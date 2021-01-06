@@ -1,0 +1,8 @@
+algorithm = Summary of Classification probs.
+inputData = "../results/Chi-RW-C.iris/result0.tst" "../results/Chi-RW-C.iris/result1.tst" "../results/Chi-RW-C.iris/result2.tst" "../results/Chi-RW-C.iris/result3.tst" "../results/Chi-RW-C.iris/result4.tst" "../results/Chi-RW-C.iris/result5.tst" "../results/Chi-RW-C.iris/result6.tst" "../results/Chi-RW-C.iris/result7.tst" "../results/Chi-RW-C.iris/result8.tst" "../results/Chi-RW-C.iris/result9.tst" "../results/Chi-RW-C.iris/result0.tra" "../results/Chi-RW-C.iris/result1.tra" "../results/Chi-RW-C.iris/result2.tra" "../results/Chi-RW-C.iris/result3.tra" "../results/Chi-RW-C.iris/result4.tra" "../results/Chi-RW-C.iris/result5.tra" "../results/Chi-RW-C.iris/result6.tra" "../results/Chi-RW-C.iris/result7.tra" "../results/Chi-RW-C.iris/result8.tra" "../results/Chi-RW-C.iris/result9.tra" 
+outputData = "../results/Vis-Clas-Check/TSTChi-RW-C/result0s0.stat" 
+
+seed = 1286082570
+subAlgorithm = StatCheckCL
+dataformat = keel
+outlabel = CHK

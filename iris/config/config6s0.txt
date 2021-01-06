@@ -1,0 +1,15 @@
+algorithm = FARCHD
+inputData = "../datasets/iris/iris-10-7tra.dat" "../datasets/iris/iris-10-7tra.dat" "../datasets/iris/iris-10-7tst.dat" 
+outputData = "../results/Fuzzy-FARCHD-C.iris/result6s0.tra" "../results/Fuzzy-FARCHD-C.iris/result6s0.tst" "../results/Fuzzy-FARCHD-C.iris/result6s0e0.txt"  "../results/Fuzzy-FARCHD-C.iris/result6s0e1.txt"  
+
+seed = 1286082570
+Number of Linguistic Values = 5
+Minimum Support = 0.05
+Maximum Confidence = 0.8
+Depth of the trees (Depthmax) = 3
+Parameter K of the prescreening = 2
+Maximum number of evaluacions = 15000
+Population size = 50
+Parameter alpha = 0.15
+Bits per gen = 30
+Type of inference = 1

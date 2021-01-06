@@ -1,0 +1,19 @@
+
+from  FarcHD_py import *
+from  FarcHD_py.FarcHDClassifier import *
+import os
+from FarcHD_py.LoadFiles import LoadFiles
+
+
+
+file_to_open =  "config0s0.txt"
+lf = LoadFiles()
+lf.parse_configuration_file("iris",file_to_open)
+
+
+x = lf.get_X()
+y = lf.get_y()
+farchd_classifier = FarcHDClassifier(lf)
+farchd_classifier.fit(x,y)
+test_x = np.array([[4.6, 3.1, 1.5, 0.2]])
+farchd_classifier.predict(test_x)

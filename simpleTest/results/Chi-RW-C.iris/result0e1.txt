@@ -1,0 +1,16 @@
+@Number of rules: 14
+
+1: sepalLength IS L_0 AND sepalWidth IS L_1 AND petalLength IS L_0 AND petalWidth IS L_0: Iris-setosa with Rule Weight: 0.9946914141525106
+2: sepalLength IS L_1 AND sepalWidth IS L_2 AND petalLength IS L_0 AND petalWidth IS L_0: Iris-setosa with Rule Weight: 1.0
+3: sepalLength IS L_1 AND sepalWidth IS L_1 AND petalLength IS L_0 AND petalWidth IS L_0: Iris-setosa with Rule Weight: 0.9897080145841041
+4: sepalLength IS L_0 AND sepalWidth IS L_0 AND petalLength IS L_0 AND petalWidth IS L_0: Iris-setosa with Rule Weight: 0.8743721633888051
+5: sepalLength IS L_1 AND sepalWidth IS L_1 AND petalLength IS L_1 AND petalWidth IS L_1: Iris-versicolor with Rule Weight: 0.5474870380145459
+6: sepalLength IS L_1 AND sepalWidth IS L_0 AND petalLength IS L_1 AND petalWidth IS L_1: Iris-versicolor with Rule Weight: 0.672414074237995
+7: sepalLength IS L_0 AND sepalWidth IS L_0 AND petalLength IS L_1 AND petalWidth IS L_1: Iris-versicolor with Rule Weight: 0.7985932110408883
+8: sepalLength IS L_1 AND sepalWidth IS L_1 AND petalLength IS L_2 AND petalWidth IS L_2: Iris-virginica with Rule Weight: 0.872291803923327
+9: sepalLength IS L_2 AND sepalWidth IS L_1 AND petalLength IS L_2 AND petalWidth IS L_2: Iris-virginica with Rule Weight: 0.9575702462535564
+10: sepalLength IS L_1 AND sepalWidth IS L_1 AND petalLength IS L_2 AND petalWidth IS L_1: Iris-virginica with Rule Weight: 0.18040318939382682
+11: sepalLength IS L_2 AND sepalWidth IS L_1 AND petalLength IS L_2 AND petalWidth IS L_1: Iris-virginica with Rule Weight: 0.6509993328176151
+12: sepalLength IS L_1 AND sepalWidth IS L_0 AND petalLength IS L_2 AND petalWidth IS L_1: Iris-virginica with Rule Weight: 0.1843982387098268
+13: sepalLength IS L_1 AND sepalWidth IS L_1 AND petalLength IS L_1 AND petalWidth IS L_2: Iris-virginica with Rule Weight: 0.6473680231744567
+14: sepalLength IS L_1 AND sepalWidth IS L_0 AND petalLength IS L_1 AND petalWidth IS L_2: Iris-virginica with Rule Weight: 0.6585359964748987

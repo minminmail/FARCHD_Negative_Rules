@@ -1,0 +1,8 @@
+algorithm = Chi Fuzzy Weighted Rule Learning Model
+inputData = "../datasets/iris/iris-10-1tra.dat" "../datasets/iris/iris-10-1tra.dat" "../datasets/iris/iris-10-1tst.dat" 
+outputData = "../results/Chi-RW-C.iris/result0.tra" "../results/Chi-RW-C.iris/result0.tst" "../results/Chi-RW-C.iris/result0e0.txt"  "../results/Chi-RW-C.iris/result0e1.txt"  
+
+Number of Labels = 3
+T-norm for the Computation of the Compatibility Degree = Product
+Rule Weight = Penalized_Certainty_Factor
+Fuzzy Reasoning Method = Winning_Rule
