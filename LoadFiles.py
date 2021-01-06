@@ -7,7 +7,7 @@ This file is for prepare the config file and read training file or test file , t
 
 """
 
-import numpy as np
+
 import logging
 import os
 from pathlib import Path

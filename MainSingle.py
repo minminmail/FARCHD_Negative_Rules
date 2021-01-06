@@ -32,6 +32,7 @@ from os.path import isfile, join
 import sys
 import logging
 from pathlib import Path
+import numpy as np
 #import javarandom
 
 # * <p>It reads the configuration file (data-set files and parameters) and launch the algorithm</p>
@@ -41,7 +42,6 @@ from pathlib import Path
 # * @since JDK1.5
 from LoadFiles import LoadFiles
 from FarcHDClassifier import FarcHDClassifier
-import numpy as np
 from Logger import Logger
 import os
 

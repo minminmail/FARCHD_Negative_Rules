@@ -1,7 +1,6 @@
 """
 This is a module to be used as a reference for building other modules
 """
-import numpy as np
 from sklearn.base import BaseEstimator, ClassifierMixin, TransformerMixin
 from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
 from sklearn.utils.multiclass import unique_labels
@@ -10,6 +9,7 @@ from sklearn.metrics import euclidean_distances
 from Apriori import Apriori
 from DataBase import DataBase
 from MyDataSet import MyDataSet
+from GranularityRule import GranularityRule
 import datetime
 import random
 import os
@@ -102,6 +102,7 @@ class FarcHDClassifier():
     negative_rule_number = None
     zone_confident = 0
     seed_int =None
+
 
 
 
@@ -241,7 +242,11 @@ class FarcHDClassifier():
             self.negative_rule_number = len(self.rule_base.negative_rule_base_array)
 
             print("Begin the  granularity rule generation ")
-            # self.rule_base.
+
+            granularity_rule = GranularityRule(self.train_myDataSet,self.nLabels,
+                self.fileDB,self.fileRB,self.val_myDataSet,
+                self.outputTr,self.outputTst,self.ruleBase, self.nClasses)
+            
 
             self.data_base.save_file(self.file_db)
             self.rule_base.save_file(self.file_rb)
@@ -256,6 +261,8 @@ class FarcHDClassifier():
             self.total_time = current_millis - int(self.start_time.utcnow().timestamp())
             self.write_time()
             self.write_rules()
+
+      
             print("Algorithm Finished")
 
             # Return the classifier
