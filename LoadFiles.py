@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 from MyDataSet import MyDataSet
+import numpy as np
 
 
 class LoadFiles:

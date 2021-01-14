@@ -4,10 +4,11 @@ from Fuzzy import Fuzzy
 from DataBase import DataBase
 from Rule import Rule
 from Logger import Logger
-from data_row import DataRow
+from DataRow import DataRow
 from MyDataSet import MyDataSet
 from ExampleWeight import ExampleWeight
 import gc
+from DataRow import DataRow
 
 
 # * This class contains the representation of a Rule Set
@@ -129,17 +130,7 @@ class RuleBase:
                 if rule.antecedent[j] >= 0:
                     cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
                     ant = ant + 1
-            #m = self.n_variables - 1
-            """
-            if j < self.n_variables and rule.antecedent[j] >= 0:
-                cadena_string += " AND " + names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j]) + ": " + \
-                                 classes[rule.class_value]
-                ant += 1
 
-            else:
-
-                cadena_string += ": " + classes[rule.class_value]
-            """
             cadena_string += ": " + self.classes[rule.class_value]
             cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
 
@@ -153,6 +144,44 @@ class RuleBase:
 
         # added negative rule print into file
         cadena_string += "@Number of negative rules: " + str(len(self.negative_rule_base_array)) + "\n\n"
+
+        for i in range(0, len(self.negative_rule_base_array)):
+            rule = self.negative_rule_base_array[i]
+            cadena_string += str(i + 1) + ": "
+
+            for j in range(0, self.n_variables):
+                if rule.antecedent[j] < 0:
+                    pass
+                else:
+                    break
+
+            if j < self.n_variables and rule.antecedent[j] >= 0:
+                cadena_string += self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                ant = ant + 1
+
+            # print("after if , j is :" + str(j))
+            j = j + 1
+            k = j
+            for j in range(k, self.n_variables):
+
+                if rule.antecedent[j] >= 0:
+                    cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                    ant = ant + 1
+
+            cadena_string += ": " + self.classes[rule.class_value]
+            cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
+
+        cadena_string += "\n\n"
+
+        cadena_string += "@supp and CF:\n\n"
+        for i in range(0, len(self.negative_rule_base_array)):
+            rule = self.negative_rule_base_array[i]
+            cadena_string += str(i + 1) + ": "
+            cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
+
+
+        """  
+        
         for i in range(0, len(self.negative_rule_base_array)):
             negative_rule = self.negative_rule_base_array[i]
             cadena_string += str(i + 1) + ": "
@@ -161,6 +190,9 @@ class RuleBase:
             # j = j + 1
             cadena_string += self.names[j] + " IS " + str(negative_rule.antecedent[j]) + ": " + str(
                 self.classes[negative_rule.class_value]) + " with Rule Weight: " + str(negative_rule.weight) + "\n"
+            
+        """
+
         print("Begin to print rules :" + "\n\n" + cadena_string)
 
         cadena_string = cadena_string + str(ant * 1.0 / len(self.rule_base_array)) + "\n\n"
@@ -409,11 +441,11 @@ class RuleBase:
 
                             for k in range(0, len(rule_negative.antecedent)):
                                 print("antecedent L_ " + str(rule_negative.antecedent[j]))
-                            print("Negative rule's class value " + str(rule_negative.get_class()))
-                            print(" Negative rule's weight, confident_vale  " + str(rule_negative.weight))
-                            print(" Negative rule's zone confident value   " + str(rule_negative.zone_confident))
-                            print("Negative rule's positive_rule_class_value" + str(positive_rule_class_value))
-                            print("Negative rule's class_type" + str(class_type))
+                            # print("Negative rule's class value " + str(rule_negative.get_class()))
+                            # print(" Negative rule's weight, confident_vale  " + str(rule_negative.weight))
+                            # print(" Negative rule's zone confident value   " + str(rule_negative.zone_confident))
+                            # print("Negative rule's positive_rule_class_value" + str(positive_rule_class_value))
+                            # print("Negative rule's class_type" + str(class_type))
                             self.negative_rule_base_array.append(rule_negative)
 
     def prepare_data_rows(self, train):
@@ -432,24 +464,24 @@ class RuleBase:
                 max_value = 0.0
                 etq = -1
                 per = None
-                n_labels = self.data_base.num_labels(m)
-                print("n_labels: " + str(n_labels))
-                for n in range(0, n_labels):
+                self.n_labels = self.data_base.num_labels(m)
+                # print("n_labels: " + str(self.n_labels))
+                for n in range(0, self.n_labels):
                     # print("Inside the second loop of searchForBestAntecedent......")
-                    print("example[" + str(m) + ")]: " + str(example[m]))
+                    # print("example[" + str(m) + ")]: " + str(example[m]))
                     per = self.data_base.membership_function(m, n, example[m])
-                    print("per: " + str(per))
+                    # print("per: " + str(per))
                     if per > max_value:
                         max_value = per
                         etq = n
                 if max_value == 0.0:
-                    print("There was an Error while searching for the antecedent of the rule")
+                    # print("There was an Error while searching for the antecedent of the rule")
                     # print("Example: ")
                     for n in range(0, self.n_variables):
                         # print(str(example[n]) + "\t")
                         pass
 
-                    print("Variable " + str(m))
+                    # print("Variable " + str(m))
                     exit(1)
                 # print(" The max_value is : " + str(max_value))
                 # print(" ,the j value is : " + str(j))
@@ -762,3 +794,50 @@ class RuleBase:
             return True
         else:
             return False
+
+
+    def search_for_best_antecedent(self, example, clas, nlabels):
+        self.n_labels = nlabels
+        #  print("n_labels " + "i" + str(nlabels))
+        ruleInstance = Rule(self.data_base)
+
+        # print("In searchForBestAntecedent ,self.n_variables is :" + str(self.n_variables))
+        ruleInstance.setClass(clas)
+        # print("In searchForBestAntecedent ,self.n_labels is :" + str(self.n_labels))
+        example_feature_array = []
+        for f_variable in range(0, self.n_variables):
+            # print("The f_variable is :"+str(f_variable))
+            # print("The example is :" + str(example))
+            example_feature_array.append(example[f_variable])
+        label_array = []
+
+        for i in range(0, self.n_variables):
+            max_value = 0.0
+            etq = -1
+            per = None
+            for j in range(0, self.n_labels):
+                # print("Inside the second loop of searchForBestAntecedent......")
+                # print("In rule base class "+"i" + str(i) + "j" + str(j))
+                per = self.data_base.membership_function(i, j, example[i])
+                if per > max_value:
+                    max_value = per
+                    etq = j
+            if max_value == 0.0:
+                # print("There was an Error while searching for the antecedent of the rule")
+                # print("Example: ")
+                for k in range(0, self.n_variables):
+                    # print(example[j] + "\t")
+                    pass
+
+                print("max_value == 0.0 " + str(i))
+                exit(1)
+            # print(" The max_value is : " + str(max_value))
+            # print(" ,the j value is : " + str(j))
+            #  ruleInstance.antecedent[i] = self.data_base.clone(i, etq)  # self.dataBase[i][j]
+            label_array.append(etq)
+        data_row_temp = DataRow()
+        data_row_temp.set_three_parameters(clas, example_feature_array, label_array)
+        ruleInstance.data_row_here = data_row_temp
+        ruleInstance.antecedent = label_array
+
+        return ruleInstance

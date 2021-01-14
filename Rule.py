@@ -1,7 +1,7 @@
 from decimal import Decimal
 
 from Fuzzy import Fuzzy
-from data_row import DataRow
+from DataRow import DataRow
 
 
 # * <p>This class contains the structure of a Fuzzy Rule</p>
@@ -96,11 +96,12 @@ class Rule:
                 # for item in example:
                 # print("item in example is  :" + str(item))
 
-                # print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
+                #print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
                 degree *= self.data_base.matching(i, self.antecedent[i], example[i])
+                #print("In degree_product,the i is  "+str(i))
             else:
                 break
-        return degree * self.confident_value
+        return degree * Decimal(self.confident_value)
 
     """
     * Function to check if a given example matchs with the rule (the rule correctly classifies it)
@@ -284,7 +285,7 @@ class Rule:
             classes_sum[train.getOutputAsIntegerWithPos(i)] = classes_sum[train.getOutputAsIntegerWithPos(i)] + comp
             total = total + comp
 
-        print("classes_sum[self.class_value]  = " + str(classes_sum[self.class_value]) + "total" + str(total))
+        # print("classes_sum[self.class_value]  = " + str(classes_sum[self.class_value]) + "total" + str(total))
         self.weight = round((classes_sum[self.class_value] / total), 4)
 
     # * Penalized Certainty Factor weight II (by Ishibuchi)
@@ -401,9 +402,9 @@ class Rule:
             # print("support_rule_number :"+str(support_rule_number))
             # print("all_number_of_the_class :" + str(all_number_of_the_class))
             self.support_value = round((supp_x / total_number), 4)
-            print("self.support_value in the rule:" + str(self.support_value))
+            #print("self.support_value in the rule:" + str(self.support_value))
             self.confident_value = round((supp_xy / all_number_of_the_class), 4)
-            print("self.confident_value in the rule:" + str(self.confident_value))
+            # print("self.confident_value in the rule:" + str(self.confident_value))
         if supp_x != 0:
             self.zone_confident = round((supp_xy / supp_x), 4)
 
@@ -414,6 +415,10 @@ class Rule:
                 antecedent_number = antecedent_number + 1
 
             return antecedent_number
+
+
+    def assing_consequent(self, train):
+        pass
 
 
 

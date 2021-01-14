@@ -17,6 +17,7 @@ import time
 
 from Populate import Populate
 from RuleBase import RuleBase
+import numpy as np
 
 
 class FarcHDClassifier():
@@ -102,8 +103,6 @@ class FarcHDClassifier():
     negative_rule_number = None
     zone_confident = 0
     seed_int =None
-
-
 
 
     def __init__(self, prepare_parameter):
@@ -241,11 +240,15 @@ class FarcHDClassifier():
 
             self.negative_rule_number = len(self.rule_base.negative_rule_base_array)
 
-            print("Begin the  granularity rule generation ")
 
-            granularity_rule = GranularityRule(self.train_myDataSet,self.nLabels,
-                self.fileDB,self.fileRB,self.val_myDataSet,
-                self.outputTr,self.outputTst,self.ruleBase, self.nClasses)
+            print("Begin the  granularity rule generation ")
+            print("self.nlabels "+str(self.nlabels))
+
+            granularity_rule = GranularityRule(self.train_mydataset,self.nlabels,
+                self.file_db,self.file_rb,self.val_mydataset,
+                self.output_tr,self.output_tst,self.rule_base,self.k_parameter,self.data_base,self.test_mydataset,self.val_mydataset,self.type_inference,self.minsup,self.minconf,self.depth)
+
+            granularity_rule.prepare(self.negative_rule_number)
             
 
             self.data_base.save_file(self.file_db)

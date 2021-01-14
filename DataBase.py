@@ -38,6 +38,7 @@ class DataBase:
     #      * @return int the number of input variables
     # '''
     # modified at 2020-08-14
+    # def init_with_five_parameters(self,n_labels_pass,self.data_base, self.train_myDataSet, self.k_parameter, self.inferenceType)
     def init_with_three_parameters(self, n_labels_pass, train_my_dataset):
         logger = Logger.set_logger()
         ranks = train_my_dataset.get_ranges()
@@ -166,6 +167,7 @@ class DataBase:
     # '''
     def membership_function(self, i, j, X):
         # print("len(self.database[0])" + str(len(self.database)))
+        # print("i" + str(i)+"j" + str(j))
         value = self.database[i][j].fuzzify(X)
         # print("Get value form Fuzzy setX is :" + str(value))
         return value
@@ -237,6 +239,9 @@ class DataBase:
         return count
 
     def matching(self, variable, label, value):
+        # print("variable"+ str(variable))
+        # print("label" + str(label))
+        # print("value" + str(value))
         if (variable < 0) or (label < 0):
             # do not care
             return 1
