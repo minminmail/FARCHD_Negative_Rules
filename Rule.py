@@ -96,9 +96,9 @@ class Rule:
                 # for item in example:
                 # print("item in example is  :" + str(item))
 
-                #print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
+                # print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
                 degree *= self.data_base.matching(i, self.antecedent[i], example[i])
-                #print("In degree_product,the i is  "+str(i))
+                # print("In degree_product,the i is  "+str(i))
             else:
                 break
         return degree * Decimal(self.confident_value)
@@ -200,6 +200,7 @@ class Rule:
             self.wracc = Decimal(-1.0)
         else:
             self.wracc = (n_ac / n_c) * ((n_ac / n_a) - Decimal(train_mydataset_pass.frecuent_class(self.class_value)))
+            print("self.wracc" + str(self.wracc))
 
     """
 
@@ -218,10 +219,10 @@ class Rule:
             if example_weight.is_active():
                 if self.matching(train_mydataset_pass.get_example(i)) > 0.0:
                     example_weight.inc_count()
-                    if (not example_weight.is_active()) and (train_mydataset_pass.get_output_as_integer_with_pos(i) == self.class_value):
+                    if (not example_weight.is_active()) and (
+                            train_mydataset_pass.get_output_as_integer_with_pos(i) == self.class_value):
                         count = count + 1
         return count
-
 
     # not exist in the java version below
 
@@ -253,6 +254,9 @@ class Rule:
     # * @return double the computation the the product T-norm
     # arrive here
     def productCompatibility(self, example):
+
+
+
 
         product = 1.0
         antecedent_number = len(self.antecedent)
@@ -402,7 +406,7 @@ class Rule:
             # print("support_rule_number :"+str(support_rule_number))
             # print("all_number_of_the_class :" + str(all_number_of_the_class))
             self.support_value = round((supp_x / total_number), 4)
-            #print("self.support_value in the rule:" + str(self.support_value))
+            # print("self.support_value in the rule:" + str(self.support_value))
             self.confident_value = round((supp_xy / all_number_of_the_class), 4)
             # print("self.confident_value in the rule:" + str(self.confident_value))
         if supp_x != 0:
@@ -416,11 +420,5 @@ class Rule:
 
             return antecedent_number
 
-
     def assing_consequent(self, train):
         pass
-
-
-
-
-

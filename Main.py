@@ -68,7 +68,7 @@ class Main:
         # np.random.seed(0)
 
         lf = LoadFiles()
-        logger.debug("Begin  lf.parse_configuration_file in Main ")
+        # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
         for filename in os.listdir("FarcHD_py\iris\config"):
 

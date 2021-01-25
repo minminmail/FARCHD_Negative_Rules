@@ -750,6 +750,7 @@ class MyDataSet:
         return self.integer_array[index_i]
 
     def get_frequent_class(self, class_value):
+        print("class_value"+str(class_value))
         return self.frequent_class_array[class_value]
 
     """
@@ -783,3 +784,22 @@ class MyDataSet:
             return np.array(self.output_integer_array)
         else:
             return np.array(self.output_array)
+
+    def copyHeader(self):
+
+        p = ""
+        # # print("copyHeader begin...., P is :" + p)
+        p = "@relation " + Attributes.getRelationName(Attributes) + "\n"
+        # # print(" after relation P is :" + p)
+        p += Attributes.getInputAttributesHeader(Attributes)
+        # # print(" after getInputAttributesHeader P is :" + p)
+        p += Attributes.getOutputAttributesHeader(Attributes)
+        # # print(" after getOutputAttributesHeader P is :" + p)
+        p += Attributes.getInputHeader(Attributes) + "\n"
+        # # print(" after getInputHeader P is :" + p)
+        p += Attributes.getOutputHeader(Attributes) + "\n"
+        # # print(" after getOutputHeader P is :" + p)
+        p += "@data\n"
+
+        # print("P is :" + p)
+        return p

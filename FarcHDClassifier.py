@@ -103,6 +103,7 @@ class FarcHDClassifier():
     negative_rule_number = None
     zone_confident = 0
     seed_int =None
+    granularity_rule_Base_array=[]
 
 
     def __init__(self, prepare_parameter):
@@ -235,6 +236,8 @@ class FarcHDClassifier():
             self.rules_stage3 = int(self.rule_base.get_size())
 
             print("Begin the  negative rule generation ")
+            self.data_base.save_file(self.file_db)
+            self.rule_base.save_file(self.file_rb)
 
             self.rule_base.generate_negative_rules(self.train_mydataset, self.negative_confident_value,self.zone_confident)
 
@@ -246,13 +249,14 @@ class FarcHDClassifier():
 
             granularity_rule = GranularityRule(self.train_mydataset,self.nlabels,
                 self.file_db,self.file_rb,self.val_mydataset,
-                self.output_tr,self.output_tst,self.rule_base,self.k_parameter,self.data_base,self.test_mydataset,self.val_mydataset,self.type_inference,self.minsup,self.minconf,self.depth)
+                self.output_tr,self.output_tst,self.rule_base,self.k_parameter,self.data_base,self.test_mydataset,
+                self.val_mydataset,self.type_inference,self.minsup,self.minconf,self.depth,self.seed_int,self.population_size,self.bits_gen,self.alpha,self.max_trials)
 
-            granularity_rule.prepare(self.negative_rule_number)
+            self.granularity_rule_Base_array = granularity_rule.get_granularity_rules(self.negative_rule_number)
             
 
-            self.data_base.save_file(self.file_db)
-            self.rule_base.save_file(self.file_rb)
+
+            #
 
             #  Finally we should fill the training and test  output files
             self.do_output(self.val_mydataset, self.output_tr)
@@ -424,7 +428,7 @@ class FarcHDClassifier():
             if predict_y[i] == test_y[i]:
                 hits = hits + 1
 
-        print("predict_y in score is :")
+        print("predict_y normal rules in score is :")
         score = 1.0 * hits / row_num
         print(score)
 

@@ -397,7 +397,7 @@ class Individual:
 
         self.fitness = self.accuracy - (self.w1_value / (self.rule_base.get_size() - self.get_nselected() + 1.0)) - (
                 5.0 * self.rule_base.get_uncover()) - (5.0 * self.rule_base.has_class_uncovered(self.geneR_array))
-        self.logger.debug (" In individual calcuates the fitness with accuracy, the fitness is :" +str(self.fitness))
+        # self.logger.debug (" In individual calcuates the fitness with accuracy, the fitness is :" +str(self.fitness))
         # print("fitness in evaluate is : " + str(self.fitness ))
 
     def compare_to(self, a_object):

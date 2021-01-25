@@ -179,60 +179,109 @@ class RuleBase:
             cadena_string += str(i + 1) + ": "
             cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
 
-
-        """  
-        
-        for i in range(0, len(self.negative_rule_base_array)):
-            negative_rule = self.negative_rule_base_array[i]
-            cadena_string += str(i + 1) + ": "
-            for j in range(0, self.n_variables - 1):
-                cadena_string += self.names[j] + " IS " + str(negative_rule.antecedent[j]) + " AND "
-            # j = j + 1
-            cadena_string += self.names[j] + " IS " + str(negative_rule.antecedent[j]) + ": " + str(
-                self.classes[negative_rule.class_value]) + " with Rule Weight: " + str(negative_rule.weight) + "\n"
-            
-        """
-
         print("Begin to print rules :" + "\n\n" + cadena_string)
 
         cadena_string = cadena_string + str(ant * 1.0 / len(self.rule_base_array)) + "\n\n"
 
         return cadena_string
 
-    def print_granularity_rule_string(self):
-        # added for granularity rules
+    def print_granularity_rule_string(self,rule_base):
+        self.granularity_rule_Base = rule_base
+
+        i = 0
+        j = 0
+        ant = 0
+        self.names = self.train_myDataSet.get_names()
+        self.classes = self.train_myDataSet.get_classes()
         cadena_string = ""
-        cadena_string += "@Number of granularity rules: " + str(len(self.granularity_rule_Base)) + "\n\n"
+
+        # added negative rule print into file
+        cadena_string += "@Granularity rules: " + str(len(self.granularity_rule_Base)) + "\n\n"
+
         for i in range(0, len(self.granularity_rule_Base)):
-            granularity_rule = self.granularity_rule_Base[i]
-            cadena_string += "In negative zone area : " + str(
-                granularity_rule.granularity_sub_zone) + " , has rules : " + "\n"
+            rule = self.granularity_rule_Base[i]
             cadena_string += str(i + 1) + ": "
-            for j in range(0, self.n_variables - 1):
-                cadena_string += self.names[j] + " IS " + granularity_rule.antecedent[j].name + " AND "
+
+            for j in range(0, self.n_variables):
+                if rule.antecedent[j] < 0:
+                    pass
+                else:
+                    break
+
+            if j < self.n_variables and rule.antecedent[j] >= 0:
+                cadena_string += self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                ant = ant + 1
+
+            # print("after if , j is :" + str(j))
             j = j + 1
-            print("granularity_rule.class_value is : " + str(granularity_rule.class_value))
-            cadena_string += self.names[j] + " IS " + granularity_rule.antecedent[j].name + ": " + str(
-                self.classes[granularity_rule.class_value]) + " with Rule Weight: " + str(
-                granularity_rule.weight) + "\n"
+            k = j
+            for j in range(k, self.n_variables):
+
+                if rule.antecedent[j] >= 0:
+                    cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                    ant = ant + 1
+
+            cadena_string += ": " + self.classes[rule.class_value]
+            cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
+
+        cadena_string += "\n\n"
+
+        cadena_string += "@supp and CF:\n\n"
+        for i in range(0, len(self.granularity_rule_Base)):
+            rule = self.granularity_rule_Base[i]
+            cadena_string += str(i + 1) + ": "
+            cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
+
         print("granularity rules rule_base_array cadena_string is:" + cadena_string)
         return cadena_string
 
-    def print_pruned_granularity_rule_string(self):
+    def print_pruned_granularity_rule_string(self,rule_base):
         # added for granularity rules
+
+        i = 0
+        j = 0
+        ant = 0
+        self.names = self.train_myDataSet.get_names()
+        self.classes = self.train_myDataSet.get_classes()
         cadena_string = ""
-        cadena_string += "@Number of pruned granularity rules: " + str(len(self.granularity_prune_rule_base)) + "\n\n"
-        for i in range(0, len(self.granularity_prune_rule_base)):
-            granularity_prune_rule = self.granularity_prune_rule_base[i]
-            cadena_string += "In negative zone area : " + str(
-                granularity_prune_rule.granularity_sub_zone) + " , has rules : " + "\n"
+
+        # added negative rule print into file
+        cadena_string += "@Pruned Granularity rules: " + str(len(rule_base)) + "\n\n"
+
+        for i in range(0, len(rule_base)):
+            rule = rule_base[i]
             cadena_string += str(i + 1) + ": "
-            for j in range(0, self.n_variables - 1):
-                cadena_string += self.names[j] + " IS " + granularity_prune_rule.antecedent[j].name + " AND "
+
+            for j in range(0, self.n_variables):
+                if rule.antecedent[j] < 0:
+                    pass
+                else:
+                    break
+
+            if j < self.n_variables and rule.antecedent[j] >= 0:
+                cadena_string += self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                ant = ant + 1
+
+            # print("after if , j is :" + str(j))
             j = j + 1
-            cadena_string += self.names[j] + " IS " + granularity_prune_rule.antecedent[j].name + ": " + str(
-                self.classes[granularity_prune_rule.class_value]) + " with Rule Weight: " + str(
-                granularity_prune_rule.weight) + "\n"
+            k = j
+            for j in range(k, self.n_variables):
+
+                if rule.antecedent[j] >= 0:
+                    cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                    ant = ant + 1
+
+            cadena_string += ": " + self.classes[rule.class_value]
+            cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
+
+        cadena_string += "\n\n"
+
+        cadena_string += "@supp and CF:\n\n"
+        for i in range(0, len(rule_base)):
+            rule = rule_base[i]
+            cadena_string += str(i + 1) + ": "
+            cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
+
         print("pruned granularity rules rule_base_array cadena_string is:" + cadena_string)
         return cadena_string
 
@@ -246,15 +295,15 @@ class RuleBase:
         file.write(outputString)
         file.close()
 
-    def write_File_for_granularity_rule(self, filename):
+    def write_File_for_granularity_rule(self, filename,rule_base):
         with open(filename, 'a') as file_append:
-            outputString = "\n" + "\n" + self.print_granularity_rule_string()
+            outputString = "\n" + "\n" + self.print_granularity_rule_string(rule_base)
             file_append.write(outputString)
             file_append.close()
 
-    def write_File_for_pruned_granularity_rule(self, filename):
+    def write_File_for_pruned_granularity_rule(self, filename,rule_base):
         with open(filename, 'a') as file_append:
-            outputString = "\n" + "\n" + self.print_pruned_granularity_rule_string()
+            outputString = "\n" + "\n" + self.print_pruned_granularity_rule_string(rule_base)
             file_append.write(outputString)
             file_append.close()
 
@@ -335,7 +384,7 @@ class RuleBase:
         for i in range(0, len(self.granularity_rule_Base)):
             rule = self.granularity_rule_Base[i]
             # print("after get rule of the FRM_Granularity :")
-            produc = rule.compatibility(example)
+            produc = rule.degree_product(example)
             produc *= rule.weight
             if produc > max_value:
                 max_value = produc
@@ -343,8 +392,12 @@ class RuleBase:
         if produc == 0:
             for i in range(0, len(self.rule_base_array)):
                 rule = self.rule_base_array[i]
-                produc = rule.compatibility(example)
-                produc *= rule.weight
+                produc = rule.degree_product(example)
+                print("produc  is ")
+                print(produc)
+                print("rule.wracc  is ")
+                print(rule.wracc)
+                produc *= rule.wracc
                 if produc > max_value:
                     max_value = produc
                     class_value = rule.class_value
@@ -688,7 +741,7 @@ class RuleBase:
                 self.nuncover_class_array[self.train_myDataSet.get_output_as_integer(j)] +=  1
 
         self.fitness = (100.0 * nhits) / (1.0 * self.train_myDataSet.size())
-        self.logger.debug("In evaluate of ruleBase , the self.fitness is :" + str(self.fitness))
+        # self.logger.debug("In evaluate of ruleBase , the self.fitness is :" + str(self.fitness))
 
     """
      * Function to evaluate the selected rules by using the training dataset and the fuzzy functions stored in the gene given.

@@ -77,7 +77,8 @@ class Populate:
         self.maxtrials = maxtrials
         self.lini = ((data_base.get_nlabels_real() * bits_gen) + rule_base_pass.get_size()) / 4.0
         self.l_value = self.lini
-        self.w1 = self.alpha * rule_base_pass.get_size()
+        rule_size = rule_base_pass.get_size()
+        self.w1 = self.alpha * rule_size
 
         self.population_array = []
         self.selected_array = [0 for x in range(self.pop_size)]
@@ -99,6 +100,7 @@ class Populate:
                 self.l_value = self.l_value - 1
                 if self.l_value < 0.0:
                     self.restart()
+
             if self.ntrials >= self.maxtrials:
                 break
 
@@ -143,8 +145,10 @@ class Populate:
             aux = self.selected_array[random_value]
             self.selected_array[random_value] = self.selected_array[i]
             self.selected_array[i] = aux
+        """ 
         for i in range(0, self.pop_size):
             self.logger.debug( "In selection, self.selected_array["+ str(i)+ "]"+ str(self.selected_array[i]))
+        """
 
     def xpc_blx(self, d_value, son1_individual, son2_individual):
         son1_individual.xpc_blx(son2_individual, d_value,self.seed_value)
@@ -178,28 +182,33 @@ class Populate:
 
                 self.population_array.append(son1_individual)
                 self.population_array.append(son2_individual)
+        """  
         for i in range (0, len(self.population_array)):
             self.logger.debug("In cross_over, self.population_array[" + str(i)+ "].fitness" + str(self.population_array[i].fitness))
+            """
 
     def elitist(self):
         
         # need to know which order to sort ,how to sort, if the sort will be saved
         self.population_array.sort(key=lambda x: x.fitness, reverse=True)
+        """
         for i in range (0, len(self.population_array)):
             self.logger.debug("In elitist, before pop, self.population_array[" + str(i)+ "].fitness" + str(self.population_array[i].fitness))
+            """
         
         while len(self.population_array) > self.pop_size:
             # print("len(self.population_array)"+str(len(self.population_array)))
             # print("len(self.pop_size)" + str(self.pop_size))
             # print("value " + str(self.population_array[self.pop_size]))
-            self.logger.debug("In elitist,  pop， self.population_array[" + str(self.pop_size)+ "].fitness" + str(self.population_array[self.pop_size].fitness))
+            # self.logger.debug("In elitist,  pop， self.population_array[" + str(self.pop_size)+ "].fitness" + str(self.population_array[self.pop_size].fitness))
             self.population_array.pop(self.pop_size)
-
+        """
         for i in range (0, len(self.population_array)):
             self.logger.debug("In elitist, after pop, self.population_array[" + str(i)+ "].fitness" + str(self.population_array[i].fitness))
+        """
 
         self.best_fitness = self.population_array[0].get_fitness()
-        self.logger.debug("In elitist of Populate class, self.best_fitness  " + str(self.best_fitness))
+        # self.logger.debug("In elitist of Populate class, self.best_fitness  " + str(self.best_fitness))
 
         #print("in elitist in population class the best_fitness is :" +str(self.best_fitness))
 
@@ -227,7 +236,7 @@ class Populate:
         self.population_array.sort(key=lambda x: x.fitness,reverse=True)
 
         ind = self.population_array[0].clone()
-        self.logger.debug("in restart , Populate class, ind.fitness, self.population_array[0] is :  " + str(ind.fitness))
+        # self.logger.debug("in restart , Populate class, ind.fitness, self.population_array[0] is :  " + str(ind.fitness))
         print(" in restart the selected self.population_array[0] fitness is "+str(ind.fitness))
         ind.set_w1_value(self.w1)
 
@@ -242,11 +251,11 @@ class Populate:
 
         self.evaluate(0)
 
-        
-
+        """
         for i in range ( 0, len(self.population_array)):
            
             self.logger.debug("in restart of populate class, after  self.evaluate(0), self.population_array["+str(i)+"].fitness"+ str(self.population_array[i].fitness))
+        """
 
         self.l_value = self.lini
 
@@ -256,14 +265,14 @@ class Populate:
 
     def get_best_RB(self):
 
-        for i in range ( 0, len(self.population_array)):
-            #print("self.population_array["+str(i)+"].fitness")
-            self.logger.debug("in get_best_RB of populate, in populate class, self.population_array["+str(i)+"].fitness"+ str(self.population_array[i].fitness))
+        # for i in range ( 0, len(self.population_array)):
+            # print("self.population_array["+str(i)+"].fitness")
+            # self.logger.debug("in get_best_RB of populate, in populate class, self.population_array["+str(i)+"].fitness"+ str(self.population_array[i].fitness))
             # print(self.population_array[i].fitness)
 
 
         self.population_array.sort(key=lambda x: x.fitness,reverse=True)
         rule_base = self.population_array[0].generate_rb() 
-        self.logger.debug("in get_best_RB , in populate class, return rule_base self.population_array["+str(0)+"].fitness"+ str(self.population_array[0].fitness))
+        # self.logger.debug("in get_best_RB , in populate class, return rule_base self.population_array["+str(0)+"].fitness"+ str(self.population_array[0].fitness))
 
         return rule_base

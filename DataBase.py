@@ -85,12 +85,13 @@ class DataBase:
                 
                 self.database[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
                 self.database_ini[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
-
+                """  
                 logger.debug("database["+str(i)+"]"+"["+str(j)+"]" +".x0 :"+" :"+ str( self.database_ini[i][j].x0))
                 logger.debug("database["+str(i)+"]"+"["+str(j)+"]"+".x1 :"+" :"+ str( self.database_ini[i][j].x1))
                 logger.debug("database["+str(i)+"]"+"["+str(j)+"]"+".x3 :"+" :"+ str( self.database_ini[i][j].x3))
                 logger.debug("database["+str(i)+"]"+"["+str(j)+"]"+".name :"+" :"+ str( self.database_ini[i][j].name))
                 logger.debug("--------------------------------------------------------------------------------")
+                """
             # print("finished init database")
             
 
