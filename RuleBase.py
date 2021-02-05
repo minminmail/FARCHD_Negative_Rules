@@ -42,6 +42,7 @@ class RuleBase:
     nuncover = None
     nuncover_class_array = []
     logger = None
+    frm_ac_max_degree_value = None
 
     # /**
     #  * Rule Base Constructor
@@ -312,7 +313,7 @@ class RuleBase:
      * @param example Example to be predicted.
     """
 
-    def frm(self, example):
+    def FRM(self, example):
 
         if self.inferenceType == 0:
             # print("run FRM_WR !")
@@ -377,15 +378,19 @@ class RuleBase:
     '''
 
     def FRM_Granularity(self, example):
-        # print("FRM_Granularity begin :  ")
+        print("FRM_Granularity begin :  ")
         class_value = -1
         max_value = 0.0
         produc = 0
         for i in range(0, len(self.granularity_rule_Base)):
             rule = self.granularity_rule_Base[i]
-            # print("after get rule of the FRM_Granularity :")
+            print("after get rule of the FRM_Granularity :")
             produc = rule.degree_product(example)
-            produc *= rule.weight
+            print("produc  is ")
+            print(produc)
+            print("rule.wracc  is ")
+            print(rule.wracc)
+            produc *= rule.wracc
             if produc > max_value:
                 max_value = produc
                 class_value = rule.class_value
@@ -447,7 +452,7 @@ class RuleBase:
     def FRM_AC(self, example):
 
         degree = Decimal(0.0)
-        max_degree = Decimal(0.0)
+        self.frm_ac_max_degree_value = Decimal(0.0)
         class_value = self.default_rule
 
         degree_class_array = [0.0 for x in range(self.train_myDataSet.get_nclasses())]
@@ -460,10 +465,10 @@ class RuleBase:
             degree = rule.matching(example)
             degree_class_array[rule.get_class()] += degree
 
-        max_degree = 0.0
+        self.frm_ac_max_degree_value = 0.0
         for i in range(0, self.train_myDataSet.get_nclasses()):
-            if degree_class_array[i] > max_degree:
-                max_degree = degree_class_array[i]
+            if degree_class_array[i] > self.frm_ac_max_degree_value:
+                self.frm_ac_max_degree_value = degree_class_array[i]
                 class_value = i
 
         return class_value

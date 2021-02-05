@@ -96,12 +96,14 @@ class Rule:
                 # for item in example:
                 # print("item in example is  :" + str(item))
 
-                # print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
+                #print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
                 degree *= self.data_base.matching(i, self.antecedent[i], example[i])
                 # print("In degree_product,the i is  "+str(i))
             else:
                 break
-        return degree * Decimal(self.confident_value)
+        return_value = degree * Decimal(self.confident_value)
+        #print("return_value:" + str(return_value))
+        return return_value
 
     """
     * Function to check if a given example matchs with the rule (the rule correctly classifies it)

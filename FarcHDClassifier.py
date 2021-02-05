@@ -253,8 +253,6 @@ class FarcHDClassifier():
                 self.val_mydataset,self.type_inference,self.minsup,self.minconf,self.depth,self.seed_int,self.population_size,self.bits_gen,self.alpha,self.max_trials)
 
             self.granularity_rule_Base_array = granularity_rule.get_granularity_rules(self.negative_rule_number)
-            
-
 
             #
 
@@ -310,7 +308,7 @@ class FarcHDClassifier():
         # Here we should include the algorithm directives to generate the
         # classification output from the input example
 
-        class_out = self.rule_base.frm(example)
+        class_out = self.rule_base.FRM(example)
 
         if class_out >= 0:
             output = self.train_mydataset.get_output_value(class_out)
