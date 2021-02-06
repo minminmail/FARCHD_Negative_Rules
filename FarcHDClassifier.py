@@ -259,6 +259,7 @@ class FarcHDClassifier():
             #  Finally we should fill the training and test  output files
             self.do_output(self.val_mydataset, self.output_tr)
             self.do_output(self.test_mydataset, self.output_tst)
+
             current_millis = int(round(time.time() * 1000))
 
             # int(datetime.datetime.utcnow().timestamp())

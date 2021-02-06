@@ -432,6 +432,7 @@ class RuleBase:
     def frm_ac_with_two_parameters(self, example, selected_array):
         class_value = self.default_rule
         degree = Decimal(0.0)
+        self.frm_ac_max_degree_value = Decimal(0.0)
         max_degree = Decimal(0.0)
         degrees_class = [0.0 for x in range(self.train_myDataSet.get_nclasses())]
         for i in range(0, self.train_myDataSet.get_nclasses()):
@@ -445,6 +446,7 @@ class RuleBase:
         for i in range(0, self.train_myDataSet.get_nclasses()):
             if degrees_class[i] > max_degree:
                 max_degree = degrees_class[i]
+                self.frm_ac_max_degree_value = max_degree
                 class_value = i
         # print("the frm_ac_with_two_parameters return value is " + str(class_value))
         return class_value

@@ -46,6 +46,7 @@ class GranularityRule:
     alpha = 0
     max_trials = 0
     max_granularity_degree = None
+    normal_rule_degree = None
 
     def __init__(self, train_mydataset, nlabels, file_db, file_rb,
                  val_mydataset, outputTr, outputTst, ruleBase,
@@ -146,6 +147,7 @@ class GranularityRule:
     #    * @return The classification accuracy
     # """
     def doOutput(self, dataset, filename):
+        final_class_out =None
         granularity_rule = True
         try:
             output = ""
@@ -175,16 +177,21 @@ class GranularityRule:
                             if degree_new > max_degree:
                                 class_out_here = classOut
 
-                    if class_out_here is None:  #
-                        print("if before class out here is None,  classificationOutput")
-                        classOut = self.classificationOutput(dataset.get_example(i))
-                        print("if after class out here is None,  classificationOutput")
+                    #if class_out_here is None:  #
+                    print("if before class out here is None,  classificationOutput")
+                    classOut_normal = self.classificationOutput(dataset.get_example(i))
+                    print("if after class out here is None,  classificationOutput")
+                    #else:
+                    if degree_new > self.normal_rule_degree:
+                        final_class_out = class_out_here
                     else:
-                        classOut = class_out_here
+                        final_class_out = classOut_normal
 
-                    if classOut >= 0:
-                        print(" classOut :" + str(classOut))
-                        output_with_name = self.train_myDataSet.get_output_value(classOut)
+
+                    print(" classOut  in doOutput is :" + str(final_class_out))
+                    if final_class_out >= 0:
+                        print(" final_class_out :" + str(final_class_out))
+                        output_with_name = self.train_myDataSet.get_output_value(final_class_out)
 
                     print(" granularity_rule output_with_name is :" + str(output_with_name))
 
@@ -192,7 +199,7 @@ class GranularityRule:
 
 
                 print("before get_output_as_string_with_pos in doOutput")
-                self.output = str(self.output) + dataset.get_output_as_string_with_pos(i) + " " + str(classOut)  + "\n"
+                self.output = str(self.output) + dataset.get_output_as_string_with_pos(i) + " " + str(final_class_out)  + "\n"
                 print("after get_output_as_string_with_pos in doOutput")
                 dataset_output =dataset.get_output_as_string_with_pos(i)
                 print("dataset_output is :"+str(dataset_output))
@@ -215,7 +222,11 @@ class GranularityRule:
         self.output = "?"
         # Here we should include the algorithm directives to generate the
         # classification output from the input example
-        classOut = self.ruleBase.FRM(example)
+        selected_array = [1, 1, 1, 1, 1, 1, 1, 1]
+        classOut = self.ruleBase.frm_ac_with_two_parameters(example,selected_array)
+        self.normal_rule_degree = self.ruleBase.frm_ac_max_degree_value
+
+        print("classOut in classificationOutput is "+str(classOut))
         if classOut >= 0:
             # print("In Fuzzy_Chi,classOut >= 0, to call getOutputValue")
             self.output = self.train_mydataset.get_output_as_string_with_pos(classOut)
@@ -227,7 +238,8 @@ class GranularityRule:
         # Here we should include the algorithm directives to generate the
         # classification output from the input example
         print("before FRM_Granularity")
-        classOut = self.granularity_rule_Base_array[zone_area_number].FRM(example)
+        selected_array = [1, 1, 1, 1, 1, 1, 1, 1]
+        classOut = self.granularity_rule_Base_array[zone_area_number].frm_ac_with_two_parameters(example,selected_array)
 
         self.max_granularity_degree = self.granularity_rule_Base_array[zone_area_number].frm_ac_max_degree_value
         print("in classification_Output_granularity  max_granularity_degree is "+str(self.max_granularity_degree))
