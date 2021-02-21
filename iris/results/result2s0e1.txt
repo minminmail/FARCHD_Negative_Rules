@@ -20,7 +20,189 @@
 6: supp: 0.1925925925925925942373674438891206 AND CF: 0.7800000000000000239808173319033818
 7: supp: 0.06591337099811669056851307594250237 AND CF: 1
 8: supp: 0.091152263374485626268078063064866 AND CF: 0.8470363288718929322053028114178550
-@Number of negative rules: 0
+@Number of negative rules: 8
 
-1.125
+1: petalWidth IS L_0(5): Iris-virginica CF: 1.0
+2: petalLength IS L_0(5): Iris-virginica CF: 1.0
+3: petalWidth IS L_2(5): Iris-virginica CF: 0.9333
+4: petalLength IS L_2(5): Iris-virginica CF: 0.9778
+5: petalWidth IS L_4(5): Iris-versicolor CF: 1.0
+6: petalWidth IS L_3(5): Iris-versicolor CF: 0.8889
+7: petalLength IS L_4(5): Iris-versicolor CF: 1.0
+8: sepalWidth IS L_1(5) AND petalWidth IS L_3(5): Iris-versicolor CF: 0.4
+
+
+@supp and CF:
+
+1: supp: 0.7259 AND CF: 1.0
+2: supp: 0.6741 AND CF: 1.0
+3: supp: 0.7259 AND CF: 0.9333
+4: supp: 0.7407 AND CF: 0.9778
+5: supp: 0.8815 AND CF: 1.0
+6: supp: 0.7704 AND CF: 0.8889
+7: supp: 0.9556 AND CF: 1.0
+8: supp: 0.563 AND CF: 0.4
+2.25
+
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_1(5): Iris-setosa CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.1621621621621621726642718545622916 AND CF: 1
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_1(5): Iris-setosa CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.2272727272727272966979971225886070 AND CF: 1
+
+
+@Granularity rules: 3
+
+1: petalLength IS L_2(5): Iris-versicolor CF: 0.9792817679558010677424596279197608
+2: sepalWidth IS L_2(5): Iris-versicolor CF: 0.9764705882352941401895803062298321
+3: sepalLength IS L_2(5) AND sepalWidth IS L_0(5) AND petalLength IS L_3(5): Iris-virginica CF: 0.4948453608247423127785237136959790
+
+
+@supp and CF:
+
+1: supp: 0.64956481905634460665804435602449 AND CF: 0.9792817679558010677424596279197608
+2: supp: 0.3738738738738737218433335648434284 AND CF: 0.9764705882352941401895803062298321
+3: supp: 0.01140123174021478621004986098911694 AND CF: 0.4948453608247423127785237136959790
+
+
+@Granularity rules: 4
+
+1: petalLength IS L_1(5): Iris-versicolor CF: 1
+2: sepalWidth IS L_2(5): Iris-versicolor CF: 1
+3: sepalLength IS L_2(5): Iris-versicolor CF: 1
+4: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.05520581113801457166591544835552797 AND CF: 1
+2: supp: 0.3190476190476189323673241103408926 AND CF: 1
+3: supp: 0.5174603174603174831387113791996469 AND CF: 1
+4: supp: 0.006349206349206343214669390911853906 AND CF: 1
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_4(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.7291666666666666227203386085875531 AND CF: 1
+
+
+@Granularity rules: 3
+
+1: sepalLength IS L_2(5) AND sepalWidth IS L_2(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.7097560975609759582498874049142083
+2: petalLength IS L_4(5): Iris-virginica CF: 1
+3: sepalWidth IS L_1(5): Iris-virginica CF: 0.9156626506024096514630373454020918
+
+
+@supp and CF:
+
+1: supp: 0.02897252090800478646685793205749805 AND CF: 0.7097560975609759582498874049142083
+2: supp: 0.1448879168944777245225762018684866 AND CF: 1
+3: supp: 0.4086021505376345417095346728010261 AND CF: 0.9156626506024096514630373454020918
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_4(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.3055555555555556727457637104331903 AND CF: 1
+
+
+@Granularity rules: 3
+
+1: sepalLength IS L_2(5) AND petalLength IS L_3(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.6223224351747465964606168513029202
+2: petalWidth IS L_3(5): Iris-virginica CF: 0.9571428571428571340206738856365088
+3: sepalLength IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.0247511433952111716897950337004119 AND CF: 0.6223224351747465964606168513029202
+2: supp: 0.7976190476190476243343953553578879 AND CF: 0.9571428571428571340206738856365088
+3: supp: 0.1984126984126986296765236618609507 AND CF: 1
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
+
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
+
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
+
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
+
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
+
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
+
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
+
+
+
+@Pruned Granularity rules: 0
+
+
+
+@supp and CF:
 

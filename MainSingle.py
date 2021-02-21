@@ -68,7 +68,7 @@ class Main:
         lf = LoadFiles()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        whole_file_name_with_path= os.getcwd() + os.path.join("\iris\config","config9s0.txt")
+        whole_file_name_with_path= os.getcwd() + os.path.join("\iris\config","config2s0.txt")
 
         # lf.parse_configuration_file("\iris", "config1s0.txt")
         lf.parse_configuration_file(whole_file_name_with_path)

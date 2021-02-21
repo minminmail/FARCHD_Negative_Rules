@@ -101,7 +101,7 @@ class FarcHDClassifier():
     nlabels = 0
     negative_confident_value = 0
     negative_rule_number = None
-    zone_confident = 0
+    zone_confident = 0.2
     seed_int =None
     granularity_rule_Base_array=[]
 
@@ -235,14 +235,15 @@ class FarcHDClassifier():
 
             self.rules_stage3 = int(self.rule_base.get_size())
 
-            print("Begin the  negative rule generation ")
-            self.data_base.save_file(self.file_db)
-            self.rule_base.save_file(self.file_rb)
+
 
             self.rule_base.generate_negative_rules(self.train_mydataset, self.negative_confident_value,self.zone_confident)
 
             self.negative_rule_number = len(self.rule_base.negative_rule_base_array)
 
+            print("Begin the  negative rule generation ")
+            self.data_base.save_file(self.file_db)
+            self.rule_base.save_file(self.file_rb)
 
             print("Begin the  granularity rule generation ")
             print("self.nlabels "+str(self.nlabels))
@@ -378,15 +379,16 @@ class FarcHDClassifier():
 
         # Input validation
         X = check_array(X, accept_sparse=True)
-        selected_array = [1, 1, 1, 1, 1, 1, 1, 1]
+
         # Check is fit had been called
         check_is_fitted(self, ['X_', 'y_'], 'is_fitted_')
 
         row_num = X.shape[0]
         predict_y = np.empty([row_num, 1], dtype=np.int32)
+        selected_array =None
 
         for i in range(0, row_num):
-            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
+            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(X[i],selected_array)
         print("predict_y is :")
         print(predict_y)
 
@@ -409,7 +411,7 @@ class FarcHDClassifier():
 
         # Input validation
         test_X = check_array(test_X, accept_sparse=True)
-        selected_array = [1, 1, 1, 1, 1, 1, 1, 1]
+
         # Check is fit had been called
         check_is_fitted(self, ['X_', 'y_'], 'is_fitted_')
 
@@ -417,9 +419,10 @@ class FarcHDClassifier():
         print("row_num in score is :" + str(row_num))
         predict_y = np.empty([row_num, 1], dtype=np.int32)
         hits = 0
+        selected_array = None
 
         for i in range(0, row_num):
-            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(test_X[i], selected_array)
+            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(test_X[i],selected_array)
 
             print("predict_y[" + str(i) + "] is :" + str(predict_y[i]))
             print("test_y[" + str(i) + "] is :" + str(test_y[i]))

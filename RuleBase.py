@@ -326,13 +326,13 @@ class RuleBase:
     # * @param example double[] the input example
     # * @return int the predicted class label (id)
 
-    def frm_two_parameters(self, example, selected_array_pass):
+    def frm_two_parameters(self, example,selected_array_pass):
         # print("run frm_two_parameters !")
         if self.inferenceType == 0:
 
-            return self.frm_wr_with_two_parameters(example, selected_array_pass)
+            return self.frm_wr_with_two_parameters(example,selected_array_pass)
         else:
-            result = self.frm_ac_with_two_parameters(example, selected_array_pass)
+            result = self.frm_ac_with_two_parameters(example,selected_array_pass)
             if result is None:
                 print("The result is none ! from frm_ac_with_two_parameters ")
             return result
@@ -429,7 +429,7 @@ class RuleBase:
     # * @param example double[] the input example
     # * @return int the class label for the set of rules with the highest sum of membership degree per class
 
-    def frm_ac_with_two_parameters(self, example, selected_array):
+    def frm_ac_with_two_parameters(self, example,selected_array):
         class_value = self.default_rule
         degree = Decimal(0.0)
         self.frm_ac_max_degree_value = Decimal(0.0)
@@ -437,6 +437,10 @@ class RuleBase:
         degrees_class = [0.0 for x in range(self.train_myDataSet.get_nclasses())]
         for i in range(0, self.train_myDataSet.get_nclasses()):
             degrees_class[i] = Decimal(0.0)
+        rule_length =len(self.rule_base_array)
+        if selected_array is None:
+            selected_array= [1 for i in range(rule_length)]
+
         for i in range(0, len(self.rule_base_array)):
             if selected_array[i] > 0:
                 rule = self.rule_base_array[i]
@@ -485,7 +489,7 @@ class RuleBase:
             rule_negative.antecedent = self.rule_base_array[i].antecedent
             positive_rule_class_value = self.rule_base_array[i].get_class()
             print("the positive rule class value is " + str(positive_rule_class_value) + " ,the i is :" + str(i))
-            rule_negative.setClass(positive_rule_class_value)
+            # rule_negative.setClass(positive_rule_class_value)
 
             for j in range(0, len(class_value_arr)):
                 class_type = int(class_value_arr[j])
@@ -514,10 +518,13 @@ class RuleBase:
             class_value = train.get_output_as_integer_with_pos(i)
             example = train.get_example(i)
             example_feature_array = []
+            example_feature_array.append(train.get_example(i))
+            """
             for f_variable in range(0, self.n_variables):
                 # print("The f_variable is :"+str(f_variable))
                 # print("The example is :" + str(example))
                 example_feature_array.append(train.get_example(f_variable))
+            """
 
             label_array = []
             for m in range(0, self.n_variables):
@@ -854,50 +861,3 @@ class RuleBase:
             return True
         else:
             return False
-
-
-    def search_for_best_antecedent(self, example, clas, nlabels):
-        self.n_labels = nlabels
-        #  print("n_labels " + "i" + str(nlabels))
-        ruleInstance = Rule(self.data_base)
-
-        # print("In searchForBestAntecedent ,self.n_variables is :" + str(self.n_variables))
-        ruleInstance.setClass(clas)
-        # print("In searchForBestAntecedent ,self.n_labels is :" + str(self.n_labels))
-        example_feature_array = []
-        for f_variable in range(0, self.n_variables):
-            # print("The f_variable is :"+str(f_variable))
-            # print("The example is :" + str(example))
-            example_feature_array.append(example[f_variable])
-        label_array = []
-
-        for i in range(0, self.n_variables):
-            max_value = 0.0
-            etq = -1
-            per = None
-            for j in range(0, self.n_labels):
-                # print("Inside the second loop of searchForBestAntecedent......")
-                # print("In rule base class "+"i" + str(i) + "j" + str(j))
-                per = self.data_base.membership_function(i, j, example[i])
-                if per > max_value:
-                    max_value = per
-                    etq = j
-            if max_value == 0.0:
-                # print("There was an Error while searching for the antecedent of the rule")
-                # print("Example: ")
-                for k in range(0, self.n_variables):
-                    # print(example[j] + "\t")
-                    pass
-
-                print("max_value == 0.0 " + str(i))
-                exit(1)
-            # print(" The max_value is : " + str(max_value))
-            # print(" ,the j value is : " + str(j))
-            #  ruleInstance.antecedent[i] = self.data_base.clone(i, etq)  # self.dataBase[i][j]
-            label_array.append(etq)
-        data_row_temp = DataRow()
-        data_row_temp.set_three_parameters(clas, example_feature_array, label_array)
-        ruleInstance.data_row_here = data_row_temp
-        ruleInstance.antecedent = label_array
-
-        return ruleInstance

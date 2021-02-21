@@ -20,7 +20,217 @@
 6: supp: 0.1987654320987654385408002663435008 AND CF: 0.7892156862745098359429233097264376
 7: supp: 0.07043314500941611057251002926528196 AND CF: 1
 8: supp: 0.1346306758736137442862445892253757 AND CF: 0.8384154287203545547644548344540641
-@Number of negative rules: 0
+@Number of negative rules: 8
 
-1.125
+1: petalWidth IS L_0(5): Iris-virginica CF: 1.0
+2: petalLength IS L_0(5): Iris-virginica CF: 1.0
+3: petalWidth IS L_2(5): Iris-virginica CF: 0.9556
+4: petalLength IS L_2(5): Iris-virginica CF: 0.9778
+5: petalWidth IS L_4(5): Iris-versicolor CF: 1.0
+6: petalWidth IS L_3(5): Iris-versicolor CF: 0.8889
+7: petalLength IS L_4(5): Iris-versicolor CF: 1.0
+8: petalLength IS L_3(5) AND petalWidth IS L_3(5): Iris-versicolor CF: 0.7333
 
+
+@supp and CF:
+
+1: supp: 0.7333 AND CF: 1.0
+2: supp: 0.6815 AND CF: 1.0
+3: supp: 0.7333 AND CF: 0.9556
+4: supp: 0.7481 AND CF: 0.9778
+5: supp: 0.8889 AND CF: 1.0
+6: supp: 0.7556 AND CF: 0.8889
+7: supp: 0.9556 AND CF: 1.0
+8: supp: 0.5926 AND CF: 0.7333
+2.25
+
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_1(5): Iris-setosa CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.1759259259259259346637923234387320 AND CF: 1
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_1(5): Iris-setosa CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.2480620155038759939507501659918912 AND CF: 1
+
+
+@Granularity rules: 3
+
+1: sepalWidth IS L_2(5): Iris-versicolor CF: 1
+2: sepalWidth IS L_0(5): Iris-versicolor CF: 0.8000000000000001465494392505206129
+3: petalLength IS L_4(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.3749999999999998581381690756744419 AND CF: 1
+2: supp: 0.074074074074074113137476792366619 AND CF: 0.8000000000000001465494392505206129
+3: supp: 0.003295668549905818851665352377090636 AND CF: 1
+
+
+@Granularity rules: 4
+
+1: petalLength IS L_1(5): Iris-versicolor CF: 1
+2: sepalWidth IS L_2(5): Iris-versicolor CF: 1
+3: sepalLength IS L_2(5): Iris-versicolor CF: 1
+4: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.04885343968095716722083492597635888 AND CF: 1
+2: supp: 0.3088235294117646160849024200241035 AND CF: 1
+3: supp: 0.5130718954248366242554268978892656 AND CF: 1
+4: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_4(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.7444444444444443679624138591558827 AND CF: 1
+
+
+@Granularity rules: 9
+
+1: sepalLength IS L_2(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.6119402985074629635046183613320239
+2: sepalWidth IS L_2(5) AND petalLength IS L_2(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.8532955350815026472826800900252463
+3: petalWidth IS L_4(5): Iris-virginica CF: 1
+4: petalWidth IS L_2(5): Iris-virginica CF: 0.5555555555555554404213159647985001
+5: petalLength IS L_4(5): Iris-virginica CF: 1
+6: sepalWidth IS L_1(5): Iris-virginica CF: 0.9186046511627907158679057037005038
+7: sepalLength IS L_4(5): Iris-virginica CF: 1
+8: sepalLength IS L_3(5): Iris-virginica CF: 0.9183673469387755064066194961540631
+9: sepalLength IS L_1(5): Iris-virginica CF: 0.8518518518518522157582877012088896
+
+
+@supp and CF:
+
+1: supp: 0.04601571268237933776933964886905230 AND CF: 0.6119402985074629635046183613320239
+2: supp: 0.01717742395708498633746696309978178 AND CF: 0.8532955350815026472826800900252463
+3: supp: 0.09090909090909097974146520341905255 AND CF: 1
+4: supp: 0.07575757575757568860735756116451797 AND CF: 0.5555555555555554404213159647985001
+5: supp: 0.1566512583461734084170044215253173 AND CF: 1
+6: supp: 0.3989898989898991502645379004013994 AND CF: 0.9186046511627907158679057037005038
+7: supp: 0.1144781144781144503121759405737314 AND CF: 1
+8: supp: 0.3030303030303031968364839968037839 AND CF: 0.9183673469387755064066194961540631
+9: supp: 0.07744107744107743761967576505633064 AND CF: 0.8518518518518522157582877012088896
+
+
+@Granularity rules: 1
+
+1: petalWidth IS L_4(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.3055555555555556727457637104331903 AND CF: 1
+
+
+@Granularity rules: 3
+
+1: sepalLength IS L_2(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.5272727272727275381348033909693621
+2: sepalWidth IS L_1(5): Iris-virginica CF: 0.9027777777777777974379771721815827
+3: sepalLength IS L_3(5): Iris-virginica CF: 0.9080459770114942437977210135180967
+
+
+@supp and CF:
+
+1: supp: 0.03978052126200272970162088771238404 AND CF: 0.5272727272727275381348033909693621
+2: supp: 0.4012345679012347214135540222438670 AND CF: 0.9027777777777777974379771721815827
+3: supp: 0.3251028806584363737862151698141974 AND CF: 0.9080459770114942437977210135180967
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+
+
+@supp and CF:
+
+1: supp: 0.006535947712418294485689078879849609 AND CF: 1
