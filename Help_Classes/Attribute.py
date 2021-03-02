@@ -37,6 +37,7 @@
 # *
 # * @author Albert Orriols Puig
 # * @version keel0.1
+import numpy as np
 class Attribute:
     #  '''
     # /////////////////////////////////////////////////////////////////////////////

@@ -160,36 +160,24 @@
 
 
 
-@Pruned Granularity rules: 0
+@Pruned Granularity rules: 1
 
-
-
-@supp and CF:
-
-
-
-@Pruned Granularity rules: 0
-
+1: sepalLength IS L_2(5) AND sepalWidth IS L_0(5) AND petalLength IS L_3(5): Iris-virginica CF: 0.4948453608247423127785237136959790
 
 
 @supp and CF:
 
+1: supp: 0.01140123174021478621004986098911694 AND CF: 0.4948453608247423127785237136959790
 
 
-@Pruned Granularity rules: 0
+@Pruned Granularity rules: 1
 
-
-
-@supp and CF:
-
-
-
-@Pruned Granularity rules: 0
-
+1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
 
 
 @supp and CF:
 
+1: supp: 0.006349206349206343214669390911853906 AND CF: 1
 
 
 @Pruned Granularity rules: 0
@@ -200,9 +188,29 @@
 
 
 
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_2(5) AND sepalWidth IS L_2(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.7097560975609759582498874049142083
+
+
+@supp and CF:
+
+1: supp: 0.02897252090800478646685793205749805 AND CF: 0.7097560975609759582498874049142083
+
+
 @Pruned Granularity rules: 0
 
 
 
 @supp and CF:
 
+
+
+@Pruned Granularity rules: 1
+
+1: sepalLength IS L_2(5) AND petalLength IS L_3(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.6223224351747465964606168513029202
+
+
+@supp and CF:
+
+1: supp: 0.0247511433952111716897950337004119 AND CF: 0.6223224351747465964606168513029202
