@@ -137,6 +137,7 @@ class GranularityRule:
         # self.nLabels = int(self.nLabels) + 1
         # print(" self.nLabels after being added by one " + str(self.nLabels))
         self.decide_more_granularity_or_not()
+        return self.granularity_rule_Base_array
 
     # """
     #    * It generates the output file from a given dataset and stores it in a file
@@ -408,8 +409,7 @@ class GranularityRule:
                 if granularity_rule.support_value > 0:
                     if negative_rule.class_value == granularity_rule.class_value:
                         self.granularity_rule_Base_array[i].granularity_prune_rule_base.append(granularity_rule)
-                        print(" Added a new pruned granularity rule in  granularity_prune_rule_base, rule weight is :" + str(
-                                granularity_rule.weight))
+                        print(" Added a new pruned granularity rule in  granularity_prune_rule_base, rule weight is :" + str(granularity_rule.weight))
         granularity_rule_base_number = len(self.granularity_rule_Base_array)
 
         for m in range(0, granularity_rule_base_number):

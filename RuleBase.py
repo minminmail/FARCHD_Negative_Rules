@@ -446,13 +446,18 @@ class RuleBase:
                 rule = self.rule_base_array[i]
                 degree = rule.matching(example)
                 degrees_class[rule.get_class()] += Decimal(degree)
-        max_degree = Decimal(0.0)
+        max_degree = 0.9
+        sum_degree = Decimal(0.0)
         for i in range(0, self.train_myDataSet.get_nclasses()):
+            sum_degree = sum_degree + degrees_class[i]
             if degrees_class[i] > max_degree:
                 max_degree = degrees_class[i]
                 self.frm_ac_max_degree_value = max_degree
                 class_value = i
         # print("the frm_ac_with_two_parameters return value is " + str(class_value))
+        if sum_degree is 0:
+            class_value = None
+
         return class_value
 
     def FRM_AC(self, example):

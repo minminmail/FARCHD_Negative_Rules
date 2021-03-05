@@ -102,9 +102,9 @@ class FarcHDClassifier():
     negative_confident_value = 0
     negative_rule_number = None
     zone_confident = 0.2
-    seed_int =None
-    granularity_rule_Base_array=[]
-
+    seed_int = None
+    granularity_rule_Base_array = []
+    normal_rule_degree = None
 
     def __init__(self, prepare_parameter):
         print("__init__ of Fuzzy_Chi begin...")
@@ -143,21 +143,21 @@ class FarcHDClassifier():
         file_db_name = prepare_parameter.get_output_file(0)
         file_rb_name = prepare_parameter.get_output_file(1)
 
-        self.file_db= os.path.join(prepare_parameter.result_path , output_file_folder + "\\"+file_db_name)
+        self.file_db = os.path.join(prepare_parameter.result_path, output_file_folder + "\\" + file_db_name)
 
-        self.file_rb =os.path.join(prepare_parameter.result_path , output_file_folder + "\\"+file_rb_name)
+        self.file_rb = os.path.join(prepare_parameter.result_path, output_file_folder + "\\" + file_rb_name)
 
-        self.file_db =os.getcwd() + self.file_db
-        self.file_rb =os.getcwd() + self.file_rb
+        self.file_db = os.getcwd() + self.file_db
+        self.file_rb = os.getcwd() + self.file_rb
 
         self.data_string = prepare_parameter.get_input_training_files()
 
         output_file = prepare_parameter.get_output_file(1)
         # print("output_file is : " + output_file)
-       
-        self.file_time =os.getcwd()+  prepare_parameter.result_path + "\\" + output_file_folder + "\\" +"time.txt"
-        self.file_hora =os.getcwd() + prepare_parameter.result_path + "\\" + output_file_folder +"\\" +"hora.txt"
-        self.file_rules = os.getcwd()+ prepare_parameter.result_path +"\\"+ output_file_folder + "\\" +"rules.txt"
+
+        self.file_time = os.getcwd() + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "time.txt"
+        self.file_hora = os.getcwd() + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "hora.txt"
+        self.file_rules = os.getcwd() + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "rules.txt"
         # Now we parse the parameters long
         self.seed_int = int(float(prepare_parameter.get_parameter(0)))
 
@@ -226,7 +226,7 @@ class FarcHDClassifier():
 
             self.pop = Populate()
 
-            self.pop.init_with_multiple_parameters(self.seed_int,self.train_mydataset, self.data_base, self.rule_base,
+            self.pop.init_with_multiple_parameters(self.seed_int, self.train_mydataset, self.data_base, self.rule_base,
                                                    self.population_size, self.bits_gen, self.max_trials, self.alpha)
             self.pop.generation()
 
@@ -235,9 +235,8 @@ class FarcHDClassifier():
 
             self.rules_stage3 = int(self.rule_base.get_size())
 
-
-
-            self.rule_base.generate_negative_rules(self.train_mydataset, self.negative_confident_value,self.zone_confident)
+            self.rule_base.generate_negative_rules(self.train_mydataset, self.negative_confident_value,
+                                                   self.zone_confident)
 
             self.negative_rule_number = len(self.rule_base.negative_rule_base_array)
 
@@ -246,12 +245,15 @@ class FarcHDClassifier():
             self.rule_base.save_file(self.file_rb)
 
             print("Begin the  granularity rule generation ")
-            print("self.nlabels "+str(self.nlabels))
+            print("self.nlabels " + str(self.nlabels))
 
-            granularity_rule = GranularityRule(self.train_mydataset,self.nlabels,
-                self.file_db,self.file_rb,self.val_mydataset,
-                self.output_tr,self.output_tst,self.rule_base,self.k_parameter,self.data_base,self.test_mydataset,
-                self.val_mydataset,self.type_inference,self.minsup,self.minconf,self.depth,self.seed_int,self.population_size,self.bits_gen,self.alpha,self.max_trials)
+            granularity_rule = GranularityRule(self.train_mydataset, self.nlabels,
+                                               self.file_db, self.file_rb, self.val_mydataset,
+                                               self.output_tr, self.output_tst, self.rule_base, self.k_parameter,
+                                               self.data_base, self.test_mydataset,
+                                               self.val_mydataset, self.type_inference, self.minsup, self.minconf,
+                                               self.depth, self.seed_int, self.population_size, self.bits_gen,
+                                               self.alpha, self.max_trials)
 
             self.granularity_rule_Base_array = granularity_rule.get_granularity_rules(self.negative_rule_number)
 
@@ -269,7 +271,6 @@ class FarcHDClassifier():
             self.write_time()
             self.write_rules()
 
-      
             print("Algorithm Finished")
 
             # Return the classifier
@@ -385,14 +386,107 @@ class FarcHDClassifier():
 
         row_num = X.shape[0]
         predict_y = np.empty([row_num, 1], dtype=np.int32)
-        selected_array =None
+        selected_array = None
 
         for i in range(0, row_num):
-            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(X[i],selected_array)
+            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
         print("predict_y is :")
         print(predict_y)
 
-        return predict_y[i]
+        return predict_y
+
+    def predict_granularity(self, X):
+        """ A reference implementation of a predicting function.
+
+        Parameters
+        ----------
+        X : {array-like, sparse matrix}, shape (n_samples, n_features)
+            The training input samples.
+
+        Returns
+        -------
+        y : ndarray, shape (n_samples,)
+            The label for each sample is the label of the closest sample
+            seen udring fit.
+        """
+
+        # Input validation
+        X = check_array(X, accept_sparse=True)
+
+        # Check is fit had been called
+        check_is_fitted(self, ['X_', 'y_'], 'is_fitted_')
+
+        row_num = X.shape[0]
+        print("row_num is :" + str(row_num))
+        predict_y = np.empty([row_num, 1], dtype=np.int32)
+        selected_array = None
+
+        for i in range(0, row_num):
+            # print(" In the doOutput the loop number i is  " + str(i))
+            # for classification:
+            # print("before classificationOutput in Fuzzy_Chi")
+            count_granularity_result=0
+            count_normalrule_result=0
+            class_out_here = None
+
+            max_granularity_count = 0
+
+            for j in range(0, self.negative_rule_number):
+                print("before classification_Output_granularity")
+                get_granularity_rule_result=False
+                classOut = self.classification_Output_granularity(X[i], j)
+                degree_new = self.max_granularity_degree
+
+                print("after classification_Output_granularity")
+                # classOut = self.classification_Output_pruned_granularity(dataset.getExample(i), j)
+                if classOut is not "?":
+                    count_granularity_result = count_granularity_result +1
+                    if degree_new > max_granularity_count:
+                        get_granularity_rule_result = True
+                        class_out_here = classOut
+                        max_granularity_count = degree_new
+
+            if get_granularity_rule_result is False:  #
+                count_normalrule_result=count_normalrule_result+1
+                print("if before class out here is None,  classificationOutput")
+                class_out_here = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
+                print("if after class out here is None,  classificationOutput")
+            else:
+                print("max_granularity_degree" + str(max_granularity_count) + "self.normal_rule_degree" + str(
+                        self.normal_rule_degree))
+            predict_y[i, 0] = class_out_here
+        print("count_granularity_result is " +str(count_granularity_result))
+        print("count_normalrule_result is " + str(count_normalrule_result))
+        return predict_y
+
+    def classificationOutput(self, example):
+        self.output = "?"
+        # Here we should include the algorithm directives to generate the
+        # classification output from the input example
+        selected_array = None
+        classOut = self.rule_base.frm_ac_with_two_parameters(example, selected_array)
+        self.normal_rule_degree = self.rule_base.frm_ac_max_degree_value
+
+        print("classOut in classificationOutput is " + str(classOut))
+        if classOut >= 0:
+            # print("In Fuzzy_Chi,classOut >= 0, to call getOutputValue")
+            self.output = self.train_mydataset.get_output_as_string_with_pos(classOut)
+        return self.output
+
+    def classification_Output_granularity(self, example, zone_area_number):
+        self.output = "?"
+
+        # Here we should include the algorithm directives to generate the
+        # classification output from the input example
+        print("before FRM_Granularity")
+        selected_array = None
+        classOut = self.granularity_rule_Base_array[zone_area_number].frm_ac_with_two_parameters(example,
+                                                                                                 selected_array)
+
+        self.max_granularity_degree = self.granularity_rule_Base_array[zone_area_number].frm_ac_max_degree_value
+        print("in classification_Output_granularity  max_granularity_degree is " + str(self.max_granularity_degree))
+
+        return classOut
 
     def score(self, test_X, test_y):
         """ A reference implementation of score function.
@@ -422,7 +516,7 @@ class FarcHDClassifier():
         selected_array = None
 
         for i in range(0, row_num):
-            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(test_X[i],selected_array)
+            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(test_X[i], selected_array)
 
             print("predict_y[" + str(i) + "] is :" + str(predict_y[i]))
             print("test_y[" + str(i) + "] is :" + str(test_y[i]))

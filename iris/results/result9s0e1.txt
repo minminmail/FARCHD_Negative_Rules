@@ -130,44 +130,30 @@
 5: supp: 0.04308390022675734569814346045581149 AND CF: 0.8636363636363639158404912453876629
 
 
-@Pruned Granularity rules: 1
+@Pruned Granularity rules: 0
 
-1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
-
-
-@supp and CF:
-
-1: supp: 0.006349206349206343214669390911853906 AND CF: 1
-
-
-@Pruned Granularity rules: 1
-
-1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
 
 
 @supp and CF:
 
-1: supp: 0.006349206349206343214669390911853906 AND CF: 1
 
 
-@Pruned Granularity rules: 1
+@Pruned Granularity rules: 0
 
-1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
 
 
 @supp and CF:
 
-1: supp: 0.006349206349206343214669390911853906 AND CF: 1
 
 
 @Pruned Granularity rules: 1
 
-1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
+1: sepalLength IS L_2(5) AND sepalWidth IS L_0(5) AND petalLength IS L_3(5): Iris-virginica CF: 0.4948453608247423127785237136959787
 
 
 @supp and CF:
 
-1: supp: 0.006349206349206343214669390911853906 AND CF: 1
+1: supp: 0.0108165531894345407633806373486494 AND CF: 0.4948453608247423127785237136959787
 
 
 @Pruned Granularity rules: 1
@@ -180,21 +166,31 @@
 1: supp: 0.006349206349206343214669390911853906 AND CF: 1
 
 
-@Pruned Granularity rules: 1
+@Pruned Granularity rules: 0
 
-1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
-
-
-@supp and CF:
-
-1: supp: 0.006349206349206343214669390911853906 AND CF: 1
-
-
-@Pruned Granularity rules: 1
-
-1: sepalLength IS L_0(5) AND petalWidth IS L_3(5): Iris-virginica CF: 1
 
 
 @supp and CF:
 
-1: supp: 0.006349206349206343214669390911853906 AND CF: 1
+
+
+@Pruned Granularity rules: 1
+
+1: sepalWidth IS L_2(5) AND petalLength IS L_2(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.7082860385925087434116702021776638
+
+
+@supp and CF:
+
+1: supp: 0.009180790960451983783834258360988441 AND CF: 0.7082860385925087434116702021776638
+
+
+@Pruned Granularity rules: 2
+
+1: petalWidth IS L_2(5): Iris-versicolor CF: 0.6093750000000000988792381306780262
+2: petalLength IS L_2(5) AND petalWidth IS L_2(5): Iris-versicolor CF: 0.8326359832635982494735694260921924
+
+
+@supp and CF:
+
+1: supp: 0.1326530612244897879882028853305145 AND CF: 0.6093750000000000988792381306780262
+2: supp: 0.05736192782197627793329082024301498 AND CF: 0.8326359832635982494735694260921924

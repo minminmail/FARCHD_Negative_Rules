@@ -68,7 +68,7 @@ class Main:
         lf = LoadFiles()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        whole_file_name_with_path= os.getcwd() + os.path.join("\iris\config","config2s0.txt")
+        whole_file_name_with_path= os.getcwd() + os.path.join("\iris\config","config8s0.txt")
 
         # lf.parse_configuration_file("\iris", "config1s0.txt")
         lf.parse_configuration_file(whole_file_name_with_path)
@@ -88,7 +88,11 @@ class Main:
         test_x = [4.6, 3.1, 1.5, 0.2]
 
         # logger.debug("Begin  farchd_classifier.predictin Main ")
-        farchd_classifier.predict(iris_X_test)
+        predict_y = farchd_classifier.predict(iris_X_test)
 
         # logger.debug("Begin  farchd_classifier.score Main ")
-        farchd_classifier.score(iris_X_test, iris_y_test)
+        farchd_classifier.score(iris_X_test, predict_y)
+
+        predict_granularity_y = farchd_classifier.predict_granularity(iris_X_test)
+
+        farchd_classifier.score(iris_X_test, predict_granularity_y)
