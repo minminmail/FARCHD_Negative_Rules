@@ -421,40 +421,45 @@ class FarcHDClassifier():
         predict_y = np.empty([row_num, 1], dtype=np.int32)
         selected_array = None
 
+        count_granularity_result = 0
+        count_normalrule_result = 0
+
         for i in range(0, row_num):
             # print(" In the doOutput the loop number i is  " + str(i))
             # for classification:
             # print("before classificationOutput in Fuzzy_Chi")
-            count_granularity_result=0
-            count_normalrule_result=0
+
             class_out_here = None
 
             max_granularity_count = 0
+            get_granularity_rule_result = False
 
             for j in range(0, self.negative_rule_number):
                 print("before classification_Output_granularity")
-                get_granularity_rule_result=False
+
                 classOut = self.classification_Output_granularity(X[i], j)
                 degree_new = self.max_granularity_degree
 
                 print("after classification_Output_granularity")
                 # classOut = self.classification_Output_pruned_granularity(dataset.getExample(i), j)
                 if classOut is not "?":
-                    count_granularity_result = count_granularity_result +1
+
                     if degree_new > max_granularity_count:
                         get_granularity_rule_result = True
                         class_out_here = classOut
                         max_granularity_count = degree_new
 
-            if get_granularity_rule_result is False:  #
-                count_normalrule_result=count_normalrule_result+1
-                print("if before class out here is None,  classificationOutput")
-                class_out_here = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
-                print("if after class out here is None,  classificationOutput")
+            if get_granularity_rule_result and max_granularity_count >1.6:  #
+
+                count_granularity_result = count_granularity_result + 1
+                print("count_granularity_result is " + str(count_granularity_result) + " ,max_granularity_count" + str(max_granularity_count))
             else:
-                print("max_granularity_degree" + str(max_granularity_count) + "self.normal_rule_degree" + str(
-                        self.normal_rule_degree))
+                count_normalrule_result=count_normalrule_result+1
+                print("In predict_granularity count_normalrule_result is "+str(count_normalrule_result))
+                class_out_here = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
+
             predict_y[i, 0] = class_out_here
+
         print("count_granularity_result is " +str(count_granularity_result))
         print("count_normalrule_result is " + str(count_normalrule_result))
         return predict_y
@@ -488,7 +493,7 @@ class FarcHDClassifier():
 
         return classOut
 
-    def score(self, test_X, test_y):
+    def score(self, test_X, test_y,if_granularity):
         """ A reference implementation of score function.
 
         Parameters
@@ -523,8 +528,10 @@ class FarcHDClassifier():
 
             if predict_y[i] == test_y[i]:
                 hits = hits + 1
-
-        print("predict_y normal rules in score is :")
+        if if_granularity:
+            print("predict_y with granularity rules ,the  score is :")
+        else:
+            print("predict_y with normal rules ,the score is :")
         score = 1.0 * hits / row_num
         print(score)
 

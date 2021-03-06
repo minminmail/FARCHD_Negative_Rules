@@ -446,7 +446,7 @@ class RuleBase:
                 rule = self.rule_base_array[i]
                 degree = rule.matching(example)
                 degrees_class[rule.get_class()] += Decimal(degree)
-        max_degree = 0.9
+        max_degree = 0.8
         sum_degree = Decimal(0.0)
         for i in range(0, self.train_myDataSet.get_nclasses()):
             sum_degree = sum_degree + degrees_class[i]
