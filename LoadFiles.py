@@ -47,7 +47,7 @@ class LoadFiles:
         self.data_folder = None
         self.something_wrong = False
 
-    def parse_configuration_file(self, file_name):
+    def parse_configuration_file(self, file_name,dataset_folder):
 
         self.file_to_open = file_name
         print("self.file_to_open :" + str(self.file_to_open))
@@ -57,8 +57,8 @@ class LoadFiles:
         logging.info("before open file")
 
 
-        self.file_path = "\\iris\\dataset"
-        self.result_path = "\\iris"
+        self.file_path = dataset_folder +"\\dataset"
+        self.result_path = dataset_folder
 
 
         # file is an string containing the whole file
