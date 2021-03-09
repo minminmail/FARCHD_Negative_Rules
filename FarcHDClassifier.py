@@ -20,6 +20,7 @@ from RuleBase import RuleBase
 import numpy as np
 
 
+
 class FarcHDClassifier():
     """ A template estimator to be used as a reference implementation.
 
@@ -369,6 +370,9 @@ class FarcHDClassifier():
 
         file = open(self.file_rules, "a+")
         file.write(string_out)
+    def write_score(self,score_string):
+        file = open(self.file_rules, "a+")
+        file.write(score_string)
 
     def predict(self, X):
         """ A reference implementation of a predicting function.
@@ -466,9 +470,12 @@ class FarcHDClassifier():
                 class_out_here = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
 
             predict_y[i, 0] = class_out_here
-
-        print("count_granularity_result is " +str(count_granularity_result))
-        print("count_normalrule_result is " + str(count_normalrule_result))
+        granularity_score_string = "\n\n" +"count_granularity_result score is: " +str(count_granularity_result)
+        print(granularity_score_string)
+        self.write_score(granularity_score_string)
+        normal_score_string = "\n\n"+ "count_normal_result score is: " + str(count_normalrule_result)
+        print(normal_score_string)
+        self.write_score(normal_score_string)
         return predict_y
 
     def classificationOutput(self, example):
@@ -535,11 +542,16 @@ class FarcHDClassifier():
 
             if predict_y[i] == test_y[i]:
                 hits = hits + 1
+        score_string = ""
         if if_granularity:
+            score_string =  " \n\n " +"predict_y with granularity rules ,the  score is :"
             print("predict_y with granularity rules ,the  score is :")
         else:
+            score_string =  "\n\n" +"predict_y with normal rules ,the score is :"
             print("predict_y with normal rules ,the score is :")
         score = 1.0 * hits / row_num
+        score_string =score_string+str(score)
+        self.write_score(score_string)
         print(score)
 
         return score

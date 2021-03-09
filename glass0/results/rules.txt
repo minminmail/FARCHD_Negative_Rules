@@ -3,3 +3,16 @@
 781 18 18
 781 18 18
 781 18 18
+781 18 18
+count_granularity_result score is: 7count_normal_result score is: 15781 18 18
+predict_y with normal rules ,the score is :1.0count_granularity_result score is: 7count_normal_result score is: 15predict_y with granularity rules ,the  score is :0.9545454545454546781 18 18
+781 18 18
+
+
+predict_y with normal rules ,the score is :1.0
+
+count_granularity_result score is: 7
+
+count_normal_result score is: 15 
+
+ predict_y with granularity rules ,the  score is :0.9545454545454546
