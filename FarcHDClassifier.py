@@ -135,8 +135,8 @@ class FarcHDClassifier():
             self.something_wrong = True
 
         self.something_wrong = self.something_wrong or self.train_mydataset.has_missing_attributes()
-        self.output_tr = prepare_parameter.get_training_output_file()
-        self.output_tst = prepare_parameter.get_test_output_file()
+        file_output_tr = prepare_parameter.get_training_output_file()
+        file_output_tst = prepare_parameter.get_test_output_file()
 
         output_file_folder = "results"
 
@@ -147,8 +147,15 @@ class FarcHDClassifier():
 
         self.file_rb = os.path.join(prepare_parameter.result_path, output_file_folder + "\\" + file_rb_name)
 
+        self.output_tr = os.path.join(prepare_parameter.result_path,  output_file_folder + "\\" + file_output_tr)
+        self.output_tst = os.path.join(prepare_parameter.result_path,  output_file_folder + "\\" + file_output_tst)
+
         self.file_db = os.getcwd() + self.file_db
         self.file_rb = os.getcwd() + self.file_rb
+
+        self.output_tr= os.getcwd() + self.output_tr
+
+        self.output_tst= os.getcwd() + self.output_tst
 
         self.data_string = prepare_parameter.get_input_training_files()
 

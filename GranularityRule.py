@@ -173,7 +173,7 @@ class GranularityRule:
 
                         print("after classification_Output_granularity")
                         # classOut = self.classification_Output_pruned_granularity(dataset.getExample(i), j)
-                        if classOut is not "?":
+                        if classOut is not "?" and classOut is not None and degree_new is not None :
                             if degree_new > max_granularity_degree:
                                 class_out_here = classOut
                                 max_granularity_degree = degree_new
