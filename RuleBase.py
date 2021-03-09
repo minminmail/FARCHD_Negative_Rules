@@ -187,104 +187,112 @@ class RuleBase:
         return cadena_string
 
     def print_granularity_rule_string(self,rule_base):
-        self.granularity_rule_Base = rule_base
-
-        i = 0
-        j = 0
-        ant = 0
-        self.names = self.train_myDataSet.get_names()
-        self.classes = self.train_myDataSet.get_classes()
         cadena_string = ""
 
-        # added negative rule print into file
-        cadena_string += "@Granularity rules: " + str(len(self.granularity_rule_Base)) + "\n\n"
+        if rule_base is None or len(rule_base) is 0:
+            return cadena_string
+        else:
+            self.granularity_rule_Base = rule_base
 
-        for i in range(0, len(self.granularity_rule_Base)):
-            rule = self.granularity_rule_Base[i]
-            cadena_string += str(i + 1) + ": "
+            i = 0
+            j = 0
+            ant = 0
+            self.names = self.train_myDataSet.get_names()
+            self.classes = self.train_myDataSet.get_classes()
 
-            for j in range(0, self.n_variables):
-                if rule.antecedent[j] < 0:
-                    pass
-                else:
-                    break
 
-            if j < self.n_variables and rule.antecedent[j] >= 0:
-                cadena_string += self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
-                ant = ant + 1
+            # added negative rule print into file
+            cadena_string += "@Granularity rules: " + str(len(self.granularity_rule_Base)) + "\n\n"
 
-            # print("after if , j is :" + str(j))
-            j = j + 1
-            k = j
-            for j in range(k, self.n_variables):
+            for i in range(0, len(self.granularity_rule_Base)):
+                rule = self.granularity_rule_Base[i]
+                cadena_string += str(i + 1) + ": "
 
-                if rule.antecedent[j] >= 0:
-                    cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                for j in range(0, self.n_variables):
+                    if rule.antecedent[j] < 0:
+                        pass
+                    else:
+                        break
+
+                if j < self.n_variables and rule.antecedent[j] >= 0:
+                    cadena_string += self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
                     ant = ant + 1
 
-            cadena_string += ": " + self.classes[rule.class_value]
-            cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
+                # print("after if , j is :" + str(j))
+                j = j + 1
+                k = j
+                for j in range(k, self.n_variables):
 
-        cadena_string += "\n\n"
+                    if rule.antecedent[j] >= 0:
+                        cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                        ant = ant + 1
 
-        cadena_string += "@supp and CF:\n\n"
-        for i in range(0, len(self.granularity_rule_Base)):
-            rule = self.granularity_rule_Base[i]
-            cadena_string += str(i + 1) + ": "
-            cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
+                cadena_string += ": " + self.classes[rule.class_value]
+                cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
 
-        print("granularity rules rule_base_array cadena_string is:" + cadena_string)
+            cadena_string += "\n\n"
+
+            cadena_string += "@supp and CF:\n\n"
+            for i in range(0, len(self.granularity_rule_Base)):
+                rule = self.granularity_rule_Base[i]
+                cadena_string += str(i + 1) + ": "
+                cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
+
+            print("granularity rules rule_base_array cadena_string is:" + cadena_string)
         return cadena_string
 
     def print_pruned_granularity_rule_string(self,rule_base):
         # added for granularity rules
-
-        i = 0
-        j = 0
-        ant = 0
-        self.names = self.train_myDataSet.get_names()
-        self.classes = self.train_myDataSet.get_classes()
         cadena_string = ""
+        if rule_base is None or len(rule_base) is 0:
+            return cadena_string
+        else:
+            i = 0
+            j = 0
+            ant = 0
+            self.names = self.train_myDataSet.get_names()
+            self.classes = self.train_myDataSet.get_classes()
 
-        # added negative rule print into file
-        cadena_string += "@Pruned Granularity rules: " + str(len(rule_base)) + "\n\n"
 
-        for i in range(0, len(rule_base)):
-            rule = rule_base[i]
-            cadena_string += str(i + 1) + ": "
+            # added negative rule print into file
+            cadena_string += "@Pruned Granularity rules: " + str(len(rule_base)) + "\n\n"
 
-            for j in range(0, self.n_variables):
-                if rule.antecedent[j] < 0:
-                    pass
-                else:
-                    break
+            for i in range(0, len(rule_base)):
+                rule = rule_base[i]
+                cadena_string += str(i + 1) + ": "
 
-            if j < self.n_variables and rule.antecedent[j] >= 0:
-                cadena_string += self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
-                ant = ant + 1
+                for j in range(0, self.n_variables):
+                    if rule.antecedent[j] < 0:
+                        pass
+                    else:
+                        break
 
-            # print("after if , j is :" + str(j))
-            j = j + 1
-            k = j
-            for j in range(k, self.n_variables):
-
-                if rule.antecedent[j] >= 0:
-                    cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                if j < self.n_variables and rule.antecedent[j] >= 0:
+                    cadena_string += self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
                     ant = ant + 1
 
-            cadena_string += ": " + self.classes[rule.class_value]
-            cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
+                # print("after if , j is :" + str(j))
+                j = j + 1
+                k = j
+                for j in range(k, self.n_variables):
 
-        cadena_string += "\n\n"
+                    if rule.antecedent[j] >= 0:
+                        cadena_string += " AND " + self.names[j] + " IS " + rule.data_base.print_here(j, rule.antecedent[j])
+                        ant = ant + 1
 
-        cadena_string += "@supp and CF:\n\n"
-        for i in range(0, len(rule_base)):
-            rule = rule_base[i]
-            cadena_string += str(i + 1) + ": "
-            cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
+                cadena_string += ": " + self.classes[rule.class_value]
+                cadena_string += " CF: " + str(rule.get_confidence()) + "\n"
 
-        print("pruned granularity rules rule_base_array cadena_string is:" + cadena_string)
-        return cadena_string
+            cadena_string += "\n\n"
+
+            cadena_string += "@supp and CF:\n\n"
+            for i in range(0, len(rule_base)):
+                rule = rule_base[i]
+                cadena_string += str(i + 1) + ": "
+                cadena_string += "supp: " + str(rule.get_support()) + " AND CF: " + str(rule.get_confidence()) + "\n"
+
+            print("pruned granularity rules rule_base_array cadena_string is:" + cadena_string)
+            return cadena_string
 
     # * It writes the rule base into an ouput file
     # * @param filename String the name of the output file
@@ -430,35 +438,40 @@ class RuleBase:
     # * @return int the class label for the set of rules with the highest sum of membership degree per class
 
     def frm_ac_with_two_parameters(self, example,selected_array):
-        class_value = self.default_rule
-        degree = Decimal(0.0)
-        self.frm_ac_max_degree_value = Decimal(0.0)
-        max_degree = Decimal(0.0)
-        degrees_class = [0.0 for x in range(self.train_myDataSet.get_nclasses())]
-        for i in range(0, self.train_myDataSet.get_nclasses()):
-            degrees_class[i] = Decimal(0.0)
-        rule_length =len(self.rule_base_array)
-        if selected_array is None:
-            selected_array= [1 for i in range(rule_length)]
-
-        for i in range(0, len(self.rule_base_array)):
-            if selected_array[i] > 0:
-                rule = self.rule_base_array[i]
-                degree = rule.matching(example)
-                degrees_class[rule.get_class()] += Decimal(degree)
-        max_degree = 0.8
-        sum_degree = Decimal(0.0)
-        for i in range(0, self.train_myDataSet.get_nclasses()):
-            sum_degree = sum_degree + degrees_class[i]
-            if degrees_class[i] > max_degree:
-                max_degree = degrees_class[i]
-                self.frm_ac_max_degree_value = max_degree
-                class_value = i
-        # print("the frm_ac_with_two_parameters return value is " + str(class_value))
-        if sum_degree is 0:
+        if self.train_myDataSet is None:
             class_value = None
+            return class_value
+        else:
 
-        return class_value
+            class_value = self.default_rule
+            degree = Decimal(0.0)
+            self.frm_ac_max_degree_value = Decimal(0.0)
+            max_degree = Decimal(0.0)
+            degrees_class = [0.0 for x in range(self.train_myDataSet.get_nclasses())]
+            for i in range(0, self.train_myDataSet.get_nclasses()):
+                degrees_class[i] = Decimal(0.0)
+            rule_length =len(self.rule_base_array)
+            if selected_array is None:
+                selected_array= [1 for i in range(rule_length)]
+
+            for i in range(0, len(self.rule_base_array)):
+                if selected_array[i] > 0:
+                    rule = self.rule_base_array[i]
+                    degree = rule.matching(example)
+                    degrees_class[rule.get_class()] += Decimal(degree)
+            max_degree = 0.8
+            sum_degree = Decimal(0.0)
+            for i in range(0, self.train_myDataSet.get_nclasses()):
+                sum_degree = sum_degree + degrees_class[i]
+                if degrees_class[i] > max_degree:
+                    max_degree = degrees_class[i]
+                    self.frm_ac_max_degree_value = max_degree
+                    class_value = i
+            # print("the frm_ac_with_two_parameters return value is " + str(class_value))
+            if sum_degree is 0:
+                class_value = None
+
+            return class_value
 
     def FRM_AC(self, example):
 
@@ -790,9 +803,12 @@ class RuleBase:
             elif prediction < 0:
                 self.nuncover += 1
                 self.nuncover_class_array[self.train_myDataSet.get_output_as_integer_with_pos(j)] += 1
-
-        self.fitness = (100.0 * nhits) / (1.0 * self.train_myDataSet.size())
-        self.logger.debug("In ruleBase , evaluate_with_two_parameters, recalulation the fitness, the self.fitness is :" + str(self.fitness))
+        train_size = self.train_myDataSet.size()
+        if train_size is 0 or None:
+            self.fitness = 0
+        else:
+            self.fitness = (100.0 * nhits) / (1.0 * self.train_myDataSet.size())
+            self.logger.debug("In ruleBase , evaluate_with_two_parameters, recalulation the fitness, the self.fitness is :" + str(self.fitness))
         # print("evaluate_with_two_parameters :IN Rule Base, fitness is :" + str(self.fitness))
 
     """

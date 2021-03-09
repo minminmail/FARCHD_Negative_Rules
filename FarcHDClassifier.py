@@ -442,14 +442,14 @@ class FarcHDClassifier():
 
                 print("after classification_Output_granularity")
                 # classOut = self.classification_Output_pruned_granularity(dataset.getExample(i), j)
-                if classOut is not "?":
+                if classOut is not "?" and classOut is not None:
 
-                    if degree_new > max_granularity_count:
+                    if degree_new is not None and degree_new > max_granularity_count:
                         get_granularity_rule_result = True
                         class_out_here = classOut
                         max_granularity_count = degree_new
 
-            if get_granularity_rule_result and max_granularity_count >1.6:  #
+            if get_granularity_rule_result and max_granularity_count >2:  #
 
                 count_granularity_result = count_granularity_result + 1
                 print("count_granularity_result is " + str(count_granularity_result) + " ,max_granularity_count" + str(max_granularity_count))

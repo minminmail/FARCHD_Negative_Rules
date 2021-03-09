@@ -614,7 +614,10 @@ class MyDataSet:
             self.instances_cl[integer_in_loop] = self.instances_cl[integer_in_loop] + 1
 
         for i in range(0, self.nclasses):
-            self.frequent_class_array[i] = (1.0 * self.instances_cl[i] / self.ndata)
+            if data_num is 0:
+                self.frequent_class_array[i] = 0
+            else:
+                self.frequent_class_array[i] = (1.0 * self.instances_cl[i] / data_num)
 
     #     *It returns the number of examples for a given class
     #     * @ param clas int the class label id

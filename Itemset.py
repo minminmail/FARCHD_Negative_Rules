@@ -16,7 +16,6 @@ from MyDataSet import MyDataSet
 from DataBase import DataBase
 
 
-
 class Itemset:
     itemset = []
     # int
@@ -31,16 +30,12 @@ class Itemset:
     #  * Builder
     #  * @param class_value_pass Class
     #  */
-    def __init__(self,class_value_pass):
-        #print("Itemset init ....")
+    def __init__(self, class_value_pass):
+        # print("Itemset init ....")
         self.itemset = []
         self.class_value = class_value_pass
         self.support = 0
         self.support_rule = 0
-
-
-
-
 
     # * Clone
     # * @return Return a copy of the itemset
@@ -143,9 +138,13 @@ class Itemset:
             self.support = self.support + degree
             if train.get_output_as_integer_with_pos(i) == self.class_value:
                 self.support_rule = self.support_rule + degree
-        self.support = self.support / train.get_ndata()
-        self.support_rule = self.support_rule / train.get_ndata()
-
+        train_data_number = train.get_ndata()
+        if train_data_number is 0 or None:
+            self.support = 0
+            self.support_rule = 0
+        else:
+            self.support = self.support / train_data_number
+            self.support_rule = self.support_rule / train_data_number
 
     def degree_product(self, dataBase, example):
 
