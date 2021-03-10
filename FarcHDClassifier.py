@@ -249,6 +249,7 @@ class FarcHDClassifier():
             self.negative_rule_number = len(self.rule_base.negative_rule_base_array)
 
             print("Begin the  negative rule generation ")
+            print("self.file_db is :" + self.file_db)
             self.data_base.save_file(self.file_db)
             self.rule_base.save_file(self.file_rb)
 

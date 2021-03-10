@@ -127,7 +127,7 @@ class GranularityRule:
         for i in range(0, self.negative_rule_number):
             self.granularity_database_array[i].save_file(self.fileDB)
 
-        # Finally we should fill the training and test output files with granularity rule result
+        # Finally we should fill the training and test output files with granularity rule results
 
         accTra = self.doOutput(self.val_myDataSet, self.outputTr)
         accTst = self.doOutput(self.test_myDataSet, self.outputTst)

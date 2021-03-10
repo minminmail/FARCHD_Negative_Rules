@@ -68,7 +68,7 @@ class Main:
         lf = LoadFiles()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        dataset_folder = '\glass0'
+        dataset_folder = '\page_blocks0'
         config_folder= dataset_folder+'\config'
         whole_file_name_with_path = os.getcwd() + os.path.join(config_folder, "config2s0.txt")
 

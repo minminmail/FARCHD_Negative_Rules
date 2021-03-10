@@ -1,0 +1,15 @@
+algorithm = FARCHD
+inputData = "../datasets/page-blocks0/page-blocks0-10-5tra.dat" "../datasets/page-blocks0/page-blocks0-10-5tra.dat" "../datasets/page-blocks0/page-blocks0-10-5tst.dat" 
+outputData = "../results/Fuzzy-FARCHD-C.page-blocks0/result4s0.tra" "../results/Fuzzy-FARCHD-C.page-blocks0/result4s0.tst" "../results/Fuzzy-FARCHD-C.page-blocks0/result4s0e0.txt"  "../results/Fuzzy-FARCHD-C.page-blocks0/result4s0e1.txt"  
+
+seed = 1286082570
+Number of Linguistic Values = 5
+Minimum Support = 0.05
+Maximum Confidence = 0.8
+Depth of the trees (Depthmax) = 3
+Parameter K of the prescreening = 2
+Maximum number of evaluacions = 15000
+Population size = 50
+Parameter alpha = 0.15
+Bits per gen = 30
+Type of inference = 1

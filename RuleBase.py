@@ -342,7 +342,7 @@ class RuleBase:
         else:
             result = self.frm_ac_with_two_parameters(example,selected_array_pass)
             if result is None:
-                print("The result is none ! from frm_ac_with_two_parameters ")
+                print("The results is none ! from frm_ac_with_two_parameters ")
             return result
 
     # * Winning Rule FRM

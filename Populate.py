@@ -89,12 +89,17 @@ class Populate:
 
     def generation(self):
         self.init()
+        print(" begin the " + "evaluate")
         self.evaluate(0)
-
+        print(" after the " + "evaluate")
         while True:
+            print(" begin the " + "selection")
             self.selection()
+            print(" begin the " + "cross_over")
             self.cross_over()
+            print(" begin the " + "evaluate")
             self.evaluate(self.pop_size)
+            print(" begin the " + "elitist")
             self.elitist()
             if not self.has_new():
                 self.l_value = self.l_value - 1
@@ -103,6 +108,7 @@ class Populate:
 
             if self.ntrials >= self.maxtrials:
                 break
+        print(" finished  " + "generation in Population class")
 
     def init(self):
         self.logger=Logger.set_logger()
@@ -110,6 +116,7 @@ class Populate:
         ind.init_with_parameter(self.rule_base, self.data_base, self.w1)
         ind.reset()
         self.population_array.append(ind)
+        print(" self.pop_size  " + str(self.pop_size))
         for i in range(1, self.pop_size):
             ind = Individual()
             ind.init_with_parameter(self.rule_base, self.data_base, self.w1)

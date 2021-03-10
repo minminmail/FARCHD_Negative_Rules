@@ -298,6 +298,6 @@ class DataBase:
     def save_file(self, filename):
 
         string_out = self.print_string()
-        file = open(filename, "w+")
+        file = open(filename, 'w+')
         file.write(string_out)
         file.close()

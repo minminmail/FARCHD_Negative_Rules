@@ -1,4 +1,4 @@
-# store the each row, class result , feature values, label values
+# store the each row, class results , feature values, label values
 # added by rui for negative rule
 class DataRow:
     class_value = None
