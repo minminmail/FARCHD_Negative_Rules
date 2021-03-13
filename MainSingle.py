@@ -33,7 +33,6 @@ import numpy as np
 
 # * <p>It reads the configuration file (data-set files and parameters) and launch the algorithm</p>
 # *
-# * @author Written by Alberto Fern谩ndez (University of Granada) 14/10/2007
 # * @version 1.0
 # * @since JDK1.5
 from LoadFiles import LoadFiles

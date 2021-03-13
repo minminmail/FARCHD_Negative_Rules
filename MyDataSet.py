@@ -1,8 +1,6 @@
 # '''
 #  * <p>It contains the methods to read a Classification/Regression Dataset</p>
 #  *
-#  * @author Written by Alberto Fern谩ndez (University of Granada) 15/10/2007
-#  * @author Modified by Alberto Fern谩ndez (University of Granada) 12/11/2008
 #  * @version 1.1
 #  * @since JDK1.5
 # '''

@@ -6,11 +6,6 @@
 # 	Copyright (C) 2004-2010
 #
 # 	F. Herrera (herrera@decsai.ugr.es)
-#     L. S谩nchez (luciano@uniovi.es)
-#     J. Alcal谩-Fdez (jalcala@decsai.ugr.es)
-#     S. Garc铆a (sglopez@ujaen.es)
-#     A. Fern谩ndez (alberto.fernandez@ujaen.es)
-#     J. Luengo (julianlm@decsai.ugr.es)
 #
 # 	This program is free software: you can redistribute it and/or modify
 # 	it under the terms of the GNU General Public License as published by
