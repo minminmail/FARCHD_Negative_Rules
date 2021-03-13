@@ -298,7 +298,7 @@ class MyDataSet:
 
                 for i in range(0, ninput_length):
 
-                    attribute_instance: Attribute = Attributes.getInputAttribute(Attributes, i)
+                    attribute_instance = Attributes.getInputAttribute(Attributes, i)
 
                     if attribute_instance.getNumNominalValues() > 0:
                         self.emin[i] = 0
