@@ -23,11 +23,7 @@
 #
 # **********************************************************************
 # 
-from os import listdir
-from os.path import isfile, join
-import sys
-import logging
-from pathlib import Path
+
 
 # * <p>It reads the configuration file (data-set files and parameters) and launch the algorithm</p>
 # *

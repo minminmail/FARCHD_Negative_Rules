@@ -1,6 +1,4 @@
 from decimal import Decimal
-
-from Fuzzy import Fuzzy
 from DataRow import DataRow
 
 

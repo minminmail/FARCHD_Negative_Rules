@@ -25,7 +25,6 @@
 # 
 
 import numpy as np
-# import javarandom
 
 # * <p>It reads the configuration file (data-set files and parameters) and launch the algorithm</p>
 # *

@@ -9,9 +9,6 @@ This file is for prepare the config file and read training file or test file , t
 
 
 import logging
-import os
-from pathlib import Path
-
 from MyDataSet import MyDataSet
 import numpy as np
 

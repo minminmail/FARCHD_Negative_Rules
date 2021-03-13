@@ -1,11 +1,9 @@
 from decimal import Decimal
 
-from Fuzzy import Fuzzy
+
 from DataBase import DataBase
 from Rule import Rule
 from Logger import Logger
-from DataRow import DataRow
-from MyDataSet import MyDataSet
 from ExampleWeight import ExampleWeight
 import gc
 from DataRow import DataRow

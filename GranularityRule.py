@@ -1,4 +1,3 @@
-from Apriori import Apriori
 from DataBase import DataBase
 from ExampleWeight import ExampleWeight
 from FarcHDSteps import FarcHDSteps

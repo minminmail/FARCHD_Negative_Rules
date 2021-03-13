@@ -31,7 +31,6 @@ from decimal import Decimal
 from Item import Item
 from Itemset import Itemset
 from RuleBase import RuleBase
-from MyDataSet import MyDataSet
 
 import gc
 import numpy as np

@@ -1,9 +1,7 @@
 from Individual import Individual
-from DataBase import DataBase
-from RuleBase import RuleBase
-from MyDataSet import MyDataSet
-from random import randrange, randint
-import logging
+
+from random import randint
+
 import random
 from Logger import Logger 
 

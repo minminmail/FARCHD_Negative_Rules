@@ -11,7 +11,6 @@ from Help_Classes.Attributes import Attributes
 from Help_Classes.Attribute import Attribute
 import math
 import numpy as np
-import sys
 
 
 class MyDataSet:

@@ -1,7 +1,5 @@
 from decimal import Decimal
 
-import numpy as np
-from numpy import array
 from Fuzzy import Fuzzy
 from Logger import Logger
 
