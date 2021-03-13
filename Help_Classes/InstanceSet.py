@@ -925,7 +925,7 @@ class InstanceSet:
             if self.storeAttributesAsNonStatic and self.attributes is not None:
                 self.instanceSet[i].printAsOriginal(self.attributes, out)
         else:
-            self.instanceSet[i].printAsOriginal(out)
+            self.instanceSet[i].printAsOriginal(self.attributes,out)
 
     # end printAsOriginal
 

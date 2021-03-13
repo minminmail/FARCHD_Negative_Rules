@@ -249,6 +249,10 @@ class Instance:
             # The attribute is defined. So, its value is processed, and the attributes definitions
             # are checked to detect inconsistencies or to redefine undefined traits.
             # print("Before processReadValue......")
+            defStr=""
+            for feature in  data_row.feature_values:
+                defStr=defStr+feature+","
+            defStr = defStr[:-1]
             self.processReadValue(curAt, defStr, att, inputOutput, count, curCount, instanceNum)
             # print("After processReadValue......")
             # Finally, the counter of read attributes is updated.
