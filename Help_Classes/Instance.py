@@ -601,7 +601,7 @@ class Instance:
 
     # * It prints the instance to the specified PrintWriter.
     # * @param out is the PrintWriter where to print.
-
+    """
     def printInstance(self, outHere):
         outHere.print("    > Inputs: ")
         for i in range(0, self.__numInputAttributes):
@@ -643,6 +643,7 @@ class Instance:
                 outHere.print(self.__realValues[Instance.ATT_OUTPUT][i])
 
     # end print
+      """
 
     # * It prints the instance to the specified PrintWriter.
     # * The attribtes order is the same as the one in the
