@@ -87,11 +87,7 @@ class InstanceParser:
         try:
             print("In init method of InstanceParser begin......")
 
-            with fileName.open() as data_file:
-                print("fileName.open() as data_file......")
-
-
-            self.file = data_file
+            self.file = fileName
             print("In init of InstanceParser, set file =" + str(fileName))
             # print(self.file.read())
             self.lineCounter = 0
@@ -155,9 +151,9 @@ class InstanceParser:
         try:
             file_first_line = None
 
-            print("In InstanceParser getLines method, the file is " + str(self.file))
-            file_lines = self.file.readlines()
-
+            with self.file.open() as data_file:
+                print("fileName.open() as data_file......")
+                file_lines = self.data_file.readlines()
 
             line_Nuember = len(file_lines)
             if line_Nuember != 0:
