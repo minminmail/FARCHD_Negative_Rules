@@ -11,6 +11,7 @@ This file is for prepare the config file and read training file or test file , t
 import logging
 from MyDataSet import MyDataSet
 import numpy as np
+from pathlib import Path
 
 
 class LoadFiles:
@@ -48,7 +49,11 @@ class LoadFiles:
 
         self.file_to_open = file_name
 
-        config_file = open(self.file_to_open, "r")
+        with file_name.open() as config_file:
+            line = config_file.readlines()
+            print(line)
+
+        #config_file = open(self.file_to_open, "r")
 
         #logging.info("fileName in parseParameters = " + file_name)
         logging.info("before open file")
@@ -59,8 +64,8 @@ class LoadFiles:
 
 
         # file is an string containing the whole file
-        file_string = config_file.read()
-        line = file_string.splitlines()
+        #file_string = config_file.read()
+        #line = file_string.splitlines()
 
         for line_number in range(0, len(line)):
             # print("In line " + str(lineNumber) + ", the str is:begin ***   " + line[lineNumber] + "   ***end")

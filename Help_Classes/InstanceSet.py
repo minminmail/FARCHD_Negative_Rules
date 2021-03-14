@@ -179,21 +179,9 @@ class InstanceSet:
         try:
             # Parsing the header of the DB.
             errorLogger = FormatErrorKeeper()
-            whole_path = os.getcwd()  + file_path
-            print("whole_path :" + whole_path)
-            self.data_folder = Path(whole_path)
-            print("self.data_folder :" + str(self.data_folder))
-            self.file_to_open = str(self.data_folder / fileName)
-            print("self.file_to_open :" + self.file_to_open)
+            self.file_to_open = Path.cwd() / file_path/fileName
 
-            """
-        whole_path = os.getcwd() + "\\" + path_name
-        print("whole_path is :" + whole_path)
-        self.data_folder = Path(whole_path)
-        print("data_folder is :" + str(self.data_folder))
-        self.file_to_open = str(self.data_folder / file_name)
-        print("self.file_to_open :" + self.file_to_open)
-            """
+
             # Declaring an instance parser
             print("In readSet,file_to_open is:" + str(self.file_to_open))
             # to do The exception in init InstanceParserof InstanceParse is: can only concatenate str (not "WindowsPath") to str
