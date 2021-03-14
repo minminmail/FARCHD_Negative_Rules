@@ -1294,39 +1294,39 @@ class Instance:
     #	NEW FUNCTIONS DEFINED FOR NON-STATIC ATTRIBUTES
 
     def printFunction(self, instAttributes, out):
-        out.print("    > Inputs: ");
+        out.printInsAttr("    > Inputs: ");
         for i in range(0, self.__numInputAttributes):
             inputAttrType = instAttributes.getInputAttribute(i).getType()
             if inputAttrType == Attribute.NOMINAL:
-                out.print(self.__nominalValues[Instance.ATT_INPUT][i])
+                out.printInsAttr(self.__nominalValues[Instance.ATT_INPUT][i])
 
             if inputAttrType == Attribute.INTEGER:
-                out.print(self.__realValues[Instance.ATT_INPUT][i])
+                out.printInsAttr(self.__realValues[Instance.ATT_INPUT][i])
 
             if inputAttrType == Attribute.REAL:
-                out.print(self.__realValues[Instance.ATT_INPUT][i])
+                out.printInsAttr(self.__realValues[Instance.ATT_INPUT][i])
 
-        out.print("\n    > Outputs: ")
+        out.printInsAttr("\n    > Outputs: ")
         for i in range(0, self.__numOutputAttributes):
             outputAttrType = self.__instAttributes.getOutputAttribute(i).getType()
             if outputAttrType == Attribute.NOMINAL:
-                out.print(self.__nominalValues[Instance.ATT_OUTPUT][i])
+                out.printInsAttr(self.__nominalValues[Instance.ATT_OUTPUT][i])
 
             if outputAttrType == Attribute.INTEGER:
-                out.print(self.__realValues[Instance.ATT_OUTPUT][i])
+                out.printInsAttr(self.__realValues[Instance.ATT_OUTPUT][i])
 
             if outputAttrType == Attribute.REAL:
-                out.print(self.__realValues[Instance.ATT_OUTPUT][i])
+                out.printInsAttr(self.__realValues[Instance.ATT_OUTPUT][i])
 
-        out.print("\n    > Undefined: ")
+        out.printInsAttr("\n    > Undefined: ")
         for i in range(0, self.__numUndefinedAttributes):
             outputAttrType = instAttributes.getOutputAttribute(i).getType()
             if outputAttrType == Attribute.NOMINAL:
-                out.print(self.__nominalValues[Instance.ATT_OUTPUT][i])
+                out.printInsAttr(self.__nominalValues[Instance.ATT_OUTPUT][i])
             elif outputAttrType == Attribute.INTEGER:
-                out.print(self.__realValues[Instance.ATT_OUTPUT][i])
+                out.printInsAttr(self.__realValues[Instance.ATT_OUTPUT][i])
             elif outputAttrType == Attribute.REAL:
-                out.print(self.__realValues[Instance.ATT_OUTPUT][i])
+                out.printInsAttr(self.__realValues[Instance.ATT_OUTPUT][i])
 
     # end print
 
@@ -1357,7 +1357,7 @@ class Instance:
                 undefCount += 1
 
         if count + 1 < numAttributes:
-            out.print(",")
+            out.printInsAttr(",")
 
     # end printAsOriginal
 
