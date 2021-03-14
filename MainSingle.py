@@ -60,7 +60,7 @@ class Main:
 
         dataset_folder = '\page_blocks0'
         config_folder= dataset_folder+'\config'
-        config_file=os.path.join(config_folder, "config2s0.txt")
+        config_file=os.path.join(config_folder, "\config2s0.txt")
         whole_file_name_with_path = os.getcwd() + config_file
 
         # lf.parse_configuration_file("\iris", "config1s0.txt")
