@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from DataBase import DataBase
 from ExampleWeight import ExampleWeight
 from FarcHDSteps import FarcHDSteps
