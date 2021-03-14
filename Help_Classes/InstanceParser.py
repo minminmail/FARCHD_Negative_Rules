@@ -153,7 +153,7 @@ class InstanceParser:
 
             with self.file.open() as data_file:
                 print("fileName.open() as data_file......")
-                file_lines = self.data_file.readlines()
+                file_lines = data_file.readlines()
 
             line_Nuember = len(file_lines)
             if line_Nuember != 0:
