@@ -7,7 +7,6 @@
 #  *
 #  * <p>Company: KEEL </p>
 #  *
-#  * @author Jesus AlcalÃ¡ (University of Granada) 09/02/2011
 #  * @version 1.0
 #  * @since JDK1.6
 #  */
