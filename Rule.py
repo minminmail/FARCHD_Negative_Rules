@@ -4,7 +4,6 @@ from DataRow import DataRow
 
 # * <p>This class contains the structure of a Fuzzy Rule</p>
 # *
-# * @author Written by Alberto Fern谩ndez (University of Granada) 29/10/2007
 # * @version 1.0
 # * @since JDK1.5
 
