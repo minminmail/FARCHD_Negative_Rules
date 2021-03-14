@@ -1363,7 +1363,7 @@ class Instance:
 
     # * It does print the instance information
 
-    def print(self, instAttributes):
+    def printInstance(self, instAttributes):
         print("  > Inputs (" + self.__numInputAttributes + "): ")
 
         for i in range(0, self.__numInputAttributes):
