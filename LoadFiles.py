@@ -59,7 +59,7 @@ class LoadFiles:
         logging.info("before open file")
 
 
-        self.file_path = dataset_folder +"\\dataset"
+        self.file_path = Path(dataset_folder)/"dataset"
         self.result_path = dataset_folder
 
 
