@@ -34,6 +34,8 @@ from LoadFiles import LoadFiles
 from FarcHDClassifier import FarcHDClassifier
 from Logger import Logger
 import os
+from pathlib import Path
+
 
 
 class Main:
@@ -58,14 +60,16 @@ class Main:
         lf = LoadFiles()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        dataset_folder = '\page_blocks0'
-        config_folder= dataset_folder+'\config'
-        config_file=config_folder+ "\config2s0.txt"
+        dataset_folder = 'page_blocks0'
+        config_folder= 'config'
+        config_file="config2s0.txt"
         #whole_file_name_with_path = os.getcwd() + config_file
 
         # lf.parse_configuration_file("\iris", "config1s0.txt")
 
         whole_file_name_with_path =os.path.join(os.getcwd(), config_file)
+        cwd = Path.cwd()
+        whole_file_name_with_path = cwd /dataset_folder /config_folder/config_file
         lf.parse_configuration_file(whole_file_name_with_path,dataset_folder)
         X = lf.get_X()
         y = lf.get_y()

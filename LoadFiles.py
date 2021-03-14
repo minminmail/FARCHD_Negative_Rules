@@ -47,10 +47,10 @@ class LoadFiles:
     def parse_configuration_file(self, file_name,dataset_folder):
 
         self.file_to_open = file_name
-        print("self.file_to_open :" + str(self.file_to_open))
+
         config_file = open(self.file_to_open, "r")
 
-        logging.info("fileName in parseParameters = " + file_name)
+        #logging.info("fileName in parseParameters = " + file_name)
         logging.info("before open file")
 
 
