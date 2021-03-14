@@ -395,7 +395,7 @@ class GranularityRule:
             self.granularity_rule_Base_array[i].granularity_prune_rule_base=[]
             negative_rule = self.ruleBase.negative_rule_base_array[i]
 
-            example_weight: ExampleWeight = []
+            example_weight = []
             for n in range(0, self.my_dataset_train_sub_zone[i].get_ndata()):
                 example_weight.append(ExampleWeight(self.k_parameter))
 
