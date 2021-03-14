@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 # This file is part of KEEL - software, the Data Mining tool
 # for regression, classification, clustering, pattern  mining and so  on.
@@ -5,11 +6,6 @@
 # Copyright(C) 2004 - 2010
 
 #     F.Herrera(herrera @ decsai.ugr.es)
-#     L.SÃ¡nchez(luciano @ uniovi.es)
-#     J.AlcalÃ¡-Fdez(jalcala @ decsai.ugr.es)
-#     S.GarcÃ­a(sglopez @ ujaen.es)
-#     A.FernÃ¡ndez(alberto.fernandez @ ujaen.es)
-#     J.Luengo(julianlm @ decsai.ugr.es)
 #
 #     This program is free software: you can redistribute it and/or modify
 # 	it under the terms of the GNU General Public License as published by
