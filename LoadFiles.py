@@ -58,8 +58,8 @@ class LoadFiles:
         #logging.info("fileName in parseParameters = " + file_name)
         logging.info("before open file")
 
-
-        self.file_path = Path(dataset_folder)/"dataset"
+        db_path = "dataset"
+        self.file_path = Path(dataset_folder)/db_path
         self.result_path = dataset_folder
 
 
