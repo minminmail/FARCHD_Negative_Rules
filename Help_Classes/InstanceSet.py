@@ -54,7 +54,7 @@ from Help_Classes.Attributes import Attributes
 from Help_Classes.InstanceAttributes import InstanceAttributes
 from Help_Classes.Instance import Instance
 from Help_Classes.ErrorInfo import ErrorInfo
-from pathlib import Path, PureWindowsPath
+from pathlib import Path
 
 
 class InstanceSet:

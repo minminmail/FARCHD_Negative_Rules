@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 This is a module to be used as a reference for building other modules
 """
@@ -29,9 +30,7 @@ class FarcHDClassifier():
     Parameters
     ----------
     number_of_labels : int, how many classes need to classification
-
-    combination_type : int，1 (PRODUCT),0 (MINIMUM)
-        T-norm for the Computation of the Compatibility Degree
+    combination_type : int，1 (PRODUCT),0 (MINIMUM)  T-norm for the Computation of the Compatibility Degree
     rule_weight : int,1 (PCF_IV	，Penalized_Certainty_Factor),0(CF，Certainty_Factor),
                       3(PCF_II，Average_Penalized_Certainty_Factor),3(NO_RW，No_Weights)
     inference_type : 0 ( WINNING_RULE, WINNING_RULEWinning_Rule), 1(ADDITIVE_COMBINATION,Additive_Combination)
