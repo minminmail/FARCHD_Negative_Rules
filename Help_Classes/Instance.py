@@ -677,7 +677,7 @@ class Instance:
                 undefCount += 1
 
             if count + 1 < numAttributes:
-                out.print(",")
+                out.printInsAttr(",")
 
     # end printAsOriginal
 
