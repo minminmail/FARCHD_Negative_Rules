@@ -29,7 +29,6 @@ from __future__ import division
 
 # <p>This class contains the representation of a fuzzy value</p>
 # '''
-#  * @author Written by Alberto Fern谩ndez (University of Granada) 16/10/2007
 #  * @version 1.0
 #  * @since JDK1.5
 # '''
