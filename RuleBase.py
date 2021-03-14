@@ -612,7 +612,7 @@ class RuleBase:
     def reduce_rules(self, class_value):
         nexamples = 0
 
-        example_weight: ExampleWeight = []
+        example_weight = []
         for i in range(0, self.train_myDataSet.size()):
             example_weight.append(ExampleWeight(self.k_value))
         selected = [0 for x in range(len(self.rule_base_array))]
