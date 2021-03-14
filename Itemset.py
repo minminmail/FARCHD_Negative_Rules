@@ -5,7 +5,6 @@ from __future__ import division
 #  * <p>Description: This class contains the representation of a itemset</p>
 #  * <p>Copyright: Copyright KEEL (c) 2007</p>
 #  * <p>Company: KEEL </p>
-#  * @author Jesus AlcalÃ¡ (University of Granada) 09/02/2011
 #  * @version 1.0
 #  * @since JDK1.6
 #  */
