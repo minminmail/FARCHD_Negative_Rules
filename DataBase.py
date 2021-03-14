@@ -10,8 +10,8 @@ class DataBase:
     # not use in FarcHD
     n_labels = 0
 
-    nlabels_array: int = []
-    varreal_array: bool = []
+    nlabels_array = []
+    varreal_array = []
     database = []
     database_ini = []
     names = []
