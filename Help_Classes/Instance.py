@@ -686,18 +686,18 @@ class Instance:
     def printAttribute(self, out, inOut, ct, type):
 
         if self.__missingValues[inOut][ct]:
-            out.print("<null>")
+            out.printInsAttr("<null>")
 
         else:
 
             if type == Attribute.NOMINAL:
-                out.print(self.__nominalValues[inOut][ct])
+                out.printInsAttr(self.__nominalValues[inOut][ct])
 
             elif type == Attribute.INTEGER:
-                out.print(int(self.__realValues[inOut][ct]))
+                out.printInsAttr(int(self.__realValues[inOut][ct]))
 
             elif type == Attribute.REAL:
-                out.print(self.__realValues[inOut][ct])
+                out.printInsAttr(self.__realValues[inOut][ct])
 
     # end printAttribute
 
