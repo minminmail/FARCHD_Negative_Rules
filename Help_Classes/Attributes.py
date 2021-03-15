@@ -135,7 +135,7 @@ class Attributes:
     #  * @param attr is the new attribute to be added.
     #  */
     def addAttribute(self, attr):
-        if (not self.isExistent(self, attr)):
+        if not self.isExistent(attr):
             print("In Atrributes class ,addAttribute begin......")
             self.attributes.append(attr)
             attType = attr.getType()
