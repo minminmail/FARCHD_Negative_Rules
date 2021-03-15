@@ -177,7 +177,7 @@ class Instance:
             # end of the while
 
         # Checking if the instance doesn't have the same number of attributes than defined.
-        if count != Attributes.getNumAttributes(Attributes):
+        if count != self.attributes.getNumAttributes(Attributes):
             # print("count != Attributes.getNumAttributes(Attributes)......")
             er = ErrorInfo(ErrorInfo.BadNumberOfValues, instanceNum, InstanceParser.lineCounter, 0, 0, self.isTrain, (
                     "Instance " + defStr + " has a different number of attributes than defined\n   > Number of attributes defined: " + Attributes.getNumAttributes() + "   > Number of attributes read:    " + count))
@@ -340,9 +340,9 @@ class Instance:
         self.anyMissingValue[1] = False
         self.anyMissingValue[2] = False
         if instanceAttrs is None:
-            self.__numInputAttributes = self.attributes.getInputNumAttributes()
-            self.__numOutputAttributes = Attributes.getOutputNumAttributes(Attributes)
-            self.__numUndefinedAttributes = Attributes.getNumAttributes() - (
+            self.__numInputAttributes = instanceAttrs.getInputNumAttributes()
+            self.__numOutputAttributes = instanceAttrs.getOutputNumAttributes()
+            self.__numUndefinedAttributes = instanceAttrs.getNumAttributes() - (
                     self.__numInputAttributes + self.__numOutputAttributes)
         else:
             self.__numInputAttributes = instanceAttrs.getInputNumAttributes()
@@ -378,7 +378,7 @@ class Instance:
         if instanceAttrs is not None:
             allat = instanceAttrs.getAttributes()
         else:
-            allat = Attributes.getAttributes()
+            allat = self.attributes.getAttributes()
 
         # fill the data structures
         inHere = outHere = undef = 0
