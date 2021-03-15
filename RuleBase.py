@@ -695,7 +695,8 @@ class RuleBase:
         return self.rule_base_array.pop(pos)
 
     def clear(self):
-        self.rule_base_array.clear()
+        self.rule_base_array[:] = []
+        # self.rule_base_array.clear()
         self.fitness = 0.0
 
     """
