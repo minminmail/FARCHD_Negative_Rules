@@ -97,6 +97,8 @@ class Instance:
     # Non-defined direction attributes location
     ATT_NONDEF = 2
 
+    attributes = None
+
     # /////////////////////////////////////////////////////////////////////////////
     # /////////////////// METHODS OF THE INSTANCE CLASS ///////////////////////////
     # /////////////////////////////////////////////////////////////////////////////
@@ -111,6 +113,7 @@ class Instance:
     def __init__(self):
         # print("__init__ of Instance begin......")
         self.__nominalValues = []
+        self.attributes = Attributes()
 
 
     def setThreeParameters(self, defStr, _isTrain, instanceNum):
@@ -134,7 +137,7 @@ class Instance:
             att = att.strip()
             # Looking if the attribute is an input, an output or it's undefined
 
-            curAt = Attributes.getAttributeByPos(Attributes, count)
+            curAt = self.attributes.getAttributeByPos(count)
             #print("inside setThreeParameters curAtis :" + str(curAt))
             directionAttr = curAt.getDirectionAttribute()
             # print("inside setThreeParameters directionAttr :" + str(directionAttr))
@@ -183,11 +186,11 @@ class Instance:
         # Compute the statistics
         if self.isTrain:
             # print("self.isTrain==True......")
-            atts = Attributes.getInputAttributes(Attributes)
+            atts = self.attributes.getInputAttributes()
             length = int(len(atts))
             for i in range(0, length):
                 if not self.__missingValues[Instance.ATT_INPUT][i]:
-                    if (atts[i].getType() == Attribute.NOMINAL) and (Attributes.getOutputNumAttributes(Attributes) == 1):
+                    if (atts[i].getType() == Attribute.NOMINAL) and (self.attributes.getOutputNumAttributes() == 1):
                         atts[i].increaseClassFrequency(currentClass, self.__nominalValues[Instance.ATT_INPUT][i])
                     elif ((atts[i].getType() == Attribute.INTEGER or atts[i].getType() == Attribute.REAL) and
                           not self.__missingValues[Instance.ATT_INPUT][i]):
@@ -216,7 +219,7 @@ class Instance:
             att = att.strip()
             # Looking if the attribute is an input, an output or it's undefined
 
-            curAt = Attributes.getAttributeByPos(Attributes, count)
+            curAt = self.attributes.getAttributeByPos( count)
             # print("inside setThreeParameters curAtis :" + str(curAt))
             directionAttr = curAt.getDirectionAttribute()
             # print("inside setThreeParameters directionAttr :" + str(directionAttr))
@@ -260,7 +263,7 @@ class Instance:
             # end of the while
 
         # Checking if the instance doesn't have the same number of attributes than defined.
-        if count != Attributes.getNumAttributes(Attributes):
+        if count != self.attributes.getNumAttributes():
             print("count != Attributes.getNumAttributes(Attributes)......")
             er = ErrorInfo(ErrorInfo.BadNumberOfValues, instanceNum, InstanceParser.lineCounter, 0, 0, self.isTrain, (
                     "Instance " + defStr + " has a different number of attributes than defined\n   > Number of attributes defined: " + Attributes.getNumAttributes() + "   > Number of attributes read:    " + count))
@@ -269,7 +272,7 @@ class Instance:
         # Compute the statistics
         if self.isTrain:
             # print("self.isTrain==True......")
-            atts = Attributes.getInputAttributes(Attributes)
+            atts = self.attributes.getInputAttributes()
             length = int(len(atts))
             for i in range(0, length):
                 if not self.__missingValues[Instance.ATT_INPUT][i]:
@@ -337,7 +340,7 @@ class Instance:
         self.anyMissingValue[1] = False
         self.anyMissingValue[2] = False
         if instanceAttrs is None:
-            self.__numInputAttributes = Attributes.getInputNumAttributes()
+            self.__numInputAttributes = self.attributes.getInputNumAttributes()
             self.__numOutputAttributes = Attributes.getOutputNumAttributes(Attributes)
             self.__numUndefinedAttributes = Attributes.getNumAttributes() - (
                     self.__numInputAttributes + self.__numOutputAttributes)
@@ -465,9 +468,8 @@ class Instance:
                 # InstanceSet.errorLogger.setError(er)
                 print(" !!!!!!!!! InstanceSet.errorLogger.setError: " + str(error_info_1))
 
-        elif (Attributes.getAttributeByPos(Attributes,
-                                           count).getType() == Attribute.INTEGER or Attributes.getAttributeByPos(
-            Attributes, count).getType() == Attribute.REAL):
+        elif (self.attributes.getAttributeByPos(count).getType() == Attribute.INTEGER or self.attributes.getAttributeByPos(
+             count).getType() == Attribute.REAL):
             # print("getType()==Attribute.INTEGER or Real ......")
             try:
                 # print("inOut is:" + str(inOut) + ", curCount is: " + str(curCount))
@@ -502,7 +504,7 @@ class Instance:
                 # print("self.isTrain and inOut != 2......")
                 self.__realValues[inOut][curCount] = curAtt.rectifyValueInBounds(self.__realValues[inOut][curCount]);
 
-        elif Attributes.getAttributeByPos(Attributes, count).getType() == Attribute.NOMINAL:
+        elif self.attributes.getAttributeByPos( count).getType() == Attribute.NOMINAL:
             # print("getType()==Attribute.NOMINAL......")
             # print("inOut : " + str(inOut) + " , curCount: " + str(curCount))
             self.__nominalValues[inOut][curCount] = att
@@ -559,9 +561,9 @@ class Instance:
         self.__anyMissingValue[0] = False
         self.__anyMissingValue[1] = False
         self.__anyMissingValue[2] = False
-        self.__numInputAttributes = Attributes.getInputNumAttributes(Attributes)
-        self.__numOutputAttributes = Attributes.getOutputNumAttributes(Attributes)
-        self.__numUndefinedAttributes = Attributes.getNumAttributes(Attributes) - (
+        self.__numInputAttributes = self.attributes.getInputNumAttributes()
+        self.__numOutputAttributes = self.attributes.getOutputNumAttributes()
+        self.__numUndefinedAttributes = self.attributes.getNumAttributes() - (
                 self.__numInputAttributes + self.__numOutputAttributes)
         self.__intNominalValues = [0 for x in range(3)]
         self.__nominalValues = ["" for x in range(3)]
@@ -659,9 +661,9 @@ class Instance:
         outCount = 0
         undefCount = 0
         count = 0
-        numAttributes = Attributes.getNumAttributes()
+        numAttributes = self.attributes.getNumAttributes()
         for count in range(0, numAttributes):
-            at = Attributes.getAttributeByPos(count)
+            at = self.attributes.getAttributeByPos(count)
             directionAttr = at.getDirectionAttribute()
 
             if directionAttr == Attribute.INPUT:
@@ -730,7 +732,7 @@ class Instance:
                 print("?")
 
             else:
-                outputAttr = Attributes.getOutputAttribute(i).getType()
+                outputAttr = self.attributes.getOutputAttribute(i).getType()
                 if outputAttr == Attribute.NOMINAL:
                     print(self.__nominalValues[Instance.ATT_OUTPUT][i])
 
@@ -747,7 +749,7 @@ class Instance:
                 print("?")
 
             else:
-                undefinedAttrType = Attributes.getUndefinedAttribute(i).getType()
+                undefinedAttrType = self.attributes.getUndefinedAttribute(i).getType()
 
                 if undefinedAttrType == Attribute.NOMINAL:
                     print(self.__nominalValues[Instance.ATT_NONDEF][i])
@@ -1044,7 +1046,7 @@ class Instance:
     #  */
 
     def setOutputNumericValue(self, pos, value):
-        at = Attribute(Attributes.getOutputAttribute(pos))
+        at = Attribute(self.attributes.getOutputAttribute(pos))
         if at.getType() == Attribute.NOMINAL:
             return False
         else:
@@ -1071,7 +1073,7 @@ class Instance:
 
     def setInputNominalValue(self, pos, value):
         print("setInputNominalValue begin......")
-        at = Attribute(Attributes.getInputAttribute(pos))
+        at = Attribute(self.attributes.getInputAttribute(pos))
         if at.getType() != Attribute.NOMINAL:
             return False
         else:
@@ -1099,7 +1101,7 @@ class Instance:
     #  */
 
     def setOutputNominalValue(self, pos, value):
-        at = Attribute(Attributes.getOutputAttribute(pos))
+        at = Attribute(self.attributes.getOutputAttribute(pos))
         if at.getType() != Attribute.NOMINAL:
             return False
         else:
@@ -1259,7 +1261,7 @@ class Instance:
         for i in range(0, self.__numInputAttributes):
             if i == self.__numInputAttributes - 1 and self.__numOutputAttributes == 0:
                 ending = ""
-            inputAttrType = Attributes.getInputAttribute(i).getType()
+            inputAttrType = self.attributes.getInputAttribute(i).getType()
             if inputAttrType == Attribute.NOMINAL:
                 aux += self.__nominalValues[0][i]
 
@@ -1275,7 +1277,7 @@ class Instance:
         for i in range(0, self.__numOutputAttributes):
             if i == self.__numOutputAttributes - 1:
                 ending = ""
-            outputAttrType = Attributes.getOutputAttribute(i).getType()
+            outputAttrType = self.attributes.getOutputAttribute(i).getType()
             if outputAttrType == Attribute.NOMINAL:
                 aux += self.__nominalValues[1][i]
 
