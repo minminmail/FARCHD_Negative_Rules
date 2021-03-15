@@ -522,8 +522,8 @@ class InstanceSet:
         for attName in st:
             attName = str(attName.strip())
             # print("attrName: " + attName)
-            attrItem = Attributes.getAttributeByName(Attributes, attName)
-            attributes = Attributes.getAttributes(Attributes)
+            attrItem = self.attributes_insance.getAttributeByName(attName)
+            attributes = self.attributes_insance.getAttributes()
             # for att in attributes:
                 # print("att name is :" + str(att.getName()))
             # print("numbers of items that attributes:"+str(len(attributes)))
