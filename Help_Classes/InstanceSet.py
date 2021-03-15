@@ -352,7 +352,7 @@ class InstanceSet:
                     if isTrain:
                         relationName = str(line.replace("@relation", "")).strip()
                         # print("set Relation name :" + str(relationName))
-                        self.attributes_insance.setRelationName(self.attributes_insance,relationName)
+                        self.attributes_insance.setRelationName(relationName)
                 elif "@attribute" in line:
 
                     if isTrain:
