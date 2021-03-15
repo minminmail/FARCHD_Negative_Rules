@@ -200,9 +200,9 @@ class FarcHDClassifier():
         """
         print(X.shape)
         print(y.shape)
-        y = y.reshape(-1,1)
-        print(y.shape)
-        X, y = check_X_y(X, y, accept_sparse=True)
+        #y = y.reshape(-1,1)
+        #print(y.shape)
+        X, y = check_X_y(X, y, accept_sparse=True,ensure_2d=False)
         self.is_fitted_ = True
 
         # Store the classes seen during fit
