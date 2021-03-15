@@ -192,9 +192,9 @@ class InstanceSet:
             # print(" The number of output attributes is: " + str(Attributes.getOutputNumAttributes(Attributes)))
             # The attributes statistics are init if we are in train mode.
             print("In readSet, isTrain is " + str(isTrain))
-            if isTrain and Attributes.getOutputNumAttributes(Attributes) == 1:
+            if isTrain and self.attributes_insance.getOutputNumAttributes() == 1:
                 print("Begin Attributes.initStatistics......")
-                Attributes.initStatistics(Attributes)
+                self.attributes_insance.initStatistics()
             # A temporal vector is used to store the instances read.
 
             print("Reading the data")
