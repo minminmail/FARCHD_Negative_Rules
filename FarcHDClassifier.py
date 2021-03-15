@@ -198,6 +198,9 @@ class FarcHDClassifier():
         self : object
             Returns self.
         """
+        print(X.shape)
+        print(y.shape)
+        y.reshape(-1,1)
         X, y = check_X_y(X, y, accept_sparse=True)
         self.is_fitted_ = True
 
