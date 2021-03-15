@@ -45,11 +45,13 @@ class MyDataSet:
     integer_array = []
 
     frequent_class_array = []
+    attributes = None
 
     #  *Init a new set of instances
 
     def __init__(self):
         self.instance_set = InstanceSet()
+        self.attributes = Attributes()
 
     # '''
     #    * Outputs an array of examples with their corresponding attribute values.
@@ -246,14 +248,14 @@ class MyDataSet:
                 print("begin getNumInstances ...... in read_classification_set ")
                 self.ndata = self.instance_set.getNumInstances()
                 print("In readCread_classification_setlassificationSet , self.ndata is : " + str(self.ndata))
-                self.ninputs = Attributes.getInputNumAttributes(Attributes)
+                self.ninputs = self.attributes.getInputNumAttributes()
                 print("In read_classification_set , self.ninputs is : " + str(self.ninputs))
-                self.nvars = self.ninputs + Attributes.getOutputNumAttributes(Attributes)
+                self.nvars = self.ninputs + self.attributes.getOutputNumAttributes()
                 print("In read_classification_set , self.nvars is : " + str(self.nvars))
 
                 # outputInteger check that there is only one output variable
-                if Attributes.getOutputNumAttributes(Attributes) > 1:
-                    outAttrs = Attributes.getOutputAttributes(Attributes)
+                if self.attributes.getOutputNumAttributes() > 1:
+                    outAttrs = self.attributes.getOutputAttributes()
                     # print("Output Attributes number is bigger than 1")
                     i = 1
                     for outAtt in outAttrs:
@@ -264,7 +266,7 @@ class MyDataSet:
                     # print("All outputs but the first one will be removed")
                     exit(1)
                 no_outputs = False
-                if Attributes.getOutputNumAttributes(Attributes) < 1:
+                if self.attributes.getOutputNumAttributes() < 1:
                     print("This algorithm can not process datasets without outputs !!!!!!")
                     # print("Zero-valued output generated")
                     no_outputs = True
@@ -298,14 +300,14 @@ class MyDataSet:
 
                 for i in range(0, ninput_length):
 
-                    attribute_instance = Attributes.getInputAttribute(Attributes, i)
+                    attribute_instance = self.attributes.getInputAttribute(i)
 
                     if attribute_instance.getNumNominalValues() > 0:
                         self.emin[i] = 0
-                        self.emax[i] = Attributes.getInputAttribute(i).getNumNominalValues() - 1
+                        self.emax[i] = self.attributes.getInputAttribute(i).getNumNominalValues() - 1
                     else:
-                        self.emax[i] = Attributes.getAttributeByPos(Attributes, i).getMaxAttribute()
-                        self.emin[i] = Attributes.getAttributeByPos(Attributes, i).getMinAttribute()
+                        self.emax[i] = self.attributes.getAttributeByPos(i).getMaxAttribute()
+                        self.emin[i] = self.attributes.getAttributeByPos(i).getMinAttribute()
 
                     if attribute_instance.getType() == Attribute.NOMINAL:
                         self.nominal_array[i] = True
@@ -378,23 +380,23 @@ class MyDataSet:
             # Load in memory a dataset that contains a regression problem
             self.instance_set.readSet(datasetFile, train, file_path)
             self.ndata = self.instance_set.getNumInstances()
-            self.ninputs = Attributes.getInputNumAttributes(Attributes)
-            self.nvars = self.ninputs + Attributes.getOutputNumAttributes(Attributes)
+            self.ninputs = self.attributes.getInputNumAttributes()
+            self.nvars = self.ninputs + self.attributes.getOutputNumAttributes()
             # print("In readRegressionSet , self.ndata is : " + str(self.ndata))
             # print("In readRegressionSet , self.ninputs is : " + str(self.ninputs))
             # print("In readRegressionSet , self.nvars is : " + str(self.nvars))
 
             # outputIntegerheck that there is only one output variable
-            if Attributes.getOutputNumAttributes(Attributes) > 1:
+            if self.attributes.getOutputNumAttributes() > 1:
                 # print("Out put attribute: ")
-                outPutAttHeader = Attributes.getOutputAttributesHeader(Attributes)
+                outPutAttHeader = self.attributes.getOutputAttributesHeader()
                 # print(outPutAttHeader)
                 # print("This algorithm can not process MIMO datasets")
                 # print("All outputs but the first one will be removed")
                 exit(1)
 
             noOutputs = False
-            if Attributes.getOutputNumAttributes(Attributes) < 1:
+            if self.attributes.getOutputNumAttributes() < 1:
                 # print("This algorithm can not process datasets without outputs")
                 # print("Zero-valued output generated")
                 noOutputs = True
@@ -409,8 +411,8 @@ class MyDataSet:
             self.emax_array = [None for x in range(self.ninputs)]
             self.emin_array = [None for x in range(self.ninputs)]
             for i in range(0, self.ninputs):
-                self.emax_array[i] = Attributes.getAttributeByPos(Attributes, i).getMaxAttribute()
-                self.emin_array[i] = Attributes.getAttributeByPos(Attributes, i).getMinAttribute()
+                self.emax_array[i] = self.attributes.getAttributeByPos(i).getMaxAttribute()
+                self.emin_array[i] = self.attributes.getAttributeByPos(i).getMinAttribute()
 
             # All values are casted into double / integer
             self.nclasses = 0
@@ -450,15 +452,15 @@ class MyDataSet:
 
         p = ""
         # # print("copyHeader begin...., P is :" + p)
-        p = "@relation " + Attributes.getRelationName(Attributes) + "\n"
+        p = "@relation " + self.attributes.getRelationName() + "\n"
         # # print(" after relation P is :" + p)
-        p += Attributes.getInputAttributesHeader(Attributes)
+        p += self.attributes.getInputAttributesHeader()
         # # print(" after getInputAttributesHeader P is :" + p)
-        p += Attributes.getOutputAttributesHeader(Attributes)
+        p += self.attributes.getOutputAttributesHeader()
         # # print(" after getOutputAttributesHeader P is :" + p)
-        p += Attributes.getInputHeader(Attributes) + "\n"
+        p += self.attributes.getInputHeader() + "\n"
         # # print(" after getInputHeader P is :" + p)
-        p += Attributes.getOutputHeader(Attributes) + "\n"
+        p += self.attributes.getOutputHeader() + "\n"
         # # print(" after getOutputHeader P is :" + p)
         p += "@data\n"
 
@@ -654,13 +656,13 @@ class MyDataSet:
     #  * @return int a code for the type of the variable (INTEGER, REAL or NOMINAL)
 
     def get_type(self, variable):
-        if Attributes.getAttributeByPos(variable).getType() == Attributes.getAttributeByPos(Attributes, 0).INTEGER:
+        if self.attributes.getAttributeByPos(variable).getType() == Attributes.getAttributeByPos( 0).INTEGER:
             return self.INTEGER
 
-        if Attributes.getAttributeByPos(variable).getType() == Attributes.getAttributeByPos(Attributes, 0).REAL:
+        if self.attributes.getAttributeByPos(variable).getType() == Attributes.getAttributeByPos( 0).REAL:
             return self.REAL
 
-        if Attributes.getAttributeByPos(variable).getType() == Attributes.getAttributeByPos(Attributes, 0).NOMINAL:
+        if self.attributes.getAttributeByPos(variable).getType() == Attributes.getAttributeByPos( 0).NOMINAL:
             return self.NOMINAL
 
         return 0
@@ -679,7 +681,7 @@ class MyDataSet:
         ninputs = self.get_ninputs()
         for i in range(0, ninputs):
             # print("self.getn_inputs() is :" + str(nInputs) + " i = " + str(i))
-            attHere = Attributes.getInputAttribute(Attributes, i)
+            attHere = self.attributes.getInputAttribute(i)
             # print("attHere.getNumNominalValues()== " + str(attHere.getNumNominalValues()))
             if attHere.getNumNominalValues() > 0:
                 rangos[i][0] = 0.0
@@ -691,8 +693,8 @@ class MyDataSet:
                 rangos[i][1] = attHere.getMaxAttribute()
                 # print(" attHere.getNumNominalValues() <= 0, rangos[" + str(i) + "][0]==" + str(rangos[i][0]) + ",rangos[i][1]== " + str(rangos[i][1]))
 
-        rangos[self.get_nvars() - 1][0] = Attributes.getOutputAttribute(Attributes, 0).getMinAttribute()
-        rangos[self.get_nvars() - 1][1] = Attributes.getOutputAttribute(Attributes, 0).getMaxAttribute()
+        rangos[self.get_nvars() - 1][0] = self.attributes.getOutputAttribute( 0).getMinAttribute()
+        rangos[self.get_nvars() - 1][1] = self.attributes.getOutputAttribute( 0).getMaxAttribute()
         return rangos
 
     def get_granularity_zone_ranges(self, data_set_x_array):
@@ -714,8 +716,8 @@ class MyDataSet:
                 rangos[i][0] = attHere.get_min_granularity_attribute(data_set_x_array, i)
                 rangos[i][1] = attHere.get_max_granularity_attribute(data_set_x_array, i)
                 # print(" attHere.getNumNominalValues() <= 0, rangos[" + str(i) + "][0]==" + str(rangos[i][0]) + ",rangos[i][1]== " + str(rangos[i][1]))
-        last_min_value = Attributes.getOutputAttribute(Attributes, 0).getMinAttribute()
-        last_max_value = Attributes.getOutputAttribute(Attributes, 0).getMaxAttribute()
+        last_min_value = self.attributes.getOutputAttribute( 0).getMinAttribute()
+        last_max_value = self.attributes.getOutputAttribute( 0).getMaxAttribute()
         # print("The last_min_value is " + str(last_min_value)+" The last_max_value is " + str(last_max_value))
         rangos[self.get_nvars() - 1][0] = last_min_value
         rangos[self.get_nvars() - 1][1] = last_max_value
@@ -727,7 +729,7 @@ class MyDataSet:
     def get_names(self):
         names = ["" for x in range(self.ninputs)]
         for i in range(0, self.ninputs):
-            names[i] = Attributes.getInputAttribute(Attributes, i).getName()
+            names[i] = self.attributes.getInputAttribute( i).getName()
             print(" attributes' names["+str(i)+"]:" + names[i])
         return names
 
@@ -739,7 +741,7 @@ class MyDataSet:
         # print(" getClasses,self.nclasses: " + str(self.nclasses))
         for i in range(0, self.nclasses):
             # print(" getClasses method i is "+str(i))
-            clases[i] = Attributes.getOutputAttribute(Attributes, 0).getNominalValue(i)
+            clases[i] = self.attributes.getOutputAttribute( 0).getNominalValue(i)
         return clases
 
     def is_nominal(self, index_i):
@@ -789,15 +791,15 @@ class MyDataSet:
 
         p = ""
         # # print("copyHeader begin...., P is :" + p)
-        p = "@relation " + Attributes.getRelationName(Attributes) + "\n"
+        p = "@relation " + self.attributes.getRelationName() + "\n"
         # # print(" after relation P is :" + p)
-        p += Attributes.getInputAttributesHeader(Attributes)
+        p += self.attributes.getInputAttributesHeader()
         # # print(" after getInputAttributesHeader P is :" + p)
-        p += Attributes.getOutputAttributesHeader(Attributes)
+        p += self.attributes.getOutputAttributesHeader()
         # # print(" after getOutputAttributesHeader P is :" + p)
-        p += Attributes.getInputHeader(Attributes) + "\n"
+        p += self.attributes.getInputHeader() + "\n"
         # # print(" after getInputHeader P is :" + p)
-        p += Attributes.getOutputHeader(Attributes) + "\n"
+        p += self.attributes.getOutputHeader() + "\n"
         # # print(" after getOutputHeader P is :" + p)
         p += "@data\n"
 
