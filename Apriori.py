@@ -121,7 +121,8 @@ class Apriori:
     def generate_l2_array(self, class_pass):
 
         if len(self.l2_array) != 0:
-            self.l2_array.clear()
+            self.l2_array[:] = []
+            # self.l2_array.clear()
         itemset = Itemset(class_pass)
 
         for i in range(0, self.nvariables):
