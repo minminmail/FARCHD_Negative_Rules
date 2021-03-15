@@ -507,7 +507,7 @@ class InstanceSet:
                 at.setBounds(minBound, maxBound)
 
         # print("Before add attribute :::: ")
-        Attributes.addAttribute(Attributes, at)
+        self.attributes_insance.addAttribute(at)
         # print("insertAttribute is finished :::: ")
 
     # end insertAttribute
@@ -554,20 +554,20 @@ class InstanceSet:
             print("isTrain == True")
             if not inputsDef and not outputsDef:
                 # print("is neither inputAtt no outputAtt")
-                posHere = Attributes.getNumAttributes(self) - 1
+                posHere = self.attributes_insance.getNumAttributes() - 1
 
-                outputAttrNames.append(Attributes.getAttributeByPos(self, posHere).getName())
-                inputAttrNames = Attributes.getAttributesExcept(Attributes, outputAttrNames)
+                outputAttrNames.append(self.attributes_insance.getAttributeByPos(posHere).getName())
+                inputAttrNames = self.attributes_insance.getAttributesExcept(outputAttrNames)
                 self.outputInfered = True
             elif not inputsDef and outputsDef:
                 # print("inputsDef == False and outputsDef == True")
-                inputAttrNames = Attributes.getAttributesExcept(Attributes, outputAttrNames)
+                inputAttrNames = self.attributes_insance.getAttributesExcept(outputAttrNames)
             elif inputsDef and not outputsDef:
                 # print("inputsDef == True and outputsDef == False")
-                outputAttrNames = Attributes.getAttributesExcept(Attributes, inputAttrNames)
+                outputAttrNames = self.attributes_insance.getAttributesExcept(inputAttrNames)
                 self.outputInfered = True
             print("setOutputInputAttributes begin: ")
-            Attributes.setOutputInputAttributes(Attributes, inputAttrNames, outputAttrNames)
+            self.attributes_insance.setOutputInputAttributes(inputAttrNames, outputAttrNames)
 
     # end of processInputsAndOutputs
 
