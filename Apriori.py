@@ -194,7 +194,8 @@ class Apriori:
 
                     l_new = self.generate_rules(l_new, class_pass)
                     self.generate_large(l_new, class_pass)
-                    l_new.clear()
+                    l_new[:] = []
+                    # l_new.clear()
                
                     gc.collect()
 
