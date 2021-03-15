@@ -82,7 +82,7 @@ class Main:
         farchd_classifier = FarcHDClassifier(lf)
 
         # logger.debug("Begin  farchd_classifier.fit in Main ")
-        y.reshape(-1, 1)
+        y.reshape(1, -1)
         farchd_classifier.fit(X, y)
         test_x = [4.6, 3.1, 1.5, 0.2]
 
