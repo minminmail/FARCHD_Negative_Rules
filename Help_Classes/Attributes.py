@@ -561,7 +561,7 @@ class Attributes:
     #  * is the same as the definition made in train.
     #  * @param outputNames is a vector with all input attribute names.
     #  */
-    def hasSameAttributeName(attrName, attr_list):
+    def hasSameAttributeName(self,attrName, attr_list):
         hasSame = False
         # print("attrName ==" + attrName)
         for item_in_list in attr_list:
