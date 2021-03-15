@@ -649,8 +649,8 @@ class RuleBase:
             if selected[i] == 0:
                 self.rule_base_array.pop(i)
         #the last 0 is not considered by loop, so we must add it here.
-      
-        example_weight.clear()
+        example_weight[:] = []
+        # example_weight.clear()
         gc.collect()
 
     def add_rule(self, rule):
