@@ -177,7 +177,7 @@ class Instance:
             # end of the while
 
         # Checking if the instance doesn't have the same number of attributes than defined.
-        if count != self.attributes.getNumAttributes(Attributes):
+        if count != self.attributes.getNumAttributes():
             # print("count != Attributes.getNumAttributes(Attributes)......")
             er = ErrorInfo(ErrorInfo.BadNumberOfValues, instanceNum, InstanceParser.lineCounter, 0, 0, self.isTrain, (
                     "Instance " + defStr + " has a different number of attributes than defined\n   > Number of attributes defined: " + Attributes.getNumAttributes() + "   > Number of attributes read:    " + count))
