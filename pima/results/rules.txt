@@ -1,0 +1,19 @@
+638 57 57
+
+
+predict_y with normal rules ,the score is :1.0
+
+count_granularity_result score is: 74
+
+count_normal_result score is: 3 
+
+ predict_y with granularity rules ,the  score is :0.7272727272727273634 66 66
+
+
+predict_y with normal rules ,the score is :1.0
+
+count_granularity_result score is: 77
+
+count_normal_result score is: 0 
+
+ predict_y with granularity rules ,the  score is :0.6623376623376623

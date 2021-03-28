@@ -56,7 +56,7 @@ class LoadFiles:
         #config_file = open(self.file_to_open, "r")
 
         #logging.info("fileName in parseParameters = " + file_name)
-        logging.info("before open file")
+        #logging.info("before open file")
 
         db_path = "dataset"
         self.file_path = Path(dataset_folder)/db_path

@@ -149,21 +149,21 @@ class FarcHDClassifier():
         self.output_tr = os.path.join(prepare_parameter.result_path,  output_file_folder + "\\" + file_output_tr)
         self.output_tst = os.path.join(prepare_parameter.result_path,  output_file_folder + "\\" + file_output_tst)
 
-        self.file_db = os.getcwd() + self.file_db
-        self.file_rb = os.getcwd() + self.file_rb
+        self.file_db = os.getcwd() + "\\" +  self.file_db
+        self.file_rb = os.getcwd() + "\\" +  self.file_rb
 
-        self.output_tr= os.getcwd() + self.output_tr
+        self.output_tr= os.getcwd() + "\\" +  self.output_tr
 
-        self.output_tst= os.getcwd() + self.output_tst
+        self.output_tst= os.getcwd() + "\\" +  self.output_tst
 
         self.data_string = prepare_parameter.get_input_training_files()
 
         output_file = prepare_parameter.get_output_file(1)
         # print("output_file is : " + output_file)
 
-        self.file_time = os.getcwd() + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "time.txt"
-        self.file_hora = os.getcwd() + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "hora.txt"
-        self.file_rules = os.getcwd() + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "rules.txt"
+        self.file_time = os.getcwd()+ "\\" +  prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "time.txt"
+        self.file_hora = os.getcwd() + "\\" +  prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "hora.txt"
+        self.file_rules = os.getcwd() + "\\" +  prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "rules.txt"
         # Now we parse the parameters long
         self.seed_int = int(float(prepare_parameter.get_parameter(0)))
 
