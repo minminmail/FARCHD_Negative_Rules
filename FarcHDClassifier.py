@@ -473,6 +473,7 @@ class FarcHDClassifier():
                 class_out_here = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
 
             predict_y[i, 0] = class_out_here
+
         granularity_score_string = "\n\n" +"count_granularity_result score is: " +str(count_granularity_result)
         print(granularity_score_string)
         self.write_score(granularity_score_string)

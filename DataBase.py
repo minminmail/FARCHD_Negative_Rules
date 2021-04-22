@@ -18,6 +18,7 @@ class DataBase:
     # not use in FarcHD
     cadena = None
     logger = None
+    sub_lable_name =None
 
     # Default constructor
     def __init__(self):
@@ -37,7 +38,10 @@ class DataBase:
     # '''
     # modified at 2020-08-14
     # def init_with_five_parameters(self,n_labels_pass,self.data_base, self.train_myDataSet, self.k_parameter, self.inferenceType)
-    def init_with_three_parameters(self, n_labels_pass, train_my_dataset):
+    def init_with_three_parameters(self, n_labels_pass, train_my_dataset,sub_zone_value = "-1"):
+        if not sub_zone_value == "-1":
+            self.sub_lable_name = "H"+str(sub_zone_value)
+
         logger = Logger.set_logger()
         ranks = train_my_dataset.get_ranges()
 
@@ -80,9 +84,12 @@ class DataBase:
                 value = float(ranks[i][0]) + mark * (j + 1)
                 self.database_ini[i][j].x3 = self.database[i][j].x3 = self.set_value(value, ranks[i][0], ranks[i][1])
                 self.database_ini[i][j].y = self.database[i][j].y = 1.0
-                
-                self.database[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
-                self.database_ini[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
+                if not sub_zone_value == "-1":
+                    self.database[i][j].name = "L_" + self.sub_lable_name +"_"+ str(j) + "(" + str(self.nlabels_array[i]) + ")"
+                    self.database_ini[i][j].name ="L_" + self.sub_lable_name +"_"+ str(j) + "(" + str(self.nlabels_array[i]) + ")"
+                else:
+                    self.database[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
+                    self.database_ini[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
                 """  
                 logger.debug("database["+str(i)+"]"+"["+str(j)+"]" +".x0 :"+" :"+ str( self.database_ini[i][j].x0))
                 logger.debug("database["+str(i)+"]"+"["+str(j)+"]"+".x1 :"+" :"+ str( self.database_ini[i][j].x1))

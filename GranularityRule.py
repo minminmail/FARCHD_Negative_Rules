@@ -117,7 +117,7 @@ class GranularityRule:
             # 2. for each sub train myDataSet, do self.granularity_data_base[i]= DataBase()
             self.granularity_database_array[i] = DataBase()
             self.granularity_database_array[i].init_with_three_parameters(self.nLabels,
-                                                                          self.my_dataset_train_sub_zone[i])
+                                                                          self.my_dataset_train_sub_zone[i],i)
 
         self.generate_granularity_rules()
         self.prunerules_granularity_rules()

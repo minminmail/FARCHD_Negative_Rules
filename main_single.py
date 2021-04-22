@@ -62,7 +62,7 @@ class Main:
         lf = LoadFiles()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        dataset_folder = 'vehicle0'
+        dataset_folder = 'vehicle3'
         config_folder= 'config'
         config_file="config5s0.txt"
         #whole_file_name_with_path = os.getcwd() + config_file
