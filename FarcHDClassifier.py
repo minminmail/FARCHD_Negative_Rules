@@ -511,7 +511,7 @@ class FarcHDClassifier():
 
         return classOut
 
-    def score(self, test_X, test_y,if_granularity):
+    def score(self, test_X, test_y,if_granularity,if_train,real_y):
         """ A reference implementation of score function.
 
         Parameters
@@ -539,20 +539,31 @@ class FarcHDClassifier():
         selected_array = None
 
         for i in range(0, row_num):
-            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(test_X[i], selected_array)
+
 
             print("predict_y[" + str(i) + "] is :" + str(predict_y[i]))
-            print("test_y[" + str(i) + "] is :" + str(test_y[i]))
+            print("real_y[" + str(i) + "] is :" + str(real_y[i]))
 
-            if predict_y[i] == test_y[i]:
+            if predict_y[i] == real_y[i]:
                 hits = hits + 1
         score_string = ""
+
         if if_granularity:
-            score_string =  " \n\n " +"predict_y with granularity rules ,the  score is :"
-            print("predict_y with granularity rules ,the  score is :")
+            if if_train:
+                score_string = " \n\n " + "predict_y with granularity rules ,the train's   score is :"
+                print("predict_y with granularity rules ,the  score is :")
+            else:
+
+                score_string = " \n\n " +"predict_y with granularity rules ,the test's score is :"
+                print("predict_y with granularity rules ,the  score is :")
         else:
-            score_string =  "\n\n" +"predict_y with normal rules ,the score is :"
-            print("predict_y with normal rules ,the score is :")
+            if if_train:
+                score_string = " \n\n " + "predict_y with normal rules ,the train's score is :"
+                print("predict_y with normal rules ,the  score is :")
+            else:
+
+                score_string =  "\n\n" +"predict_y with normal rules ,the test's score is :"
+                print("predict_y with normal rules ,the score is :")
         score = 1.0 * hits / row_num
         score_string =score_string+str(score)
         self.write_score(score_string)

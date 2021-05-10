@@ -62,9 +62,9 @@ class Main:
         lf = LoadFiles()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        dataset_folder = 'vehicle3'
+        dataset_folder = 'pima'
         config_folder= 'config'
-        config_file="config5s0.txt"
+        config_file="config6s0.txt"
         #whole_file_name_with_path = os.getcwd() + config_file
 
         # lf.parse_configuration_file("\iris", "config1s0.txt")
@@ -89,11 +89,30 @@ class Main:
         test_x = [4.6, 3.1, 1.5, 0.2]
 
         # logger.debug("Begin  farchd_classifier.predictin Main ")
-        predict_y = farchd_classifier.predict(iris_X_test)
+        predict_y_test = farchd_classifier.predict(iris_X_test)
+
+        predict_y_train = farchd_classifier.predict(X)
 
         # logger.debug("Begin  farchd_classifier.score Main ")
-        farchd_classifier.score(iris_X_test, predict_y, False)
 
-        predict_granularity_y = farchd_classifier.predict_granularity(iris_X_test)
+        if_granularity = False
+        # normal rule prediction
+        if_train = True
+        farchd_classifier.score(X, predict_y_train, if_granularity, if_train, y)
+        if_train = False
+        farchd_classifier.score(iris_X_test, predict_y_test, if_granularity,if_train,iris_y_test)
 
-        farchd_classifier.score(iris_X_test, predict_granularity_y, True)
+
+
+
+        if_granularity = True
+
+        # granularity  rule for train data prediction
+        if_train = True
+        predict_train_granularity_y = farchd_classifier.predict_granularity(X)
+        farchd_classifier.score(X, predict_train_granularity_y,if_granularity, if_train,y)
+
+        # granularity  rule for test data prediction
+        if_train = False
+        predict_test_granularity_y = farchd_classifier.predict_granularity(iris_X_test)
+        farchd_classifier.score(iris_X_test, predict_test_granularity_y,if_granularity, if_train,iris_y_test)
