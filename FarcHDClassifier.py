@@ -18,7 +18,7 @@ import time
 from Populate import Populate
 from RuleBase import RuleBase
 import numpy as np
-
+from sklearn.metrics import accuracy_score
 
 
 class FarcHDClassifier():
@@ -104,6 +104,7 @@ class FarcHDClassifier():
     seed_int = None
     granularity_rule_Base_array = []
     normal_rule_degree = None
+    max_granularity_degree = None
 
     def __init__(self, prepare_parameter):
         print("__init__ of Fuzzy_Chi begin...")
@@ -146,24 +147,24 @@ class FarcHDClassifier():
 
         self.file_rb = os.path.join(prepare_parameter.result_path, output_file_folder + "\\" + file_rb_name)
 
-        self.output_tr = os.path.join(prepare_parameter.result_path,  output_file_folder + "\\" + file_output_tr)
-        self.output_tst = os.path.join(prepare_parameter.result_path,  output_file_folder + "\\" + file_output_tst)
+        self.output_tr = os.path.join(prepare_parameter.result_path, output_file_folder + "\\" + file_output_tr)
+        self.output_tst = os.path.join(prepare_parameter.result_path, output_file_folder + "\\" + file_output_tst)
 
-        self.file_db = os.getcwd() + "\\" +  self.file_db
-        self.file_rb = os.getcwd() + "\\" +  self.file_rb
+        self.file_db = os.getcwd() + "\\" + self.file_db
+        self.file_rb = os.getcwd() + "\\" + self.file_rb
 
-        self.output_tr= os.getcwd() + "\\" +  self.output_tr
+        self.output_tr = os.getcwd() + "\\" + self.output_tr
 
-        self.output_tst= os.getcwd() + "\\" +  self.output_tst
+        self.output_tst = os.getcwd() + "\\" + self.output_tst
 
         self.data_string = prepare_parameter.get_input_training_files()
 
         output_file = prepare_parameter.get_output_file(1)
         # print("output_file is : " + output_file)
 
-        self.file_time = os.getcwd()+ "\\" +  prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "time.txt"
-        self.file_hora = os.getcwd() + "\\" +  prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "hora.txt"
-        self.file_rules = os.getcwd() + "\\" +  prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "rules.txt"
+        self.file_time = os.getcwd() + "\\" + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "time.txt"
+        self.file_hora = os.getcwd() + "\\" + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "hora.txt"
+        self.file_rules = os.getcwd() + "\\" + prepare_parameter.result_path + "\\" + output_file_folder + "\\" + "rules.txt"
         # Now we parse the parameters long
         self.seed_int = int(float(prepare_parameter.get_parameter(0)))
 
@@ -180,6 +181,7 @@ class FarcHDClassifier():
         self.bits_gen = int(prepare_parameter.get_parameter(9))
         self.type_inference = int(prepare_parameter.get_parameter(10))
         # javarandom.Random(self.seed_int)
+        self.output = None
         random.seed(self.seed_int)
 
     def fit(self, X, y):
@@ -200,9 +202,9 @@ class FarcHDClassifier():
         """
         print(X.shape)
         print(y.shape)
-        #y = y.reshape(-1,1)
-        #print(y.shape)
-        X, y = check_X_y(X, y, accept_sparse=True,ensure_2d=False)
+        # y = y.reshape(-1,1)
+        # print(y.shape)
+        X, y = check_X_y(X, y, accept_sparse=True, ensure_2d=False)
         self.is_fitted_ = True
 
         # Store the classes seen during fit
@@ -373,7 +375,8 @@ class FarcHDClassifier():
 
         file = open(self.file_rules, "a+")
         file.write(string_out)
-    def write_score(self,score_string):
+
+    def write_score(self, score_string):
         file = open(self.file_rules, "a+")
         file.write(score_string)
 
@@ -404,7 +407,7 @@ class FarcHDClassifier():
 
         for i in range(0, row_num):
             predict_y[i] = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
-        print("predict_y is :")
+        print("normal rule ,predict_y is :")
         print(predict_y)
 
         return predict_y
@@ -439,14 +442,14 @@ class FarcHDClassifier():
         count_normalrule_result = 0
 
         for i in range(0, row_num):
-            # print(" In the doOutput the loop number i is  " + str(i))
-            # for classification:
-            # print("before classificationOutput in Fuzzy_Chi")
+
 
             class_out_here = None
 
-            max_granularity_count = 0
+            max_granularity_count = 0  # save the max degree of granularity rule result
             get_granularity_rule_result = False
+
+            print("row = " + str(i) + "began predict")
 
             for j in range(0, self.negative_rule_number):
                 print("before classification_Output_granularity")
@@ -459,25 +462,33 @@ class FarcHDClassifier():
                 if classOut is not "?" and classOut is not None:
 
                     if degree_new is not None and degree_new > max_granularity_count:
+                        print(str(i) + " negative rule ,degree new is " + str(degree_new))
                         get_granularity_rule_result = True
                         class_out_here = classOut
-                        max_granularity_count = degree_new
+                        print(" class_out_here is " + str(class_out_here))
 
-            if get_granularity_rule_result and max_granularity_count >2:  #
+                        max_granularity_degree = degree_new
+                        print(" max_granularity_count is " + str(max_granularity_count))
+
+            if get_granularity_rule_result and max_granularity_degree > 3:  #
 
                 count_granularity_result = count_granularity_result + 1
-                print("count_granularity_result is " + str(count_granularity_result) + " ,max_granularity_count" + str(max_granularity_count))
+                print("count_granularity_result is: " + str(count_granularity_result) + " ,max_granularity_degree is :" + str(
+                    max_granularity_degree))
             else:
-                count_normalrule_result=count_normalrule_result+1
-                print("In predict_granularity count_normalrule_result is "+str(count_normalrule_result))
-                class_out_here = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
+                count_normalrule_result = count_normalrule_result + 1
+                print("In predict_granularity count_normalrule_result is " + str(count_normalrule_result))
+                class_out_here = self.classificationOutput(X[i])
+                normal_rule_degree = self.normal_rule_degree
+                print(" normal_rule_degree is " + str(normal_rule_degree))
 
             predict_y[i, 0] = class_out_here
+            print(" finally the predict y  is " + str(predict_y[i, 0]))
 
-        granularity_score_string = "\n\n" +"count_granularity_result score is: " +str(count_granularity_result)
+        granularity_score_string = "\n\n" + "count_granularity_result score is: " + str(count_granularity_result)
         print(granularity_score_string)
         self.write_score(granularity_score_string)
-        normal_score_string = "\n\n"+ "count_normal_result score is: " + str(count_normalrule_result)
+        normal_score_string = "\n\n" + "count_normal_result score is: " + str(count_normalrule_result)
         print(normal_score_string)
         self.write_score(normal_score_string)
         return predict_y
@@ -487,13 +498,16 @@ class FarcHDClassifier():
         # Here we should include the algorithm directives to generate the
         # classification output from the input example
         selected_array = None
-        classOut = self.rule_base.frm_ac_with_two_parameters(example, selected_array)
+        self.output = self.rule_base.frm_ac_with_two_parameters(example, selected_array)
         self.normal_rule_degree = self.rule_base.frm_ac_max_degree_value
 
-        print("classOut in classificationOutput is " + str(classOut))
-        if classOut >= 0:
+        print("classOut in classificationOutput is " + str(self.output))
+        """
+        if self.output >= 0:
             # print("In Fuzzy_Chi,classOut >= 0, to call getOutputValue")
-            self.output = self.train_mydataset.get_output_as_string_with_pos(classOut)
+            self.output = self.train_mydataset.get_output_as_string_with_pos(self.output)
+        """
+
         return self.output
 
     def classification_Output_granularity(self, example, zone_area_number):
@@ -503,15 +517,15 @@ class FarcHDClassifier():
         # classification output from the input example
         print("before FRM_Granularity")
         selected_array = None
-        classOut = self.granularity_rule_Base_array[zone_area_number].frm_ac_with_two_parameters(example,
+        self.output = self.granularity_rule_Base_array[zone_area_number].frm_ac_with_two_parameters(example,
                                                                                                  selected_array)
 
         self.max_granularity_degree = self.granularity_rule_Base_array[zone_area_number].frm_ac_max_degree_value
         print("in classification_Output_granularity  max_granularity_degree is " + str(self.max_granularity_degree))
 
-        return classOut
+        return self.output
 
-    def score(self, test_X, test_y,if_granularity,if_train,real_y):
+    def score(self, y_true, y_pred, if_granularity, if_train):
         """ A reference implementation of score function.
 
         Parameters
@@ -526,46 +540,37 @@ class FarcHDClassifier():
             seen udring fit.
         """
 
+        """
         # Input validation
-        test_X = check_array(test_X, accept_sparse=True)
+        real_X = check_array(real_X, accept_sparse=True)
 
         # Check is fit had been called
         check_is_fitted(self, ['X_', 'y_'], 'is_fitted_')
 
-        row_num = test_X.shape[0]
+        row_num = real_X.shape[0]
         print("row_num in score is :" + str(row_num))
-        predict_y = np.empty([row_num, 1], dtype=np.int32)
-        hits = 0
-        selected_array = None
-
-        for i in range(0, row_num):
-
-
-            print("predict_y[" + str(i) + "] is :" + str(predict_y[i]))
-            print("real_y[" + str(i) + "] is :" + str(real_y[i]))
-
-            if predict_y[i] == real_y[i]:
-                hits = hits + 1
-        score_string = ""
+        
+   """
 
         if if_granularity:
             if if_train:
-                score_string = " \n\n " + "predict_y with granularity rules ,the train's   score is :"
-                print("predict_y with granularity rules ,the  score is :")
+                score_string = " \n\n " + "with granularity rules ,the train's   accuracy_score is :"
+                print("accuracy_score with granularity rules ,the  score is :")
             else:
 
-                score_string = " \n\n " +"predict_y with granularity rules ,the test's score is :"
-                print("predict_y with granularity rules ,the  score is :")
+                score_string = " \n\n " + "with granularity rules ,the test's accuracy_score is :"
+                print("accuracy_score with granularity rules ,the  score is :")
         else:
             if if_train:
-                score_string = " \n\n " + "predict_y with normal rules ,the train's score is :"
-                print("predict_y with normal rules ,the  score is :")
+                score_string = " \n\n " + "with normal rules ,the train's accuracy_score is :"
+                print("accuracy_score with normal rules ,the  score is :")
             else:
 
-                score_string =  "\n\n" +"predict_y with normal rules ,the test's score is :"
-                print("predict_y with normal rules ,the score is :")
-        score = 1.0 * hits / row_num
-        score_string =score_string+str(score)
+                score_string = "\n\n" + "with normal rules ,the test's accuracy_score is :"
+                print("accuracy_score with normal rules ,the score is :")
+        # score = 1.0 * hits / row_num
+        score = accuracy_score(y_true, y_pred)
+        score_string = score_string + str(score)
         self.write_score(score_string)
         print(score)
 

@@ -7,4 +7,38 @@ count_granularity_result score is: 78
 
 count_normal_result score is: 7 
 
- predict_y with granularity rules ,the  score is :0.9411764705882353
+ predict_y with granularity rules ,the  score is :0.94117647058823535606 45 40
+ 
+
+ predict_y with normal rules ,the train's score is :0.7795275590551181
+
+predict_y with normal rules ,the test's score is :0.7738095238095238
+
+count_granularity_result score is: 189
+
+count_normal_result score is: 573 
+
+ predict_y with granularity rules ,the train's   score is :0.7782152230971129
+
+count_granularity_result score is: 17
+
+count_normal_result score is: 67 
+
+ predict_y with granularity rules ,the test's score is :0.77380952380952385606 45 40
+ 
+
+ predict_y with normal rules ,the train's score is :0.7795275590551181
+
+predict_y with normal rules ,the test's score is :0.7738095238095238
+
+count_granularity_result score is: 647
+
+count_normal_result score is: 115 
+
+ predict_y with granularity rules ,the train's   score is :0.7795275590551181
+
+count_granularity_result score is: 77
+
+count_normal_result score is: 7 
+
+ predict_y with granularity rules ,the test's score is :0.7857142857142857

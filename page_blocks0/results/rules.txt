@@ -7,4 +7,59 @@ count_granularity_result score is: 485
 
 count_normal_result score is: 62 
 
- predict_y with granularity rules ,the  score is :1.0
+ predict_y with granularity rules ,the  score is :1.093 22 9
+ 
+
+ predict_y with normal rules ,the train's score is :0.8978680203045686
+
+predict_y with normal rules ,the test's score is :0.8976234003656307
+
+count_granularity_result score is: 4444
+
+count_normal_result score is: 481 
+
+ predict_y with granularity rules ,the train's   score is :0.8978680203045686
+
+count_granularity_result score is: 485
+
+count_normal_result score is: 62 
+
+ predict_y with granularity rules ,the test's score is :0.897623400365630793 22 9
+93 22 9
+ 
+
+ with normal rules ,the train's accuracy_score is :0.8978680203045686
+
+with normal rules ,the test's accuracy_score is :0.897623400365630793 22 9
+ 
+
+ with normal rules ,the train's accuracy_score is :0.8978680203045686
+
+with normal rules ,the test's accuracy_score is :0.897623400365630793 22 9
+ 
+
+ with normal rules ,the train's accuracy_score is :0.8978680203045686
+
+with normal rules ,the test's accuracy_score is :0.897623400365630793 22 9
+ 
+
+ with normal rules ,the train's accuracy_score is :0.8978680203045686
+
+with normal rules ,the test's accuracy_score is :0.897623400365630793 22 9
+ 
+
+ with normal rules ,the train's accuracy_score is :0.8978680203045686
+
+with normal rules ,the test's accuracy_score is :0.8976234003656307
+
+count_granularity_result score is: 2048
+
+count_normal_result score is: 2877 
+
+ with granularity rules ,the train's   accuracy_score is :0.8978680203045686
+
+count_granularity_result score is: 201
+
+count_normal_result score is: 346 
+
+ with granularity rules ,the test's accuracy_score is :0.8976234003656307

@@ -196,7 +196,7 @@ class Instance:
                           not self.__missingValues[Instance.ATT_INPUT][i]):
                         atts[i].addInMeanValue(currentClass, self.__realValues[Instance.ATT_INPUT][i])
 
-        # print("setThreeParameters finished...... ")
+        print("setThreeParameters finished...... ")
 
     # end Instance
 
