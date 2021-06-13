@@ -18,6 +18,7 @@ import time
 from Populate import Populate
 from RuleBase import RuleBase
 import numpy as np
+from Logger import Logger
 from sklearn.metrics import accuracy_score
 
 
@@ -105,9 +106,11 @@ class FarcHDClassifier():
     granularity_rule_Base_array = []
     normal_rule_degree = None
     max_granularity_degree = None
+    logger = None
 
     def __init__(self, prepare_parameter):
         print("__init__ of Fuzzy_Chi begin...")
+        self.logger = Logger.set_logger()
         self.start_time = datetime.datetime.now()
 
         self.train_mydataset = MyDataSet()
@@ -245,12 +248,26 @@ class FarcHDClassifier():
             print("Building classifier")
             self.rule_base = self.pop.get_best_RB()
 
+            # calculate the rule suppx,suppxy,for check small disjuncts
+            self.rule_base.calculate_confident_support_rulebase(self.train_mydataset)
+
+            rule_log = ""
+            for i in range(0, len(self.rule_base.rule_base_array)):
+                rule_log = rule_log + self.rule_base.rule_base_array[i].print_rule_information(
+                    self.rule_base.n_variables, self.train_mydataset)
+
+            self.logger.debug("Rule information log is  :" + " /n " + rule_log)
+
             self.rules_stage3 = int(self.rule_base.get_size())
 
-            self.rule_base.generate_negative_rules(self.train_mydataset, self.negative_confident_value,
-                                                   self.zone_confident)
+            """  
+            test for FARCHD first
+            
+            self.rule_base.generate_negative_rules(self.train_mydataset, self.negative_confident_value,self.zone_confident)
 
             self.negative_rule_number = len(self.rule_base.negative_rule_base_array)
+            
+            """
 
             print("Begin the  negative rule generation ")
             print("self.file_db is :" + self.file_db)
@@ -259,6 +276,8 @@ class FarcHDClassifier():
 
             print("Begin the  granularity rule generation ")
             print("self.nlabels " + str(self.nlabels))
+
+            """    
 
             granularity_rule = GranularityRule(self.train_mydataset, self.nlabels,
                                                self.file_db, self.file_rb, self.val_mydataset,
@@ -270,7 +289,7 @@ class FarcHDClassifier():
 
             self.granularity_rule_Base_array = granularity_rule.get_granularity_rules(self.negative_rule_number)
 
-            #
+            """
 
             #  Finally we should fill the training and test  output files
             self.do_output(self.val_mydataset, self.output_tr)
@@ -281,6 +300,7 @@ class FarcHDClassifier():
             # int(datetime.datetime.utcnow().timestamp())
 
             self.total_time = current_millis - int(self.start_time.utcnow().timestamp())
+            print("Algorithm self.total_time is :" + str(self.total_time))
             self.write_time()
             self.write_rules()
 
@@ -288,6 +308,13 @@ class FarcHDClassifier():
 
             # Return the classifier
             return self
+
+    def write_rules(self):
+
+        string_out = "" + str(self.rules_stage1) + " " + str(self.rules_stage2) + " " + str(self.rules_stage3) + "\n"
+
+        file = open(self.file_rules, "a+")
+        file.write(string_out)
 
     # """
     #    * It generates the output file from a given dataset and stores it in a file
@@ -297,13 +324,49 @@ class FarcHDClassifier():
     #    * @return The classification accuracy
     # """
 
+    def write_time(self):
+        aux = None  # int
+        seg = None  # int
+        min_value = None  # int
+        hor = None  # int
+
+        string_out = "" + str(self.total_time / 1000) + "  " + self.data_string + "\n"
+        file = open(self.file_time, "a+")
+        file.write(string_out)
+        self.total_time /= 1000
+        seg = self.total_time % 60
+        self.total_time = self.total_time / 60
+        min_value = self.total_time % 60
+        hor = self.total_time / 60
+        string_out = ""
+
+        if hor < 10:
+            string_out = string_out + "0" + str(hor) + ":"
+        else:
+            string_out = string_out + str(hor) + ":"
+
+        if min_value < 10:
+            string_out = string_out + "0" + str(min_value) + ":"
+        else:
+            string_out = string_out + str(min_value) + ":"
+
+        if seg < 10:
+            string_out = string_out + "0" + str(seg)
+        else:
+            string_out = string_out + str(seg)
+
+        string_out = string_out + "  " + self.data_string + "\n"
+
+        file = open(self.file_hora, "a+")
+        file.write(string_out)
+
     def do_output(self, mydataset, filename):
 
         output = mydataset.copy_header()  # we insert the header in the output file
         # We write the output for each example
         for i in range(0, mydataset.get_ndata()):
             # for classification:
-            output = output + mydataset.get_output_as_string_with_pos(i) + " " + self.classification_output(
+            output = output + mydataset.get_output_as_string_with_pos(i) + " " + self.classification_output_string(
                 mydataset.get_example(i)) + "\n"
 
         if os.path.isfile(filename):
@@ -325,56 +388,31 @@ class FarcHDClassifier():
         # classification output from the input example
 
         class_out = self.rule_base.FRM(example)
+        """ 
+        if class_out >= 0:
+            output = self.train_mydataset.get_output_value(class_out)
+        """
+        self.normal_rule_degree = self.rule_base.frm_ac_max_degree_value
+
+        return class_out
+
+    def classification_output_string(self, example):
+        output = "?"
+        # Here we should include the algorithm directives to generate the
+        # classification output from the input example
+
+        class_out = self.rule_base.FRM(example)
 
         if class_out >= 0:
             output = self.train_mydataset.get_output_value(class_out)
 
+        self.normal_rule_degree = self.rule_base.frm_ac_max_degree_value
+
         return output
-
-    def write_time(self):
-        aux = None  # int
-        seg = None  # int
-        min_value = None  # int
-        hor = None  # int
-
-        string_out = "" + str(self.total_time / 1000) + "  " + self.data_string + "\n"
-        file = open(self.file_time, "a+")
-        file.write(string_out)
-        self.total_time /= 1000
-        seg = self.total_time % 60
-        self.total_time = self.total_time / 60
-        min_value = self.total_time % 60
-        hor = self.total_time / 60
-        string_out = ""
-        if hor < 10:
-            string_out = string_out + "0" + str(hor) + ":"
-        else:
-            string_out = string_out + str(hor) + ":"
-        if min_value < 10:
-            string_out = string_out + "0" + str(min_value) + ":"
-        else:
-            string_out = string_out + str(min_value) + ":"
-
-        if seg < 10:
-            string_out = string_out + "0" + str(seg)
-        else:
-            string_out = string_out + str(seg)
-
-        string_out = string_out + "  " + self.data_string + "\n"
-
-        file = open(self.file_hora, "a+")
-        file.write(string_out)
 
     """ 
      * Add all the rules generated by the classifier to fileRules file.
      """
-
-    def write_rules(self):
-
-        string_out = "" + str(self.rules_stage1) + " " + str(self.rules_stage2) + " " + str(self.rules_stage3) + "\n"
-
-        file = open(self.file_rules, "a+")
-        file.write(string_out)
 
     def write_score(self, score_string):
         file = open(self.file_rules, "a+")
@@ -402,11 +440,10 @@ class FarcHDClassifier():
         check_is_fitted(self, ['X_', 'y_'], 'is_fitted_')
 
         row_num = X.shape[0]
-        predict_y = np.empty([row_num, 1], dtype=np.int32)
-        selected_array = None
+        predict_y = np.empty([row_num, 1], dtype = str)   #dtype=np.int32
 
         for i in range(0, row_num):
-            predict_y[i] = self.rule_base.frm_ac_with_two_parameters(X[i], selected_array)
+            predict_y[i] = self.classification_output(X[i])
         print("normal rule ,predict_y is :")
         print(predict_y)
 
@@ -443,7 +480,6 @@ class FarcHDClassifier():
 
         for i in range(0, row_num):
 
-
             class_out_here = None
 
             max_granularity_count = 0  # save the max degree of granularity rule result
@@ -473,12 +509,13 @@ class FarcHDClassifier():
             if get_granularity_rule_result and max_granularity_degree > 3:  #
 
                 count_granularity_result = count_granularity_result + 1
-                print("count_granularity_result is: " + str(count_granularity_result) + " ,max_granularity_degree is :" + str(
+                print("count_granularity_result is: " + str(
+                    count_granularity_result) + " ,max_granularity_degree is :" + str(
                     max_granularity_degree))
             else:
                 count_normalrule_result = count_normalrule_result + 1
                 print("In predict_granularity count_normalrule_result is " + str(count_normalrule_result))
-                class_out_here = self.classificationOutput(X[i])
+                class_out_here = self.classification_output(X[i])
                 normal_rule_degree = self.normal_rule_degree
                 print(" normal_rule_degree is " + str(normal_rule_degree))
 
@@ -493,22 +530,6 @@ class FarcHDClassifier():
         self.write_score(normal_score_string)
         return predict_y
 
-    def classificationOutput(self, example):
-        self.output = "?"
-        # Here we should include the algorithm directives to generate the
-        # classification output from the input example
-        selected_array = None
-        self.output = self.rule_base.frm_ac_with_two_parameters(example, selected_array)
-        self.normal_rule_degree = self.rule_base.frm_ac_max_degree_value
-
-        print("classOut in classificationOutput is " + str(self.output))
-        """
-        if self.output >= 0:
-            # print("In Fuzzy_Chi,classOut >= 0, to call getOutputValue")
-            self.output = self.train_mydataset.get_output_as_string_with_pos(self.output)
-        """
-
-        return self.output
 
     def classification_Output_granularity(self, example, zone_area_number):
         self.output = "?"
@@ -518,7 +539,7 @@ class FarcHDClassifier():
         print("before FRM_Granularity")
         selected_array = None
         self.output = self.granularity_rule_Base_array[zone_area_number].frm_ac_with_two_parameters(example,
-                                                                                                 selected_array)
+                                                                                                    selected_array)
 
         self.max_granularity_degree = self.granularity_rule_Base_array[zone_area_number].frm_ac_max_degree_value
         print("in classification_Output_granularity  max_granularity_degree is " + str(self.max_granularity_degree))
@@ -569,9 +590,47 @@ class FarcHDClassifier():
                 score_string = "\n\n" + "with normal rules ,the test's accuracy_score is :"
                 print("accuracy_score with normal rules ,the score is :")
         # score = 1.0 * hits / row_num
-        score = accuracy_score(y_true, y_pred)
+        y_pred_int =[]
+        for i in range(0, len(y_pred)):
+            y_pred_int.append(int( y_pred[i]))
+
+        score = accuracy_score(y_true, y_pred_int)
         score_string = score_string + str(score)
         self.write_score(score_string)
         print(score)
 
         return score
+
+    def get_X(self):
+
+        self.X = self.train_mydataset.get_X()
+        # change into ndarray type
+        self.X = np.array(self.X)
+        print(self.X)
+
+        return self.X
+
+    def get_y(self):
+
+        self.y = self.train_mydataset.get_y()
+        self.y = np.array(self.y)
+        print(self.y)
+
+        return self.y
+
+    def get_test_x(self):
+
+        self.X = self.test_mydataset.get_X()
+        # change into ndarray type
+        self.X = np.array(self.X)
+        print(self.X)
+
+        return self.X
+
+    def get_test_y(self):
+
+        self.y = self.test_mydataset.get_y()
+        self.y = np.array(self.y)
+        print(self.y)
+
+        return self.y

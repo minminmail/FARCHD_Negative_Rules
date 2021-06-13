@@ -380,6 +380,8 @@ class Individual:
         for i in range(len(self.geneR_array) - 1, -1, -1):
             if self.geneR_array[i] < 1:
                 rule_base.remove(i)
+        for i in range(0,len(rule_base.rule_base_array)):
+            rule_base.rule_base_array[i].rule_index = i+1
 
         return rule_base
 

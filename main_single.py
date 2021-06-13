@@ -59,11 +59,15 @@ class Main:
 
         logger = Logger.set_logger()
         lf = LoadFiles()
+
+        log_file = open("help.log", "w")
+        log_file.truncate()
+        log_file.close()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        dataset_folder = 'page_blocks0'
+        dataset_folder = 'iris'
         config_folder = 'config'
-        config_file = "config6s0.txt"
+        config_file = "config0s0.txt"
         # whole_file_name_with_path = os.getcwd() + config_file
 
         # lf.parse_configuration_file("\iris", "config1s0.txt")
@@ -72,15 +76,17 @@ class Main:
         cwd = Path.cwd()
         whole_file_name_with_path = cwd / dataset_folder / config_folder / config_file
         lf.parse_configuration_file(whole_file_name_with_path, dataset_folder)
-        X = lf.get_X()
-        y = lf.get_y()
-        indices = np.random.permutation(len(X))
 
-        X_test = lf.get_test_x()
-        y_test = lf.get_test_y()
 
         # logger.debug("Begin  FarcHDClassifier in Main ")
         farchd_classifier = FarcHDClassifier(lf)
+
+        X = farchd_classifier.get_X()
+        y = farchd_classifier.get_y()
+        indices = np.random.permutation(len(X))
+
+        X_test = farchd_classifier.get_test_x()
+        y_test = farchd_classifier.get_test_y()
 
         # logger.debug("Begin  farchd_classifier.fit in Main ")
         y.reshape(1, -1)
@@ -101,6 +107,7 @@ class Main:
         predict_y_test = farchd_classifier.predict(X_test)
         farchd_classifier.score(y_test, predict_y_test, if_granularity, if_train)
 
+        """ 
         if_granularity = True
 
         # granularity  rule for train data prediction
@@ -112,3 +119,4 @@ class Main:
         if_train = False
         predict_test_granularity_y = farchd_classifier.predict_granularity(X_test)
         farchd_classifier.score(y_test, predict_test_granularity_y,if_granularity, if_train)
+         """

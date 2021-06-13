@@ -18,12 +18,11 @@ class DataBase:
     # not use in FarcHD
     cadena = None
     logger = None
-    sub_lable_name =None
+    sub_lable_name = None
 
     # Default constructor
     def __init__(self):
         pass
-
 
         # Constructor with parameters. It performs a homegeneous partition of the input space for
         # a given number of fuzzy labels.
@@ -32,15 +31,14 @@ class DataBase:
         # @param rangos double[][] Range of each variable (minimum and maximum values)
         # @param names String[] Labels for the input attributes
 
-
     # '''
     #      * @return int the number of input variables
     # '''
     # modified at 2020-08-14
     # def init_with_five_parameters(self,n_labels_pass,self.data_base, self.train_myDataSet, self.k_parameter, self.inferenceType)
-    def init_with_three_parameters(self, n_labels_pass, train_my_dataset,sub_zone_value = "-1"):
+    def init_with_three_parameters(self, n_labels_pass, train_my_dataset, sub_zone_value="-1"):
         if not sub_zone_value == "-1":
-            self.sub_lable_name = "H"+str(sub_zone_value)
+            self.sub_lable_name = "H" + str(sub_zone_value)
 
         logger = Logger.set_logger()
         ranks = train_my_dataset.get_ranges()
@@ -70,8 +68,10 @@ class DataBase:
 
             self.database[i] = [Fuzzy() for x in range(self.nlabels_array[i])]
             self.database_ini[i] = [Fuzzy() for x in range(self.nlabels_array[i])]
-
-            mark = float(rank /float(self.nlabels_array[i] - 1.0))
+            if (self.nlabels_array[i] - 1.0) == 0:
+                mark = 0
+            else:
+                mark = float(rank / float(self.nlabels_array[i] - 1.0))
 
             for j in range(0, self.nlabels_array[i]):
                 self.database[i][j] = Fuzzy()
@@ -79,14 +79,16 @@ class DataBase:
 
                 value = float(ranks[i][0]) + mark * (j - 1)
                 self.database_ini[i][j].x0 = self.database[i][j].x0 = self.set_value(value, ranks[i][0], ranks[i][1])
-                value = float(ranks[i][0])+ mark * j
+                value = float(ranks[i][0]) + mark * j
                 self.database_ini[i][j].x1 = self.database[i][j].x1 = self.set_value(value, ranks[i][0], ranks[i][1])
                 value = float(ranks[i][0]) + mark * (j + 1)
                 self.database_ini[i][j].x3 = self.database[i][j].x3 = self.set_value(value, ranks[i][0], ranks[i][1])
                 self.database_ini[i][j].y = self.database[i][j].y = 1.0
                 if not sub_zone_value == "-1":
-                    self.database[i][j].name = "L_" + self.sub_lable_name +"_"+ str(j) + "(" + str(self.nlabels_array[i]) + ")"
-                    self.database_ini[i][j].name ="L_" + self.sub_lable_name +"_"+ str(j) + "(" + str(self.nlabels_array[i]) + ")"
+                    self.database[i][j].name = "L_" + self.sub_lable_name + "_" + str(j) + "(" + str(
+                        self.nlabels_array[i]) + ")"
+                    self.database_ini[i][j].name = "L_" + self.sub_lable_name + "_" + str(j) + "(" + str(
+                        self.nlabels_array[i]) + ")"
                 else:
                     self.database[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
                     self.database_ini[i][j].name = "L_" + str(j) + "(" + str(self.nlabels_array[i]) + ")"
@@ -98,7 +100,6 @@ class DataBase:
                 logger.debug("--------------------------------------------------------------------------------")
                 """
             # print("finished init database")
-            
 
     # 2020-08-14
     def set_value(self, val, min_value, max_value):
@@ -143,7 +144,7 @@ class DataBase:
                     self.database[i][j].x1 = self.database_ini[i][j].x1 + displacement
                     self.database[i][j].x3 = self.database_ini[i][j].x3 + displacement
 
-                    pos =pos+ 1
+                    pos = pos + 1
         # print("finished decode")
 
     """
@@ -213,8 +214,6 @@ class DataBase:
             print("self.dataBase is None")
         self.cadena += "\n"
         return self.cadena
-
-
 
     def num_labels(self, index_value):
 
@@ -290,8 +289,7 @@ class DataBase:
             information += "\n" + self.names[i] + ":\n"
             for j in range(0, self.nlabels_array[i]):
                 information += self.database[i][j].name + ": (" + str(self.database[i][j].x0) + "," + str(
-                    self.database[i][
-                        j].x1) + "," + str(self.database[i][j].x3) + ")\n"
+                    self.database[i][j].x1) + "," + str(self.database[i][j].x3) + ")\n"
 
         return information
 

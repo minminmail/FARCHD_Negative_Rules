@@ -1,0 +1,38 @@
+@Number of rules: 12
+
+1: Alm2 IS L_2(5): positive CF: 0.9049
+2: Alm1 IS L_1(5): positive CF: 0.9918
+3: Alm1 IS L_0(5): positive CF: 1.0000
+4: Gvh IS L_0(5): positive CF: 0.9786
+5: Mcg IS L_2(5) AND Gvh IS L_1(5) AND Aac IS L_3(5): positive CF: 0.5867
+6: Mcg IS L_2(5) AND Gvh IS L_2(5) AND Aac IS L_2(5): positive CF: 0.6247
+7: Alm2 IS L_3(5): negative CF: 0.9133
+8: Alm1 IS L_4(5): negative CF: 1.0000
+9: Alm1 IS L_3(5): negative CF: 0.9944
+10: Mcg IS L_0(5): negative CF: 0.5759
+11: Mcg IS L_0(5) AND Chg IS L_0(5): negative CF: 0.5759
+12: Mcg IS L_2(5) AND Gvh IS L_2(5): negative CF: 0.4598
+
+
+@supp and CF:
+
+1: supp: 0.3630 AND CF: 0.9049
+2: supp: 0.4300 AND CF: 0.9918
+3: supp: 0.0531 AND CF: 1.0000
+4: supp: 0.0551 AND CF: 0.9786
+5: supp: 0.0399 AND CF: 0.5867
+6: supp: 0.0619 AND CF: 0.6247
+7: supp: 0.2160 AND CF: 0.9133
+8: supp: 0.0568 AND CF: 1.0000
+9: supp: 0.2397 AND CF: 0.9944
+10: supp: 0.0207 AND CF: 0.5759
+11: supp: 0.0207 AND CF: 0.5759
+12: supp: 0.0757 AND CF: 0.4598
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+1.5
+

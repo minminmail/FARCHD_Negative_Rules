@@ -1,0 +1,88 @@
+@Number of rules: 37
+
+1: Compactness IS L_1(5) AND Elongatedness IS L_3(5) AND Hollows_ratio IS L_3(5): positive CF: 0.6803
+2: Compactness IS L_1(5) AND Elongatedness IS L_4(5) AND Praxis_rectangular IS L_0(5): positive CF: 0.6384
+3: Compactness IS L_2(5) AND Elongatedness IS L_3(5): positive CF: 0.7615
+4: Compactness IS L_2(5) AND Radius_ratio IS L_0(5) AND Major_kurtosis IS L_1(5): positive CF: 0.7842
+5: Compactness IS L_2(5) AND Radius_ratio IS L_0(5) AND Major_skewness IS L_1(5): positive CF: 0.7743
+6: Compactness IS L_2(5) AND Elongatedness IS L_3(5) AND Praxis_rectangular IS L_0(5): positive CF: 0.7910
+7: Circularity IS L_2(5) AND Distance_circularity IS L_3(5) AND Elongatedness IS L_2(5): positive CF: 0.7900
+8: Circularity IS L_2(5) AND Elongatedness IS L_2(5) AND Length_rectangular IS L_3(5): positive CF: 0.9769
+9: Distance_circularity IS L_3(5) AND Elongatedness IS L_2(5) AND Length_rectangular IS L_2(5): positive CF: 0.7743
+10: Elongatedness IS L_2(5) AND Length_rectangular IS L_3(5): positive CF: 0.9655
+11: Elongatedness IS L_3(5) AND Hollows_ratio IS L_3(5): positive CF: 0.6758
+12: Major_kurtosis IS L_1(5): negative CF: 0.7179
+13: Minor_kurtosis IS L_3(5): negative CF: 0.9626
+14: Minor_skewness IS L_0(5): negative CF: 0.7805
+15: Gyration_radius IS L_3(5): negative CF: 0.9889
+16: Major_variance IS L_2(5): negative CF: 0.9870
+17: Elongatedness IS L_1(5): negative CF: 0.9864
+18: Elongatedness IS L_0(5): negative CF: 1.0000
+19: Scatter_ratio IS L_2(5): negative CF: 0.9360
+20: Radius_ratio IS L_2(5): negative CF: 0.9792
+21: Circularity IS L_3(5): negative CF: 0.9473
+22: Compactness IS L_1(5) AND Elongatedness IS L_2(5) AND Hollows_ratio IS L_1(5): negative CF: 0.8418
+23: Compactness IS L_1(5) AND Elongatedness IS L_2(5) AND Length_rectangular IS L_1(5): negative CF: 0.8736
+24: Compactness IS L_1(5) AND Praxis_rectangular IS L_1(5) AND Minor_skewness IS L_0(5): negative CF: 0.7351
+25: Compactness IS L_2(5) AND Scatter_ratio IS L_1(5) AND Major_variance IS L_1(5): negative CF: 0.5902
+26: Compactness IS L_2(5) AND Major_variance IS L_1(5) AND Minor_variance IS L_1(5): negative CF: 0.6451
+27: Compactness IS L_2(5) AND Minor_variance IS L_1(5) AND Minor_skewness IS L_0(5): negative CF: 0.7158
+28: Compactness IS L_2(5) AND Minor_skewness IS L_0(5) AND Hollows_ratio IS L_2(5): negative CF: 0.7723
+29: Distance_circularity IS L_2(5) AND Minor_variance IS L_1(5) AND Minor_skewness IS L_0(5): negative CF: 0.7397
+30: Radius_ratio IS L_0(5) AND Elongatedness IS L_2(5) AND Major_skewness IS L_1(5): negative CF: 0.6848
+31: Radius_ratio IS L_1(5) AND Praxis_aspect_ratio IS L_1(5) AND Minor_skewness IS L_0(5): negative CF: 0.7288
+32: Radius_ratio IS L_1(5) AND Elongatedness IS L_2(5) AND Minor_skewness IS L_0(5): negative CF: 0.6974
+33: Radius_ratio IS L_1(5) AND Praxis_rectangular IS L_1(5) AND Major_kurtosis IS L_1(5): negative CF: 0.5706
+34: Praxis_aspect_ratio IS L_1(5) AND Praxis_rectangular IS L_1(5) AND Major_kurtosis IS L_1(5): negative CF: 0.5999
+35: Max_length_aspect_ratio IS L_1(5) AND Gyration_radius IS L_2(5) AND Major_kurtosis IS L_1(5): negative CF: 0.5871
+36: Scatter_ratio IS L_1(5) AND Major_variance IS L_1(5) AND Hollows_ratio IS L_1(5): negative CF: 0.7851
+37: Elongatedness IS L_2(5) AND Hollows_ratio IS L_0(5): negative CF: 0.9638
+
+
+@supp and CF:
+
+1: supp: 0.0136 AND CF: 0.6803
+2: supp: 0.0131 AND CF: 0.6384
+3: supp: 0.0461 AND CF: 0.7615
+4: supp: 0.0183 AND CF: 0.7842
+5: supp: 0.0236 AND CF: 0.7743
+6: supp: 0.0310 AND CF: 0.7910
+7: supp: 0.0266 AND CF: 0.7900
+8: supp: 0.0160 AND CF: 0.9769
+9: supp: 0.0249 AND CF: 0.7743
+10: supp: 0.0212 AND CF: 0.9655
+11: supp: 0.0239 AND CF: 0.6758
+12: supp: 0.2413 AND CF: 0.7179
+13: supp: 0.0858 AND CF: 0.9626
+14: supp: 0.2155 AND CF: 0.7805
+15: supp: 0.1531 AND CF: 0.9889
+16: supp: 0.2957 AND CF: 0.9870
+17: supp: 0.2767 AND CF: 0.9864
+18: supp: 0.1219 AND CF: 1.0000
+19: supp: 0.2124 AND CF: 0.9360
+20: supp: 0.2802 AND CF: 0.9792
+21: supp: 0.1997 AND CF: 0.9473
+22: supp: 0.0532 AND CF: 0.8418
+23: supp: 0.0901 AND CF: 0.8736
+24: supp: 0.0453 AND CF: 0.7351
+25: supp: 0.0862 AND CF: 0.5902
+26: supp: 0.0967 AND CF: 0.6451
+27: supp: 0.0396 AND CF: 0.7158
+28: supp: 0.0394 AND CF: 0.7723
+29: supp: 0.0602 AND CF: 0.7397
+30: supp: 0.0400 AND CF: 0.6848
+31: supp: 0.0641 AND CF: 0.7288
+32: supp: 0.0522 AND CF: 0.6974
+33: supp: 0.0503 AND CF: 0.5706
+34: supp: 0.0444 AND CF: 0.5999
+35: supp: 0.0385 AND CF: 0.5871
+36: supp: 0.0698 AND CF: 0.7851
+37: supp: 0.0458 AND CF: 0.9638
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+2.3513513513513513
+

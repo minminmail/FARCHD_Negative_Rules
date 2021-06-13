@@ -1,0 +1,140 @@
+@Number of rules: 63
+
+1: 'mass' IS L_1(5): tested_negative CF: 0.8387
+2: 'plas' IS L_2(5): tested_negative CF: 0.7883
+3: 'plas' IS L_1(5): tested_negative CF: 0.9540
+4: 'preg' IS L_0(5) AND 'plas' IS L_3(5): tested_negative CF: 0.5731
+5: 'preg' IS L_0(5) AND 'plas' IS L_2(5): tested_negative CF: 0.8449
+6: 'preg' IS L_0(5) AND 'plas' IS L_3(5) AND 'insu' IS L_0(5): tested_negative CF: 0.5540
+7: 'preg' IS L_0(5) AND 'pres' IS L_2(5) AND 'skin' IS L_0(5): tested_negative CF: 0.8473
+8: 'preg' IS L_0(5) AND 'pres' IS L_3(5) AND 'pedi' IS L_1(5): tested_negative CF: 0.6440
+9: 'preg' IS L_0(5) AND 'pres' IS L_3(5) AND 'insu' IS L_0(5): tested_negative CF: 0.6738
+10: 'preg' IS L_0(5) AND 'pres' IS L_3(5) AND 'skin' IS L_1(5): tested_negative CF: 0.6799
+11: 'preg' IS L_0(5) AND 'skin' IS L_0(5) AND 'age' IS L_0(5): tested_negative CF: 0.8232
+12: 'preg' IS L_0(5) AND 'skin' IS L_0(5) AND 'pedi' IS L_1(5): tested_negative CF: 0.7292
+13: 'preg' IS L_0(5) AND 'insu' IS L_0(5) AND 'age' IS L_1(5): tested_negative CF: 0.6371
+14: 'preg' IS L_0(5) AND 'insu' IS L_1(5) AND 'pedi' IS L_1(5): tested_negative CF: 0.6928
+15: 'preg' IS L_1(5) AND 'plas' IS L_2(5): tested_negative CF: 0.8197
+16: 'preg' IS L_1(5) AND 'plas' IS L_3(5) AND 'pres' IS L_2(5): tested_negative CF: 0.5796
+17: 'preg' IS L_1(5) AND 'pres' IS L_2(5) AND 'pedi' IS L_0(5): tested_negative CF: 0.7518
+18: 'preg' IS L_1(5) AND 'pres' IS L_2(5) AND 'insu' IS L_1(5): tested_negative CF: 0.6861
+19: 'preg' IS L_1(5) AND 'pres' IS L_2(5) AND 'insu' IS L_0(5): tested_negative CF: 0.7366
+20: 'preg' IS L_1(5) AND 'pres' IS L_2(5) AND 'skin' IS L_0(5): tested_negative CF: 0.6892
+21: 'preg' IS L_1(5) AND 'skin' IS L_0(5) AND 'age' IS L_1(5): tested_negative CF: 0.6207
+22: 'preg' IS L_1(5) AND 'skin' IS L_1(5) AND 'pedi' IS L_0(5): tested_negative CF: 0.7955
+23: 'preg' IS L_1(5) AND 'insu' IS L_0(5) AND 'age' IS L_1(5): tested_negative CF: 0.6674
+24: 'preg' IS L_1(5) AND 'insu' IS L_0(5) AND 'age' IS L_0(5): tested_negative CF: 0.7964
+25: 'preg' IS L_1(5) AND 'pedi' IS L_0(5) AND 'age' IS L_1(5): tested_negative CF: 0.6846
+26: 'preg' IS L_1(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative CF: 0.8348
+27: 'plas' IS L_2(5) AND 'age' IS L_0(5): tested_negative CF: 0.8787
+28: 'plas' IS L_2(5) AND 'skin' IS L_0(5) AND 'mass' IS L_2(5): tested_negative CF: 0.7468
+29: 'plas' IS L_2(5) AND 'skin' IS L_2(5) AND 'mass' IS L_2(5): tested_negative CF: 0.7270
+30: 'pres' IS L_2(5) AND 'skin' IS L_0(5) AND 'pedi' IS L_1(5): tested_negative CF: 0.7238
+31: 'pres' IS L_2(5) AND 'skin' IS L_0(5) AND 'pedi' IS L_0(5): tested_negative CF: 0.7379
+32: 'pres' IS L_2(5) AND 'skin' IS L_1(5) AND 'pedi' IS L_1(5): tested_negative CF: 0.7077
+33: 'pres' IS L_2(5) AND 'insu' IS L_0(5) AND 'pedi' IS L_1(5): tested_negative CF: 0.7199
+34: 'pres' IS L_3(5) AND 'skin' IS L_1(5) AND 'pedi' IS L_0(5): tested_negative CF: 0.6922
+35: 'pres' IS L_3(5) AND 'insu' IS L_0(5) AND 'age' IS L_0(5): tested_negative CF: 0.7416
+36: 'pres' IS L_3(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative CF: 0.7962
+37: 'skin' IS L_0(5) AND 'pedi' IS L_0(5) AND 'age' IS L_1(5): tested_negative CF: 0.6127
+38: 'insu' IS L_0(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative CF: 0.8523
+39: 'insu' IS L_1(5) AND 'pedi' IS L_0(5): tested_negative CF: 0.6924
+40: 'insu' IS L_1(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative CF: 0.8461
+41: 'pres' IS L_0(5): tested_positive CF: 0.5295
+42: 'plas' IS L_4(5): tested_positive CF: 0.8261
+43: 'plas' IS L_3(5): tested_positive CF: 0.4871
+44: 'preg' IS L_0(5) AND 'pedi' IS L_1(5) AND 'age' IS L_1(5): tested_positive CF: 0.4130
+45: 'preg' IS L_2(5) AND 'skin' IS L_0(5): tested_positive CF: 0.4501
+46: 'preg' IS L_2(5) AND 'plas' IS L_3(5) AND 'skin' IS L_1(5): tested_positive CF: 0.6522
+47: 'preg' IS L_2(5) AND 'plas' IS L_3(5) AND 'pres' IS L_3(5): tested_positive CF: 0.6519
+48: 'preg' IS L_2(5) AND 'pres' IS L_3(5) AND 'age' IS L_2(5): tested_positive CF: 0.6325
+49: 'preg' IS L_2(5) AND 'insu' IS L_1(5) AND 'mass' IS L_2(5): tested_positive CF: 0.6441
+50: 'plas' IS L_3(5) AND 'age' IS L_2(5): tested_positive CF: 0.6568
+51: 'plas' IS L_3(5) AND 'pedi' IS L_2(5): tested_positive CF: 0.6509
+52: 'plas' IS L_3(5) AND 'mass' IS L_3(5): tested_positive CF: 0.6469
+53: 'plas' IS L_3(5) AND 'skin' IS L_2(5) AND 'age' IS L_1(5): tested_positive CF: 0.5748
+54: 'plas' IS L_3(5) AND 'insu' IS L_0(5) AND 'age' IS L_1(5): tested_positive CF: 0.5511
+55: 'pres' IS L_0(5) AND 'insu' IS L_0(5): tested_positive CF: 0.5300
+56: 'pres' IS L_2(5) AND 'insu' IS L_0(5) AND 'age' IS L_2(5): tested_positive CF: 0.4547
+57: 'pres' IS L_3(5) AND 'pedi' IS L_2(5): tested_positive CF: 0.6474
+58: 'pres' IS L_3(5) AND 'skin' IS L_1(5) AND 'age' IS L_2(5): tested_positive CF: 0.6769
+59: 'pres' IS L_3(5) AND 'skin' IS L_1(5) AND 'age' IS L_1(5): tested_positive CF: 0.4523
+60: 'pres' IS L_3(5) AND 'skin' IS L_2(5) AND 'pedi' IS L_1(5): tested_positive CF: 0.5088
+61: 'pres' IS L_3(5) AND 'skin' IS L_2(5) AND 'insu' IS L_1(5): tested_positive CF: 0.5500
+62: 'pres' IS L_3(5) AND 'pedi' IS L_1(5) AND 'age' IS L_1(5): tested_positive CF: 0.4593
+63: 'skin' IS L_2(5) AND 'insu' IS L_1(5) AND 'pedi' IS L_1(5): tested_positive CF: 0.5136
+
+
+@supp and CF:
+
+1: supp: 0.1616 AND CF: 0.8387
+2: supp: 0.3971 AND CF: 0.7883
+3: supp: 0.0585 AND CF: 0.9540
+4: supp: 0.0694 AND CF: 0.5731
+5: supp: 0.1766 AND CF: 0.8449
+6: supp: 0.0378 AND CF: 0.5540
+7: supp: 0.0493 AND CF: 0.8473
+8: supp: 0.0375 AND CF: 0.6440
+9: supp: 0.0515 AND CF: 0.6738
+10: supp: 0.0390 AND CF: 0.6799
+11: supp: 0.0566 AND CF: 0.8232
+12: supp: 0.0393 AND CF: 0.7292
+13: supp: 0.0404 AND CF: 0.6371
+14: supp: 0.0423 AND CF: 0.6928
+15: supp: 0.1600 AND CF: 0.8197
+16: supp: 0.0395 AND CF: 0.5796
+17: supp: 0.0763 AND CF: 0.7518
+18: supp: 0.0426 AND CF: 0.6861
+19: supp: 0.1084 AND CF: 0.7366
+20: supp: 0.0516 AND CF: 0.6892
+21: supp: 0.0344 AND CF: 0.6207
+22: supp: 0.0614 AND CF: 0.7955
+23: supp: 0.0690 AND CF: 0.6674
+24: supp: 0.0917 AND CF: 0.7964
+25: supp: 0.0480 AND CF: 0.6846
+26: supp: 0.0668 AND CF: 0.8348
+27: supp: 0.2263 AND CF: 0.8787
+28: supp: 0.0789 AND CF: 0.7468
+29: supp: 0.0420 AND CF: 0.7270
+30: supp: 0.0555 AND CF: 0.7238
+31: supp: 0.0636 AND CF: 0.7379
+32: supp: 0.0958 AND CF: 0.7077
+33: supp: 0.1170 AND CF: 0.7199
+34: supp: 0.0430 AND CF: 0.6922
+35: supp: 0.0571 AND CF: 0.7416
+36: supp: 0.0427 AND CF: 0.7962
+37: supp: 0.0383 AND CF: 0.6127
+38: supp: 0.1232 AND CF: 0.8523
+39: supp: 0.0644 AND CF: 0.6924
+40: supp: 0.0397 AND CF: 0.8461
+41: supp: 0.0231 AND CF: 0.5295
+42: supp: 0.0709 AND CF: 0.8261
+43: supp: 0.1665 AND CF: 0.4871
+44: supp: 0.0199 AND CF: 0.4130
+45: supp: 0.0334 AND CF: 0.4501
+46: supp: 0.0181 AND CF: 0.6522
+47: supp: 0.0218 AND CF: 0.6519
+48: supp: 0.0203 AND CF: 0.6325
+49: supp: 0.0191 AND CF: 0.6441
+50: supp: 0.0407 AND CF: 0.6568
+51: supp: 0.0183 AND CF: 0.6509
+52: supp: 0.0348 AND CF: 0.6469
+53: supp: 0.0177 AND CF: 0.5748
+54: supp: 0.0429 AND CF: 0.5511
+55: supp: 0.0231 AND CF: 0.5300
+56: supp: 0.0188 AND CF: 0.4547
+57: supp: 0.0224 AND CF: 0.6474
+58: supp: 0.0212 AND CF: 0.6769
+59: supp: 0.0257 AND CF: 0.4523
+60: supp: 0.0193 AND CF: 0.5088
+61: supp: 0.0183 AND CF: 0.5500
+62: supp: 0.0293 AND CF: 0.4593
+63: supp: 0.0203 AND CF: 0.5136
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+2.634920634920635
+

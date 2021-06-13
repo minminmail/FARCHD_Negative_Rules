@@ -1,0 +1,86 @@
+@Number of rules: 36
+
+1: Mcg IS L_1(5) AND Gvh IS L_1(5) AND Vac IS L_2(5): positive CF: 0.4018
+2: Mcg IS L_1(5) AND Gvh IS L_1(5) AND Mit IS L_1(5): positive CF: 0.4040
+3: Mcg IS L_1(5) AND Alm IS L_2(5) AND Vac IS L_3(5): positive CF: 0.4268
+4: Mcg IS L_1(5) AND Alm IS L_2(5) AND Vac IS L_2(5): positive CF: 0.4195
+5: Mcg IS L_1(5) AND Alm IS L_2(5) AND Mit IS L_1(5): positive CF: 0.4549
+6: Mcg IS L_2(5) AND Alm IS L_2(5) AND Mit IS L_0(5): positive CF: 0.4223
+7: Mcg IS L_2(5) AND Pox IS L_0(5) AND Nuc IS L_2(5): positive CF: 0.5638
+8: Gvh IS L_1(5) AND Alm IS L_2(5) AND Vac IS L_3(5): positive CF: 0.4089
+9: Gvh IS L_1(5) AND Alm IS L_2(5) AND Vac IS L_2(5): positive CF: 0.4016
+10: Gvh IS L_1(5) AND Alm IS L_2(5) AND Mit IS L_1(5): positive CF: 0.4247
+11: Gvh IS L_1(5) AND Alm IS L_2(5) AND Mit IS L_0(5): positive CF: 0.4646
+12: Alm IS L_2(5) AND Mit IS L_0(5) AND Pox IS L_0(5): positive CF: 0.4362
+13: Erl IS L_0(5) AND Pox IS L_0(5) AND Nuc IS L_2(5): positive CF: 0.5587
+14: Pox IS L_0(5) AND Nuc IS L_2(5): positive CF: 0.5575
+15: Nuc IS L_0(5): negative CF: 0.8575
+16: Alm IS L_0(5): negative CF: 0.9733
+17: Gvh IS L_3(5): negative CF: 0.8831
+18: Mcg IS L_3(5): negative CF: 0.9046
+19: Mcg IS L_1(5) AND Nuc IS L_1(5): negative CF: 0.6963
+20: Mcg IS L_1(5) AND Gvh IS L_2(5) AND Nuc IS L_1(5): negative CF: 0.7413
+21: Mcg IS L_1(5) AND Mit IS L_0(5) AND Nuc IS L_1(5): negative CF: 0.7000
+22: Mcg IS L_1(5) AND Vac IS L_2(5) AND Nuc IS L_1(5): negative CF: 0.6792
+23: Mcg IS L_2(5) AND Vac IS L_2(5): negative CF: 0.6989
+24: Mcg IS L_2(5) AND Gvh IS L_2(5) AND Nuc IS L_1(5): negative CF: 0.7715
+25: Mcg IS L_2(5) AND Gvh IS L_2(5) AND Erl IS L_0(5): negative CF: 0.7280
+26: Mcg IS L_2(5) AND Gvh IS L_2(5) AND Mit IS L_1(5): negative CF: 0.6879
+27: Mcg IS L_2(5) AND Gvh IS L_2(5) AND Alm IS L_1(5): negative CF: 0.7611
+28: Mcg IS L_2(5) AND Alm IS L_2(5) AND Vac IS L_2(5): negative CF: 0.6599
+29: Mcg IS L_2(5) AND Mit IS L_1(5) AND Nuc IS L_1(5): negative CF: 0.7263
+30: Mcg IS L_2(5) AND Mit IS L_1(5) AND Vac IS L_2(5): negative CF: 0.6626
+31: Gvh IS L_1(5) AND Mit IS L_1(5) AND Vac IS L_2(5): negative CF: 0.6156
+32: Gvh IS L_2(5) AND Mit IS L_0(5) AND Nuc IS L_1(5): negative CF: 0.7327
+33: Alm IS L_1(5) AND Nuc IS L_1(5): negative CF: 0.7992
+34: Alm IS L_1(5) AND Mit IS L_0(5): negative CF: 0.7112
+35: Alm IS L_1(5) AND Erl IS L_0(5) AND Nuc IS L_1(5): negative CF: 0.7983
+36: Alm IS L_1(5) AND Pox IS L_0(5) AND Nuc IS L_1(5): negative CF: 0.7970
+
+
+@supp and CF:
+
+1: supp: 0.0193 AND CF: 0.4018
+2: supp: 0.0453 AND CF: 0.4040
+3: supp: 0.0522 AND CF: 0.4268
+4: supp: 0.0212 AND CF: 0.4195
+5: supp: 0.0506 AND CF: 0.4549
+6: supp: 0.0185 AND CF: 0.4223
+7: supp: 0.0353 AND CF: 0.5638
+8: supp: 0.0534 AND CF: 0.4089
+9: supp: 0.0230 AND CF: 0.4016
+10: supp: 0.0521 AND CF: 0.4247
+11: supp: 0.0174 AND CF: 0.4646
+12: supp: 0.0375 AND CF: 0.4362
+13: supp: 0.0746 AND CF: 0.5587
+14: supp: 0.0751 AND CF: 0.5575
+15: supp: 0.0668 AND CF: 0.8575
+16: supp: 0.0456 AND CF: 0.9733
+17: supp: 0.0880 AND CF: 0.8831
+18: supp: 0.1097 AND CF: 0.9046
+19: supp: 0.1816 AND CF: 0.6963
+20: supp: 0.0876 AND CF: 0.7413
+21: supp: 0.0373 AND CF: 0.7000
+22: supp: 0.0473 AND CF: 0.6792
+23: supp: 0.0873 AND CF: 0.6989
+24: supp: 0.1681 AND CF: 0.7715
+25: supp: 0.2030 AND CF: 0.7280
+26: supp: 0.1134 AND CF: 0.6879
+27: supp: 0.0976 AND CF: 0.7611
+28: supp: 0.0461 AND CF: 0.6599
+29: supp: 0.1656 AND CF: 0.7263
+30: supp: 0.0497 AND CF: 0.6626
+31: supp: 0.0384 AND CF: 0.6156
+32: supp: 0.0524 AND CF: 0.7327
+33: supp: 0.2815 AND CF: 0.7992
+34: supp: 0.0588 AND CF: 0.7112
+35: supp: 0.2782 AND CF: 0.7983
+36: supp: 0.2776 AND CF: 0.7970
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+2.638888888888889
+

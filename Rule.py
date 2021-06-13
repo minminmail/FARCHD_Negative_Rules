@@ -38,6 +38,10 @@ class Rule:
 
     # In this fuzzy zone, the confident is supp(xUY)/supp(x)
     zone_confident = None
+    supp_xy = None
+    supp_x = None
+    rule_index = None
+    rule_information =""
 
     def __init__(self, data_base_pass):
 
@@ -54,6 +58,7 @@ class Rule:
 
         # print("__init__ of Rule")
         self.data_row_here = DataRow()
+        self.rule_index = 0
 
     """
     * Clone
@@ -71,6 +76,9 @@ class Rule:
             rule.support_value = self.support_value
             rule.nAnts = self.nants
             rule.wracc = self.wracc
+            rule.rule_index = self.rule_index
+            rule.supp_x = self.supp_x
+            rule.supp_xy = self.supp_xy
 
         return rule
 
@@ -93,13 +101,12 @@ class Rule:
                 # for item in example:
                 # print("item in example is  :" + str(item))
 
-                #print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
+                # print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
                 degree *= self.data_base.matching(i, self.antecedent[i], example[i])
                 # print("In degree_product,the i is  "+str(i))
-            else:
-                break
+
         return_value = degree * Decimal(self.confident_value)
-        #print("return_value:" + str(return_value))
+        # print("return_value:" + str(return_value))
         return return_value
 
     """
@@ -143,7 +150,7 @@ class Rule:
     """
 
     def get_confidence(self):
-        return self.confident_value
+        return round(self.confident_value,4)
 
     """
        * It returns the Wracc of the rule
@@ -151,7 +158,7 @@ class Rule:
     """
 
     def get_wracc(self):
-        return self.wracc
+        return round(self.wracc,4)
 
     """
 
@@ -160,7 +167,7 @@ class Rule:
     """
 
     def get_support(self):
-        return self.support_value
+        return round(self.support_value,4)
 
     """ 
     /**
@@ -199,7 +206,8 @@ class Rule:
             self.wracc = Decimal(-1.0)
         else:
             self.wracc = (n_ac / n_c) * ((n_ac / n_a) - Decimal(train_mydataset_pass.frecuent_class(self.class_value)))
-            print("self.wracc" + str(self.wracc))
+        self.wracc = round(self.wracc, 4)
+        print("self.wracc" + str(self.wracc))
 
     """
 
@@ -235,6 +243,7 @@ class Rule:
     # * Operator T-min
     # * @param example double[] The input example
     # * @return double the computation the the minimum T-norm
+    """
 
     def minimumCompatibility(self, example):
         minimum = None
@@ -247,15 +256,14 @@ class Rule:
             minimum = min(membershipDegree, minimum)
 
         return minimum
+           """
 
     # * Operator T-product
     # * @param example double[] The input example
     # * @return double the computation the the product T-norm
     # arrive here
+    """
     def productCompatibility(self, example):
-
-
-
 
         product = 1.0
         antecedent_number = len(self.antecedent)
@@ -268,11 +276,13 @@ class Rule:
             # print("membershipDegree in productCompatibility  = " +str(membershipDegree))
             product = product * membershipDegree
         # print("product: "+ str(product))
+        product = round(product, 4)
         return product
+           
 
     # * Classic Certainty Factor weight
     # * @param train myDataset training dataset
-
+ 
     def consequent_CF(self, train):
         train_Class_Number = train.getnClasses()
         # to have enough class_sum space
@@ -293,6 +303,9 @@ class Rule:
 
     # * Penalized Certainty Factor weight II (by Ishibuchi)
     # * @param train myDataset training dataset
+   
+
+    
 
     def consequent_PCF2(self, train):
         classes_sum = float[train.getnClasses()]
@@ -373,7 +386,7 @@ class Rule:
             return True
         else:
             return False
-
+"""
     def calculate_confident_support(self, data_row_array):
         # how many instances in the zone
         supp_x = 0
@@ -410,6 +423,31 @@ class Rule:
             # print("self.confident_value in the rule:" + str(self.confident_value))
         if supp_x != 0:
             self.zone_confident = round((supp_xy / supp_x), 4)
+        self.supp_x = supp_x
+        self.supp_xy = supp_xy
+
+    def print_rule_information(self,n_variables,train_myDataSet):
+
+        self.rule_information =""
+        names =train_myDataSet.get_names()
+        classes = train_myDataSet.get_classes()
+
+        for j in range(0, n_variables):
+            if self.antecedent[j] < 0:
+                pass
+            else:
+                if j < n_variables and self.antecedent[j] >= 0:
+                    self.rule_information += names[j] + " IS " + self.data_base.print_here(j, self.antecedent[j]) + " AND "
+
+
+        self.rule_information += ": " + classes[self.class_value]
+        self.rule_information += " CF: " + str(self.get_confidence()) + "\n"
+
+        self.rule_information = self.rule_information + " /n "+ "how many instance number covered by the rule :" + str(self.supp_xy)+ "  "
+        self.rule_information = self.rule_information + " /n "+  "how many instance number only antecedent covered by the rule :" + str(self.supp_x)+ "  "
+
+        return self.rule_information
+
 
     def get_antecident_number(self, antecedent_array):
         antecedent_number = 0

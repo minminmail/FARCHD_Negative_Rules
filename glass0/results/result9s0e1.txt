@@ -1,0 +1,38 @@
+@Number of rules: 12
+
+1: RI IS L_2(5) AND Mg IS L_4(5) AND Fe IS L_0(5): positive CF: 0.7466
+2: Mg IS L_3(5) AND Al IS L_1(5): positive CF: 0.5384
+3: Mg IS L_3(5) AND Al IS L_1(5) AND Ba IS L_0(5): positive CF: 0.5440
+4: Ba IS L_1(5): negative CF: 0.9911
+5: Ca IS L_3(5): negative CF: 1.0000
+6: Al IS L_3(5): negative CF: 1.0000
+7: Al IS L_2(5): negative CF: 0.8268
+8: Mg IS L_2(5): negative CF: 0.8918
+9: Mg IS L_0(5): negative CF: 1.0000
+10: RI IS L_1(5) AND Ca IS L_1(5) AND Fe IS L_1(5): negative CF: 0.6353
+11: Na IS L_1(5) AND Al IS L_1(5) AND Fe IS L_1(5): negative CF: 0.5462
+12: Si IS L_3(5) AND Ca IS L_2(5): negative CF: 0.7942
+
+
+@supp and CF:
+
+1: supp: 0.0259 AND CF: 0.7466
+2: supp: 0.1818 AND CF: 0.5384
+3: supp: 0.1813 AND CF: 0.5440
+4: supp: 0.0667 AND CF: 0.9911
+5: supp: 0.0348 AND CF: 1.0000
+6: supp: 0.0640 AND CF: 1.0000
+7: supp: 0.2903 AND CF: 0.8268
+8: supp: 0.0681 AND CF: 0.8918
+9: supp: 0.2027 AND CF: 1.0000
+10: supp: 0.0664 AND CF: 0.6353
+11: supp: 0.0397 AND CF: 0.5462
+12: supp: 0.0340 AND CF: 0.7942
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+1.8333333333333333
+

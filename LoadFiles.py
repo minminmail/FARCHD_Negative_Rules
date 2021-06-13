@@ -79,6 +79,7 @@ class LoadFiles:
                 self.read_all_parameters(line[line_number])  # We read all the possible parameters
         # print("__init__ of Read Files begin...")
 
+        """
         self.train_mydataset = MyDataSet()
         self.val_mydataset = MyDataSet()
         self.test_mydataset = MyDataSet()
@@ -113,6 +114,7 @@ class LoadFiles:
         # print("********* Summary for readAllParameters :" + " *********")
         # for key, value in self.__parameters:
         # print("********* parameters are : (" + key + ", " + value + " ) *********")
+      """
 
     # """
     #     * It reads the name of the algorithm from the configuration file
@@ -348,36 +350,4 @@ class LoadFiles:
     def get_output_file(self, pos):
         return self.output_files[pos]
 
-    def get_X(self):
 
-        self.X = self.train_mydataset.get_X()
-        # change into ndarray type
-        self.X = np.array(self.X)
-        print(self.X)
-
-        return self.X
-
-    def get_y(self):
-
-        self.y = self.train_mydataset.get_y()
-        self.y = np.array(self.y)
-        print(self.y)
-
-        return self.y
-
-    def get_test_x(self):
-
-        self.X = self.test_mydataset.get_X()
-        # change into ndarray type
-        self.X = np.array(self.X)
-        print(self.X)
-
-        return self.X
-
-    def get_test_y(self):
-
-        self.y = self.test_mydataset.get_y()
-        self.y = np.array(self.y)
-        print(self.y)
-
-        return self.y

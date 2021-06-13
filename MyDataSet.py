@@ -692,7 +692,7 @@ class MyDataSet:
                 rangos[i][0] = attHere.getMinAttribute()
                 rangos[i][1] = attHere.getMaxAttribute()
                 # print(" attHere.getNumNominalValues() <= 0, rangos[" + str(i) + "][0]==" + str(rangos[i][0]) + ",rangos[i][1]== " + str(rangos[i][1]))
-
+        # save the output rango in the last range array
         rangos[self.get_nvars() - 1][0] = self.attributes.getOutputAttribute( 0).getMinAttribute()
         rangos[self.get_nvars() - 1][1] = self.attributes.getOutputAttribute( 0).getMaxAttribute()
         return rangos

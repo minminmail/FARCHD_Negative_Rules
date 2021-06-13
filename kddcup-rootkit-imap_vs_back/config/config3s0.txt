@@ -1,0 +1,15 @@
+algorithm = FARCHD
+inputData = "../datasets/kddcup-rootkit-imap_vs_back2/kddcup-rootkit-imap_vs_back2-10-4tra.dat" "../datasets/kddcup-rootkit-imap_vs_back2/kddcup-rootkit-imap_vs_back2-10-4tra.dat" "../datasets/kddcup-rootkit-imap_vs_back2/kddcup-rootkit-imap_vs_back2-10-4tst.dat" 
+outputData = "../results/Fuzzy-FARCHD-C.kddcup-rootkit-imap_vs_back2/result3s0.tra" "../results/Fuzzy-FARCHD-C.kddcup-rootkit-imap_vs_back2/result3s0.tst" "../results/Fuzzy-FARCHD-C.kddcup-rootkit-imap_vs_back2/result3s0e0.txt"  "../results/Fuzzy-FARCHD-C.kddcup-rootkit-imap_vs_back2/result3s0e1.txt"  
+
+seed = 1286082570
+Number of Linguistic Values = 5
+Minimum Support = 0.05
+Maximum Confidence = 0.8
+Depth of the trees (Depthmax) = 3
+Parameter K of the prescreening = 2
+Maximum number of evaluacions = 15000
+Population size = 50
+Parameter alpha = 0.15
+Bits per gen = 30
+Type of inference = 1

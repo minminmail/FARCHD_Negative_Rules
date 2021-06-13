@@ -1,0 +1,6 @@
+1045 14 10
+ 
+
+ with normal rules ,the train's accuracy_score is :0.998001998001998
+
+with normal rules ,the test's accuracy_score is :0.9955156950672646

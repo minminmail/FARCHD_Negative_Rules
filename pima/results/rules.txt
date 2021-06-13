@@ -74,4 +74,9 @@ count_granularity_result score is: 56
 
 count_normal_result score is: 21 
 
- predict_y with granularity rules ,the test's score is :0.5974025974025974
+ predict_y with granularity rules ,the test's score is :0.5974025974025974647 63 63
+ 
+
+ with normal rules ,the train's accuracy_score is :0.7283236994219653
+
+with normal rules ,the test's accuracy_score is :0.7631578947368421
