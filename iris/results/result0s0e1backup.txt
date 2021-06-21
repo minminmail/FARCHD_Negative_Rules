@@ -1,0 +1,44 @@
+@Number of rules: 6
+
+1: sepalWidth IS L_1(5) AND petalLength IS L_3(5): Iris-virginica rule's support x: 62
+ rule's support xy: 2
+rule's supp: 0.4593 AND rule's CF: 0.04442: petalLength IS L_2(5): Iris-versicolor rule's support x: 97
+ rule's support xy: 8
+rule's supp: 0.7185 AND rule's CF: 0.17783: petalWidth IS L_2(5): Iris-versicolor rule's support x: 101
+ rule's support xy: 12
+rule's supp: 0.7481 AND rule's CF: 0.26674: petalWidth IS L_3(5): Iris-virginica rule's support x: 103
+ rule's support xy: 18
+rule's supp: 0.763 AND rule's CF: 0.45: petalWidth IS L_4(5): Iris-virginica rule's support x: 118
+ rule's support xy: 28
+rule's supp: 0.8741 AND rule's CF: 0.62226: petalLength IS L_4(5): Iris-virginica rule's support x: 130
+ rule's support xy: 40
+rule's supp: 0.963 AND rule's CF: 0.8889
+
+@supp and CF:
+
+1: supp: 0.4593 AND CF: 0.0444
+2: supp: 0.7185 AND CF: 0.1778
+3: supp: 0.7481 AND CF: 0.2667
+4: supp: 0.763 AND CF: 0.4
+5: supp: 0.8741 AND CF: 0.6222
+6: supp: 0.963 AND CF: 0.8889
+@Number of negative rules: 6
+
+1: sepalWidth IS L_1(5) AND petalLength IS L_3(5): Iris-versicolor CF: 0.3556
+2: petalLength IS L_2(5): Iris-virginica CF: 0.9778
+3: petalWidth IS L_2(5): Iris-virginica CF: 0.9778
+4: petalWidth IS L_3(5): Iris-versicolor CF: 0.8889
+5: petalWidth IS L_4(5): Iris-versicolor CF: 1.0
+6: petalLength IS L_4(5): Iris-versicolor CF: 1.0
+
+
+@supp and CF:
+
+1: supp: 0.4593 AND CF: 0.3556
+2: supp: 0.7185 AND CF: 0.9778
+3: supp: 0.7481 AND CF: 0.9778
+4: supp: 0.763 AND CF: 0.8889
+5: supp: 0.8741 AND CF: 1.0
+6: supp: 0.963 AND CF: 1.0
+2.3333333333333335
+

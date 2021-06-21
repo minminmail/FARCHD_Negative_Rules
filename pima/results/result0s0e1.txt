@@ -1,0 +1,176 @@
+@Number of rules: 54
+
+1: 'pres' IS L_0(5) AND 'insu' IS L_0(5): tested_positive rule's support x: 34
+ rule's support xy: 15
+rule's supp: 0.0492 AND rule's CF: 0.06222: 'preg' IS L_2(5) AND 'skin' IS L_0(5): tested_positive rule's support x: 52
+ rule's support xy: 26
+rule's supp: 0.0753 AND rule's CF: 0.10793: 'preg' IS L_1(5) AND 'plas' IS L_3(5) AND 'pres' IS L_2(5): tested_negative rule's support x: 45
+ rule's support xy: 23
+rule's supp: 0.0651 AND rule's CF: 0.05114: 'pres' IS L_2(5) AND 'skin' IS L_0(5) AND 'age' IS L_1(5): tested_negative rule's support x: 50
+ rule's support xy: 26
+rule's supp: 0.0724 AND rule's CF: 0.05785: 'preg' IS L_2(5) AND 'pres' IS L_2(5) AND 'insu' IS L_0(5): tested_negative rule's support x: 42
+ rule's support xy: 22
+rule's supp: 0.0608 AND rule's CF: 0.04896: 'skin' IS L_0(5) AND 'insu' IS L_0(5) AND 'age' IS L_1(5): tested_negative rule's support x: 86
+ rule's support xy: 46
+rule's supp: 0.1245 AND rule's CF: 0.10227: 'plas' IS L_3(5): tested_positive rule's support x: 224
+ rule's support xy: 121
+rule's supp: 0.3242 AND rule's CF: 0.50218: 'preg' IS L_0(5) AND 'plas' IS L_3(5) AND 'insu' IS L_0(5): tested_negative rule's support x: 36
+ rule's support xy: 20
+rule's supp: 0.0521 AND rule's CF: 0.04449: 'preg' IS L_1(5) AND 'plas' IS L_3(5) AND 'skin' IS L_1(5): tested_positive rule's support x: 39
+ rule's support xy: 22
+rule's supp: 0.0564 AND rule's CF: 0.091310: 'skin' IS L_2(5) AND 'pedi' IS L_1(5) AND 'age' IS L_1(5): tested_positive rule's support x: 19
+ rule's support xy: 11
+rule's supp: 0.0275 AND rule's CF: 0.045611: 'pres' IS L_2(5) AND 'skin' IS L_0(5) AND 'mass' IS L_2(5): tested_negative rule's support x: 85
+ rule's support xy: 50
+rule's supp: 0.123 AND rule's CF: 0.111112: 'preg' IS L_0(5) AND 'pres' IS L_2(5) AND 'age' IS L_1(5): tested_negative rule's support x: 27
+ rule's support xy: 16
+rule's supp: 0.0391 AND rule's CF: 0.035613: 'preg' IS L_0(5) AND 'insu' IS L_0(5) AND 'age' IS L_1(5): tested_negative rule's support x: 30
+ rule's support xy: 18
+rule's supp: 0.0434 AND rule's CF: 0.0414: 'plas' IS L_3(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative rule's support x: 33
+ rule's support xy: 20
+rule's supp: 0.0478 AND rule's CF: 0.044415: 'insu' IS L_1(5) AND 'pedi' IS L_0(5): tested_negative rule's support x: 61
+ rule's support xy: 37
+rule's supp: 0.0883 AND rule's CF: 0.082216: 'preg' IS L_1(5) AND 'pedi' IS L_0(5) AND 'age' IS L_1(5): tested_negative rule's support x: 55
+ rule's support xy: 34
+rule's supp: 0.0796 AND rule's CF: 0.075617: 'preg' IS L_1(5) AND 'pres' IS L_2(5) AND 'insu' IS L_1(5): tested_negative rule's support x: 40
+ rule's support xy: 25
+rule's supp: 0.0579 AND rule's CF: 0.055618: 'preg' IS L_1(5) AND 'pres' IS L_2(5) AND 'skin' IS L_0(5): tested_negative rule's support x: 49
+ rule's support xy: 31
+rule's supp: 0.0709 AND rule's CF: 0.068919: 'pres' IS L_3(5) AND 'pedi' IS L_1(5) AND 'age' IS L_1(5): tested_positive rule's support x: 30
+ rule's support xy: 19
+rule's supp: 0.0434 AND rule's CF: 0.078820: 'preg' IS L_0(5) AND 'insu' IS L_1(5): tested_negative rule's support x: 85
+ rule's support xy: 54
+rule's supp: 0.123 AND rule's CF: 0.1221: 'plas' IS L_3(5) AND 'age' IS L_1(5): tested_positive rule's support x: 79
+ rule's support xy: 51
+rule's supp: 0.1143 AND rule's CF: 0.211622: 'preg' IS L_1(5) AND 'skin' IS L_0(5) AND 'age' IS L_1(5): tested_negative rule's support x: 40
+ rule's support xy: 26
+rule's supp: 0.0579 AND rule's CF: 0.057823: 'pres' IS L_3(5) AND 'skin' IS L_1(5) AND 'pedi' IS L_0(5): tested_negative rule's support x: 44
+ rule's support xy: 29
+rule's supp: 0.0637 AND rule's CF: 0.064424: 'plas' IS L_3(5) AND 'age' IS L_2(5): tested_positive rule's support x: 48
+ rule's support xy: 32
+rule's supp: 0.0695 AND rule's CF: 0.132825: 'pres' IS L_3(5) AND 'pedi' IS L_2(5): tested_positive rule's support x: 21
+ rule's support xy: 14
+rule's supp: 0.0304 AND rule's CF: 0.058126: 'insu' IS L_0(5) AND 'mass' IS L_3(5) AND 'age' IS L_1(5): tested_positive rule's support x: 15
+ rule's support xy: 10
+rule's supp: 0.0217 AND rule's CF: 0.041527: 'pres' IS L_2(5) AND 'skin' IS L_0(5) AND 'insu' IS L_0(5): tested_negative rule's support x: 115
+ rule's support xy: 77
+rule's supp: 0.1664 AND rule's CF: 0.171128: 'pres' IS L_2(5) AND 'skin' IS L_1(5) AND 'pedi' IS L_1(5): tested_negative rule's support x: 126
+ rule's support xy: 87
+rule's supp: 0.1823 AND rule's CF: 0.193329: 'pres' IS L_3(5) AND 'skin' IS L_1(5) AND 'age' IS L_2(5): tested_positive rule's support x: 23
+ rule's support xy: 16
+rule's supp: 0.0333 AND rule's CF: 0.066430: 'preg' IS L_1(5) AND 'pres' IS L_2(5) AND 'pedi' IS L_0(5): tested_negative rule's support x: 83
+ rule's support xy: 59
+rule's supp: 0.1201 AND rule's CF: 0.131131: 'preg' IS L_0(5) AND 'pres' IS L_3(5) AND 'skin' IS L_1(5): tested_negative rule's support x: 35
+ rule's support xy: 25
+rule's supp: 0.0507 AND rule's CF: 0.055632: 'preg' IS L_2(5) AND 'insu' IS L_1(5) AND 'mass' IS L_2(5): tested_positive rule's support x: 25
+ rule's support xy: 18
+rule's supp: 0.0362 AND rule's CF: 0.074733: 'preg' IS L_1(5) AND 'skin' IS L_1(5) AND 'pedi' IS L_0(5): tested_negative rule's support x: 63
+ rule's support xy: 47
+rule's supp: 0.0912 AND rule's CF: 0.104434: 'preg' IS L_0(5) AND 'skin' IS L_0(5) AND 'pedi' IS L_0(5): tested_negative rule's support x: 40
+ rule's support xy: 30
+rule's supp: 0.0579 AND rule's CF: 0.066735: 'pres' IS L_2(5) AND 'insu' IS L_0(5) AND 'pedi' IS L_1(5): tested_negative rule's support x: 118
+ rule's support xy: 89
+rule's supp: 0.1708 AND rule's CF: 0.197836: 'skin' IS L_1(5) AND 'mass' IS L_2(5) AND 'age' IS L_2(5): tested_positive rule's support x: 33
+ rule's support xy: 25
+rule's supp: 0.0478 AND rule's CF: 0.103737: 'pres' IS L_3(5) AND 'insu' IS L_0(5) AND 'age' IS L_0(5): tested_negative rule's support x: 38
+ rule's support xy: 29
+rule's supp: 0.055 AND rule's CF: 0.064438: 'preg' IS L_1(5) AND 'insu' IS L_0(5) AND 'age' IS L_0(5): tested_negative rule's support x: 69
+ rule's support xy: 53
+rule's supp: 0.0999 AND rule's CF: 0.117839: 'plas' IS L_2(5) AND 'skin' IS L_0(5): tested_negative rule's support x: 126
+ rule's support xy: 97
+rule's supp: 0.1823 AND rule's CF: 0.215640: 'insu' IS L_1(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative rule's support x: 29
+ rule's support xy: 23
+rule's supp: 0.042 AND rule's CF: 0.051141: 'skin' IS L_0(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative rule's support x: 46
+ rule's support xy: 37
+rule's supp: 0.0666 AND rule's CF: 0.082242: 'plas' IS L_2(5): tested_negative rule's support x: 391
+ rule's support xy: 315
+rule's supp: 0.5658 AND rule's CF: 0.743: 'preg' IS L_0(5) AND 'skin' IS L_0(5) AND 'pedi' IS L_1(5): tested_negative rule's support x: 31
+ rule's support xy: 25
+rule's supp: 0.0449 AND rule's CF: 0.055644: 'preg' IS L_1(5) AND 'pedi' IS L_0(5) AND 'age' IS L_0(5): tested_negative rule's support x: 57
+ rule's support xy: 46
+rule's supp: 0.0825 AND rule's CF: 0.102245: 'plas' IS L_3(5) AND 'mass' IS L_3(5): tested_positive rule's support x: 28
+ rule's support xy: 23
+rule's supp: 0.0405 AND rule's CF: 0.095446: 'preg' IS L_1(5) AND 'plas' IS L_2(5): tested_negative rule's support x: 131
+ rule's support xy: 108
+rule's supp: 0.1896 AND rule's CF: 0.2447: 'plas' IS L_4(5): tested_positive rule's support x: 52
+ rule's support xy: 43
+rule's supp: 0.0753 AND rule's CF: 0.178448: 'plas' IS L_2(5) AND 'pres' IS L_3(5) AND 'skin' IS L_0(5): tested_negative rule's support x: 30
+ rule's support xy: 25
+rule's supp: 0.0434 AND rule's CF: 0.055649: 'plas' IS L_2(5) AND 'skin' IS L_2(5) AND 'mass' IS L_2(5): tested_negative rule's support x: 37
+ rule's support xy: 31
+rule's supp: 0.0535 AND rule's CF: 0.068950: 'preg' IS L_0(5) AND 'skin' IS L_1(5) AND 'pedi' IS L_0(5): tested_negative rule's support x: 70
+ rule's support xy: 62
+rule's supp: 0.1013 AND rule's CF: 0.137851: 'preg' IS L_0(5) AND 'skin' IS L_1(5) AND 'insu' IS L_0(5): tested_negative rule's support x: 110
+ rule's support xy: 98
+rule's supp: 0.1592 AND rule's CF: 0.217852: 'skin' IS L_2(5) AND 'insu' IS L_1(5) AND 'age' IS L_1(5): tested_positive rule's support x: 19
+ rule's support xy: 17
+rule's supp: 0.0275 AND rule's CF: 0.070553: 'plas' IS L_2(5) AND 'age' IS L_0(5): tested_negative rule's support x: 216
+ rule's support xy: 198
+rule's supp: 0.3126 AND rule's CF: 0.4454: 'plas' IS L_1(5): tested_negative rule's support x: 20
+ rule's support xy: 20
+rule's supp: 0.0289 AND rule's CF: 0.0444
+
+@supp and CF:
+
+1: supp: 0.0492 AND CF: 0.0622
+2: supp: 0.0753 AND CF: 0.1079
+3: supp: 0.0651 AND CF: 0.0511
+4: supp: 0.0724 AND CF: 0.0578
+5: supp: 0.0608 AND CF: 0.0489
+6: supp: 0.1245 AND CF: 0.1022
+7: supp: 0.3242 AND CF: 0.5021
+8: supp: 0.0521 AND CF: 0.0444
+9: supp: 0.0564 AND CF: 0.0913
+10: supp: 0.0275 AND CF: 0.0456
+11: supp: 0.123 AND CF: 0.1111
+12: supp: 0.0391 AND CF: 0.0356
+13: supp: 0.0434 AND CF: 0.04
+14: supp: 0.0478 AND CF: 0.0444
+15: supp: 0.0883 AND CF: 0.0822
+16: supp: 0.0796 AND CF: 0.0756
+17: supp: 0.0579 AND CF: 0.0556
+18: supp: 0.0709 AND CF: 0.0689
+19: supp: 0.0434 AND CF: 0.0788
+20: supp: 0.123 AND CF: 0.12
+21: supp: 0.1143 AND CF: 0.2116
+22: supp: 0.0579 AND CF: 0.0578
+23: supp: 0.0637 AND CF: 0.0644
+24: supp: 0.0695 AND CF: 0.1328
+25: supp: 0.0304 AND CF: 0.0581
+26: supp: 0.0217 AND CF: 0.0415
+27: supp: 0.1664 AND CF: 0.1711
+28: supp: 0.1823 AND CF: 0.1933
+29: supp: 0.0333 AND CF: 0.0664
+30: supp: 0.1201 AND CF: 0.1311
+31: supp: 0.0507 AND CF: 0.0556
+32: supp: 0.0362 AND CF: 0.0747
+33: supp: 0.0912 AND CF: 0.1044
+34: supp: 0.0579 AND CF: 0.0667
+35: supp: 0.1708 AND CF: 0.1978
+36: supp: 0.0478 AND CF: 0.1037
+37: supp: 0.055 AND CF: 0.0644
+38: supp: 0.0999 AND CF: 0.1178
+39: supp: 0.1823 AND CF: 0.2156
+40: supp: 0.042 AND CF: 0.0511
+41: supp: 0.0666 AND CF: 0.0822
+42: supp: 0.5658 AND CF: 0.7
+43: supp: 0.0449 AND CF: 0.0556
+44: supp: 0.0825 AND CF: 0.1022
+45: supp: 0.0405 AND CF: 0.0954
+46: supp: 0.1896 AND CF: 0.24
+47: supp: 0.0753 AND CF: 0.1784
+48: supp: 0.0434 AND CF: 0.0556
+49: supp: 0.0535 AND CF: 0.0689
+50: supp: 0.1013 AND CF: 0.1378
+51: supp: 0.1592 AND CF: 0.2178
+52: supp: 0.0275 AND CF: 0.0705
+53: supp: 0.3126 AND CF: 0.44
+54: supp: 0.0289 AND CF: 0.0444
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+2.6481481481481484
+

@@ -429,4 +429,179 @@ with normal rules ,the test's accuracy_score is :0.933333333333333336 8 8
 
  with normal rules ,the train's accuracy_score is :0.3333333333333333
 
-with normal rules ,the test's accuracy_score is :0.3333333333333333
+with normal rules ,the test's accuracy_score is :0.333333333333333336 8 8
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.866666666666666736 8 5
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9185185185185185
+
+with normal rules ,the test's accuracy_score is :0.733333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.866666666666666736 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.866666666666666736 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.866666666666666736 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.866666666666666736 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.866666666666666736 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.866666666666666736 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+36 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+36 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+36 8 6
+36 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+36 8 6
+36 8 6
+36 8 6
+36 8 6
+36 8 6
+36 8 6
+36 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+36 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+36 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+36 8 6
+36 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.933333333333333336 8 6
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9703703703703703
+
+with normal rules ,the test's accuracy_score is :0.9333333333333333

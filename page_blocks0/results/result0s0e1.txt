@@ -1,0 +1,47 @@
+@Number of rules: 11
+
+1: P_black IS L_0(5): negative rule's support x: 2
+ rule's support xy: 0
+rule's supp: 0.0004 AND rule's CF: 0.02: P_and IS L_2(5): negative rule's support x: 315
+ rule's support xy: 229
+rule's supp: 0.064 AND rule's CF: 0.05183: P_black IS L_4(5): positive rule's support x: 249
+ rule's support xy: 188
+rule's supp: 0.0506 AND rule's CF: 0.37384: Eccen IS L_2(5): positive rule's support x: 64
+ rule's support xy: 56
+rule's supp: 0.013 AND rule's CF: 0.11135: Blackand IS L_1(5): negative rule's support x: 4880
+ rule's support xy: 4408
+rule's supp: 0.9911 AND rule's CF: 0.99716: Eccen IS L_1(5): negative rule's support x: 4849
+ rule's support xy: 4412
+rule's supp: 0.9848 AND rule's CF: 0.9987: Lenght IS L_1(5): negative rule's support x: 3885
+ rule's support xy: 3559
+rule's supp: 0.789 AND rule's CF: 0.8058: P_black IS L_1(5): negative rule's support x: 1652
+ rule's support xy: 1536
+rule's supp: 0.3355 AND rule's CF: 0.34749: Wb_trans IS L_1(5): negative rule's support x: 4667
+ rule's support xy: 4343
+rule's supp: 0.9478 AND rule's CF: 0.982410: P_and IS L_3(5): negative rule's support x: 1665
+ rule's support xy: 1565
+rule's supp: 0.3381 AND rule's CF: 0.35411: P_black IS L_2(5): negative rule's support x: 2664
+ rule's support xy: 2552
+rule's supp: 0.541 AND rule's CF: 0.5772
+
+@supp and CF:
+
+1: supp: 0.0004 AND CF: 0.0
+2: supp: 0.064 AND CF: 0.0518
+3: supp: 0.0506 AND CF: 0.3738
+4: supp: 0.013 AND CF: 0.1113
+5: supp: 0.9911 AND CF: 0.9971
+6: supp: 0.9848 AND CF: 0.998
+7: supp: 0.789 AND CF: 0.805
+8: supp: 0.3355 AND CF: 0.3474
+9: supp: 0.9478 AND CF: 0.9824
+10: supp: 0.3381 AND CF: 0.354
+11: supp: 0.541 AND CF: 0.5772
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+1.0
+

@@ -40,9 +40,7 @@ class FarcHDSteps:
 
         self.data_base = DataBase()
         self.data_base.init_with_three_parameters(self.nlabels, self.train_mydataset)
-        self.rule_base = RuleBase()
-        self.rule_base.init_with_five_parameters(self.data_base, self.train_mydataset, self.k_parameter,
-                                                 self.type_inference)
+        self.rule_base = RuleBase(self.data_base, self.train_mydataset, self.k_parameter,self.type_inference)
         self.apriori = Apriori()
         self.apriori.multiple_init(self.rule_base, self.data_base, self.train_mydataset, self.minsup, self.minconf,
                                    self.depth)

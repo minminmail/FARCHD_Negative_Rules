@@ -107,7 +107,9 @@ class Main:
         predict_y_test = farchd_classifier.predict(X_test)
         farchd_classifier.score(y_test, predict_y_test, if_granularity, if_train)
 
+
         """ 
+
         if_granularity = True
 
         # granularity  rule for train data prediction
@@ -119,4 +121,5 @@ class Main:
         if_train = False
         predict_test_granularity_y = farchd_classifier.predict_granularity(X_test)
         farchd_classifier.score(y_test, predict_test_granularity_y,if_granularity, if_train)
-         """
+        """
+

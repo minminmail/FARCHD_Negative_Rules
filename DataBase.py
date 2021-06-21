@@ -31,11 +31,8 @@ class DataBase:
         # @param rangos double[][] Range of each variable (minimum and maximum values)
         # @param names String[] Labels for the input attributes
 
-    # '''
-    #      * @return int the number of input variables
-    # '''
-    # modified at 2020-08-14
-    # def init_with_five_parameters(self,n_labels_pass,self.data_base, self.train_myDataSet, self.k_parameter, self.inferenceType)
+    # ''' * @return int the number of input variables ''' modified at 2020-08-14 def init_with_five_parameters(self,
+    # n_labels_pass,self.data_base, self.train_myDataSet, self.k_parameter, self.inferenceType)
     def init_with_three_parameters(self, n_labels_pass, train_my_dataset, sub_zone_value="-1"):
         if not sub_zone_value == "-1":
             self.sub_lable_name = "H" + str(sub_zone_value)
@@ -251,7 +248,7 @@ class DataBase:
             # do not care
             return 1
         else:
-            return Decimal(self.database[variable][label].fuzzify(value))
+            return self.database[variable][label].fuzzify(value)
 
     """
      * Return a String representation of the Triangular Membership Functions of the variable and its label given as arguments. 

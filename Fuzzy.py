@@ -27,6 +27,7 @@ from __future__ import division
 **********************************************************************/
 """
 
+
 # <p>This class contains the representation of a fuzzy value</p>
 # '''
 #  * @version 1.0
@@ -44,7 +45,6 @@ class Fuzzy:
 
     def __init__(self):
         pass
-
 
     # * If fuzzyfies a crisp value
     # * @param X double The crips value
@@ -83,6 +83,7 @@ class Fuzzy:
         d.y = self.y
         d.name = self.name
         return d
+
     """
 
    * It returns the name of the fuzzy set
@@ -90,5 +91,6 @@ class Fuzzy:
    * @return The name of the fuzzy set
     
     """
+
     def get_name(self):
         return self.name

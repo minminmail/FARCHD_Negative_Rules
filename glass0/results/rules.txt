@@ -59,4 +59,14 @@ with normal rules ,the test's accuracy_score is :0.6666666666666666793 19 12
 
  with normal rules ,the train's accuracy_score is :0.6735751295336787
 
-with normal rules ,the test's accuracy_score is :0.6666666666666666
+with normal rules ,the test's accuracy_score is :0.6666666666666666774 19 17
+ 
+
+ with normal rules ,the train's accuracy_score is :0.671875
+
+with normal rules ,the test's accuracy_score is :0.8181818181818182774 19 17
+ 
+
+ with normal rules ,the train's accuracy_score is :0.671875
+
+with normal rules ,the test's accuracy_score is :0.8181818181818182

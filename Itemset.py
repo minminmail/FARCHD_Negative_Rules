@@ -129,9 +129,9 @@ class Itemset:
 
     def calculate_supports(self, dataBase, train):
 
-        degree = Decimal(0.0)
-        self.support = Decimal(0.0)
-        self.support_rule = Decimal(0.0)
+        degree =0.0
+        self.support = 0.0
+        self.support_rule =0.0
         for i in range(0, train.size()):
             degree = self.degree_product(dataBase, train.get_example(i))
             self.support = self.support + degree
@@ -147,7 +147,7 @@ class Itemset:
 
     def degree_product(self, dataBase, example):
 
-        degree = Decimal(1.0)
+        degree = 1.0
         for i in range(0, len(self.itemset)):
             if degree > 0.0:
                 item = self.itemset[i]

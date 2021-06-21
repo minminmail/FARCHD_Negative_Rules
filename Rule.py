@@ -41,7 +41,11 @@ class Rule:
     supp_xy = None
     supp_x = None
     rule_index = None
-    rule_information =""
+    rule_information = ""
+    rule_cover_accurate = None
+    negative_rule = None
+    degree_previous_dic = {-1: 0.0}
+    degree_example_dic = {999: 0.0}
 
     def __init__(self, data_base_pass):
 
@@ -59,6 +63,7 @@ class Rule:
         # print("__init__ of Rule")
         self.data_row_here = DataRow()
         self.rule_index = 0
+        self.negative_rule = False
 
     """
     * Clone
@@ -79,6 +84,10 @@ class Rule:
             rule.rule_index = self.rule_index
             rule.supp_x = self.supp_x
             rule.supp_xy = self.supp_xy
+            rule.rule_cover_accurate = self.rule_cover_accurate
+            rule.data_row_here = self.data_row_here
+            rule.negative_rule = self.negative_rule
+            rule.degree_example_dic = self.degree_example_dic
 
         return rule
 
@@ -94,18 +103,30 @@ class Rule:
             if self.antecedent[i] > -1:
                 self.nants += 1
 
-    def degree_product(self, example):
-        degree = Decimal(1.0)
+    def degree_product(self, example,row_index):
+        degree = 1.0
+        new_degree_value = 0
         for i in range(0, len(self.antecedent)):
             if degree > 0.0:
                 # for item in example:
                 # print("item in example is  :" + str(item))
 
-                # print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+ str(len(example)))
-                degree *= self.data_base.matching(i, self.antecedent[i], example[i])
+                # print("i is :"+ str(i)+" len(self.antecedent) : " + str(len(self.antecedent))+"len(example) : "+
+                # str(len(example)))
+                match_value = self.data_base.matching(i, self.antecedent[i], example[i])
+                if not (row_index == 999):
+                    if match_value > 0 and not (match_value == 1):
+                        if row_index in self.degree_example_dic:
+
+                            new_degree_value = match_value + self.degree_example_dic[row_index]
+                            self.degree_example_dic.update({row_index : new_degree_value})
+                        else:
+                            self.degree_example_dic[row_index]= match_value
+                degree = degree * match_value
                 # print("In degree_product,the i is  "+str(i))
 
-        return_value = degree * Decimal(self.confident_value)
+        return_value = degree * self.confident_value
+        self.degree_previous_dic[row_index]=return_value
         # print("return_value:" + str(return_value))
         return return_value
 
@@ -115,8 +136,8 @@ class Rule:
     * @return 0.0 = doesn't match, >0.0 = does.
     """
 
-    def matching(self, example):
-        return self.degree_product(example)
+    def matching(self, example,row_index):
+        return self.degree_product(example,row_index)
 
     """
 
@@ -150,7 +171,7 @@ class Rule:
     """
 
     def get_confidence(self):
-        return round(self.confident_value,4)
+        return round(self.confident_value, 4)
 
     """
        * It returns the Wracc of the rule
@@ -158,7 +179,7 @@ class Rule:
     """
 
     def get_wracc(self):
-        return round(self.wracc,4)
+        return round(self.wracc, 4)
 
     """
 
@@ -167,7 +188,7 @@ class Rule:
     """
 
     def get_support(self):
-        return round(self.support_value,4)
+        return round(self.support_value, 4)
 
     """ 
     /**
@@ -180,32 +201,32 @@ class Rule:
 
     def calculate_wracc(self, train_mydataset_pass, example_weight_array):
         i = 0
-        n_c = Decimal(0.0)
-        degree = Decimal(0.0)
+        n_c = 0.0
+        degree = 0.0
         exmple_weight = None
 
-        n_a = n_ac = Decimal(0.0)
+        n_a = n_ac = 0.0
 
         for i in range(0, train_mydataset_pass.size()):
             exmple_weight = example_weight_array[i]
             if exmple_weight.is_active():
-                degree = self.matching(train_mydataset_pass.get_example(i))
+                degree = self.matching(train_mydataset_pass.get_example(i),999)
                 if degree > 0.0:
-                    degree *= Decimal(exmple_weight.get_weight())
+                    degree *= exmple_weight.get_weight()
                     n_a += degree
 
                     if train_mydataset_pass.get_output_as_integer_with_pos(i) == self.class_value:
                         n_ac += degree
-                        n_c += Decimal(exmple_weight.get_weight())
+                        n_c += exmple_weight.get_weight()
 
 
                 elif train_mydataset_pass.get_output_as_integer_with_pos(i) == self.class_value:
-                    n_c += Decimal(exmple_weight.get_weight())
+                    n_c += exmple_weight.get_weight()
 
         if (n_a < 0.0000000001) or (n_ac < 0.0000000001) or (n_c < 0.0000000001):
             self.wracc = Decimal(-1.0)
         else:
-            self.wracc = (n_ac / n_c) * ((n_ac / n_a) - Decimal(train_mydataset_pass.frecuent_class(self.class_value)))
+            self.wracc = (n_ac / n_c) * ((n_ac / n_a) - (train_mydataset_pass.frecuent_class(self.class_value)))
         self.wracc = round(self.wracc, 4)
         print("self.wracc" + str(self.wracc))
 
@@ -224,7 +245,7 @@ class Rule:
         for i in range(0, train_mydataset_pass.size()):
             example_weight = example_weight_array[i]
             if example_weight.is_active():
-                if self.matching(train_mydataset_pass.get_example(i)) > 0.0:
+                if self.matching(train_mydataset_pass.get_example(i),999) > 0.0:
                     example_weight.inc_count()
                     if (not example_weight.is_active()) and (
                             train_mydataset_pass.get_output_as_integer_with_pos(i) == self.class_value):
@@ -365,6 +386,7 @@ class Rule:
         sum_value = total - classes_sum[self.class_value]
         self.weight = round(((classes_sum[self.class_value] - sum_value) / total), 4)
         # print("self.weight is " + str(self.weight))
+"""
 
     # * This function detects if one rule is already included in the Rule Set
     # * @param r Rule Rule to compare
@@ -386,7 +408,7 @@ class Rule:
             return True
         else:
             return False
-"""
+
     def calculate_confident_support(self, data_row_array):
         # how many instances in the zone
         supp_x = 0
@@ -425,11 +447,15 @@ class Rule:
             self.zone_confident = round((supp_xy / supp_x), 4)
         self.supp_x = supp_x
         self.supp_xy = supp_xy
+        if self.supp_xy == 0 or self.supp_xy is None:
+            self.rule_cover_accurate = 0
+        else:
+            self.rule_cover_accurate = round((self.supp_xy / self.supp_x), 4)
 
-    def print_rule_information(self,n_variables,train_myDataSet):
+    def print_rule_information(self, n_variables, train_myDataSet):
 
-        self.rule_information =""
-        names =train_myDataSet.get_names()
+        self.rule_information = ""
+        names = train_myDataSet.get_names()
         classes = train_myDataSet.get_classes()
 
         for j in range(0, n_variables):
@@ -439,23 +465,23 @@ class Rule:
                 if j < n_variables and self.antecedent[j] >= 0:
                     self.rule_information += names[j] + " IS " + self.data_base.print_here(j, self.antecedent[j]) + " AND "
 
-
         self.rule_information += ": " + classes[self.class_value]
         self.rule_information += " CF: " + str(self.get_confidence()) + "\n"
 
-        self.rule_information = self.rule_information + " /n "+ "how many instance number covered by the rule :" + str(self.supp_xy)+ "  "
-        self.rule_information = self.rule_information + " /n "+  "how many instance number only antecedent covered by the rule :" + str(self.supp_x)+ "  "
+        self.rule_information = self.rule_information + " /n " + "how many instance number covered by the rule :" + str(
+            self.supp_xy) + "  "
+        self.rule_information = self.rule_information + " /n " + "how many instance number only antecedent covered by the rule :" + str(
+            self.supp_x) + "  "
 
         return self.rule_information
-
 
     def get_antecident_number(self, antecedent_array):
         antecedent_number = 0
         for i in range(0, len(antecedent_array)):
-            if not antecedent_array[i] == -1:
+            if not (antecedent_array[i] == -1):
                 antecedent_number = antecedent_number + 1
 
-            return antecedent_number
+        return antecedent_number
 
     def assing_consequent(self, train):
         pass

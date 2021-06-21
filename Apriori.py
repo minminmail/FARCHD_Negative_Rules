@@ -102,9 +102,7 @@ class Apriori:
         self.rule_stage1 = 0
         # int
 
-        self.rule_base_class = RuleBase()
-        self.rule_base_class.init_with_five_parameters(self.data_base, self.train, self.rule_base.get_k_value(),
-                                                       self.rule_base.get_inference_type())
+        self.rule_base_class = RuleBase(self.data_base, self.train, self.rule_base.get_k_value(), self.rule_base.get_inference_type())
 
         for i in range(0, self.nclasses):
             self.minsup = Decimal(self.minSupps_array[i])

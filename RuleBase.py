@@ -40,6 +40,7 @@ class RuleBase:
     nuncover_class_array = []
     logger = None
     frm_ac_max_degree_value = None
+    rule_row_dic = {"rule_index": "row_number"}
 
     # /**
     #  * Rule Base Constructor
@@ -50,21 +51,27 @@ class RuleBase:
     #  * @param names String[] the names for the features of the problem
     #  * @param classes String[] the labels for the class attributes
     #  */
-    def __init__(self):
-        self.logger = Logger.set_logger()
-        pass
 
-    def init_with_five_parameters(self, data_base_pass, train_myDataset_pass, K_int, inferenceType_pass):
+    # init_with_five_parameters
+    def __init__(self, data_base_pass=None, train_myDataset_pass=None, K_int=0, inferenceType_pass=0):
+        self.logger = Logger.set_logger()
         self.rule_base_array = []
         self.data_base = data_base_pass
         self.train_myDataSet = train_myDataset_pass
-        self.n_variables = self.data_base.num_variables()
+        if data_base_pass is None:
+            self.n_variables = 0
+        else:
+            self.n_variables = self.data_base.num_variables()
         self.fitness = 0.0
         self.k_value = K_int
         self.inferenceType = inferenceType_pass
         self.default_rule = -1
         self.nuncover = 0
-        self.nuncover_class_array = [0 for x in range(self.train_myDataSet.get_nclasses())]
+
+        if train_myDataset_pass is None:
+            self.nuncover_class_array = None
+        else:
+            self.nuncover_class_array = [0 for x in range(train_myDataset_pass.get_nclasses())]
 
     # * It checks if a specific rule is already in the rule base
     # * @param r Rule the rule for comparison
@@ -105,6 +112,10 @@ class RuleBase:
         self.classes = self.train_myDataSet.get_classes()
         cadena_string = ""
         cadena_string += "@Number of rules: " + str(len(self.rule_base_array)) + "\n\n"
+        for i in range(0, len(self.data_row_array)):
+            cadena_string += "data_row_array  : " + str(i)  + "\n\n"
+            for rule_index, degree in self.data_row_array[i].rule_degree_dic.items():
+                cadena_string += "rule index is : " + str(rule_index) + " , degree is : " + str(degree) + "\n"
 
         for i in range(0, len(self.rule_base_array)):
             rule = self.rule_base_array[i]
@@ -132,8 +143,11 @@ class RuleBase:
             cadena_string += ": " + self.classes[rule.class_value]
 
             cadena_string += " rule's support x: " + str(rule.supp_x) + "\n"
-
             cadena_string += " rule's support xy: " + str(rule.supp_xy) + "\n"
+            cadena_string += " rule's rule_cover_accurate: " + str(rule.rule_cover_accurate) + "\n"
+            cadena_string += " rule's negative_rule: " + str(rule.negative_rule) + "\n"
+            # cadena_string += " rule's example degree dictionary: " + str(rule.degree_example_dic) + "\n"
+            # cadena_string += " rule's example previous degree dictionary: " + str(rule.degree_previous_dic) + "\n"
 
             cadena_string += "rule's supp: " + str(rule.get_support()) + " AND rule's CF: " + str(rule.get_confidence())
 
@@ -325,14 +339,16 @@ class RuleBase:
      * @param example Example to be predicted.
     """
 
-    def FRM(self, example):
+    def FRM(self, example, row_index):
 
         if self.inferenceType == 0:
             # print("run FRM_WR !")
             return self.FRM_WR(example)
-        else:
+        if self.inferenceType == 1:
+            return self.FRM_AC(example, row_index)
+        if self.inferenceType == 2:
             # print("run FRM_AC !")
-            return self.FRM_AC(example)
+            return self.FRM_Mix(example)
 
     # * Fuzzy Reasoning Method
     # * @param example double[] the input example
@@ -354,6 +370,22 @@ class RuleBase:
     # * @return int the class label for the rule with highest membership degree to the example
 
     def FRM_WR(self, example):
+        class_value = 0
+        max_value = 0.0
+        degree = 0.0
+        class_value = self.defaultRule
+
+        for i in range(0, len(self.rule_base_array)):
+            rule = self.rule_base_array[i]
+            degree = rule.matching(example)
+
+            if degree > max_value:
+                max_value = degree
+                class_value = rule.get_class()
+
+        return class_value
+
+    def FRM_Mix(self, example):
         class_value = 0
         max_value = 0.0
         degree = 0.0
@@ -461,7 +493,7 @@ class RuleBase:
             for i in range(0, len(self.rule_base_array)):
                 if selected_array[i] > 0:
                     rule = self.rule_base_array[i]
-                    degree = rule.matching(example)
+                    degree = rule.matching(example, 999)
                     degrees_class[rule.get_class()] += Decimal(degree)
             max_degree = 0.8
             sum_degree = Decimal(0.0)
@@ -477,28 +509,40 @@ class RuleBase:
 
             return class_value
 
-    def FRM_AC(self, example):
-
-        degree = Decimal(0.0)
-        self.frm_ac_max_degree_value = Decimal(0.0)
+    def FRM_AC(self, example, row_index):
+        rule_degree_dic = {}
+        if not (row_index == 999):
+            self.data_row_array[row_index].rule_degree_dic ={}
+        degree = 0.0
+        self.frm_ac_max_degree_value = 0.0
         class_value = self.default_rule
 
         degree_class_array = [0.0 for x in range(self.train_myDataSet.get_nclasses())]
         for i in range(0, self.train_myDataSet.get_nclasses()):
-            degree_class_array[i] = Decimal(0.0)
+            degree_class_array[i] = 0.0
 
         for i in range(0, len(self.rule_base_array)):
-            rule = self.rule_base_array[i]
+            degree = self.rule_base_array[i].matching(example, row_index)
+            if degree > 0 and (not (row_index == 999)):
 
-            degree = rule.matching(example)
-            degree_class_array[rule.get_class()] += degree
+                if i in rule_degree_dic:
 
-        self.frm_ac_max_degree_value = 0.0
+                    degree_list_string = str(rule_degree_dic[i]['degree']) + ":" + str(degree)
+                    rule_degree_dic[i].update({'rule_index': i, 'degree': degree_list_string})
+                    print(" row_index is :" + str(row_index)+" update  :" +"rule_index is "+ str(i)+ str("rule_index is "))
+                else:
+                    rule_degree_dic[i] = {'rule_index': i, 'degree': degree}
+
+            degree_class_array[self.rule_base_array[i].get_class()] += degree
+
+        frm_ac_max_degree_value = 0.0
         for i in range(0, self.train_myDataSet.get_nclasses()):
-            if degree_class_array[i] > self.frm_ac_max_degree_value:
-                self.frm_ac_max_degree_value = degree_class_array[i]
+            if degree_class_array[i] > frm_ac_max_degree_value:
+                frm_ac_max_degree_value = degree_class_array[i]
+                self.frm_ac_max_degree_value = frm_ac_max_degree_value
                 class_value = i
-
+        if not (row_index == 999):
+            self.data_row_array[row_index].rule_degree_dic = rule_degree_dic
         return class_value
 
     # added by rui for negative  rules
@@ -534,9 +578,46 @@ class RuleBase:
                             # print("Negative rule's class_type" + str(class_type))
                             self.negative_rule_base_array.append(rule_negative)
 
+    def generate_negative_rules_by_rule_cover_number(self, train, confident_value_pass, zone_confident_pass):
+
+        class_value_arr = self.get_class_value_array(train)
+        self.prepare_data_rows(train)
+        for i in range(0, len(self.rule_base_array)):
+            rule_negative = Rule(self.data_base)
+            rule_negative.antecedent = self.rule_base_array[i].antecedent
+            positive_rule_class_value = self.rule_base_array[i].get_class()
+            print("the positive rule class value is " + str(positive_rule_class_value) + " ,the i is :" + str(i))
+            # rule_negative.setClass(positive_rule_class_value)
+            best_rule_cover_accurate = self.rule_base_array[i].rule_cover_accurate
+            has_negative_rule = False
+            for j in range(0, len(class_value_arr)):
+                class_type = int(class_value_arr[j])
+                if positive_rule_class_value != class_type:  # need to get another class value for negative rule
+
+                    rule_negative.calculate_confident_support(self.data_row_array)
+                    print("Negative rule's  confident value is :" + str(rule_negative.confident_value))
+
+                    if rule_negative.rule_cover_accurate > best_rule_cover_accurate:
+                        best_negative_rule = rule_negative.clone()
+                        best_negative_rule.setClass(class_type)  # change the class type in the rule
+                        best_negative_rule.negative_rule = True
+                        has_negative_rule = True
+
+            if (not (self.duplicated_negative_rule(rule_negative))) and has_negative_rule:
+
+                for k in range(0, len(rule_negative.antecedent)):
+                    print("antecedent L_ " + str(rule_negative.antecedent[j]))
+                # print("Negative rule's class value " + str(rule_negative.get_class()))
+                # print(" Negative rule's weight, confident_vale  " + str(rule_negative.weight))
+                # print(" Negative rule's zone confident value   " + str(rule_negative.zone_confident))
+                # print("Negative rule's positive_rule_class_value" + str(positive_rule_class_value))
+                # print("Negative rule's class_type" + str(class_type))
+                self.rule_base_array.pop(i)
+                self.rule_base_array.append(best_negative_rule)
+
     def prepare_data_rows(self, train):
         for i in range(0, train.size()):
-            data_row_temp = DataRow()
+
             class_value = train.get_output_as_integer_with_pos(i)
             example = train.get_example(i)
             example_feature_array = []
@@ -577,7 +658,7 @@ class RuleBase:
 
                 label_array.append(etq)
 
-            data_row_temp.set_three_parameters(class_value, example_feature_array, label_array)
+            data_row_temp = DataRow(class_value, example_feature_array, label_array)
             self.data_row_array.append(data_row_temp)
 
     def get_class_value_array(self, train):
@@ -855,10 +936,13 @@ class RuleBase:
    * @param filename Name for the rulebase file
     """
 
-    def save_file(self, file_name):
+    def save_file(self, file_name, predit):
 
         string_out = self.printString()
         file = open(file_name, "w+")
+        if predit is True:
+            string_out = "After predict the rules information is as below: " + string_out
+
         file.write(string_out)
         file.close()
 
@@ -886,3 +970,9 @@ class RuleBase:
             return True
         else:
             return False
+
+    def reduce_low_accurate_rules(self, pop_number):
+
+        self.rule_base_array.sort(key=lambda x: x.rule_cover_accurate, reverse=False)
+        for j in range(0, pop_number):
+            self.rule_base_array.pop(j)

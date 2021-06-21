@@ -67,4 +67,9 @@ count_normal_result score is: 346
 
  with normal rules ,the train's accuracy_score is :0.8978680203045686
 
-with normal rules ,the test's accuracy_score is :0.8976234003656307
+with normal rules ,the test's accuracy_score is :0.897623400365630785 21 11
+ 
+
+ with normal rules ,the train's accuracy_score is :0.8978472786352559
+
+with normal rules ,the test's accuracy_score is :0.8978102189781022

@@ -359,13 +359,6 @@ class GranularityRule:
             my_dataset.instanceSet.instanceSet.append(newInstance)
 
 
-
-
-
-
-
-
-
     def generation_rule_step_two(self, sub_train, sub_zone_number, area_number):
 
         print("In generation, the area_number is :" + str(area_number))
@@ -381,7 +374,7 @@ class GranularityRule:
         if rule_number > 0:
             #  added by rui for granularity rules
             #  rule_base = RuleBase()
-            #  rule_base.init_with_five_parameters(self.data_base, self.train_myDataSet,
+            #  rule_base.init(self.data_base, self.train_myDataSet,
 
             self.granularity_rule_Base_array.append(farchd.rule_base)
         else:

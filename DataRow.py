@@ -4,12 +4,9 @@ class DataRow:
     class_value = None
     feature_values = []
     label_values = []
+    rule_degree_dic = {}
 
-    def __init__(self):
-        self.class_value = 0
-        # print("__init__ of data_row")
-
-    def set_three_parameters(self, class_value, feature_array, label_array):
+    def __init__(self, class_value=0, feature_array=None, label_array=None):
         # print("__init__ of data_row")
         # print(" class_value :" + str(class_value))
         # print(" self.class_value :"+str(self.class_value))
