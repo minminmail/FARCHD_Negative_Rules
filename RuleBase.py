@@ -113,7 +113,7 @@ class RuleBase:
         cadena_string = ""
         cadena_string += "@Number of rules: " + str(len(self.rule_base_array)) + "\n\n"
         for i in range(0, len(self.data_row_array)):
-            cadena_string += "data_row_array  : " + str(i)  + "\n\n"
+            cadena_string += "data_row_array  : " + str(i) + "\n\n"
             for rule_index, degree in self.data_row_array[i].rule_degree_dic.items():
                 cadena_string += "rule index is : " + str(rule_index) + " , degree is : " + str(degree) + "\n"
 
@@ -142,6 +142,7 @@ class RuleBase:
 
             cadena_string += ": " + self.classes[rule.class_value]
 
+            cadena_string += " rule's index : " + str(rule.rule_index) + "\n"
             cadena_string += " rule's support x: " + str(rule.supp_x) + "\n"
             cadena_string += " rule's support xy: " + str(rule.supp_xy) + "\n"
             cadena_string += " rule's rule_cover_accurate: " + str(rule.rule_cover_accurate) + "\n"
@@ -512,7 +513,7 @@ class RuleBase:
     def FRM_AC(self, example, row_index):
         rule_degree_dic = {}
         if not (row_index == 999):
-            self.data_row_array[row_index].rule_degree_dic ={}
+            self.data_row_array[row_index].rule_degree_dic = {}
         degree = 0.0
         self.frm_ac_max_degree_value = 0.0
         class_value = self.default_rule
@@ -522,16 +523,18 @@ class RuleBase:
             degree_class_array[i] = 0.0
 
         for i in range(0, len(self.rule_base_array)):
+            self.rule_base_array[i].rule_index = i
             degree = self.rule_base_array[i].matching(example, row_index)
             if degree > 0 and (not (row_index == 999)):
 
                 if i in rule_degree_dic:
 
                     degree_list_string = str(rule_degree_dic[i]['degree']) + ":" + str(degree)
-                    rule_degree_dic[i].update({'rule_index': i, 'degree': degree_list_string})
-                    print(" row_index is :" + str(row_index)+" update  :" +"rule_index is "+ str(i)+ str("rule_index is "))
+                    rule_degree_dic[i].update({i: degree_list_string})
+                    print(" row_index is :" + str(row_index) + " update  :" + "rule_index is " + str(i) + str(
+                        "rule_index is "))
                 else:
-                    rule_degree_dic[i] = {'rule_index': i, 'degree': degree}
+                    rule_degree_dic[i] = degree
 
             degree_class_array[self.rule_base_array[i].get_class()] += degree
 

@@ -595,6 +595,7 @@ class FarcHDClassifier():
         score = accuracy_score(y_true, y_pred_int)
         score_string = score_string + str(score)
         self.write_score(score_string)
+        self.calculate_rule_accurate(y_true, y_pred_int)
         print(score)
 
         return score
@@ -632,3 +633,28 @@ class FarcHDClassifier():
         print(self.y)
 
         return self.y
+
+    def calculate_rule_accurate(self, y_true, y_pred_int):
+        row_num = len(y_true)
+        rule_num = len(self.rule_base.rule_base_array)
+        rule_sum_error_arr = [0] * rule_num
+        error_rate_string = ""
+        for i in range(0, row_num):
+
+            if not (y_true[i] == y_pred_int[i]):
+                sum_degree = 0
+                rule_accurate_array = [0] * rule_num
+                rule_degree = [0]* rule_num
+                for rule_index, degree in self.rule_base.data_row_array[i].rule_degree_dic.items():
+                    sum_degree = sum_degree + degree
+                    rule_degree[rule_index] = degree
+
+                for rule_index , degree in self.rule_base.data_row_array[i].rule_degree_dic.items():
+                    rule_accurate_array[rule_index] = rule_degree[rule_index] / sum_degree
+                    rule_sum_error_arr[rule_index] = rule_sum_error_arr[rule_index] + rule_accurate_array[rule_index]
+        for k in range(0, rule_num):
+            print("rule index number :"+str(k) + " ,  and the error rate :" + str(rule_sum_error_arr[k]))
+            error_rate_string = error_rate_string + "rule index number :"+str(k) + " ,  and the error rate :" + str(rule_sum_error_arr[k])
+
+        file = open(self.file_rules, "a+")
+        file.write(error_rate_string)

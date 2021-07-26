@@ -1,4 +1,4 @@
-2021-06-22 00:33:32,795 Rule information log is  : /n petalWidth IS L_3(5) AND : Iris-virginica CF: 0.6
+2021-06-24 21:40:06,098 Rule information log is  : /n petalWidth IS L_3(5) AND : Iris-virginica CF: 0.6
  /n how many instance number covered by the rule :27   /n how many instance number only antecedent covered by the rule :32  petalLength IS L_2(5) AND : Iris-versicolor CF: 0.8222
  /n how many instance number covered by the rule :37   /n how many instance number only antecedent covered by the rule :38  petalWidth IS L_0(5) AND : Iris-setosa CF: 0.8222
  /n how many instance number covered by the rule :37   /n how many instance number only antecedent covered by the rule :37  petalLength IS L_0(5) AND : Iris-setosa CF: 0.9556

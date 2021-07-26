@@ -2,542 +2,542 @@ After predict the rules information is as below: @Number of rules: 6
 
 data_row_array  : 0
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 1
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 2
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5668813559322033}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.5668813559322033
 data_row_array  : 3
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.4110999999999999}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.4110999999999999
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 4
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4041322033898307}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 1 , degree is : 0.4041322033898307
 data_row_array  : 5
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.29264745762711875}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.29264745762711875
 data_row_array  : 6
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.29264745762711875}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.29264745762711875
 data_row_array  : 7
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4041322033898307}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.4041322033898307
 data_row_array  : 8
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.29264745762711875}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 1 , degree is : 0.29264745762711875
 data_row_array  : 9
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999986}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.12593333333333345}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.020713559322033864}
+rule index is : 0 , degree is : 0.39999999999999986
+rule index is : 4 , degree is : 0.12593333333333345
+rule index is : 5 , degree is : 0.020713559322033864
 data_row_array  : 10
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.49999999999999994}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.06296666666666673}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.07343898305084745}
+rule index is : 0 , degree is : 0.49999999999999994
+rule index is : 4 , degree is : 0.06296666666666673
+rule index is : 5 , degree is : 0.07343898305084745
 data_row_array  : 11
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.013181355932203313}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 5 , degree is : 0.013181355932203313
 data_row_array  : 12
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.8260271186440679}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.8260271186440679
 data_row_array  : 13
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 14
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.23690508474576305}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.23690508474576305
 data_row_array  : 15
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.9556}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.9556
 data_row_array  : 16
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.2740666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5020949152542373}
+rule index is : 2 , degree is : 0.2740666666666666
+rule index is : 3 , degree is : 0.5020949152542373
 data_row_array  : 17
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.3725220338983052}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.3725220338983052
 data_row_array  : 18
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5668813559322033}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.5668813559322033
 data_row_array  : 19
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.4110999999999999}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5668813559322033}
+rule index is : 2 , degree is : 0.4110999999999999
+rule index is : 3 , degree is : 0.5668813559322033
 data_row_array  : 20
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 21
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6964542372881356}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6964542372881356
 data_row_array  : 22
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5668813559322033}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.5668813559322033
 data_row_array  : 23
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5668813559322033}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.5668813559322033
 data_row_array  : 24
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.4110999999999999}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.4110999999999999
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 25
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.8222}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.8222
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 26
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6964542372881356}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6964542372881356
 data_row_array  : 27
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.8222}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.8222
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 28
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.8260271186440679}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.8260271186440679
 data_row_array  : 29
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.7612406779661017}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.7612406779661017
 data_row_array  : 30
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.8222}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.8222
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 31
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.7612406779661017}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.7612406779661017
 data_row_array  : 32
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 33
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.5481333333333334}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.7612406779661017}
+rule index is : 2 , degree is : 0.5481333333333334
+rule index is : 3 , degree is : 0.7612406779661017
 data_row_array  : 34
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.5481333333333334}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.7612406779661017}
+rule index is : 2 , degree is : 0.5481333333333334
+rule index is : 3 , degree is : 0.7612406779661017
 data_row_array  : 35
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.4110999999999999}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.3725220338983052}
+rule index is : 2 , degree is : 0.4110999999999999
+rule index is : 3 , degree is : 0.3725220338983052
 data_row_array  : 36
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.5481333333333334}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6964542372881356}
+rule index is : 2 , degree is : 0.5481333333333334
+rule index is : 3 , degree is : 0.6964542372881356
 data_row_array  : 37
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5668813559322033}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.5668813559322033
 data_row_array  : 38
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6964542372881356}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6964542372881356
 data_row_array  : 39
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 40
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6964542372881356}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.6964542372881356
 data_row_array  : 41
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 42
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7943288135593222}
+rule index is : 1 , degree is : 0.7943288135593222
 data_row_array  : 43
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 44
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.30000000000000004}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4041322033898307}
+rule index is : 0 , degree is : 0.30000000000000004
+rule index is : 1 , degree is : 0.4041322033898307
 data_row_array  : 45
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.45987457627118633}
+rule index is : 1 , degree is : 0.45987457627118633
 data_row_array  : 46
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.794328813559322}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 1 , degree is : 0.794328813559322
 data_row_array  : 47
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5713593220338983}
+rule index is : 1 , degree is : 0.5713593220338983
 data_row_array  : 48
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6828440677966102}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.6828440677966102
 data_row_array  : 49
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7943288135593222}
+rule index is : 1 , degree is : 0.7943288135593222
 data_row_array  : 50
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4041322033898307}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 1 , degree is : 0.4041322033898307
 data_row_array  : 51
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6271016949152542}
+rule index is : 1 , degree is : 0.6271016949152542
 data_row_array  : 52
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5713593220338984}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 1 , degree is : 0.5713593220338984
 data_row_array  : 53
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 54
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7385864406779664}
+rule index is : 1 , degree is : 0.7385864406779664
 data_row_array  : 55
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 56
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.794328813559322}
+rule index is : 1 , degree is : 0.794328813559322
 data_row_array  : 57
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.34838983050847494}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 1 , degree is : 0.34838983050847494
 data_row_array  : 58
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7943288135593222}
+rule index is : 1 , degree is : 0.7943288135593222
 data_row_array  : 59
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4041322033898307}
+rule index is : 1 , degree is : 0.4041322033898307
 data_row_array  : 60
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6271016949152545}
+rule index is : 1 , degree is : 0.6271016949152545
 data_row_array  : 61
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5713593220338984}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 1 , degree is : 0.5713593220338984
 data_row_array  : 62
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999997}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.23690508474576305}
+rule index is : 0 , degree is : 0.39999999999999997
+rule index is : 1 , degree is : 0.23690508474576305
 data_row_array  : 63
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5713593220338983}
+rule index is : 1 , degree is : 0.5713593220338983
 data_row_array  : 64
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.738586440677966}
+rule index is : 1 , degree is : 0.738586440677966
 data_row_array  : 65
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6828440677966102}
+rule index is : 1 , degree is : 0.6828440677966102
 data_row_array  : 66
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.794328813559322}
+rule index is : 1 , degree is : 0.794328813559322
 data_row_array  : 67
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.30000000000000004}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
+rule index is : 0 , degree is : 0.30000000000000004
+rule index is : 1 , degree is : 0.1811627118644073
 data_row_array  : 68
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 69
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5713593220338984}
+rule index is : 1 , degree is : 0.5713593220338984
 data_row_array  : 70
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7385864406779664}
+rule index is : 1 , degree is : 0.7385864406779664
 data_row_array  : 71
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7943288135593222}
+rule index is : 1 , degree is : 0.7943288135593222
 data_row_array  : 72
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5713593220338984}
+rule index is : 1 , degree is : 0.5713593220338984
 data_row_array  : 73
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4598745762711869}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 1 , degree is : 0.4598745762711869
 data_row_array  : 74
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7943288135593222}
+rule index is : 1 , degree is : 0.7943288135593222
 data_row_array  : 75
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.45987457627118633}
+rule index is : 1 , degree is : 0.45987457627118633
 data_row_array  : 76
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6828440677966102}
+rule index is : 1 , degree is : 0.6828440677966102
 data_row_array  : 77
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6828440677966102}
+rule index is : 1 , degree is : 0.6828440677966102
 data_row_array  : 78
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6828440677966102}
+rule index is : 1 , degree is : 0.6828440677966102
 data_row_array  : 79
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.6271016949152545}
+rule index is : 1 , degree is : 0.6271016949152545
 data_row_array  : 80
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.29264745762711863}
+rule index is : 1 , degree is : 0.29264745762711863
 data_row_array  : 81
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.7385864406779664}
+rule index is : 1 , degree is : 0.7385864406779664
 data_row_array  : 82
 
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.3778}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.043310169491525385}
+rule index is : 4 , degree is : 0.3778
+rule index is : 5 , degree is : 0.043310169491525385
 data_row_array  : 83
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.6}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
+rule index is : 0 , degree is : 0.6
+rule index is : 1 , degree is : 0.1811627118644073
 data_row_array  : 84
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999986}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.12593333333333345}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.035777966101694904}
+rule index is : 0 , degree is : 0.39999999999999986
+rule index is : 4 , degree is : 0.12593333333333345
+rule index is : 5 , degree is : 0.035777966101694904
 data_row_array  : 85
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.013181355932203313}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 5 , degree is : 0.013181355932203313
 data_row_array  : 86
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.29999999999999977}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.18890000000000018}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.028245762711864353}
+rule index is : 0 , degree is : 0.29999999999999977
+rule index is : 4 , degree is : 0.18890000000000018
+rule index is : 5 , degree is : 0.028245762711864353
 data_row_array  : 87
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999986}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.12593333333333345}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.08850338983050843}
+rule index is : 0 , degree is : 0.39999999999999986
+rule index is : 4 , degree is : 0.12593333333333345
+rule index is : 5 , degree is : 0.08850338983050843
 data_row_array  : 88
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999997}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 0 , degree is : 0.39999999999999997
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 89
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.06590677966101689}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 5 , degree is : 0.06590677966101689
 data_row_array  : 90
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.028245762711864353}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 5 , degree is : 0.028245762711864353
 data_row_array  : 91
 
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.3778}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.05084237288135587}
+rule index is : 4 , degree is : 0.3778
+rule index is : 5 , degree is : 0.05084237288135587
 data_row_array  : 92
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.49999999999999994}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.06296666666666673}
+rule index is : 0 , degree is : 0.49999999999999994
+rule index is : 1 , degree is : 0.1811627118644073
+rule index is : 4 , degree is : 0.06296666666666673
 data_row_array  : 93
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.6}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.06967796610169538}
+rule index is : 0 , degree is : 0.6
+rule index is : 1 , degree is : 0.06967796610169538
 data_row_array  : 94
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999986}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.12593333333333345}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.005649152542372829}
+rule index is : 0 , degree is : 0.39999999999999986
+rule index is : 4 , degree is : 0.12593333333333345
+rule index is : 5 , degree is : 0.005649152542372829
 data_row_array  : 95
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.49999999999999994}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.23690508474576305}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.06296666666666673}
+rule index is : 0 , degree is : 0.49999999999999994
+rule index is : 1 , degree is : 0.23690508474576305
+rule index is : 4 , degree is : 0.06296666666666673
 data_row_array  : 96
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.10000000000000007}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.3148333333333333}
+rule index is : 0 , degree is : 0.10000000000000007
+rule index is : 1 , degree is : 0.1811627118644073
+rule index is : 4 , degree is : 0.3148333333333333
 data_row_array  : 97
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.06967796610169538}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 1 , degree is : 0.06967796610169538
+rule index is : 4 , degree is : 0.25186666666666657
 data_row_array  : 98
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.29999999999999977}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.18890000000000018}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.09603559322033897}
+rule index is : 0 , degree is : 0.29999999999999977
+rule index is : 4 , degree is : 0.18890000000000018
+rule index is : 5 , degree is : 0.09603559322033897
 data_row_array  : 99
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.49999999999999994}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.29264745762711875}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.06296666666666673}
+rule index is : 0 , degree is : 0.49999999999999994
+rule index is : 1 , degree is : 0.29264745762711875
+rule index is : 4 , degree is : 0.06296666666666673
 data_row_array  : 100
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.49999999999999994}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.06296666666666673}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.09603559322033897}
+rule index is : 0 , degree is : 0.49999999999999994
+rule index is : 4 , degree is : 0.06296666666666673
+rule index is : 5 , degree is : 0.09603559322033897
 data_row_array  : 101
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.043310169491525385}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 5 , degree is : 0.043310169491525385
 data_row_array  : 102
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.29264745762711875}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 1 , degree is : 0.29264745762711875
 data_row_array  : 103
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999986}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.12593333333333345}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.013181355932203313}
+rule index is : 0 , degree is : 0.39999999999999986
+rule index is : 4 , degree is : 0.12593333333333345
+rule index is : 5 , degree is : 0.013181355932203313
 data_row_array  : 104
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.30000000000000004}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.028245762711864353}
+rule index is : 0 , degree is : 0.30000000000000004
+rule index is : 5 , degree is : 0.028245762711864353
 data_row_array  : 105
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.6}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.05084237288135587}
+rule index is : 0 , degree is : 0.6
+rule index is : 5 , degree is : 0.05084237288135587
 data_row_array  : 106
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.29999999999999977}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.18890000000000018}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.013181355932203313}
+rule index is : 0 , degree is : 0.29999999999999977
+rule index is : 4 , degree is : 0.18890000000000018
+rule index is : 5 , degree is : 0.013181355932203313
 data_row_array  : 107
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.1811627118644073
 data_row_array  : 108
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.05084237288135587}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 4 , degree is : 0.25186666666666657
+rule index is : 5 , degree is : 0.05084237288135587
 data_row_array  : 109
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.10000000000000007}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.3148333333333333}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.013181355932203313}
+rule index is : 0 , degree is : 0.10000000000000007
+rule index is : 4 , degree is : 0.3148333333333333
+rule index is : 5 , degree is : 0.013181355932203313
 data_row_array  : 110
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.005649152542372829}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 5 , degree is : 0.005649152542372829
 data_row_array  : 111
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.34838983050847494}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 1 , degree is : 0.34838983050847494
 data_row_array  : 112
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.39999999999999986}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.013935593220339177}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.12593333333333345}
+rule index is : 0 , degree is : 0.39999999999999986
+rule index is : 1 , degree is : 0.013935593220339177
+rule index is : 4 , degree is : 0.12593333333333345
 data_row_array  : 113
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.10000000000000007}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.3148333333333333}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.013181355932203313}
+rule index is : 0 , degree is : 0.10000000000000007
+rule index is : 4 , degree is : 0.3148333333333333
+rule index is : 5 , degree is : 0.013181355932203313
 data_row_array  : 114
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 1 , degree is : 0.1811627118644073
+rule index is : 4 , degree is : 0.25186666666666657
 data_row_array  : 115
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.6}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
+rule index is : 0 , degree is : 0.6
+rule index is : 1 , degree is : 0.1811627118644073
 data_row_array  : 116
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.035777966101694904}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 4 , degree is : 0.25186666666666657
+rule index is : 5 , degree is : 0.035777966101694904
 data_row_array  : 117
 
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.3778}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.020713559322033864}
+rule index is : 4 , degree is : 0.3778
+rule index is : 5 , degree is : 0.020713559322033864
 data_row_array  : 118
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1254203389830511}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 1 , degree is : 0.1254203389830511
+rule index is : 4 , degree is : 0.25186666666666657
 data_row_array  : 119
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.6}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.23690508474576305}
+rule index is : 0 , degree is : 0.6
+rule index is : 1 , degree is : 0.23690508474576305
 data_row_array  : 120
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.49999999999999994}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1254203389830511}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.06296666666666673}
+rule index is : 0 , degree is : 0.49999999999999994
+rule index is : 1 , degree is : 0.1254203389830511
+rule index is : 4 , degree is : 0.06296666666666673
 data_row_array  : 121
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.013935593220339177}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 1 , degree is : 0.013935593220339177
+rule index is : 4 , degree is : 0.25186666666666657
 data_row_array  : 122
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.1811627118644073}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 1 , degree is : 0.1811627118644073
 data_row_array  : 123
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.7612406779661017}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.7612406779661017
 data_row_array  : 124
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.8222}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.6316677966101695}
+rule index is : 2 , degree is : 0.8222
+rule index is : 3 , degree is : 0.6316677966101695
 data_row_array  : 125
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.6851666666666666}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.7612406779661017}
+rule index is : 2 , degree is : 0.6851666666666666
+rule index is : 3 , degree is : 0.7612406779661017
 data_row_array  : 126
 
-rule index is : 2 , degree is : {'rule_index': 2, 'degree': 0.1370333333333333}
-rule index is : 3 , degree is : {'rule_index': 3, 'degree': 0.5668813559322033}
+rule index is : 2 , degree is : 0.1370333333333333
+rule index is : 3 , degree is : 0.5668813559322033
 data_row_array  : 127
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.19999999999999998}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4598745762711869}
+rule index is : 0 , degree is : 0.19999999999999998
+rule index is : 1 , degree is : 0.4598745762711869
 data_row_array  : 128
 
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.4598745762711869}
+rule index is : 1 , degree is : 0.4598745762711869
 data_row_array  : 129
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.09999999999999988}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.34838983050847494}
+rule index is : 0 , degree is : 0.09999999999999988
+rule index is : 1 , degree is : 0.34838983050847494
 data_row_array  : 130
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.30000000000000004}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.5156169491525425}
+rule index is : 0 , degree is : 0.30000000000000004
+rule index is : 1 , degree is : 0.5156169491525425
 data_row_array  : 131
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.005649152542372829}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 5 , degree is : 0.005649152542372829
 data_row_array  : 132
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.1111}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 4 , degree is : 0.25186666666666657
+rule index is : 5 , degree is : 0.1111
 data_row_array  : 133
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.20000000000000015}
-rule index is : 4 , degree is : {'rule_index': 4, 'degree': 0.25186666666666657}
-rule index is : 5 , degree is : {'rule_index': 5, 'degree': 0.020713559322033864}
+rule index is : 0 , degree is : 0.20000000000000015
+rule index is : 4 , degree is : 0.25186666666666657
+rule index is : 5 , degree is : 0.020713559322033864
 data_row_array  : 134
 
-rule index is : 0 , degree is : {'rule_index': 0, 'degree': 0.5000000000000001}
-rule index is : 1 , degree is : {'rule_index': 1, 'degree': 0.34838983050847494}
+rule index is : 0 , degree is : 0.5000000000000001
+rule index is : 1 , degree is : 0.34838983050847494
 data_row_array  : 135
 
 data_row_array  : 136
@@ -808,27 +808,33 @@ data_row_array  : 268
 
 data_row_array  : 269
 
-1: petalWidth IS L_3(5): Iris-virginica rule's support x: 32
+1: petalWidth IS L_3(5): Iris-virginica rule's index : 0
+ rule's support x: 32
  rule's support xy: 27
  rule's rule_cover_accurate: 0.8438
  rule's negative_rule: False
-rule's supp: 0.237 AND rule's CF: 0.62: petalLength IS L_2(5): Iris-versicolor rule's support x: 38
+rule's supp: 0.237 AND rule's CF: 0.62: petalLength IS L_2(5): Iris-versicolor rule's index : 1
+ rule's support x: 38
  rule's support xy: 37
  rule's rule_cover_accurate: 0.9737
  rule's negative_rule: False
-rule's supp: 0.2815 AND rule's CF: 0.82223: petalWidth IS L_0(5): Iris-setosa rule's support x: 37
+rule's supp: 0.2815 AND rule's CF: 0.82223: petalWidth IS L_0(5): Iris-setosa rule's index : 2
+ rule's support x: 37
  rule's support xy: 37
  rule's rule_cover_accurate: 1.0
  rule's negative_rule: False
-rule's supp: 0.2741 AND rule's CF: 0.82224: petalLength IS L_0(5): Iris-setosa rule's support x: 43
+rule's supp: 0.2741 AND rule's CF: 0.82224: petalLength IS L_0(5): Iris-setosa rule's index : 3
+ rule's support x: 43
  rule's support xy: 43
  rule's rule_cover_accurate: 1.0
  rule's negative_rule: False
-rule's supp: 0.3185 AND rule's CF: 0.95565: petalWidth IS L_4(5): Iris-virginica rule's support x: 17
+rule's supp: 0.3185 AND rule's CF: 0.95565: petalWidth IS L_4(5): Iris-virginica rule's index : 4
+ rule's support x: 17
  rule's support xy: 17
  rule's rule_cover_accurate: 1.0
  rule's negative_rule: False
-rule's supp: 0.1259 AND rule's CF: 0.37786: petalLength IS L_4(5): Iris-virginica rule's support x: 5
+rule's supp: 0.1259 AND rule's CF: 0.37786: petalLength IS L_4(5): Iris-virginica rule's index : 5
+ rule's support x: 5
  rule's support xy: 5
  rule's rule_cover_accurate: 1.0
  rule's negative_rule: False
