@@ -1,7 +1,7 @@
-2021-06-24 21:40:06,098 Rule information log is  : /n petalWidth IS L_3(5) AND : Iris-virginica CF: 0.6
- /n how many instance number covered by the rule :27   /n how many instance number only antecedent covered by the rule :32  petalLength IS L_2(5) AND : Iris-versicolor CF: 0.8222
- /n how many instance number covered by the rule :37   /n how many instance number only antecedent covered by the rule :38  petalWidth IS L_0(5) AND : Iris-setosa CF: 0.8222
- /n how many instance number covered by the rule :37   /n how many instance number only antecedent covered by the rule :37  petalLength IS L_0(5) AND : Iris-setosa CF: 0.9556
- /n how many instance number covered by the rule :43   /n how many instance number only antecedent covered by the rule :43  petalWidth IS L_4(5) AND : Iris-virginica CF: 0.3778
- /n how many instance number covered by the rule :17   /n how many instance number only antecedent covered by the rule :17  petalLength IS L_4(5) AND : Iris-virginica CF: 0.1111
- /n how many instance number covered by the rule :5   /n how many instance number only antecedent covered by the rule :5  
+2021-08-11 19:27:02,775 Rule information log is  : /n f2 IS L_1(5) AND : green CF: 0.2152
+ /n how many instance number covered by the rule :51   /n how many instance number only antecedent covered by the rule :59  f1 IS L_4(5) AND : green CF: 0.2363
+ /n how many instance number covered by the rule :56   /n how many instance number only antecedent covered by the rule :59  f2 IS L_3(5) AND : green CF: 0.2911
+ /n how many instance number covered by the rule :69   /n how many instance number only antecedent covered by the rule :69  f2 IS L_0(5) AND : green CF: 0.0127
+ /n how many instance number covered by the rule :3   /n how many instance number only antecedent covered by the rule :3  f1 IS L_2(5) AND : green CF: 0.2658
+ /n how many instance number covered by the rule :63   /n how many instance number only antecedent covered by the rule :63  f1 IS L_0(5) AND : green CF: 0.0042
+ /n how many instance number covered by the rule :1   /n how many instance number only antecedent covered by the rule :1  

@@ -65,7 +65,7 @@ class Main:
         log_file.close()
         # logger.debug("Begin  lf.parse_configuration_file in Main ")
 
-        dataset_folder = 'iris'
+        dataset_folder = 'A2'
         config_folder = 'config'
         config_file = "config0s0.txt"
         # whole_file_name_with_path = os.getcwd() + config_file
