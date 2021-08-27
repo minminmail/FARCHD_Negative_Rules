@@ -1,0 +1,6 @@
+10 7 5
+ 
+
+ with normal rules ,the train's accuracy_score is :0.9621380846325167rule index number :0 ,  and the error rate :13.032482511286357rule index number :1 ,  and the error rate :0rule index number :2 ,  and the error rate :8.967517488713643rule index number :3 ,  and the error rate :12.0rule index number :4 ,  and the error rate :0
+
+with normal rules ,the test's accuracy_score is :0.96rule index number :0 ,  and the error rate :0.5830584123812883rule index number :1 ,  and the error rate :0rule index number :2 ,  and the error rate :0.41694158761871175rule index number :3 ,  and the error rate :3.0rule index number :4 ,  and the error rate :0

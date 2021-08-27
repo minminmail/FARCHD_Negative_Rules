@@ -1,18 +1,11 @@
 @relation 
-@attribute f1 real[0.19,16.0]
-@attribute f2 real[0.0,12.0]
-@attribute class{red,green}
-@inputs f1,f2
-@outputs class 
+@attribute 3.61646249686014 real[0.032626572772507245,15.99550170609938]
+@attribute 11.61879710931984 real[0.01308043209846943,15.989311852037073]
+@attribute red{red,green}
+@inputs 3.61646249686014,11.61879710931984
+@outputs red 
 @data
-green green
-green green
-red red
-red red
-green green
-green green
-green green
-green green
+red green
 red green
 red green
 red green
@@ -40,26 +33,6 @@ green green
 green green
 green green
 green green
-red green
-red green
-@relation 
-@attribute f1 real[0.19,16.0]
-@attribute f2 real[0.0,12.0]
-@attribute class{red,green}
-@inputs f1,f2
-@outputs class 
-@data
-green green
-green green
-red red
-red red
-green green
-green green
-green green
-green green
-red green
-red green
-red green
 green green
 green green
 green green
@@ -84,26 +57,6 @@ green green
 green green
 green green
 green green
-red green
-red green
-@relation 
-@attribute f1 real[0.19,16.0]
-@attribute f2 real[0.0,12.0]
-@attribute class{red,green}
-@inputs f1,f2
-@outputs class 
-@data
-green green
-green green
-red red
-red red
-green green
-green green
-green green
-green green
-red green
-red green
-red green
 green green
 green green
 green green
@@ -128,5 +81,27 @@ green green
 green green
 green green
 green green
-red green
-red green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green
+green green

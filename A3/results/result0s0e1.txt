@@ -1,0 +1,5440 @@
+After predict the rules information is as below: @Number of rules: 5
+
+data_row_array  : 0
+
+rule index is : 3 , degree is : 0.1083233707857531
+data_row_array  : 1
+
+rule index is : 3 , degree is : 0.10729370025345096
+data_row_array  : 2
+
+rule index is : 3 , degree is : 0.10490135521090695
+data_row_array  : 3
+
+rule index is : 0 , degree is : 0.15394160460013737
+rule index is : 2 , degree is : 0.11008272183298849
+data_row_array  : 4
+
+rule index is : 0 , degree is : 0.13984340139001783
+data_row_array  : 5
+
+rule index is : 3 , degree is : 0.22664178305388086
+data_row_array  : 6
+
+rule index is : 3 , degree is : 0.1327559593354109
+data_row_array  : 7
+
+rule index is : 0 , degree is : 0.058955925258829464
+rule index is : 3 , degree is : 0.057156349939747636
+data_row_array  : 8
+
+rule index is : 0 , degree is : 0.07294221627587229
+data_row_array  : 9
+
+data_row_array  : 10
+
+rule index is : 3 , degree is : 0.054383494702146394
+data_row_array  : 11
+
+rule index is : 0 , degree is : 0.19763993611242844
+rule index is : 1 , degree is : 0.060215412986154127
+rule index is : 4 , degree is : 0.000360068968782463
+data_row_array  : 12
+
+rule index is : 0 , degree is : 0.16871241013381266
+rule index is : 1 , degree is : 0.08562208306053568
+data_row_array  : 13
+
+data_row_array  : 14
+
+rule index is : 0 , degree is : 0.1275052027044584
+rule index is : 1 , degree is : 0.12181383774491968
+rule index is : 3 , degree is : 0.1764905488425052
+data_row_array  : 15
+
+data_row_array  : 16
+
+rule index is : 4 , degree is : 9.390169461430335e-05
+data_row_array  : 17
+
+rule index is : 1 , degree is : 0.2314187580834945
+rule index is : 4 , degree is : 0.0005658111903771162
+data_row_array  : 18
+
+rule index is : 0 , degree is : 0.2488509785027568
+rule index is : 2 , degree is : 0.2396549701257844
+data_row_array  : 19
+
+rule index is : 0 , degree is : 0.04385554961460067
+rule index is : 1 , degree is : 0.19528224079679324
+rule index is : 2 , degree is : 0.05853605876292926
+rule index is : 3 , degree is : 0.19026394123707066
+data_row_array  : 20
+
+rule index is : 1 , degree is : 0.22819374387165015
+rule index is : 4 , degree is : 0.00020624157684166815
+data_row_array  : 21
+
+rule index is : 0 , degree is : 0.03308340399459592
+rule index is : 1 , degree is : 0.20474327628123018
+rule index is : 2 , degree is : 0.006229807201594406
+data_row_array  : 22
+
+rule index is : 0 , degree is : 0.09347039553972793
+rule index is : 1 , degree is : 0.1517061665019219
+rule index is : 2 , degree is : 0.0020407810649348676
+rule index is : 3 , degree is : 0.24675921893506506
+data_row_array  : 23
+
+rule index is : 0 , degree is : 0.16716324571144395
+rule index is : 2 , degree is : 0.02312044797958107
+rule index is : 3 , degree is : 0.22567955202041884
+data_row_array  : 24
+
+rule index is : 2 , degree is : 0.20179337001277614
+data_row_array  : 25
+
+rule index is : 0 , degree is : 0.1530677453815865
+rule index is : 1 , degree is : 0.09936258876703635
+rule index is : 2 , degree is : 0.1910846661934694
+rule index is : 3 , degree is : 0.05771533380653049
+data_row_array  : 26
+
+rule index is : 0 , degree is : 0.0347088802006732
+rule index is : 1 , degree is : 0.20331564165695945
+rule index is : 2 , degree is : 0.03123143606487659
+data_row_array  : 27
+
+rule index is : 0 , degree is : 0.00013995824787857135
+rule index is : 1 , degree is : 0.23367707649003
+rule index is : 3 , degree is : 0.19734776692852435
+data_row_array  : 28
+
+rule index is : 0 , degree is : 0.26375001849074853
+rule index is : 1 , degree is : 0.0021517869153380577
+rule index is : 4 , degree is : 0.0003279993067312913
+data_row_array  : 29
+
+rule index is : 0 , degree is : 0.18042366447121735
+rule index is : 2 , degree is : 0.2456054504217335
+data_row_array  : 30
+
+rule index is : 4 , degree is : 0.0002767360754953888
+data_row_array  : 31
+
+rule index is : 0 , degree is : 0.10686840490005166
+rule index is : 3 , degree is : 0.22879786646668193
+data_row_array  : 32
+
+rule index is : 4 , degree is : 0.00015208868377075856
+data_row_array  : 33
+
+rule index is : 1 , degree is : 0.1878468778961485
+rule index is : 4 , degree is : 0.00023321734463251878
+data_row_array  : 34
+
+rule index is : 0 , degree is : 0.033340745556320675
+rule index is : 1 , degree is : 0.20451725653242758
+rule index is : 2 , degree is : 0.14610310037472554
+data_row_array  : 35
+
+rule index is : 0 , degree is : 0.058334143110866564
+rule index is : 1 , degree is : 0.18256588031810442
+rule index is : 3 , degree is : 0.09019977022781837
+data_row_array  : 36
+
+rule index is : 0 , degree is : 0.16897601289225728
+rule index is : 1 , degree is : 0.08539056418403548
+rule index is : 2 , degree is : 0.029163227706829494
+data_row_array  : 37
+
+rule index is : 1 , degree is : 0.1238684483198391
+data_row_array  : 38
+
+rule index is : 0 , degree is : 0.09900366890403524
+rule index is : 3 , degree is : 0.055215018978957704
+data_row_array  : 39
+
+rule index is : 0 , degree is : 0.1712747735679827
+data_row_array  : 40
+
+rule index is : 0 , degree is : 0.2425741923104537
+rule index is : 2 , degree is : 0.22784151536728556
+data_row_array  : 41
+
+rule index is : 0 , degree is : 0.1350930620784617
+rule index is : 1 , degree is : 0.11514951948180185
+rule index is : 2 , degree is : 0.12374568120927343
+data_row_array  : 42
+
+rule index is : 0 , degree is : 0.1314560188871953
+rule index is : 1 , degree is : 0.11834388724332733
+rule index is : 2 , degree is : 0.20112134402200113
+rule index is : 3 , degree is : 0.04767865597799874
+data_row_array  : 43
+
+rule index is : 0 , degree is : 0.24311447872646424
+rule index is : 1 , degree is : 0.02027571327480337
+rule index is : 2 , degree is : 0.21905046892462932
+rule index is : 3 , degree is : 0.029749531075370567
+data_row_array  : 44
+
+rule index is : 2 , degree is : 0.17893744114985694
+data_row_array  : 45
+
+rule index is : 0 , degree is : 0.1340891408357975
+rule index is : 1 , degree is : 0.11603125046052044
+rule index is : 2 , degree is : 0.21724026718877895
+data_row_array  : 46
+
+rule index is : 0 , degree is : 0.07131726793680657
+rule index is : 1 , degree is : 0.1711629705348408
+data_row_array  : 47
+
+rule index is : 2 , degree is : 0.07721327351353185
+rule index is : 3 , degree is : 0.17158672648646806
+data_row_array  : 48
+
+data_row_array  : 49
+
+rule index is : 2 , degree is : 0.05521713949524999
+rule index is : 3 , degree is : 0.1935828605047499
+data_row_array  : 50
+
+rule index is : 0 , degree is : 0.1426314371878096
+rule index is : 2 , degree is : 0.08087548805702555
+rule index is : 3 , degree is : 0.16792451194297434
+data_row_array  : 51
+
+rule index is : 0 , degree is : 0.22520456811827264
+rule index is : 1 , degree is : 0.03600575497350809
+rule index is : 2 , degree is : 0.18019615981675963
+data_row_array  : 52
+
+rule index is : 0 , degree is : 0.00745159826331608
+rule index is : 1 , degree is : 0.2272553580993114
+rule index is : 2 , degree is : 0.04729770813274361
+data_row_array  : 53
+
+data_row_array  : 54
+
+rule index is : 0 , degree is : 0.020137176916211183
+rule index is : 2 , degree is : 0.1961931677735865
+rule index is : 3 , degree is : 0.05260683222641339
+data_row_array  : 55
+
+rule index is : 0 , degree is : 0.16217322289769365
+rule index is : 1 , degree is : 0.09136536621532389
+rule index is : 2 , degree is : 0.2282783732024313
+data_row_array  : 56
+
+rule index is : 0 , degree is : 0.07563377826523991
+rule index is : 2 , degree is : 0.1574519917645304
+data_row_array  : 57
+
+rule index is : 0 , degree is : 0.13703344243406698
+rule index is : 1 , degree is : 0.11344530863604484
+data_row_array  : 58
+
+rule index is : 3 , degree is : 0.05919411369661366
+data_row_array  : 59
+
+rule index is : 0 , degree is : 0.1444922575338594
+data_row_array  : 60
+
+rule index is : 0 , degree is : 0.2554490865003892
+rule index is : 1 , degree is : 0.009442387589064582
+rule index is : 3 , degree is : 0.003970461889586657
+data_row_array  : 61
+
+rule index is : 2 , degree is : 0.0316816283351542
+rule index is : 3 , degree is : 0.2171183716648457
+data_row_array  : 62
+
+rule index is : 0 , degree is : 0.14844974048415144
+rule index is : 1 , degree is : 0.10341852244479859
+rule index is : 3 , degree is : 0.0064744594129174235
+data_row_array  : 63
+
+rule index is : 0 , degree is : 0.19255411350548093
+rule index is : 2 , degree is : 0.16548789681383777
+data_row_array  : 64
+
+rule index is : 0 , degree is : 0.15531036940860435
+rule index is : 2 , degree is : 0.014292532396664372
+rule index is : 3 , degree is : 0.23450746760333552
+data_row_array  : 65
+
+rule index is : 4 , degree is : 0.0005549858843815857
+data_row_array  : 66
+
+rule index is : 2 , degree is : 0.05166227620854006
+rule index is : 3 , degree is : 0.19713772379145983
+data_row_array  : 67
+
+rule index is : 0 , degree is : 0.22679179371865063
+rule index is : 1 , degree is : 0.03461171535905138
+rule index is : 4 , degree is : 0.00010595418128533734
+data_row_array  : 68
+
+rule index is : 0 , degree is : 0.060352201405147174
+rule index is : 1 , degree is : 0.18079344594844698
+rule index is : 2 , degree is : 0.15152785350350895
+data_row_array  : 69
+
+rule index is : 2 , degree is : 0.15629981497594017
+rule index is : 3 , degree is : 0.09250018502405968
+data_row_array  : 70
+
+rule index is : 0 , degree is : 0.11231544982457294
+data_row_array  : 71
+
+data_row_array  : 72
+
+rule index is : 0 , degree is : 0.20142765952084377
+rule index is : 1 , degree is : 0.056888704748409916
+data_row_array  : 73
+
+rule index is : 0 , degree is : 0.07051710394593957
+rule index is : 3 , degree is : 0.11534115933390292
+data_row_array  : 74
+
+rule index is : 0 , degree is : 0.009855939661845958
+rule index is : 4 , degree is : 0.0003510188627758047
+data_row_array  : 75
+
+rule index is : 3 , degree is : 0.11480484962591529
+data_row_array  : 76
+
+rule index is : 0 , degree is : 0.12082243204037231
+rule index is : 2 , degree is : 0.041346078672824776
+data_row_array  : 77
+
+rule index is : 0 , degree is : 0.0488150517485587
+data_row_array  : 78
+
+rule index is : 0 , degree is : 0.09341486330600819
+rule index is : 2 , degree is : 0.0343026880290834
+rule index is : 3 , degree is : 0.2144973119709165
+data_row_array  : 79
+
+rule index is : 0 , degree is : 0.12764035358752837
+rule index is : 3 , degree is : 0.121172035165289
+data_row_array  : 80
+
+rule index is : 2 , degree is : 0.06794393087933032
+rule index is : 3 , degree is : 0.1808560691206696
+data_row_array  : 81
+
+rule index is : 0 , degree is : 0.1776209594458351
+rule index is : 2 , degree is : 0.022233921142007815
+data_row_array  : 82
+
+rule index is : 0 , degree is : 0.17552348966120251
+rule index is : 1 , degree is : 0.07964000044031122
+rule index is : 4 , degree is : 0.00039366381263391555
+data_row_array  : 83
+
+rule index is : 2 , degree is : 0.11672498448593491
+data_row_array  : 84
+
+rule index is : 1 , degree is : 0.1390426034300057
+rule index is : 4 , degree is : 4.919868395543902e-06
+data_row_array  : 85
+
+rule index is : 0 , degree is : 0.0637510770395984
+rule index is : 2 , degree is : 0.17378345519651242
+rule index is : 3 , degree is : 0.07501654480348745
+data_row_array  : 86
+
+rule index is : 4 , degree is : 0.00017975766543833798
+data_row_array  : 87
+
+rule index is : 4 , degree is : 0.0003148191939109487
+data_row_array  : 88
+
+rule index is : 1 , degree is : 0.1932401809776634
+rule index is : 4 , degree is : 1.1696891278519783e-05
+data_row_array  : 89
+
+rule index is : 1 , degree is : 0.2142766169778087
+rule index is : 4 , degree is : 0.00047816576167036536
+data_row_array  : 90
+
+rule index is : 0 , degree is : 0.15012054498683644
+rule index is : 1 , degree is : 0.10195107656678298
+rule index is : 3 , degree is : 0.06738795329051514
+data_row_array  : 91
+
+rule index is : 2 , degree is : 0.24343967447299728
+data_row_array  : 92
+
+data_row_array  : 93
+
+rule index is : 1 , degree is : 0.23195072399297442
+rule index is : 3 , degree is : 0.07596025066774269
+data_row_array  : 94
+
+rule index is : 0 , degree is : 0.24367400701587416
+rule index is : 1 , degree is : 0.019784286850821266
+rule index is : 2 , degree is : 0.09883341826076893
+rule index is : 3 , degree is : 0.149966581739231
+data_row_array  : 95
+
+rule index is : 1 , degree is : 0.17297308530937372
+data_row_array  : 96
+
+rule index is : 2 , degree is : 0.22959557291142602
+rule index is : 3 , degree is : 0.019204427088573846
+data_row_array  : 97
+
+rule index is : 0 , degree is : 0.009497597601239211
+rule index is : 3 , degree is : 0.1947755296503988
+data_row_array  : 98
+
+rule index is : 2 , degree is : 0.18666067015196283
+data_row_array  : 99
+
+rule index is : 3 , degree is : 0.05156404048576515
+data_row_array  : 100
+
+rule index is : 0 , degree is : 0.21146502650129007
+rule index is : 3 , degree is : 0.21474648813928734
+data_row_array  : 101
+
+rule index is : 3 , degree is : 0.11965770447924694
+data_row_array  : 102
+
+rule index is : 0 , degree is : 0.21400772197981063
+rule index is : 2 , degree is : 0.22856665312113203
+rule index is : 3 , degree is : 0.020233346878867825
+data_row_array  : 103
+
+rule index is : 1 , degree is : 0.21257464440037685
+data_row_array  : 104
+
+rule index is : 0 , degree is : 0.19976839434750804
+rule index is : 1 , degree is : 0.058346015783443325
+rule index is : 2 , degree is : 0.24383227192730156
+rule index is : 3 , degree is : 0.00496772807269829
+data_row_array  : 105
+
+data_row_array  : 106
+
+rule index is : 3 , degree is : 0.10206377216171461
+data_row_array  : 107
+
+rule index is : 2 , degree is : 0.07621765837467384
+rule index is : 3 , degree is : 0.17258234162532607
+data_row_array  : 108
+
+rule index is : 2 , degree is : 0.24708598832150605
+rule index is : 3 , degree is : 0.0017140116784938133
+data_row_array  : 109
+
+rule index is : 0 , degree is : 0.17381471444039828
+rule index is : 3 , degree is : 0.07498062905460258
+data_row_array  : 110
+
+rule index is : 0 , degree is : 0.14474936142626393
+rule index is : 3 , degree is : 0.1701910253050671
+data_row_array  : 111
+
+rule index is : 0 , degree is : 0.0386377046221267
+rule index is : 2 , degree is : 0.12491306460775299
+data_row_array  : 112
+
+rule index is : 0 , degree is : 0.08172032898210328
+rule index is : 3 , degree is : 0.17364898503411874
+data_row_array  : 113
+
+rule index is : 1 , degree is : 0.22583446535637336
+rule index is : 3 , degree is : 0.13689184600320534
+data_row_array  : 114
+
+rule index is : 0 , degree is : 0.14585955378266266
+rule index is : 1 , degree is : 0.10569344975812722
+rule index is : 2 , degree is : 0.046221249480862626
+rule index is : 3 , degree is : 0.2025787505191373
+data_row_array  : 115
+
+rule index is : 1 , degree is : 0.11814347181753428
+rule index is : 2 , degree is : 0.038054161584657756
+data_row_array  : 116
+
+rule index is : 3 , degree is : 0.13170492750185508
+data_row_array  : 117
+
+rule index is : 0 , degree is : 0.12662165351138996
+rule index is : 3 , degree is : 0.04353776896921827
+data_row_array  : 118
+
+rule index is : 1 , degree is : 0.21701066511751743
+rule index is : 3 , degree is : 0.01945046041030766
+data_row_array  : 119
+
+rule index is : 1 , degree is : 0.21219344716802796
+data_row_array  : 120
+
+rule index is : 0 , degree is : 0.029942256539323777
+rule index is : 1 , degree is : 0.20750210526335874
+rule index is : 2 , degree is : 0.0703273447350752
+data_row_array  : 121
+
+rule index is : 3 , degree is : 0.03818056777355923
+data_row_array  : 122
+
+rule index is : 0 , degree is : 0.17349733168650355
+rule index is : 1 , degree is : 0.08141954865400251
+rule index is : 2 , degree is : 0.12351470679231687
+rule index is : 3 , degree is : 0.12528529320768306
+data_row_array  : 123
+
+rule index is : 2 , degree is : 0.03303101372849719
+rule index is : 3 , degree is : 0.21576898627150273
+data_row_array  : 124
+
+rule index is : 0 , degree is : 0.04309387014045919
+data_row_array  : 125
+
+rule index is : 3 , degree is : 0.05361507548526798
+data_row_array  : 126
+
+rule index is : 0 , degree is : 0.1889093738369132
+rule index is : 1 , degree is : 0.06788335235510777
+rule index is : 3 , degree is : 0.19122623366784436
+data_row_array  : 127
+
+rule index is : 2 , degree is : 0.24533109946126067
+data_row_array  : 128
+
+rule index is : 4 , degree is : 0.00011521424897959538
+data_row_array  : 129
+
+rule index is : 2 , degree is : 0.041048768210267136
+rule index is : 3 , degree is : 0.2077512317897328
+data_row_array  : 130
+
+rule index is : 0 , degree is : 0.25294696059155863
+rule index is : 1 , degree is : 0.011639972252793326
+rule index is : 3 , degree is : 0.07255227917528995
+data_row_array  : 131
+
+rule index is : 0 , degree is : 0.06040260198199506
+rule index is : 1 , degree is : 0.1807491797768954
+rule index is : 3 , degree is : 0.0883015918250284
+data_row_array  : 132
+
+rule index is : 0 , degree is : 0.1545270942802792
+rule index is : 2 , degree is : 0.1916235367470239
+data_row_array  : 133
+
+rule index is : 0 , degree is : 0.17935436817698294
+rule index is : 1 , degree is : 0.07627538963268737
+rule index is : 3 , degree is : 0.07109406233029168
+data_row_array  : 134
+
+rule index is : 2 , degree is : 0.18282095421987538
+data_row_array  : 135
+
+rule index is : 0 , degree is : 0.11480888943368216
+rule index is : 2 , degree is : 0.12328750269620789
+data_row_array  : 136
+
+rule index is : 3 , degree is : 0.06181481921795591
+data_row_array  : 137
+
+data_row_array  : 138
+
+data_row_array  : 139
+
+rule index is : 0 , degree is : 0.15263401705499116
+rule index is : 1 , degree is : 0.09974352671879438
+rule index is : 3 , degree is : 0.11200473111118572
+data_row_array  : 140
+
+rule index is : 0 , degree is : 0.09472548461413989
+rule index is : 4 , degree is : 3.5420213970834604e-05
+data_row_array  : 141
+
+rule index is : 2 , degree is : 0.22963291863352756
+data_row_array  : 142
+
+rule index is : 2 , degree is : 0.1764705738563958
+rule index is : 3 , degree is : 0.07232942614360406
+data_row_array  : 143
+
+rule index is : 0 , degree is : 0.10936311802812212
+rule index is : 3 , degree is : 0.13048286988513383
+data_row_array  : 144
+
+rule index is : 2 , degree is : 0.09513183299167499
+data_row_array  : 145
+
+rule index is : 3 , degree is : 0.059923186714373806
+data_row_array  : 146
+
+rule index is : 2 , degree is : 0.15019778764936423
+rule index is : 3 , degree is : 0.09860221235063565
+data_row_array  : 147
+
+rule index is : 3 , degree is : 0.20025155780188084
+data_row_array  : 148
+
+rule index is : 3 , degree is : 0.1472867717774907
+data_row_array  : 149
+
+rule index is : 2 , degree is : 0.13525499442675196
+rule index is : 3 , degree is : 0.11354500557324794
+data_row_array  : 150
+
+rule index is : 2 , degree is : 0.07630662000527391
+data_row_array  : 151
+
+rule index is : 4 , degree is : 0.00047880590286648086
+data_row_array  : 152
+
+rule index is : 3 , degree is : 0.10701953330530971
+data_row_array  : 153
+
+rule index is : 0 , degree is : 0.15622743176612275
+rule index is : 1 , degree is : 0.09658747728429938
+rule index is : 3 , degree is : 0.042058425276559556
+data_row_array  : 154
+
+rule index is : 0 , degree is : 0.1822751211640205
+rule index is : 2 , degree is : 0.02479377659405596
+rule index is : 3 , degree is : 0.22400622340594395
+data_row_array  : 155
+
+rule index is : 0 , degree is : 0.042121295702376965
+rule index is : 2 , degree is : 0.12306299592918649
+data_row_array  : 156
+
+rule index is : 0 , degree is : 0.17202523625408453
+rule index is : 2 , degree is : 0.16004149581773855
+rule index is : 3 , degree is : 0.08875850418226133
+data_row_array  : 157
+
+rule index is : 0 , degree is : 0.09511120549044742
+rule index is : 3 , degree is : 0.010530756936797671
+data_row_array  : 158
+
+rule index is : 0 , degree is : 0.1816983739724033
+rule index is : 1 , degree is : 0.07421667980936178
+rule index is : 2 , degree is : 0.016342648742835662
+rule index is : 3 , degree is : 0.23245735125716424
+data_row_array  : 159
+
+rule index is : 2 , degree is : 0.11140165490952574
+rule index is : 3 , degree is : 0.13739834509047416
+data_row_array  : 160
+
+rule index is : 2 , degree is : 0.0789370830645308
+data_row_array  : 161
+
+rule index is : 2 , degree is : 0.05929212007850704
+rule index is : 3 , degree is : 0.18950787992149287
+data_row_array  : 162
+
+rule index is : 0 , degree is : 0.12608878575429533
+rule index is : 1 , degree is : 0.1230578583420201
+rule index is : 2 , degree is : 0.22969412516777596
+data_row_array  : 163
+
+rule index is : 0 , degree is : 0.020234880762768283
+rule index is : 3 , degree is : 0.03283095924304771
+data_row_array  : 164
+
+data_row_array  : 165
+
+rule index is : 0 , degree is : 0.24864242892928176
+rule index is : 1 , degree is : 0.01542058646256167
+data_row_array  : 166
+
+rule index is : 0 , degree is : 0.17964987723890793
+rule index is : 3 , degree is : 0.20218580643467443
+data_row_array  : 167
+
+rule index is : 1 , degree is : 0.16092326044526964
+rule index is : 2 , degree is : 0.16840930545991525
+rule index is : 3 , degree is : 0.08039069454008463
+data_row_array  : 168
+
+rule index is : 2 , degree is : 0.0697816003223444
+rule index is : 3 , degree is : 0.1790183996776555
+data_row_array  : 169
+
+rule index is : 2 , degree is : 0.21265863020101738
+rule index is : 3 , degree is : 0.036141369798982484
+data_row_array  : 170
+
+rule index is : 0 , degree is : 0.11496490348126742
+rule index is : 2 , degree is : 0.11399041792315617
+rule index is : 3 , degree is : 0.1348095820768437
+data_row_array  : 171
+
+rule index is : 0 , degree is : 0.1888991484144181
+rule index is : 1 , degree is : 0.06789233321077777
+rule index is : 3 , degree is : 0.16457884615673518
+data_row_array  : 172
+
+rule index is : 0 , degree is : 0.21644424018469277
+rule index is : 1 , degree is : 0.04369983713305345
+rule index is : 3 , degree is : 0.1291557449013962
+data_row_array  : 173
+
+rule index is : 0 , degree is : 0.25809049230725933
+rule index is : 1 , degree is : 0.00712247520121247
+rule index is : 2 , degree is : 0.040199691738740564
+data_row_array  : 174
+
+data_row_array  : 175
+
+rule index is : 1 , degree is : 0.2118199397430163
+rule index is : 2 , degree is : 0.22764562895888313
+rule index is : 3 , degree is : 0.021154371041116744
+data_row_array  : 176
+
+rule index is : 3 , degree is : 0.0730956775931306
+data_row_array  : 177
+
+rule index is : 0 , degree is : 0.26570486529434056
+data_row_array  : 178
+
+rule index is : 0 , degree is : 0.09850309392331213
+rule index is : 1 , degree is : 0.14728601292535545
+rule index is : 3 , degree is : 0.1528579759465398
+data_row_array  : 179
+
+rule index is : 0 , degree is : 0.05980271051303039
+rule index is : 1 , degree is : 0.18127605665685007
+rule index is : 2 , degree is : 0.0010927582425914887
+rule index is : 3 , degree is : 0.24770724175740844
+data_row_array  : 180
+
+data_row_array  : 181
+
+data_row_array  : 182
+
+data_row_array  : 183
+
+rule index is : 0 , degree is : 0.1217666937973272
+rule index is : 2 , degree is : 0.2225714801625183
+data_row_array  : 184
+
+rule index is : 0 , degree is : 0.08487644065873927
+rule index is : 2 , degree is : 0.16082608350112304
+rule index is : 3 , degree is : 0.08797391649887687
+data_row_array  : 185
+
+rule index is : 0 , degree is : 0.05107734484136044
+rule index is : 2 , degree is : 0.1788638590333946
+rule index is : 3 , degree is : 0.06993614096660529
+data_row_array  : 186
+
+rule index is : 0 , degree is : 0.1449596265544914
+rule index is : 2 , degree is : 0.08536611071576714
+data_row_array  : 187
+
+rule index is : 0 , degree is : 0.21020942284711622
+rule index is : 3 , degree is : 0.18164493593519354
+data_row_array  : 188
+
+rule index is : 2 , degree is : 0.20897539910420526
+rule index is : 3 , degree is : 0.039824600895794586
+data_row_array  : 189
+
+rule index is : 0 , degree is : 0.005212887313891045
+rule index is : 1 , degree is : 0.229221588827995
+rule index is : 2 , degree is : 0.07031804005191084
+data_row_array  : 190
+
+rule index is : 4 , degree is : 0.0001413908881412803
+data_row_array  : 191
+
+rule index is : 1 , degree is : 0.2157433199855811
+rule index is : 4 , degree is : 0.00021128029496506984
+data_row_array  : 192
+
+rule index is : 0 , degree is : 0.004635786369706459
+rule index is : 2 , degree is : 0.03708423169588544
+data_row_array  : 193
+
+rule index is : 0 , degree is : 0.047534267756335576
+rule index is : 2 , degree is : 0.2366690535770962
+data_row_array  : 194
+
+rule index is : 2 , degree is : 0.06274659683963214
+data_row_array  : 195
+
+rule index is : 0 , degree is : 0.04978342477376304
+rule index is : 2 , degree is : 0.18318877206984718
+rule index is : 3 , degree is : 0.0656112279301527
+data_row_array  : 196
+
+rule index is : 2 , degree is : 0.1551722723208081
+rule index is : 3 , degree is : 0.09362772767919177
+data_row_array  : 197
+
+rule index is : 0 , degree is : 0.24512478447764055
+rule index is : 4 , degree is : 0.00027970119213763147
+data_row_array  : 198
+
+rule index is : 0 , degree is : 0.15006884649360222
+rule index is : 1 , degree is : 0.10199648268142675
+rule index is : 3 , degree is : 0.03223062247975454
+data_row_array  : 199
+
+rule index is : 2 , degree is : 0.004979994380158127
+rule index is : 3 , degree is : 0.2438200056198418
+data_row_array  : 200
+
+rule index is : 0 , degree is : 0.18407409423958632
+rule index is : 1 , degree is : 0.07213011557770366
+rule index is : 2 , degree is : 0.08258293853429081
+rule index is : 3 , degree is : 0.16621706146570908
+data_row_array  : 201
+
+rule index is : 1 , degree is : 0.17833576568982593
+rule index is : 3 , degree is : 0.012840003337697735
+data_row_array  : 202
+
+rule index is : 1 , degree is : 0.1264554646116501
+rule index is : 2 , degree is : 0.1886186953526526
+rule index is : 3 , degree is : 0.06018130464734728
+data_row_array  : 203
+
+rule index is : 3 , degree is : 0.07502936449613362
+data_row_array  : 204
+
+data_row_array  : 205
+
+rule index is : 2 , degree is : 0.2242751362262328
+rule index is : 3 , degree is : 0.024524863773767076
+data_row_array  : 206
+
+rule index is : 2 , degree is : 0.1877781359208801
+data_row_array  : 207
+
+rule index is : 1 , degree is : 0.16260197736161144
+rule index is : 4 , degree is : 0.0005862188331793326
+data_row_array  : 208
+
+rule index is : 0 , degree is : 0.13319547495709122
+rule index is : 1 , degree is : 0.11681614558614599
+rule index is : 4 , degree is : 0.0004347423272835607
+data_row_array  : 209
+
+rule index is : 0 , degree is : 0.06128812575426006
+rule index is : 1 , degree is : 0.17997143575752816
+rule index is : 2 , degree is : 0.16314145041647635
+data_row_array  : 210
+
+rule index is : 2 , degree is : 0.12085766407037908
+data_row_array  : 211
+
+rule index is : 0 , degree is : 0.029931820388123424
+rule index is : 1 , degree is : 0.2075112711993116
+rule index is : 2 , degree is : 0.10437329518082396
+rule index is : 3 , degree is : 0.14442670481917594
+data_row_array  : 212
+
+rule index is : 0 , degree is : 0.01754874074166632
+rule index is : 1 , degree is : 0.21838716910067021
+rule index is : 4 , degree is : 0.0005597785562086228
+data_row_array  : 213
+
+rule index is : 2 , degree is : 0.15325470637025604
+rule index is : 3 , degree is : 0.09554529362974383
+data_row_array  : 214
+
+rule index is : 0 , degree is : 0.25843161351722294
+rule index is : 1 , degree is : 0.006822872876308293
+rule index is : 2 , degree is : 0.11289923874380249
+rule index is : 3 , degree is : 0.1359007612561974
+data_row_array  : 215
+
+rule index is : 2 , degree is : 0.007995129833432283
+rule index is : 3 , degree is : 0.24080487016656763
+data_row_array  : 216
+
+rule index is : 0 , degree is : 0.1867224636694511
+rule index is : 3 , degree is : 0.0297928637155887
+data_row_array  : 217
+
+rule index is : 1 , degree is : 0.18818173252154216
+data_row_array  : 218
+
+rule index is : 2 , degree is : 0.016735517274721487
+rule index is : 3 , degree is : 0.23206448272527844
+data_row_array  : 219
+
+rule index is : 2 , degree is : 0.04203900710641539
+rule index is : 3 , degree is : 0.20676099289358454
+data_row_array  : 220
+
+rule index is : 0 , degree is : 0.009788034343384069
+rule index is : 1 , degree is : 0.22520329665859054
+rule index is : 2 , degree is : 0.09193478255038492
+rule index is : 3 , degree is : 0.15686521744961499
+data_row_array  : 221
+
+rule index is : 4 , degree is : 0.00017008226992206333
+data_row_array  : 222
+
+rule index is : 1 , degree is : 0.1195771506502351
+rule index is : 3 , degree is : 0.01587178272116886
+data_row_array  : 223
+
+rule index is : 1 , degree is : 0.23354678055859948
+data_row_array  : 224
+
+rule index is : 0 , degree is : 0.2593209616086323
+rule index is : 1 , degree is : 0.006041770007144091
+rule index is : 2 , degree is : 0.12149177600047485
+rule index is : 3 , degree is : 0.12730822399952507
+data_row_array  : 225
+
+rule index is : 2 , degree is : 0.15644566584632408
+data_row_array  : 226
+
+rule index is : 0 , degree is : 0.14359124033012077
+rule index is : 4 , degree is : 0.00041727431002033495
+data_row_array  : 227
+
+rule index is : 1 , degree is : 0.14415703015366818
+rule index is : 2 , degree is : 0.13423184123688467
+rule index is : 3 , degree is : 0.11456815876311523
+data_row_array  : 228
+
+rule index is : 0 , degree is : 0.12989293037556746
+rule index is : 2 , degree is : 0.11820228788050818
+rule index is : 3 , degree is : 0.13059771211949173
+data_row_array  : 229
+
+rule index is : 0 , degree is : 0.03142578256656537
+rule index is : 2 , degree is : 0.1863937757487692
+rule index is : 3 , degree is : 0.06240622425123068
+data_row_array  : 230
+
+rule index is : 0 , degree is : 0.14947087486471755
+rule index is : 1 , degree is : 0.10252167339079275
+rule index is : 2 , degree is : 0.19596562336118836
+rule index is : 3 , degree is : 0.05283437663881153
+data_row_array  : 231
+
+rule index is : 4 , degree is : 0.00045205643683525465
+data_row_array  : 232
+
+rule index is : 4 , degree is : 0.0001242846589389635
+data_row_array  : 233
+
+rule index is : 1 , degree is : 0.18586970089436508
+rule index is : 2 , degree is : 0.056052840426226984
+rule index is : 3 , degree is : 0.19274715957377292
+data_row_array  : 234
+
+rule index is : 1 , degree is : 0.18079444416334411
+rule index is : 2 , degree is : 0.21177259399570697
+rule index is : 3 , degree is : 0.037027406004292905
+data_row_array  : 235
+
+rule index is : 2 , degree is : 0.007870279120993218
+data_row_array  : 236
+
+data_row_array  : 237
+
+rule index is : 2 , degree is : 0.16692930587331006
+data_row_array  : 238
+
+rule index is : 2 , degree is : 0.048889042257445295
+rule index is : 3 , degree is : 0.19991095774255463
+data_row_array  : 239
+
+rule index is : 1 , degree is : 0.1813432642650392
+rule index is : 3 , degree is : 0.21886528172203676
+data_row_array  : 240
+
+rule index is : 4 , degree is : 0.0005224429242698248
+data_row_array  : 241
+
+rule index is : 0 , degree is : 0.07073618885530666
+rule index is : 3 , degree is : 0.2118704140605652
+data_row_array  : 242
+
+rule index is : 4 , degree is : 0.0005280974286265772
+data_row_array  : 243
+
+rule index is : 1 , degree is : 0.2259701102709658
+rule index is : 2 , degree is : 0.15893739034503357
+rule index is : 3 , degree is : 0.08986260965496631
+data_row_array  : 244
+
+rule index is : 3 , degree is : 0.10335274668661841
+data_row_array  : 245
+
+rule index is : 0 , degree is : 0.21337279118876432
+rule index is : 2 , degree is : 0.0874746056536615
+rule index is : 3 , degree is : 0.1613253943463384
+data_row_array  : 246
+
+rule index is : 0 , degree is : 0.2647965341371754
+rule index is : 1 , degree is : 0.001232645825425956
+rule index is : 4 , degree is : 0.00016998157563306081
+data_row_array  : 247
+
+rule index is : 2 , degree is : 0.20415668506444604
+rule index is : 3 , degree is : 0.044643314935553846
+data_row_array  : 248
+
+rule index is : 0 , degree is : 0.2236625993973314
+rule index is : 3 , degree is : 0.20449516498946238
+data_row_array  : 249
+
+rule index is : 1 , degree is : 0.18369841664173017
+rule index is : 2 , degree is : 0.13372805040341093
+data_row_array  : 250
+
+rule index is : 2 , degree is : 0.0429225886107018
+data_row_array  : 251
+
+rule index is : 0 , degree is : 0.2246173695719204
+rule index is : 4 , degree is : 0.00020692403118427469
+data_row_array  : 252
+
+rule index is : 2 , degree is : 0.21355686483138311
+data_row_array  : 253
+
+rule index is : 3 , degree is : 0.10541548690131658
+data_row_array  : 254
+
+rule index is : 0 , degree is : 0.01051301227755543
+rule index is : 2 , degree is : 0.17265813637574223
+data_row_array  : 255
+
+rule index is : 0 , degree is : 0.20301000528865598
+rule index is : 4 , degree is : 0.0005005677992390286
+data_row_array  : 256
+
+rule index is : 1 , degree is : 0.16529096795039877
+data_row_array  : 257
+
+rule index is : 0 , degree is : 0.22712820993689095
+rule index is : 1 , degree is : 0.034316245367223476
+rule index is : 3 , degree is : 0.19105152328004305
+data_row_array  : 258
+
+rule index is : 1 , degree is : 0.11709348549081555
+rule index is : 3 , degree is : 0.050315239949381314
+data_row_array  : 259
+
+rule index is : 3 , degree is : 0.24032640081452447
+data_row_array  : 260
+
+rule index is : 0 , degree is : 0.25866452440289533
+rule index is : 3 , degree is : 0.061238321465342714
+data_row_array  : 261
+
+rule index is : 2 , degree is : 0.11985407742822769
+data_row_array  : 262
+
+rule index is : 0 , degree is : 0.06995108006383227
+rule index is : 2 , degree is : 0.015824462071491616
+rule index is : 3 , degree is : 0.2329755379285083
+data_row_array  : 263
+
+rule index is : 1 , degree is : 0.14046065199067861
+rule index is : 2 , degree is : 0.08928388258745103
+rule index is : 3 , degree is : 0.1595161174125489
+data_row_array  : 264
+
+rule index is : 3 , degree is : 0.13645504583349732
+data_row_array  : 265
+
+rule index is : 2 , degree is : 0.006030835099117239
+data_row_array  : 266
+
+data_row_array  : 267
+
+data_row_array  : 268
+
+rule index is : 0 , degree is : 0.01978056299339386
+data_row_array  : 269
+
+rule index is : 1 , degree is : 0.18140639906043513
+rule index is : 4 , degree is : 0.0005553338761344912
+data_row_array  : 270
+
+rule index is : 2 , degree is : 0.08370454431225689
+rule index is : 3 , degree is : 0.165095455687743
+data_row_array  : 271
+
+rule index is : 1 , degree is : 0.1969917606171707
+rule index is : 2 , degree is : 0.12277887575494408
+rule index is : 3 , degree is : 0.1260211242450558
+data_row_array  : 272
+
+rule index is : 0 , degree is : 0.07204715022806171
+rule index is : 2 , degree is : 0.003725926532600159
+data_row_array  : 273
+
+rule index is : 2 , degree is : 0.05741204460872411
+data_row_array  : 274
+
+data_row_array  : 275
+
+rule index is : 0 , degree is : 0.17956684746972595
+rule index is : 2 , degree is : 0.06775667294211708
+rule index is : 3 , degree is : 0.18104332705788284
+data_row_array  : 276
+
+rule index is : 0 , degree is : 0.0841662962616133
+rule index is : 2 , degree is : 0.21891794687363209
+rule index is : 3 , degree is : 0.02988205312636779
+data_row_array  : 277
+
+data_row_array  : 278
+
+rule index is : 0 , degree is : 0.11616416955710179
+rule index is : 2 , degree is : 0.17846402466804753
+rule index is : 3 , degree is : 0.07033597533195234
+data_row_array  : 279
+
+rule index is : 1 , degree is : 0.18900758074174387
+rule index is : 4 , degree is : 0.0004577084710703937
+data_row_array  : 280
+
+rule index is : 1 , degree is : 0.1539522190027505
+rule index is : 2 , degree is : 0.22493941911496393
+data_row_array  : 281
+
+data_row_array  : 282
+
+rule index is : 2 , degree is : 0.17024891451608765
+rule index is : 3 , degree is : 0.07855108548391224
+data_row_array  : 283
+
+rule index is : 2 , degree is : 0.19443685575752964
+rule index is : 3 , degree is : 0.05436314424247026
+data_row_array  : 284
+
+rule index is : 2 , degree is : 0.21670458693552844
+rule index is : 3 , degree is : 0.032095413064471445
+data_row_array  : 285
+
+rule index is : 1 , degree is : 0.18950591464342142
+rule index is : 2 , degree is : 0.1987759729792775
+rule index is : 3 , degree is : 0.050024027020722395
+data_row_array  : 286
+
+rule index is : 0 , degree is : 0.10696101373070165
+rule index is : 2 , degree is : 0.06016408736705379
+rule index is : 3 , degree is : 0.1886359126329461
+data_row_array  : 287
+
+rule index is : 0 , degree is : 0.148577277441988
+rule index is : 3 , degree is : 0.1468525546820573
+data_row_array  : 288
+
+rule index is : 2 , degree is : 0.19235043114611217
+rule index is : 3 , degree is : 0.05644956885388771
+data_row_array  : 289
+
+rule index is : 0 , degree is : 0.1016393279710538
+rule index is : 1 , degree is : 0.14453149932519768
+rule index is : 2 , degree is : 0.07597846373927969
+rule index is : 3 , degree is : 0.17282153626072022
+data_row_array  : 290
+
+rule index is : 0 , degree is : 0.0721429818705889
+rule index is : 2 , degree is : 0.010658792481853243
+rule index is : 3 , degree is : 0.23814120751814666
+data_row_array  : 291
+
+rule index is : 0 , degree is : 0.062067097427838586
+rule index is : 1 , degree is : 0.1792872750615001
+rule index is : 2 , degree is : 0.01903069936803762
+data_row_array  : 292
+
+rule index is : 0 , degree is : 0.239562047787796
+rule index is : 2 , degree is : 0.24339113421879174
+rule index is : 3 , degree is : 0.005408865781208122
+data_row_array  : 293
+
+rule index is : 3 , degree is : 0.05978340924378653
+data_row_array  : 294
+
+rule index is : 0 , degree is : 0.25549826605929166
+rule index is : 3 , degree is : 0.13557659283311552
+data_row_array  : 295
+
+rule index is : 0 , degree is : 0.10519542833424543
+rule index is : 3 , degree is : 0.22716802583209592
+data_row_array  : 296
+
+rule index is : 0 , degree is : 0.10076692715620274
+rule index is : 2 , degree is : 0.09496084491001704
+rule index is : 3 , degree is : 0.15383915508998286
+data_row_array  : 297
+
+rule index is : 0 , degree is : 0.14869059086261951
+rule index is : 3 , degree is : 0.08114202271768313
+data_row_array  : 298
+
+rule index is : 0 , degree is : 0.25511919078068923
+rule index is : 1 , degree is : 0.009732130711776288
+rule index is : 3 , degree is : 0.18549075682872632
+data_row_array  : 299
+
+rule index is : 0 , degree is : 0.0328445079627633
+rule index is : 2 , degree is : 0.026459737503544335
+data_row_array  : 300
+
+data_row_array  : 301
+
+rule index is : 3 , degree is : 0.12102432336967471
+data_row_array  : 302
+
+rule index is : 2 , degree is : 0.10199984034896797
+data_row_array  : 303
+
+rule index is : 0 , degree is : 0.10360654034716135
+rule index is : 4 , degree is : 0.00036401438368566745
+data_row_array  : 304
+
+rule index is : 0 , degree is : 0.2563489806575207
+rule index is : 2 , degree is : 0.07251011237372058
+data_row_array  : 305
+
+rule index is : 0 , degree is : 0.020852895823760043
+rule index is : 2 , degree is : 0.22975126968365298
+data_row_array  : 306
+
+rule index is : 0 , degree is : 0.12724762561742545
+rule index is : 4 , degree is : 0.00041626588349399316
+data_row_array  : 307
+
+rule index is : 3 , degree is : 0.1261537024603948
+data_row_array  : 308
+
+rule index is : 0 , degree is : 0.21518296990935354
+rule index is : 1 , degree is : 0.044807594422213146
+rule index is : 2 , degree is : 0.14043769032480147
+rule index is : 3 , degree is : 0.10836230967519841
+data_row_array  : 309
+
+rule index is : 0 , degree is : 0.15397628896098065
+rule index is : 1 , degree is : 0.0985646267502732
+rule index is : 3 , degree is : 0.23758288226667915
+data_row_array  : 310
+
+rule index is : 0 , degree is : 0.25858673664453224
+rule index is : 2 , degree is : 0.17988004307905858
+data_row_array  : 311
+
+rule index is : 2 , degree is : 0.14032639857003898
+rule index is : 3 , degree is : 0.1084736014299609
+data_row_array  : 312
+
+rule index is : 3 , degree is : 0.2361708915855142
+data_row_array  : 313
+
+rule index is : 2 , degree is : 0.22024514407121107
+data_row_array  : 314
+
+rule index is : 0 , degree is : 0.1345267636215416
+rule index is : 3 , degree is : 0.16502836822628036
+data_row_array  : 315
+
+rule index is : 2 , degree is : 0.03848538736172618
+rule index is : 3 , degree is : 0.21031461263827372
+data_row_array  : 316
+
+data_row_array  : 317
+
+rule index is : 1 , degree is : 0.18025327007591252
+rule index is : 2 , degree is : 0.13162930659860553
+rule index is : 3 , degree is : 0.11717069340139437
+data_row_array  : 318
+
+rule index is : 0 , degree is : 0.04389262866537339
+rule index is : 2 , degree is : 0.06389247845918562
+data_row_array  : 319
+
+rule index is : 0 , degree is : 0.17392172849615595
+rule index is : 1 , degree is : 0.08104680645228675
+rule index is : 2 , degree is : 0.12434187380403962
+rule index is : 3 , degree is : 0.12445812619596029
+data_row_array  : 320
+
+rule index is : 2 , degree is : 0.15348341989353304
+rule index is : 3 , degree is : 0.09531658010646686
+data_row_array  : 321
+
+rule index is : 0 , degree is : 0.25718254560990594
+data_row_array  : 322
+
+rule index is : 0 , degree is : 0.09439845975038767
+rule index is : 1 , degree is : 0.15089105976844236
+rule index is : 3 , degree is : 0.22067210438529292
+data_row_array  : 323
+
+rule index is : 4 , degree is : 0.0002021236923314186
+data_row_array  : 324
+
+data_row_array  : 325
+
+rule index is : 0 , degree is : 0.08549821050017214
+rule index is : 1 , degree is : 0.15870803300172706
+rule index is : 4 , degree is : 4.470225555423666e-06
+data_row_array  : 326
+
+rule index is : 0 , degree is : 0.13638409852732947
+rule index is : 1 , degree is : 0.11401561894932519
+rule index is : 4 , degree is : 0.00023162346903833443
+data_row_array  : 327
+
+rule index is : 1 , degree is : 0.1909828681924073
+rule index is : 4 , degree is : 0.0001903803930084537
+data_row_array  : 328
+
+data_row_array  : 329
+
+rule index is : 3 , degree is : 0.03792909309822147
+data_row_array  : 330
+
+rule index is : 4 , degree is : 0.00010433079204080032
+data_row_array  : 331
+
+rule index is : 1 , degree is : 0.2205933864814351
+rule index is : 2 , degree is : 0.13058994742370406
+rule index is : 3 , degree is : 0.11821005257629583
+data_row_array  : 332
+
+rule index is : 0 , degree is : 0.1713570053711842
+rule index is : 1 , degree is : 0.08329936943732956
+rule index is : 3 , degree is : 0.1232828080820241
+data_row_array  : 333
+
+rule index is : 4 , degree is : 0.00048559180798178516
+data_row_array  : 334
+
+rule index is : 0 , degree is : 0.22817138932182865
+rule index is : 1 , degree is : 0.03340003447241342
+rule index is : 4 , degree is : 0.00044310471347575557
+data_row_array  : 335
+
+rule index is : 0 , degree is : 0.20437879554107277
+rule index is : 1 , degree is : 0.054296760339959366
+rule index is : 2 , degree is : 0.23460707164766967
+rule index is : 3 , degree is : 0.014192928352330185
+data_row_array  : 336
+
+rule index is : 0 , degree is : 0.08892591158315426
+rule index is : 1 , degree is : 0.1556975276929321
+rule index is : 4 , degree is : 0.0002222562875996893
+data_row_array  : 337
+
+rule index is : 3 , degree is : 0.030748485392535437
+data_row_array  : 338
+
+rule index is : 1 , degree is : 0.22524129810694013
+rule index is : 2 , degree is : 0.23940273821685587
+rule index is : 3 , degree is : 0.009397261783144005
+data_row_array  : 339
+
+data_row_array  : 340
+
+rule index is : 2 , degree is : 0.020836194063273236
+data_row_array  : 341
+
+rule index is : 0 , degree is : 0.2517085425169203
+rule index is : 1 , degree is : 0.012727658751104492
+rule index is : 2 , degree is : 0.18313734773648122
+data_row_array  : 342
+
+rule index is : 0 , degree is : 0.25372192695362256
+rule index is : 1 , degree is : 0.010959329369808533
+rule index is : 2 , degree is : 0.071664740106988
+data_row_array  : 343
+
+rule index is : 0 , degree is : 0.13151805068737998
+rule index is : 4 , degree is : 0.0005597827694319327
+data_row_array  : 344
+
+rule index is : 0 , degree is : 0.11670910474528257
+rule index is : 2 , degree is : 0.22484233585158578
+rule index is : 3 , degree is : 0.023957664148414104
+data_row_array  : 345
+
+rule index is : 0 , degree is : 0.1624491615384156
+data_row_array  : 346
+
+rule index is : 2 , degree is : 0.05967451095347989
+data_row_array  : 347
+
+rule index is : 4 , degree is : 0.00010096964949472839
+data_row_array  : 348
+
+rule index is : 3 , degree is : 0.11093261421954859
+data_row_array  : 349
+
+rule index is : 0 , degree is : 0.11293950634999551
+rule index is : 3 , degree is : 0.11726924320509109
+data_row_array  : 350
+
+rule index is : 0 , degree is : 0.20988315329824578
+rule index is : 1 , degree is : 0.04946235446607861
+rule index is : 3 , degree is : 0.24002627318843495
+data_row_array  : 351
+
+rule index is : 0 , degree is : 0.03008494256000686
+rule index is : 2 , degree is : 0.18127864633255425
+data_row_array  : 352
+
+rule index is : 0 , degree is : 0.17424444084775983
+rule index is : 1 , degree is : 0.08076337238840627
+rule index is : 3 , degree is : 0.13354691599644367
+data_row_array  : 353
+
+rule index is : 1 , degree is : 0.22988864028728048
+rule index is : 3 , degree is : 0.08221998830700901
+data_row_array  : 354
+
+rule index is : 0 , degree is : 0.04361116337060591
+rule index is : 2 , degree is : 0.15402818064774296
+data_row_array  : 355
+
+rule index is : 0 , degree is : 0.03127794971935611
+rule index is : 1 , degree is : 0.2063289833043371
+rule index is : 4 , degree is : 0.00024721646084906163
+data_row_array  : 356
+
+rule index is : 0 , degree is : 0.0895965094407932
+data_row_array  : 357
+
+rule index is : 0 , degree is : 0.156184370662938
+rule index is : 2 , degree is : 0.12587148654133823
+data_row_array  : 358
+
+rule index is : 0 , degree is : 0.20762230806981508
+data_row_array  : 359
+
+rule index is : 0 , degree is : 0.22663498834728843
+rule index is : 1 , degree is : 0.03474943547860239
+rule index is : 3 , degree is : 0.08236806214371281
+data_row_array  : 360
+
+rule index is : 0 , degree is : 0.08398151918147707
+rule index is : 1 , degree is : 0.16004012327336836
+rule index is : 2 , degree is : 0.14755665594746759
+data_row_array  : 361
+
+rule index is : 3 , degree is : 0.20563590696296224
+data_row_array  : 362
+
+rule index is : 1 , degree is : 0.13218814065524376
+rule index is : 4 , degree is : 0.000576362384617149
+data_row_array  : 363
+
+rule index is : 3 , degree is : 0.20259429991211308
+data_row_array  : 364
+
+rule index is : 0 , degree is : 0.23718569233968329
+rule index is : 1 , degree is : 0.02548288929745321
+rule index is : 2 , degree is : 0.19796389025404457
+rule index is : 3 , degree is : 0.05083610974595533
+data_row_array  : 365
+
+rule index is : 4 , degree is : 0.0003019423320493914
+data_row_array  : 366
+
+rule index is : 0 , degree is : 0.17645096331439666
+rule index is : 1 , degree is : 0.07882541238577781
+rule index is : 2 , degree is : 0.1338145305111502
+data_row_array  : 367
+
+rule index is : 2 , degree is : 0.021765266897286077
+data_row_array  : 368
+
+rule index is : 2 , degree is : 0.09468788563744944
+rule index is : 3 , degree is : 0.15411211436255046
+data_row_array  : 369
+
+rule index is : 0 , degree is : 0.22962333062359327
+rule index is : 2 , degree is : 0.23867963692767363
+rule index is : 3 , degree is : 0.010120363072326237
+data_row_array  : 370
+
+rule index is : 0 , degree is : 0.24453273391807978
+rule index is : 2 , degree is : 0.17666323627014285
+data_row_array  : 371
+
+rule index is : 2 , degree is : 0.050221793462306485
+data_row_array  : 372
+
+rule index is : 0 , degree is : 0.2562756011700139
+rule index is : 1 , degree is : 0.008716470497561017
+rule index is : 2 , degree is : 0.18775401900262134
+data_row_array  : 373
+
+rule index is : 1 , degree is : 0.16034056717888873
+data_row_array  : 374
+
+rule index is : 4 , degree is : 0.00013377046238403556
+data_row_array  : 375
+
+rule index is : 0 , degree is : 0.19348181853517712
+data_row_array  : 376
+
+rule index is : 2 , degree is : 0.22653591735598946
+rule index is : 3 , degree is : 0.022264082644010422
+data_row_array  : 377
+
+rule index is : 0 , degree is : 0.11738579702082609
+data_row_array  : 378
+
+rule index is : 2 , degree is : 0.010924661249811396
+rule index is : 3 , degree is : 0.23787533875018854
+data_row_array  : 379
+
+rule index is : 0 , degree is : 0.16287456264886718
+rule index is : 2 , degree is : 0.14254229698016552
+data_row_array  : 380
+
+rule index is : 3 , degree is : 0.01815754246057529
+data_row_array  : 381
+
+rule index is : 3 , degree is : 0.2181298838365412
+data_row_array  : 382
+
+rule index is : 0 , degree is : 0.19409704980817652
+rule index is : 1 , degree is : 0.06332708397764208
+rule index is : 2 , degree is : 0.2386535260056074
+data_row_array  : 383
+
+rule index is : 1 , degree is : 0.19967418108498383
+rule index is : 3 , degree is : 0.1863126054694023
+data_row_array  : 384
+
+rule index is : 0 , degree is : 0.19121121771885058
+rule index is : 1 , degree is : 0.0658616727923844
+rule index is : 2 , degree is : 0.07863144635215259
+rule index is : 3 , degree is : 0.17016855364784733
+data_row_array  : 385
+
+rule index is : 0 , degree is : 0.11031024840440025
+data_row_array  : 386
+
+rule index is : 0 , degree is : 0.12419509203452232
+data_row_array  : 387
+
+rule index is : 2 , degree is : 0.005909865911900874
+rule index is : 3 , degree is : 0.24289013408809906
+data_row_array  : 388
+
+rule index is : 2 , degree is : 0.05661664593444983
+rule index is : 3 , degree is : 0.19218335406555007
+data_row_array  : 389
+
+rule index is : 1 , degree is : 0.14445570254893605
+rule index is : 4 , degree is : 0.00023600885994806055
+data_row_array  : 390
+
+rule index is : 0 , degree is : 0.07956341742070078
+rule index is : 1 , degree is : 0.16392048462449346
+rule index is : 2 , degree is : 0.23113714770792423
+rule index is : 3 , degree is : 0.01766285229207563
+data_row_array  : 391
+
+rule index is : 0 , degree is : 0.016159734849461174
+rule index is : 1 , degree is : 0.21960711492184815
+rule index is : 4 , degree is : 0.00026268915922534843
+data_row_array  : 392
+
+rule index is : 2 , degree is : 0.15749528216927167
+data_row_array  : 393
+
+rule index is : 1 , degree is : 0.23288340949788702
+rule index is : 2 , degree is : 0.13452205615050208
+rule index is : 3 , degree is : 0.11427794384949778
+data_row_array  : 394
+
+rule index is : 0 , degree is : 0.10135137417258905
+rule index is : 2 , degree is : 0.10578399359003722
+data_row_array  : 395
+
+rule index is : 0 , degree is : 0.17489440793813818
+rule index is : 1 , degree is : 0.08019251474103413
+rule index is : 2 , degree is : 0.01607766004393562
+data_row_array  : 396
+
+rule index is : 1 , degree is : 0.1897104963517802
+data_row_array  : 397
+
+rule index is : 0 , degree is : 0.018880689413372165
+rule index is : 1 , degree is : 0.21721733589464157
+rule index is : 2 , degree is : 0.05608727021092631
+rule index is : 3 , degree is : 0.19271272978907358
+data_row_array  : 398
+
+rule index is : 0 , degree is : 0.2265241313449091
+rule index is : 2 , degree is : 0.004880939366085482
+data_row_array  : 399
+
+rule index is : 0 , degree is : 0.019001669125662795
+rule index is : 1 , degree is : 0.2171110809858003
+rule index is : 2 , degree is : 0.015556421559115954
+data_row_array  : 400
+
+rule index is : 0 , degree is : 0.16318329459163786
+rule index is : 3 , degree is : 0.09167408593857823
+data_row_array  : 401
+
+rule index is : 0 , degree is : 0.07544032511558683
+rule index is : 3 , degree is : 0.24010089162033063
+data_row_array  : 402
+
+rule index is : 3 , degree is : 0.1228486736543173
+data_row_array  : 403
+
+rule index is : 0 , degree is : 0.009415802703880876
+rule index is : 1 , degree is : 0.22553022286939386
+rule index is : 3 , degree is : 0.004434197085569418
+data_row_array  : 404
+
+rule index is : 3 , degree is : 0.17959303739545643
+data_row_array  : 405
+
+rule index is : 0 , degree is : 0.03988641320314866
+rule index is : 1 , degree is : 0.1987682817171444
+rule index is : 2 , degree is : 0.24489255349599318
+rule index is : 3 , degree is : 0.003907446504006683
+data_row_array  : 406
+
+rule index is : 2 , degree is : 0.18008648413855918
+data_row_array  : 407
+
+rule index is : 3 , degree is : 0.22302203278359942
+data_row_array  : 408
+
+data_row_array  : 409
+
+rule index is : 0 , degree is : 0.21623583900786914
+rule index is : 3 , degree is : 0.03905258309608035
+data_row_array  : 410
+
+rule index is : 0 , degree is : 0.13498486057605996
+rule index is : 1 , degree is : 0.11524455145498563
+rule index is : 3 , degree is : 0.1780232864236781
+data_row_array  : 411
+
+rule index is : 1 , degree is : 0.1286138715450809
+rule index is : 4 , degree is : 0.0003275954771991596
+data_row_array  : 412
+
+rule index is : 1 , degree is : 0.21958050312306826
+rule index is : 4 , degree is : 0.0005126608620063485
+data_row_array  : 413
+
+rule index is : 3 , degree is : 0.019144576584311512
+data_row_array  : 414
+
+rule index is : 0 , degree is : 0.13524083749297885
+rule index is : 1 , degree is : 0.11501973025597874
+rule index is : 3 , degree is : 0.17409954468461106
+data_row_array  : 415
+
+rule index is : 0 , degree is : 0.008038441923044778
+rule index is : 1 , degree is : 0.22673994094061656
+rule index is : 3 , degree is : 0.2475619992735057
+data_row_array  : 416
+
+rule index is : 3 , degree is : 0.033762309361098496
+data_row_array  : 417
+
+rule index is : 3 , degree is : 0.04431734515658786
+data_row_array  : 418
+
+rule index is : 0 , degree is : 0.09843059296205191
+rule index is : 2 , degree is : 0.010821118431631468
+rule index is : 3 , degree is : 0.23797888156836847
+data_row_array  : 419
+
+rule index is : 3 , degree is : 0.014015477603339242
+data_row_array  : 420
+
+rule index is : 1 , degree is : 0.2310070096395778
+rule index is : 2 , degree is : 0.10442077702783509
+rule index is : 3 , degree is : 0.14437922297216482
+data_row_array  : 421
+
+rule index is : 4 , degree is : 0.0004848962364058743
+data_row_array  : 422
+
+rule index is : 1 , degree is : 0.22420391138050272
+rule index is : 2 , degree is : 0.10271511951037797
+rule index is : 3 , degree is : 0.14608488048962193
+data_row_array  : 423
+
+rule index is : 0 , degree is : 0.23383100598210574
+rule index is : 1 , degree is : 0.02842926672195217
+rule index is : 4 , degree is : 0.00034404281997459937
+data_row_array  : 424
+
+rule index is : 3 , degree is : 0.007090446086831283
+data_row_array  : 425
+
+rule index is : 1 , degree is : 0.12157378081655547
+rule index is : 3 , degree is : 0.1489540989613049
+data_row_array  : 426
+
+rule index is : 4 , degree is : 0.0004170377173752862
+data_row_array  : 427
+
+rule index is : 0 , degree is : 0.08923107745656644
+rule index is : 1 , degree is : 0.15542950447278275
+rule index is : 2 , degree is : 0.0799995538529541
+data_row_array  : 428
+
+rule index is : 2 , degree is : 0.08373533359955693
+data_row_array  : 429
+
+rule index is : 3 , degree is : 0.21848862337258226
+data_row_array  : 430
+
+rule index is : 0 , degree is : 0.21401046008189947
+rule index is : 1 , degree is : 0.045837394563681036
+rule index is : 3 , degree is : 0.19831625775056108
+data_row_array  : 431
+
+rule index is : 0 , degree is : 0.03380122015808903
+rule index is : 1 , degree is : 0.20411282767482639
+data_row_array  : 432
+
+rule index is : 0 , degree is : 0.1983215942615293
+rule index is : 3 , degree is : 0.1285074003648386
+data_row_array  : 433
+
+rule index is : 0 , degree is : 0.06396787367256203
+rule index is : 1 , degree is : 0.17761784799156646
+rule index is : 4 , degree is : 0.00024661829681068626
+data_row_array  : 434
+
+rule index is : 0 , degree is : 0.1633185719043012
+rule index is : 2 , degree is : 0.15503683535981505
+rule index is : 3 , degree is : 0.09376316464018483
+data_row_array  : 435
+
+rule index is : 1 , degree is : 0.16935289858676653
+rule index is : 2 , degree is : 0.10930652137000847
+rule index is : 3 , degree is : 0.13949347862999142
+data_row_array  : 436
+
+rule index is : 0 , degree is : 0.05375508262302357
+rule index is : 1 , degree is : 0.18658760962711152
+rule index is : 3 , degree is : 0.016368673527327505
+data_row_array  : 437
+
+rule index is : 2 , degree is : 0.23387343064503419
+rule index is : 3 , degree is : 0.014926569354965674
+data_row_array  : 438
+
+rule index is : 1 , degree is : 0.12386464643457026
+rule index is : 2 , degree is : 0.0037361453543201047
+data_row_array  : 439
+
+rule index is : 0 , degree is : 0.09931937075226334
+rule index is : 1 , degree is : 0.14656908759624654
+rule index is : 2 , degree is : 0.01571868774111891
+rule index is : 3 , degree is : 0.23308131225888098
+data_row_array  : 440
+
+rule index is : 0 , degree is : 0.25338786631983307
+rule index is : 3 , degree is : 0.18265123479078538
+data_row_array  : 441
+
+rule index is : 0 , degree is : 0.09425632884279762
+rule index is : 1 , degree is : 0.15101589149719727
+rule index is : 3 , degree is : 0.19184009226699097
+data_row_array  : 442
+
+rule index is : 0 , degree is : 0.17039639289301087
+data_row_array  : 443
+
+rule index is : 1 , degree is : 0.17051809235715018
+rule index is : 2 , degree is : 0.010672441184148323
+data_row_array  : 444
+
+data_row_array  : 445
+
+rule index is : 0 , degree is : 0.23778009697412977
+rule index is : 1 , degree is : 0.024960831432939347
+rule index is : 2 , degree is : 0.12382328758516047
+data_row_array  : 446
+
+rule index is : 2 , degree is : 0.13471066135867055
+data_row_array  : 447
+
+rule index is : 2 , degree is : 0.10924668567210774
+rule index is : 3 , degree is : 0.13955331432789214
+data_row_array  : 448
+
+rule index is : 0 , degree is : 0.2638483703326893
+rule index is : 3 , degree is : 0.05611096972808679
+data_row_array  : 449
+
+rule index is : 2 , degree is : 0.01605151901488746
+rule index is : 3 , degree is : 0.23274848098511244
+data_row_array  : 450
+
+rule index is : 0 , degree is : 0.1722625725826981
+rule index is : 1 , degree is : 0.08250402152578958
+rule index is : 2 , degree is : 0.17339161609502113
+rule index is : 3 , degree is : 0.07540838390497877
+data_row_array  : 451
+
+rule index is : 0 , degree is : 0.21885498646982712
+rule index is : 1 , degree is : 0.041582510005087954
+rule index is : 2 , degree is : 0.23490746127910797
+rule index is : 3 , degree is : 0.013892538720891915
+data_row_array  : 452
+
+rule index is : 1 , degree is : 0.15142536645600646
+rule index is : 2 , degree is : 0.09094454323221522
+data_row_array  : 453
+
+rule index is : 2 , degree is : 0.01758007704027281
+data_row_array  : 454
+
+rule index is : 2 , degree is : 0.032793767431818034
+rule index is : 3 , degree is : 0.21600623256818188
+data_row_array  : 455
+
+rule index is : 0 , degree is : 0.254216735336421
+data_row_array  : 456
+
+data_row_array  : 457
+
+rule index is : 0 , degree is : 0.07263007942961903
+rule index is : 3 , degree is : 0.0937231312999626
+data_row_array  : 458
+
+rule index is : 0 , degree is : 0.15610883107796772
+rule index is : 2 , degree is : 0.16219474293784816
+rule index is : 3 , degree is : 0.08660525706215173
+data_row_array  : 459
+
+data_row_array  : 460
+
+rule index is : 3 , degree is : 0.03515660965991844
+data_row_array  : 461
+
+rule index is : 0 , degree is : 0.14950617221055418
+rule index is : 1 , degree is : 0.10249067219073037
+rule index is : 3 , degree is : 0.07725760229509954
+data_row_array  : 462
+
+rule index is : 0 , degree is : 0.15087525912078165
+data_row_array  : 463
+
+rule index is : 1 , degree is : 0.21910485000141366
+rule index is : 2 , degree is : 0.18742662837025087
+data_row_array  : 464
+
+rule index is : 4 , degree is : 0.00020621485451078798
+data_row_array  : 465
+
+rule index is : 2 , degree is : 0.08906450107263389
+data_row_array  : 466
+
+rule index is : 0 , degree is : 0.05305191693979381
+rule index is : 1 , degree is : 0.18720519090712323
+rule index is : 2 , degree is : 0.0096725809449961
+rule index is : 3 , degree is : 0.23912741905500381
+data_row_array  : 467
+
+rule index is : 1 , degree is : 0.19951822030131486
+rule index is : 3 , degree is : 0.07134917027109705
+data_row_array  : 468
+
+rule index is : 2 , degree is : 0.19309916957717319
+rule index is : 3 , degree is : 0.055700830422826676
+data_row_array  : 469
+
+rule index is : 2 , degree is : 0.032819314586638
+data_row_array  : 470
+
+rule index is : 1 , degree is : 0.22916500016421473
+rule index is : 3 , degree is : 0.1908598949838534
+data_row_array  : 471
+
+rule index is : 0 , degree is : 0.022507728165784273
+rule index is : 1 , degree is : 0.21403175490172666
+data_row_array  : 472
+
+rule index is : 0 , degree is : 0.10344506404909293
+rule index is : 1 , degree is : 0.1429455447983549
+data_row_array  : 473
+
+rule index is : 2 , degree is : 0.24730301880131628
+rule index is : 3 , degree is : 0.001496981198683582
+data_row_array  : 474
+
+rule index is : 0 , degree is : 0.19788408379607622
+rule index is : 1 , degree is : 0.06000098124897585
+rule index is : 2 , degree is : 0.14223890676835965
+data_row_array  : 475
+
+rule index is : 2 , degree is : 0.19007907488816836
+rule index is : 3 , degree is : 0.058720925111831516
+data_row_array  : 476
+
+rule index is : 0 , degree is : 0.12091910587396784
+rule index is : 1 , degree is : 0.12759832098672547
+rule index is : 2 , degree is : 0.08368807698527424
+rule index is : 3 , degree is : 0.1651119230147257
+data_row_array  : 477
+
+rule index is : 0 , degree is : 0.21695652838422858
+rule index is : 1 , degree is : 0.04324990106599307
+rule index is : 4 , degree is : 0.0005156951643806386
+data_row_array  : 478
+
+rule index is : 2 , degree is : 0.1921985141875883
+data_row_array  : 479
+
+rule index is : 0 , degree is : 0.20891508993605798
+rule index is : 1 , degree is : 0.05031259193444642
+rule index is : 4 , degree is : 0.00021670831476724135
+data_row_array  : 480
+
+rule index is : 0 , degree is : 0.13935778865892443
+rule index is : 1 , degree is : 0.11140386555801453
+rule index is : 2 , degree is : 0.14026388975778958
+rule index is : 3 , degree is : 0.1085361102422103
+data_row_array  : 481
+
+rule index is : 0 , degree is : 0.0826109300247559
+rule index is : 1 , degree is : 0.16124389391514674
+rule index is : 2 , degree is : 0.036758595837721474
+data_row_array  : 482
+
+rule index is : 2 , degree is : 0.15143050836758284
+rule index is : 3 , degree is : 0.09736949163241704
+data_row_array  : 483
+
+rule index is : 0 , degree is : 0.13870198508166295
+rule index is : 1 , degree is : 0.11197984931595491
+data_row_array  : 484
+
+rule index is : 4 , degree is : 0.00037465723246401654
+data_row_array  : 485
+
+rule index is : 0 , degree is : 0.14705424384877336
+data_row_array  : 486
+
+rule index is : 0 , degree is : 0.25676016355391085
+rule index is : 2 , degree is : 0.03674139446034005
+rule index is : 3 , degree is : 0.21205860553965986
+data_row_array  : 487
+
+rule index is : 0 , degree is : 0.19117629946732287
+rule index is : 2 , degree is : 0.030834786025751678
+data_row_array  : 488
+
+rule index is : 2 , degree is : 0.23361749145877633
+rule index is : 3 , degree is : 0.015182508541223537
+data_row_array  : 489
+
+rule index is : 2 , degree is : 0.09769834045235733
+data_row_array  : 490
+
+rule index is : 0 , degree is : 0.1390900335568772
+rule index is : 2 , degree is : 0.029903815731008494
+data_row_array  : 491
+
+rule index is : 0 , degree is : 0.070213430997439
+rule index is : 2 , degree is : 0.10486870633263133
+rule index is : 3 , degree is : 0.14393129366736857
+data_row_array  : 492
+
+rule index is : 0 , degree is : 0.11445480146573836
+rule index is : 1 , degree is : 0.13327583552708627
+rule index is : 2 , degree is : 0.15576432225407258
+data_row_array  : 493
+
+rule index is : 2 , degree is : 0.24174438496494238
+data_row_array  : 494
+
+rule index is : 0 , degree is : 0.04896716453028357
+rule index is : 1 , degree is : 0.19079277585582155
+rule index is : 2 , degree is : 0.17881041988758967
+rule index is : 3 , degree is : 0.06998958011241022
+data_row_array  : 495
+
+rule index is : 0 , degree is : 0.1850355504786184
+rule index is : 1 , degree is : 0.07128568105972583
+rule index is : 3 , degree is : 0.04750123658300056
+data_row_array  : 496
+
+rule index is : 0 , degree is : 0.2268369173146195
+rule index is : 1 , degree is : 0.03457208389121697
+rule index is : 2 , degree is : 0.05040029329225713
+rule index is : 3 , degree is : 0.1983997067077428
+data_row_array  : 497
+
+rule index is : 0 , degree is : 0.2643235960282998
+rule index is : 2 , degree is : 0.11826796994973698
+rule index is : 3 , degree is : 0.13053203005026293
+data_row_array  : 498
+
+rule index is : 2 , degree is : 0.13889608519009747
+rule index is : 3 , degree is : 0.10990391480990241
+data_row_array  : 499
+
+rule index is : 2 , degree is : 0.20724361398570204
+rule index is : 3 , degree is : 0.04155638601429782
+data_row_array  : 500
+
+data_row_array  : 501
+
+rule index is : 0 , degree is : 0.1836702037212978
+rule index is : 1 , degree is : 0.07248484737025009
+rule index is : 2 , degree is : 0.043293612200059915
+rule index is : 3 , degree is : 0.20550638779994002
+data_row_array  : 502
+
+rule index is : 0 , degree is : 0.24930639174383618
+rule index is : 1 , degree is : 0.014837436552558583
+rule index is : 4 , degree is : 0.00042079084747590124
+data_row_array  : 503
+
+rule index is : 0 , degree is : 0.2620935072105007
+rule index is : 3 , degree is : 0.2233617197474261
+data_row_array  : 504
+
+rule index is : 3 , degree is : 0.11417969835666954
+data_row_array  : 505
+
+data_row_array  : 506
+
+rule index is : 0 , degree is : 0.053234278027402195
+rule index is : 2 , degree is : 0.027211523522678353
+rule index is : 3 , degree is : 0.22158847647732158
+data_row_array  : 507
+
+rule index is : 2 , degree is : 0.11062881850081147
+rule index is : 3 , degree is : 0.13817118149918842
+data_row_array  : 508
+
+rule index is : 0 , degree is : 0.11103538507218044
+data_row_array  : 509
+
+rule index is : 2 , degree is : 0.17491394923082157
+data_row_array  : 510
+
+rule index is : 1 , degree is : 0.1430838468024846
+rule index is : 2 , degree is : 0.17136634730160893
+data_row_array  : 511
+
+data_row_array  : 512
+
+rule index is : 3 , degree is : 0.06456259572007375
+data_row_array  : 513
+
+rule index is : 1 , degree is : 0.15308989494764483
+rule index is : 2 , degree is : 0.21320578498820922
+data_row_array  : 514
+
+rule index is : 0 , degree is : 0.03352161704469666
+data_row_array  : 515
+
+rule index is : 3 , degree is : 0.02856540385318222
+data_row_array  : 516
+
+rule index is : 0 , degree is : 0.21280756451404606
+data_row_array  : 517
+
+data_row_array  : 518
+
+rule index is : 0 , degree is : 0.1668067583689988
+rule index is : 1 , degree is : 0.08729579223639397
+rule index is : 2 , degree is : 0.14367772044205762
+rule index is : 3 , degree is : 0.10512227955794226
+data_row_array  : 519
+
+rule index is : 0 , degree is : 0.2127299603014466
+rule index is : 2 , degree is : 0.2362148391976683
+data_row_array  : 520
+
+rule index is : 2 , degree is : 0.0381019551736798
+rule index is : 3 , degree is : 0.2106980448263201
+data_row_array  : 521
+
+rule index is : 0 , degree is : 0.19575812581133514
+rule index is : 4 , degree is : 0.00047966438881788905
+data_row_array  : 522
+
+rule index is : 0 , degree is : 0.08494791640663146
+rule index is : 4 , degree is : 6.796058697424074e-05
+data_row_array  : 523
+
+rule index is : 1 , degree is : 0.1480821145657173
+data_row_array  : 524
+
+rule index is : 2 , degree is : 0.13793090406537623
+rule index is : 3 , degree is : 0.11086909593462366
+data_row_array  : 525
+
+rule index is : 2 , degree is : 0.2080568594971608
+data_row_array  : 526
+
+rule index is : 0 , degree is : 0.12572092939839022
+rule index is : 1 , degree is : 0.12338094179810805
+rule index is : 2 , degree is : 0.23456595551622894
+data_row_array  : 527
+
+rule index is : 0 , degree is : 0.0964188351732151
+rule index is : 2 , degree is : 0.1434250611756749
+data_row_array  : 528
+
+rule index is : 3 , degree is : 0.2069947498293641
+data_row_array  : 529
+
+rule index is : 0 , degree is : 0.09850662595634184
+rule index is : 3 , degree is : 0.23838520384360315
+data_row_array  : 530
+
+rule index is : 1 , degree is : 0.19259251991071807
+rule index is : 3 , degree is : 0.13243143160993226
+data_row_array  : 531
+
+rule index is : 2 , degree is : 0.03174253400865833
+rule index is : 3 , degree is : 0.2170574659913416
+data_row_array  : 532
+
+rule index is : 1 , degree is : 0.13892011243912925
+rule index is : 2 , degree is : 0.05614219847807456
+rule index is : 3 , degree is : 0.19265780152192533
+data_row_array  : 533
+
+rule index is : 2 , degree is : 0.1236900554821857
+data_row_array  : 534
+
+rule index is : 0 , degree is : 0.05458755760850434
+rule index is : 1 , degree is : 0.18585645766766223
+rule index is : 2 , degree is : 0.10529641814783357
+rule index is : 3 , degree is : 0.14350358185216633
+data_row_array  : 535
+
+data_row_array  : 536
+
+rule index is : 0 , degree is : 0.041990046500835695
+rule index is : 2 , degree is : 0.19897002194865346
+rule index is : 3 , degree is : 0.04982997805134642
+data_row_array  : 537
+
+rule index is : 0 , degree is : 0.2145233959570708
+rule index is : 1 , degree is : 0.045386889651528324
+rule index is : 2 , degree is : 0.21686461089622783
+rule index is : 3 , degree is : 0.03193538910377205
+data_row_array  : 538
+
+rule index is : 0 , degree is : 0.1981202905477103
+rule index is : 1 , degree is : 0.059793523929171026
+rule index is : 2 , degree is : 0.056730752403428945
+data_row_array  : 539
+
+rule index is : 1 , degree is : 0.22207666992145234
+rule index is : 4 , degree is : 0.00033891256094053824
+data_row_array  : 540
+
+rule index is : 0 , degree is : 0.18500948631191708
+rule index is : 2 , degree is : 0.034061106489667446
+data_row_array  : 541
+
+rule index is : 2 , degree is : 0.14621000203141613
+rule index is : 3 , degree is : 0.10258999796858374
+data_row_array  : 542
+
+rule index is : 0 , degree is : 0.1429625025422331
+rule index is : 1 , degree is : 0.10823789220746016
+rule index is : 3 , degree is : 0.14337467376834828
+data_row_array  : 543
+
+rule index is : 1 , degree is : 0.21497001833368623
+rule index is : 3 , degree is : 0.19537371482834703
+data_row_array  : 544
+
+rule index is : 0 , degree is : 0.2524065942254723
+rule index is : 3 , degree is : 0.008853002894116621
+data_row_array  : 545
+
+rule index is : 0 , degree is : 0.2533737108079648
+rule index is : 1 , degree is : 0.011265163084514777
+rule index is : 3 , degree is : 0.20748290048411397
+data_row_array  : 546
+
+rule index is : 2 , degree is : 0.21648808050450855
+rule index is : 3 , degree is : 0.03231191949549134
+data_row_array  : 547
+
+rule index is : 1 , degree is : 0.172690470765016
+rule index is : 2 , degree is : 0.05079151712656251
+data_row_array  : 548
+
+rule index is : 0 , degree is : 0.016310034988541035
+rule index is : 1 , degree is : 0.21947510826325733
+rule index is : 2 , degree is : 0.13335958259559222
+rule index is : 3 , degree is : 0.11544041740440768
+data_row_array  : 549
+
+rule index is : 2 , degree is : 0.21421844970157794
+data_row_array  : 550
+
+rule index is : 3 , degree is : 0.05200712197681671
+data_row_array  : 551
+
+rule index is : 0 , degree is : 0.022086379383308537
+rule index is : 4 , degree is : 0.0002486627289490401
+data_row_array  : 552
+
+rule index is : 0 , degree is : 0.15136990439251166
+rule index is : 4 , degree is : 0.00046481118434660773
+data_row_array  : 553
+
+rule index is : 0 , degree is : 0.21042552112903679
+rule index is : 1 , degree is : 0.04898599984985424
+rule index is : 2 , degree is : 0.16590280042815345
+rule index is : 3 , degree is : 0.08289719957184644
+data_row_array  : 554
+
+rule index is : 0 , degree is : 0.08317121312643987
+rule index is : 1 , degree is : 0.1607518045493552
+rule index is : 2 , degree is : 0.0660901628631089
+data_row_array  : 555
+
+rule index is : 2 , degree is : 0.2016162902541899
+data_row_array  : 556
+
+rule index is : 2 , degree is : 0.23142690594951143
+data_row_array  : 557
+
+rule index is : 4 , degree is : 0.000598212226133031
+data_row_array  : 558
+
+rule index is : 1 , degree is : 0.22222964925134933
+rule index is : 2 , degree is : 0.06279564913427084
+rule index is : 3 , degree is : 0.18600435086572908
+data_row_array  : 559
+
+rule index is : 0 , degree is : 0.20480721476964062
+rule index is : 1 , degree is : 0.05392048529999256
+rule index is : 4 , degree is : 0.00013497631882775435
+data_row_array  : 560
+
+rule index is : 0 , degree is : 0.19318176082799468
+rule index is : 2 , degree is : 0.17718695678187704
+rule index is : 3 , degree is : 0.07161304321812284
+data_row_array  : 561
+
+rule index is : 0 , degree is : 0.06690164346589918
+rule index is : 3 , degree is : 0.060980522322975336
+data_row_array  : 562
+
+rule index is : 0 , degree is : 0.1780023925403931
+rule index is : 2 , degree is : 0.03907856913794986
+data_row_array  : 563
+
+rule index is : 3 , degree is : 0.04266957595213911
+data_row_array  : 564
+
+rule index is : 0 , degree is : 0.07073104512302664
+rule index is : 2 , degree is : 0.1071444030528366
+rule index is : 3 , degree is : 0.1416555969471633
+data_row_array  : 565
+
+rule index is : 2 , degree is : 0.14839398874706453
+data_row_array  : 566
+
+rule index is : 0 , degree is : 0.14781358752725843
+rule index is : 1 , degree is : 0.10397724731828316
+rule index is : 2 , degree is : 0.05626297884113907
+data_row_array  : 567
+
+rule index is : 0 , degree is : 0.03963289692174781
+rule index is : 1 , degree is : 0.19899094177195853
+rule index is : 3 , degree is : 0.12148572422371572
+data_row_array  : 568
+
+rule index is : 0 , degree is : 0.028224095190130614
+rule index is : 2 , degree is : 0.0008086923256864193
+rule index is : 3 , degree is : 0.24799130767431352
+data_row_array  : 569
+
+rule index is : 0 , degree is : 0.061370226004122154
+rule index is : 1 , degree is : 0.17989932817519247
+data_row_array  : 570
+
+rule index is : 0 , degree is : 0.2595337727593196
+rule index is : 1 , degree is : 0.005854860739560734
+rule index is : 2 , degree is : 0.11586459903079534
+rule index is : 3 , degree is : 0.13293540096920456
+data_row_array  : 571
+
+rule index is : 2 , degree is : 0.2102029778848682
+rule index is : 3 , degree is : 0.03859702211513169
+data_row_array  : 572
+
+rule index is : 1 , degree is : 0.2182764684251064
+rule index is : 3 , degree is : 0.03693529798452575
+data_row_array  : 573
+
+rule index is : 3 , degree is : 0.03657189431655942
+data_row_array  : 574
+
+rule index is : 0 , degree is : 0.0019741992452818047
+rule index is : 1 , degree is : 0.23206608646300944
+rule index is : 3 , degree is : 0.16791775731898723
+data_row_array  : 575
+
+rule index is : 1 , degree is : 0.1657601193331851
+rule index is : 4 , degree is : 0.0004355999596039788
+data_row_array  : 576
+
+rule index is : 1 , degree is : 0.18994062132896952
+data_row_array  : 577
+
+rule index is : 0 , degree is : 0.00010337196924456994
+rule index is : 2 , degree is : 0.06186440471546796
+data_row_array  : 578
+
+data_row_array  : 579
+
+rule index is : 4 , degree is : 0.00013885210036909568
+data_row_array  : 580
+
+rule index is : 0 , degree is : 0.11857207071924704
+rule index is : 2 , degree is : 0.13848507352679224
+data_row_array  : 581
+
+rule index is : 0 , degree is : 0.25188902422798926
+rule index is : 1 , degree is : 0.012569144010128097
+rule index is : 2 , degree is : 0.03305611939272935
+data_row_array  : 582
+
+rule index is : 3 , degree is : 0.18688635071827356
+data_row_array  : 583
+
+rule index is : 1 , degree is : 0.11689547943978201
+rule index is : 2 , degree is : 0.22960165808161792
+data_row_array  : 584
+
+rule index is : 0 , degree is : 0.22421220998587182
+rule index is : 1 , degree is : 0.03687733022277671
+rule index is : 3 , degree is : 0.13362522615372163
+data_row_array  : 585
+
+rule index is : 1 , degree is : 0.152318226375904
+rule index is : 2 , degree is : 0.011320812251358387
+data_row_array  : 586
+
+rule index is : 1 , degree is : 0.1855500353444032
+data_row_array  : 587
+
+rule index is : 4 , degree is : 0.00019691712989257693
+data_row_array  : 588
+
+rule index is : 0 , degree is : 0.19774044834355256
+rule index is : 1 , degree is : 0.060127134399990255
+rule index is : 3 , degree is : 0.08899762228302442
+data_row_array  : 589
+
+rule index is : 1 , degree is : 0.18370840546853176
+data_row_array  : 590
+
+rule index is : 0 , degree is : 0.21939642285348313
+rule index is : 1 , degree is : 0.041106973466775505
+rule index is : 2 , degree is : 0.10500316024356732
+data_row_array  : 591
+
+rule index is : 0 , degree is : 0.05680915153317738
+rule index is : 1 , degree is : 0.18390526059933554
+rule index is : 2 , degree is : 0.002580829688585532
+rule index is : 3 , degree is : 0.24621917031141438
+data_row_array  : 592
+
+rule index is : 2 , degree is : 0.16606755593198916
+data_row_array  : 593
+
+rule index is : 0 , degree is : 0.23725388856438048
+rule index is : 3 , degree is : 0.09957416104272034
+data_row_array  : 594
+
+rule index is : 0 , degree is : 0.15795666611448958
+rule index is : 1 , degree is : 0.09506871323227772
+data_row_array  : 595
+
+rule index is : 0 , degree is : 0.050946656548676215
+rule index is : 1 , degree is : 0.18905421374500186
+rule index is : 2 , degree is : 0.2145008878400915
+data_row_array  : 596
+
+rule index is : 2 , degree is : 0.17541573712081163
+data_row_array  : 597
+
+rule index is : 0 , degree is : 0.14139407721668437
+rule index is : 2 , degree is : 0.02773566103476201
+rule index is : 3 , degree is : 0.2210643389652379
+data_row_array  : 598
+
+rule index is : 0 , degree is : 0.17355227209619564
+rule index is : 1 , degree is : 0.08137129520627141
+rule index is : 2 , degree is : 0.0059312377848392194
+data_row_array  : 599
+
+rule index is : 0 , degree is : 0.12463194963174713
+rule index is : 2 , degree is : 0.03551005833879561
+data_row_array  : 600
+
+rule index is : 3 , degree is : 0.18187113438167615
+data_row_array  : 601
+
+rule index is : 1 , degree is : 0.2047569095173601
+rule index is : 3 , degree is : 0.030016281577491737
+data_row_array  : 602
+
+rule index is : 1 , degree is : 0.20400350215893306
+rule index is : 2 , degree is : 0.1569507632825556
+rule index is : 3 , degree is : 0.09184923671744429
+data_row_array  : 603
+
+rule index is : 0 , degree is : 0.2437910638871218
+rule index is : 1 , degree is : 0.01968147732227993
+rule index is : 3 , degree is : 0.1535581000843705
+data_row_array  : 604
+
+rule index is : 0 , degree is : 0.06798504868794408
+rule index is : 1 , degree is : 0.1740896153897771
+rule index is : 3 , degree is : 0.1919911467559052
+data_row_array  : 605
+
+rule index is : 4 , degree is : 0.00042596894769402627
+data_row_array  : 606
+
+rule index is : 0 , degree is : 0.13301950516876448
+rule index is : 2 , degree is : 0.07963500987673079
+rule index is : 3 , degree is : 0.16916499012326913
+data_row_array  : 607
+
+rule index is : 2 , degree is : 0.21393010638957954
+data_row_array  : 608
+
+rule index is : 0 , degree is : 0.23762404488053035
+data_row_array  : 609
+
+rule index is : 2 , degree is : 0.0333537798625195
+rule index is : 3 , degree is : 0.2154462201374804
+data_row_array  : 610
+
+rule index is : 2 , degree is : 0.0191552849361346
+data_row_array  : 611
+
+rule index is : 3 , degree is : 0.2433498670540724
+data_row_array  : 612
+
+rule index is : 0 , degree is : 0.0932341417924395
+rule index is : 1 , degree is : 0.1519136650973991
+rule index is : 2 , degree is : 0.23794704372523173
+data_row_array  : 613
+
+rule index is : 3 , degree is : 0.014927214231489658
+data_row_array  : 614
+
+rule index is : 0 , degree is : 0.2516709180716365
+data_row_array  : 615
+
+rule index is : 0 , degree is : 0.061338814649188625
+rule index is : 2 , degree is : 0.04906175332380018
+data_row_array  : 616
+
+rule index is : 2 , degree is : 0.058707971718019905
+data_row_array  : 617
+
+rule index is : 0 , degree is : 0.10947920494386429
+rule index is : 1 , degree is : 0.13764583728070823
+rule index is : 2 , degree is : 0.06545795779966256
+data_row_array  : 618
+
+rule index is : 4 , degree is : 0.0001145856883659696
+data_row_array  : 619
+
+rule index is : 0 , degree is : 0.050942709652641076
+rule index is : 2 , degree is : 0.23565374962335284
+rule index is : 3 , degree is : 0.013146250376647023
+data_row_array  : 620
+
+rule index is : 3 , degree is : 0.11826126075291218
+data_row_array  : 621
+
+rule index is : 0 , degree is : 0.1318687738612978
+rule index is : 1 , degree is : 0.11798136991445743
+data_row_array  : 622
+
+rule index is : 0 , degree is : 0.15403005737624006
+rule index is : 1 , degree is : 0.09851740265001904
+rule index is : 4 , degree is : 0.000589686167855069
+data_row_array  : 623
+
+rule index is : 0 , degree is : 0.176419883177245
+rule index is : 1 , degree is : 0.0788527096662664
+rule index is : 4 , degree is : 0.00046368926984588027
+data_row_array  : 624
+
+rule index is : 2 , degree is : 0.1885058814569146
+data_row_array  : 625
+
+rule index is : 1 , degree is : 0.1570562555846177
+rule index is : 3 , degree is : 0.11380532165988896
+data_row_array  : 626
+
+rule index is : 4 , degree is : 0.0006000232021910245
+data_row_array  : 627
+
+data_row_array  : 628
+
+rule index is : 0 , degree is : 0.19235721608896958
+rule index is : 2 , degree is : 0.13850796986879158
+data_row_array  : 629
+
+rule index is : 2 , degree is : 0.13936948984727907
+data_row_array  : 630
+
+rule index is : 4 , degree is : 8.210923422117347e-05
+data_row_array  : 631
+
+rule index is : 0 , degree is : 0.12155124084070047
+rule index is : 3 , degree is : 0.0301183378387085
+data_row_array  : 632
+
+rule index is : 2 , degree is : 0.04480367817030283
+data_row_array  : 633
+
+rule index is : 2 , degree is : 0.20765679114586585
+data_row_array  : 634
+
+rule index is : 1 , degree is : 0.1684989818725089
+rule index is : 2 , degree is : 0.065545998837
+data_row_array  : 635
+
+data_row_array  : 636
+
+data_row_array  : 637
+
+rule index is : 1 , degree is : 0.15107437113189603
+rule index is : 3 , degree is : 0.23571137403766287
+data_row_array  : 638
+
+data_row_array  : 639
+
+rule index is : 4 , degree is : 0.00045578447173611587
+data_row_array  : 640
+
+rule index is : 2 , degree is : 0.24442922858553573
+data_row_array  : 641
+
+rule index is : 0 , degree is : 0.09278923495715347
+rule index is : 3 , degree is : 0.1879518002894925
+data_row_array  : 642
+
+rule index is : 0 , degree is : 0.13723143569053609
+rule index is : 1 , degree is : 0.11327141373235408
+rule index is : 2 , degree is : 0.025071363689362105
+data_row_array  : 643
+
+rule index is : 0 , degree is : 0.09242063573542933
+rule index is : 3 , degree is : 0.1649134116052808
+data_row_array  : 644
+
+rule index is : 0 , degree is : 0.11331436215983383
+rule index is : 1 , degree is : 0.13427746854632175
+rule index is : 2 , degree is : 0.00744648964266387
+rule index is : 3 , degree is : 0.24135351035733607
+data_row_array  : 645
+
+rule index is : 1 , degree is : 0.15133468899973893
+rule index is : 2 , degree is : 0.1685053010518482
+rule index is : 3 , degree is : 0.08029469894815168
+data_row_array  : 646
+
+rule index is : 3 , degree is : 0.03427409230200997
+data_row_array  : 647
+
+rule index is : 0 , degree is : 0.020082199417382336
+rule index is : 1 , degree is : 0.21616206527504137
+rule index is : 2 , degree is : 0.04234573396194619
+data_row_array  : 648
+
+rule index is : 1 , degree is : 0.2310086423435797
+rule index is : 4 , degree is : 0.0005877331424457988
+data_row_array  : 649
+
+data_row_array  : 650
+
+rule index is : 0 , degree is : 0.16184591086696956
+rule index is : 4 , degree is : 0.00047931379475828624
+data_row_array  : 651
+
+rule index is : 0 , degree is : 0.079492751233278
+data_row_array  : 652
+
+rule index is : 0 , degree is : 0.23941969173856054
+rule index is : 1 , degree is : 0.02352079666237619
+rule index is : 2 , degree is : 0.11549646852626877
+data_row_array  : 653
+
+rule index is : 1 , degree is : 0.16877221547081353
+data_row_array  : 654
+
+rule index is : 0 , degree is : 0.1479140081021596
+rule index is : 1 , degree is : 0.10388904923258858
+rule index is : 2 , degree is : 0.18510248996954792
+rule index is : 3 , degree is : 0.06369751003045195
+data_row_array  : 655
+
+rule index is : 3 , degree is : 0.18885297030024284
+data_row_array  : 656
+
+rule index is : 0 , degree is : 0.1449979964866624
+rule index is : 2 , degree is : 0.18208000761422238
+data_row_array  : 657
+
+rule index is : 2 , degree is : 0.21586760009779124
+data_row_array  : 658
+
+rule index is : 3 , degree is : 0.15127372797457125
+data_row_array  : 659
+
+rule index is : 0 , degree is : 0.23185716364546166
+rule index is : 1 , degree is : 0.03016286679072523
+rule index is : 2 , degree is : 0.05380918116882866
+rule index is : 3 , degree is : 0.19499081883117125
+data_row_array  : 660
+
+rule index is : 1 , degree is : 0.17154375985682105
+rule index is : 3 , degree is : 0.02260004799148419
+data_row_array  : 661
+
+rule index is : 2 , degree is : 0.132421050022109
+rule index is : 3 , degree is : 0.1163789499778909
+data_row_array  : 662
+
+rule index is : 0 , degree is : 0.2465658112451796
+rule index is : 2 , degree is : 0.1759517084101509
+rule index is : 3 , degree is : 0.072848291589849
+data_row_array  : 663
+
+rule index is : 0 , degree is : 0.21167782042143002
+rule index is : 2 , degree is : 0.2315498318487302
+data_row_array  : 664
+
+rule index is : 0 , degree is : 0.07247736382778919
+rule index is : 1 , degree is : 0.17014407339242257
+rule index is : 2 , degree is : 0.2318420704675342
+data_row_array  : 665
+
+rule index is : 0 , degree is : 0.05876075824921772
+rule index is : 1 , degree is : 0.1821911897871258
+data_row_array  : 666
+
+rule index is : 1 , degree is : 0.20461927481575878
+rule index is : 2 , degree is : 0.22864608597332955
+data_row_array  : 667
+
+rule index is : 0 , degree is : 0.22147287036260796
+rule index is : 2 , degree is : 0.18377161811406995
+rule index is : 3 , degree is : 0.06502838188592994
+data_row_array  : 668
+
+rule index is : 0 , degree is : 0.24866085056490198
+rule index is : 1 , degree is : 0.015404406979436186
+rule index is : 3 , degree is : 0.18862032029294637
+data_row_array  : 669
+
+rule index is : 4 , degree is : 0.0005525254482696501
+data_row_array  : 670
+
+rule index is : 2 , degree is : 0.12798283959732018
+rule index is : 3 , degree is : 0.12081716040267969
+data_row_array  : 671
+
+data_row_array  : 672
+
+rule index is : 2 , degree is : 0.001126017670746885
+rule index is : 3 , degree is : 0.24767398232925303
+data_row_array  : 673
+
+rule index is : 0 , degree is : 0.07018153426788526
+rule index is : 2 , degree is : 0.17321557186580713
+rule index is : 3 , degree is : 0.07558442813419278
+data_row_array  : 674
+
+rule index is : 0 , degree is : 0.07854108253464473
+rule index is : 1 , degree is : 0.16481838806686722
+rule index is : 2 , degree is : 0.2026760034906817
+data_row_array  : 675
+
+rule index is : 3 , degree is : 0.1192601615998024
+data_row_array  : 676
+
+rule index is : 0 , degree is : 0.0792854953853374
+rule index is : 2 , degree is : 0.08130458859625592
+data_row_array  : 677
+
+rule index is : 0 , degree is : 0.1657346685503843
+rule index is : 1 , degree is : 0.08823739478933187
+data_row_array  : 678
+
+rule index is : 3 , degree is : 0.17697053909074914
+data_row_array  : 679
+
+rule index is : 4 , degree is : 0.0001426828132375897
+data_row_array  : 680
+
+rule index is : 4 , degree is : 0.0004774334680809263
+data_row_array  : 681
+
+rule index is : 0 , degree is : 0.16466953434297815
+rule index is : 1 , degree is : 0.08917288831935274
+rule index is : 3 , degree is : 0.17839897871170082
+data_row_array  : 682
+
+rule index is : 1 , degree is : 0.22280573738990503
+rule index is : 2 , degree is : 0.11579939144335799
+data_row_array  : 683
+
+rule index is : 0 , degree is : 0.1020051085653811
+rule index is : 2 , degree is : 0.039078676857707495
+data_row_array  : 684
+
+rule index is : 2 , degree is : 0.17423973964799266
+rule index is : 3 , degree is : 0.07456026035200723
+data_row_array  : 685
+
+rule index is : 3 , degree is : 0.2232320818508581
+data_row_array  : 686
+
+rule index is : 0 , degree is : 0.21603360293297103
+rule index is : 1 , degree is : 0.044060494493881934
+data_row_array  : 687
+
+rule index is : 1 , degree is : 0.11705005509729481
+rule index is : 2 , degree is : 0.0010915815315051675
+data_row_array  : 688
+
+rule index is : 0 , degree is : 0.15615331383071557
+rule index is : 3 , degree is : 0.23237340929992537
+data_row_array  : 689
+
+rule index is : 4 , degree is : 0.0002419202667473071
+data_row_array  : 690
+
+rule index is : 0 , degree is : 0.05300985890795198
+rule index is : 3 , degree is : 0.17360888690184367
+data_row_array  : 691
+
+rule index is : 0 , degree is : 0.06636544759036751
+rule index is : 2 , degree is : 0.05061268823104786
+rule index is : 3 , degree is : 0.19818731176895207
+data_row_array  : 692
+
+rule index is : 0 , degree is : 0.023668665739445812
+rule index is : 2 , degree is : 0.16470023678858806
+rule index is : 3 , degree is : 0.08409976321141185
+data_row_array  : 693
+
+rule index is : 1 , degree is : 0.17935809341778808
+rule index is : 4 , degree is : 0.00014604905731507224
+data_row_array  : 694
+
+rule index is : 4 , degree is : 0.0005833005233987594
+data_row_array  : 695
+
+rule index is : 0 , degree is : 0.18485051410322278
+rule index is : 1 , degree is : 0.07144819610317997
+rule index is : 4 , degree is : 2.2935707862754008e-05
+data_row_array  : 696
+
+rule index is : 0 , degree is : 0.22313865164045887
+rule index is : 2 , degree is : 0.0032741403582984187
+data_row_array  : 697
+
+rule index is : 0 , degree is : 0.02472425249990974
+rule index is : 1 , degree is : 0.21208501038888466
+rule index is : 3 , degree is : 0.07210547162799898
+data_row_array  : 698
+
+rule index is : 3 , degree is : 0.019318074366293226
+data_row_array  : 699
+
+rule index is : 0 , degree is : 0.2196826013535778
+rule index is : 1 , degree is : 0.040855626609817806
+rule index is : 2 , degree is : 0.1736255588805024
+rule index is : 3 , degree is : 0.07517444111949748
+data_row_array  : 700
+
+rule index is : 0 , degree is : 0.1172161086655389
+rule index is : 1 , degree is : 0.13085061530427122
+rule index is : 3 , degree is : 0.12071161211308558
+data_row_array  : 701
+
+rule index is : 2 , degree is : 0.11055209578336628
+rule index is : 3 , degree is : 0.13824790421663363
+data_row_array  : 702
+
+rule index is : 2 , degree is : 0.16902653415352373
+rule index is : 3 , degree is : 0.07977346584647617
+data_row_array  : 703
+
+rule index is : 0 , degree is : 0.13122511385084532
+data_row_array  : 704
+
+rule index is : 0 , degree is : 0.16075628431852143
+rule index is : 2 , degree is : 0.15084205589319538
+data_row_array  : 705
+
+rule index is : 2 , degree is : 0.157130332769658
+rule index is : 3 , degree is : 0.09166966723034191
+data_row_array  : 706
+
+rule index is : 0 , degree is : 0.02747679880370437
+rule index is : 1 , degree is : 0.2096674847471597
+data_row_array  : 707
+
+rule index is : 2 , degree is : 0.08844639337143755
+rule index is : 3 , degree is : 0.16035360662856238
+data_row_array  : 708
+
+rule index is : 0 , degree is : 0.21441372352446214
+rule index is : 1 , degree is : 0.045483213523594065
+rule index is : 4 , degree is : 9.86578395600227e-05
+data_row_array  : 709
+
+rule index is : 0 , degree is : 0.1323695556863442
+rule index is : 1 , degree is : 0.11754153974655417
+rule index is : 2 , degree is : 0.1963115252556488
+rule index is : 3 , degree is : 0.05248847474435109
+data_row_array  : 710
+
+rule index is : 0 , degree is : 0.26081256580194995
+rule index is : 1 , degree is : 0.004731713431645771
+rule index is : 2 , degree is : 0.20139195089432463
+rule index is : 3 , degree is : 0.04740804910567525
+data_row_array  : 711
+
+rule index is : 2 , degree is : 0.1757071584261027
+rule index is : 3 , degree is : 0.0730928415738972
+data_row_array  : 712
+
+rule index is : 0 , degree is : 0.17995152409279852
+rule index is : 3 , degree is : 0.029307616024508244
+data_row_array  : 713
+
+rule index is : 2 , degree is : 0.02576320243268507
+rule index is : 3 , degree is : 0.22303679756731487
+data_row_array  : 714
+
+rule index is : 3 , degree is : 0.03317647533542181
+data_row_array  : 715
+
+rule index is : 0 , degree is : 0.15299409561398966
+rule index is : 2 , degree is : 0.13835946000541854
+data_row_array  : 716
+
+rule index is : 0 , degree is : 0.1762588213385702
+rule index is : 1 , degree is : 0.07899416818573358
+rule index is : 3 , degree is : 0.21394986663096377
+data_row_array  : 717
+
+rule index is : 0 , degree is : 0.20900416817291262
+rule index is : 3 , degree is : 0.15044893989306085
+data_row_array  : 718
+
+data_row_array  : 719
+
+rule index is : 0 , degree is : 0.1152341932807118
+rule index is : 1 , degree is : 0.132591305826332
+data_row_array  : 720
+
+rule index is : 0 , degree is : 0.17547188385509763
+rule index is : 1 , degree is : 0.07968532514905396
+rule index is : 2 , degree is : 0.011970117140791854
+rule index is : 3 , degree is : 0.23682988285920806
+data_row_array  : 721
+
+rule index is : 0 , degree is : 0.07159387276517867
+rule index is : 2 , degree is : 0.14979390200757117
+data_row_array  : 722
+
+rule index is : 0 , degree is : 0.18158768237462844
+rule index is : 1 , degree is : 0.07431389880094613
+rule index is : 4 , degree is : 0.000253029319507626
+data_row_array  : 723
+
+rule index is : 0 , degree is : 0.026606129553029843
+rule index is : 3 , degree is : 0.2169993706740101
+data_row_array  : 724
+
+rule index is : 3 , degree is : 0.12388452822629789
+data_row_array  : 725
+
+rule index is : 0 , degree is : 0.00418792916031963
+rule index is : 1 , degree is : 0.230121796252131
+rule index is : 3 , degree is : 0.022858830225717643
+data_row_array  : 726
+
+rule index is : 2 , degree is : 0.10666132757293793
+rule index is : 3 , degree is : 0.14213867242706196
+data_row_array  : 727
+
+rule index is : 0 , degree is : 0.04724352225249099
+rule index is : 1 , degree is : 0.19230662846494218
+rule index is : 2 , degree is : 0.014511618951157464
+data_row_array  : 728
+
+data_row_array  : 729
+
+rule index is : 2 , degree is : 0.07886085257066971
+data_row_array  : 730
+
+rule index is : 0 , degree is : 0.22904754441364492
+rule index is : 1 , degree is : 0.032630518843312584
+rule index is : 2 , degree is : 0.08766334356526996
+data_row_array  : 731
+
+rule index is : 2 , degree is : 0.1518624499642082
+rule index is : 3 , degree is : 0.0969375500357917
+data_row_array  : 732
+
+data_row_array  : 733
+
+rule index is : 0 , degree is : 0.17506425121537644
+rule index is : 2 , degree is : 0.10291432690694552
+data_row_array  : 734
+
+rule index is : 1 , degree is : 0.21030222648178998
+rule index is : 2 , degree is : 0.09356773398976001
+data_row_array  : 735
+
+rule index is : 2 , degree is : 0.21528334666033003
+data_row_array  : 736
+
+rule index is : 4 , degree is : 0.000303961310414603
+data_row_array  : 737
+
+rule index is : 0 , degree is : 0.24419009151297924
+rule index is : 1 , degree is : 0.019331016544949068
+rule index is : 2 , degree is : 0.11762613925262186
+rule index is : 3 , degree is : 0.13117386074737805
+data_row_array  : 738
+
+rule index is : 2 , degree is : 0.15060212215505708
+data_row_array  : 739
+
+rule index is : 0 , degree is : 0.04033036034517576
+rule index is : 2 , degree is : 0.12829248524407164
+rule index is : 3 , degree is : 0.12050751475592827
+data_row_array  : 740
+
+rule index is : 0 , degree is : 0.26088972029007085
+rule index is : 3 , degree is : 0.02948672740397075
+data_row_array  : 741
+
+rule index is : 0 , degree is : 0.17899431508845412
+rule index is : 1 , degree is : 0.07659161958046364
+rule index is : 3 , degree is : 0.022378553066587693
+data_row_array  : 742
+
+rule index is : 2 , degree is : 0.10659767703026175
+data_row_array  : 743
+
+rule index is : 0 , degree is : 0.06960081316792986
+rule index is : 1 , degree is : 0.172670510448302
+rule index is : 2 , degree is : 0.0446574182266146
+data_row_array  : 744
+
+rule index is : 1 , degree is : 0.1887719635749904
+rule index is : 2 , degree is : 0.10625150534639013
+data_row_array  : 745
+
+rule index is : 1 , degree is : 0.11834740121445338
+data_row_array  : 746
+
+rule index is : 0 , degree is : 0.21838899321158045
+rule index is : 1 , degree is : 0.04199178582694396
+rule index is : 3 , degree is : 0.2130262994956846
+data_row_array  : 747
+
+rule index is : 0 , degree is : 0.04411450857399357
+rule index is : 1 , degree is : 0.19505480050864124
+rule index is : 3 , degree is : 0.14842287364311654
+data_row_array  : 748
+
+rule index is : 0 , degree is : 0.08677675016098696
+rule index is : 1 , degree is : 0.15758510823576724
+rule index is : 3 , degree is : 0.1591875362422775
+data_row_array  : 749
+
+rule index is : 3 , degree is : 0.17495162039621337
+data_row_array  : 750
+
+rule index is : 0 , degree is : 0.13496009999110944
+rule index is : 1 , degree is : 0.11526629835491586
+rule index is : 2 , degree is : 0.2045174737199907
+data_row_array  : 751
+
+rule index is : 0 , degree is : 0.24635517833436224
+rule index is : 2 , degree is : 0.1167586808579766
+rule index is : 3 , degree is : 0.1320413191420233
+data_row_array  : 752
+
+rule index is : 0 , degree is : 0.06854789655246707
+rule index is : 1 , degree is : 0.1735952734261202
+rule index is : 2 , degree is : 0.010108864070262194
+data_row_array  : 753
+
+rule index is : 2 , degree is : 0.15223167748575475
+data_row_array  : 754
+
+rule index is : 0 , degree is : 0.12851970308172775
+rule index is : 4 , degree is : 0.0002767245531750052
+data_row_array  : 755
+
+rule index is : 1 , degree is : 0.16926460111694844
+rule index is : 3 , degree is : 0.11355781014659208
+data_row_array  : 756
+
+rule index is : 0 , degree is : 0.013334084431072177
+rule index is : 1 , degree is : 0.22208884695723263
+rule index is : 2 , degree is : 0.1114071017434718
+rule index is : 3 , degree is : 0.1373928982565281
+data_row_array  : 757
+
+rule index is : 0 , degree is : 0.22493581572945823
+rule index is : 2 , degree is : 0.10819594763292609
+data_row_array  : 758
+
+rule index is : 0 , degree is : 0.10771776169579479
+data_row_array  : 759
+
+rule index is : 0 , degree is : 0.04640057565009865
+rule index is : 1 , degree is : 0.1930469775094175
+rule index is : 2 , degree is : 0.008668445785218883
+rule index is : 3 , degree is : 0.24013155421478102
+data_row_array  : 760
+
+rule index is : 2 , degree is : 0.1269791992410689
+data_row_array  : 761
+
+rule index is : 3 , degree is : 0.12866316104186032
+data_row_array  : 762
+
+rule index is : 1 , degree is : 0.19659935502556333
+rule index is : 2 , degree is : 0.0852892503337564
+data_row_array  : 763
+
+rule index is : 0 , degree is : 0.08385758596839533
+rule index is : 1 , degree is : 0.1601489722035656
+rule index is : 2 , degree is : 0.16508225455491926
+data_row_array  : 764
+
+rule index is : 0 , degree is : 0.029391421743977002
+rule index is : 1 , degree is : 0.20798589630450104
+rule index is : 3 , degree is : 0.1853668257421453
+data_row_array  : 765
+
+rule index is : 0 , degree is : 0.057822508573496335
+rule index is : 1 , degree is : 0.1830152422821809
+rule index is : 3 , degree is : 0.15651741805012434
+data_row_array  : 766
+
+rule index is : 0 , degree is : 0.1256741691016214
+rule index is : 2 , degree is : 0.1939499317198031
+data_row_array  : 767
+
+rule index is : 1 , degree is : 0.20459516468007014
+rule index is : 2 , degree is : 0.048477978585408935
+data_row_array  : 768
+
+rule index is : 2 , degree is : 0.06245619118817812
+rule index is : 3 , degree is : 0.1863438088118218
+data_row_array  : 769
+
+rule index is : 0 , degree is : 0.17297823232585202
+rule index is : 2 , degree is : 0.1348372678913802
+data_row_array  : 770
+
+rule index is : 0 , degree is : 0.09055265373643263
+rule index is : 1 , degree is : 0.15426878120368911
+rule index is : 2 , degree is : 0.18985680641928887
+rule index is : 3 , degree is : 0.058943193580711005
+data_row_array  : 771
+
+rule index is : 1 , degree is : 0.21796662149080548
+rule index is : 2 , degree is : 0.11554408047778508
+rule index is : 3 , degree is : 0.13325591952221483
+data_row_array  : 772
+
+rule index is : 2 , degree is : 0.17853066021971514
+rule index is : 3 , degree is : 0.07026933978028474
+data_row_array  : 773
+
+rule index is : 0 , degree is : 0.17877128745120974
+rule index is : 2 , degree is : 0.21497998642834343
+rule index is : 3 , degree is : 0.033820013571656454
+data_row_array  : 774
+
+rule index is : 0 , degree is : 0.2585192414500421
+rule index is : 4 , degree is : 0.00043522114444800354
+data_row_array  : 775
+
+rule index is : 0 , degree is : 0.05532049272385361
+rule index is : 1 , degree is : 0.18521273028235546
+rule index is : 2 , degree is : 0.12963149582708655
+rule index is : 3 , degree is : 0.11916850417291333
+data_row_array  : 776
+
+rule index is : 2 , degree is : 0.15170875072210452
+rule index is : 3 , degree is : 0.09709124927789536
+data_row_array  : 777
+
+rule index is : 1 , degree is : 0.2146789538196357
+rule index is : 4 , degree is : 0.0005973407325133847
+data_row_array  : 778
+
+rule index is : 0 , degree is : 0.04292059330083825
+rule index is : 1 , degree is : 0.19610340077484603
+rule index is : 2 , degree is : 0.21255317962087403
+data_row_array  : 779
+
+rule index is : 0 , degree is : 0.06364315440644855
+rule index is : 2 , degree is : 0.17333972226223596
+rule index is : 3 , degree is : 0.07546027773776393
+data_row_array  : 780
+
+rule index is : 0 , degree is : 0.14020529965334974
+rule index is : 1 , degree is : 0.11065950766734346
+rule index is : 2 , degree is : 0.1913374660516141
+data_row_array  : 781
+
+rule index is : 1 , degree is : 0.1743160319408656
+rule index is : 3 , degree is : 0.18967833279456478
+data_row_array  : 782
+
+data_row_array  : 783
+
+rule index is : 0 , degree is : 0.00039540202918599324
+rule index is : 1 , degree is : 0.2334527235371011
+rule index is : 2 , degree is : 0.24861360657788867
+rule index is : 3 , degree is : 0.0001863934221111957
+data_row_array  : 784
+
+rule index is : 0 , degree is : 0.18031173222461336
+rule index is : 2 , degree is : 0.07620105148356518
+rule index is : 3 , degree is : 0.17259894851643473
+data_row_array  : 785
+
+rule index is : 2 , degree is : 0.01703460888811409
+rule index is : 3 , degree is : 0.23176539111188582
+data_row_array  : 786
+
+rule index is : 3 , degree is : 0.23245601964182738
+data_row_array  : 787
+
+rule index is : 0 , degree is : 0.2106475437772623
+rule index is : 1 , degree is : 0.048791000243711746
+rule index is : 3 , degree is : 0.12849280784916275
+data_row_array  : 788
+
+rule index is : 1 , degree is : 0.12410943162593116
+rule index is : 2 , degree is : 0.05375131815482547
+rule index is : 3 , degree is : 0.19504868184517443
+data_row_array  : 789
+
+rule index is : 0 , degree is : 0.036724408295999905
+rule index is : 1 , degree is : 0.20154542952815635
+rule index is : 2 , degree is : 0.2443332451599254
+rule index is : 3 , degree is : 0.00446675484007447
+data_row_array  : 790
+
+rule index is : 0 , degree is : 0.22768775969634117
+rule index is : 1 , degree is : 0.033824800086384006
+rule index is : 4 , degree is : 0.0002704654647383697
+data_row_array  : 791
+
+rule index is : 0 , degree is : 0.21895036742979504
+rule index is : 1 , degree is : 0.04149873814768563
+rule index is : 3 , degree is : 0.18255424230976308
+data_row_array  : 792
+
+rule index is : 0 , degree is : 0.16492886104145685
+rule index is : 1 , degree is : 0.0889451250507415
+rule index is : 2 , degree is : 0.12172052350522215
+rule index is : 3 , degree is : 0.12707947649477774
+data_row_array  : 793
+
+rule index is : 0 , degree is : 0.17756424316343594
+rule index is : 1 , degree is : 0.07784763316449539
+rule index is : 2 , degree is : 0.24200003448815852
+data_row_array  : 794
+
+rule index is : 2 , degree is : 0.1889687112842269
+rule index is : 3 , degree is : 0.059831288715772986
+data_row_array  : 795
+
+rule index is : 3 , degree is : 0.002043617278100299
+data_row_array  : 796
+
+rule index is : 0 , degree is : 0.24260791824832406
+rule index is : 1 , degree is : 0.020720618758609408
+data_row_array  : 797
+
+rule index is : 3 , degree is : 0.07392710437648517
+data_row_array  : 798
+
+rule index is : 2 , degree is : 0.12437068703515064
+data_row_array  : 799
+
+rule index is : 0 , degree is : 0.2566898623919222
+rule index is : 1 , degree is : 0.0083526302508211
+rule index is : 2 , degree is : 0.04254412343334665
+data_row_array  : 800
+
+rule index is : 3 , degree is : 0.1757948723336564
+data_row_array  : 801
+
+rule index is : 0 , degree is : 0.21029337723223093
+rule index is : 2 , degree is : 0.21067919600781032
+data_row_array  : 802
+
+rule index is : 0 , degree is : 0.02229740720557055
+rule index is : 4 , degree is : 0.00023271275430077016
+data_row_array  : 803
+
+rule index is : 3 , degree is : 0.12337597692948898
+data_row_array  : 804
+
+rule index is : 4 , degree is : 0.0005030466584649793
+data_row_array  : 805
+
+rule index is : 1 , degree is : 0.21466002886956997
+rule index is : 3 , degree is : 0.05355409151202953
+data_row_array  : 806
+
+rule index is : 2 , degree is : 0.12898868484134063
+data_row_array  : 807
+
+rule index is : 0 , degree is : 0.15742807691598082
+rule index is : 3 , degree is : 0.1750156782112881
+data_row_array  : 808
+
+rule index is : 0 , degree is : 0.1489960087408835
+rule index is : 3 , degree is : 0.12643807238576887
+data_row_array  : 809
+
+rule index is : 0 , degree is : 0.2200557799255599
+rule index is : 1 , degree is : 0.04052786872052625
+rule index is : 2 , degree is : 0.02877362533921794
+rule index is : 3 , degree is : 0.22002637466078198
+data_row_array  : 810
+
+rule index is : 2 , degree is : 0.1163382219921932
+rule index is : 3 , degree is : 0.1324617780078067
+data_row_array  : 811
+
+rule index is : 1 , degree is : 0.1435899791278644
+rule index is : 4 , degree is : 2.9014443538150025e-05
+data_row_array  : 812
+
+rule index is : 3 , degree is : 0.24687672946811115
+data_row_array  : 813
+
+rule index is : 0 , degree is : 0.04542476173758012
+rule index is : 1 , degree is : 0.19390402218540106
+rule index is : 3 , degree is : 0.23186263306262714
+data_row_array  : 814
+
+rule index is : 0 , degree is : 0.07344747729141328
+rule index is : 1 , degree is : 0.16929203534660994
+rule index is : 2 , degree is : 0.0867006934936156
+data_row_array  : 815
+
+data_row_array  : 816
+
+rule index is : 0 , degree is : 0.004629502078653723
+rule index is : 3 , degree is : 0.13678269535901919
+data_row_array  : 817
+
+rule index is : 0 , degree is : 0.1151262473434107
+rule index is : 2 , degree is : 0.05298559361932495
+rule index is : 3 , degree is : 0.19581440638067496
+data_row_array  : 818
+
+rule index is : 1 , degree is : 0.19143736390869595
+rule index is : 2 , degree is : 0.04731120224725261
+data_row_array  : 819
+
+rule index is : 0 , degree is : 0.17845463621396587
+rule index is : 1 , degree is : 0.0770656125213177
+rule index is : 2 , degree is : 0.06337370369507957
+rule index is : 3 , degree is : 0.18542629630492036
+data_row_array  : 820
+
+rule index is : 0 , degree is : 0.13029123720358132
+rule index is : 4 , degree is : 0.0001163470368941481
+data_row_array  : 821
+
+rule index is : 2 , degree is : 0.06434991680262658
+rule index is : 3 , degree is : 0.18445008319737333
+data_row_array  : 822
+
+rule index is : 0 , degree is : 0.2466748197422272
+rule index is : 1 , degree is : 0.017148712037067124
+rule index is : 3 , degree is : 0.017910503407494466
+data_row_array  : 823
+
+rule index is : 0 , degree is : 0.09135641634563008
+rule index is : 2 , degree is : 0.02716054248066551
+data_row_array  : 824
+
+rule index is : 0 , degree is : 0.08146865026641059
+rule index is : 2 , degree is : 0.18361458155254967
+rule index is : 3 , degree is : 0.06518541844745021
+data_row_array  : 825
+
+rule index is : 1 , degree is : 0.11844414366809691
+rule index is : 2 , degree is : 0.2264938781086693
+rule index is : 3 , degree is : 0.022306121891330567
+data_row_array  : 826
+
+rule index is : 3 , degree is : 0.11413610002459165
+data_row_array  : 827
+
+rule index is : 2 , degree is : 0.15445713306034797
+data_row_array  : 828
+
+rule index is : 0 , degree is : 0.21070645989569056
+rule index is : 1 , degree is : 0.04873925498267296
+rule index is : 2 , degree is : 0.0277589149012975
+data_row_array  : 829
+
+rule index is : 1 , degree is : 0.19948587619201727
+rule index is : 2 , degree is : 0.1078105146200237
+rule index is : 3 , degree is : 0.14098948537997621
+data_row_array  : 830
+
+rule index is : 0 , degree is : 0.2506839918729222
+rule index is : 2 , degree is : 0.07920008277947442
+rule index is : 3 , degree is : 0.16959991722052548
+data_row_array  : 831
+
+rule index is : 0 , degree is : 0.23129922764204935
+data_row_array  : 832
+
+rule index is : 0 , degree is : 0.2263663277543451
+rule index is : 1 , degree is : 0.034985396585402354
+rule index is : 3 , degree is : 0.04329177339454302
+data_row_array  : 833
+
+rule index is : 0 , degree is : 0.12548900784899644
+rule index is : 2 , degree is : 0.050565449291580286
+data_row_array  : 834
+
+rule index is : 0 , degree is : 0.08247926792061884
+rule index is : 2 , degree is : 0.21586224806899415
+rule index is : 3 , degree is : 0.032937751931005746
+data_row_array  : 835
+
+data_row_array  : 836
+
+rule index is : 3 , degree is : 0.053676019501155046
+data_row_array  : 837
+
+rule index is : 0 , degree is : 0.0019290913298698653
+rule index is : 1 , degree is : 0.2321057041588145
+data_row_array  : 838
+
+rule index is : 0 , degree is : 0.21971245563335787
+rule index is : 1 , degree is : 0.04082940598392534
+rule index is : 3 , degree is : 0.0008463351176019533
+data_row_array  : 839
+
+rule index is : 0 , degree is : 0.05435306530015698
+rule index is : 1 , degree is : 0.18606240921421222
+rule index is : 2 , degree is : 0.12222414420507006
+data_row_array  : 840
+
+rule index is : 2 , degree is : 0.22154038594265824
+data_row_array  : 841
+
+rule index is : 0 , degree is : 0.13982198545050445
+rule index is : 1 , degree is : 0.1109961675494818
+rule index is : 4 , degree is : 0.0005011501688912464
+data_row_array  : 842
+
+rule index is : 2 , degree is : 0.12412785395668496
+rule index is : 3 , degree is : 0.12467214604331492
+data_row_array  : 843
+
+rule index is : 0 , degree is : 0.1980744248102785
+rule index is : 1 , degree is : 0.05983380721020616
+rule index is : 2 , degree is : 0.14095920546891447
+rule index is : 3 , degree is : 0.10784079453108543
+data_row_array  : 844
+
+rule index is : 0 , degree is : 0.025992755845420205
+rule index is : 2 , degree is : 0.24546594564688334
+rule index is : 3 , degree is : 0.0033340543531165147
+data_row_array  : 845
+
+data_row_array  : 846
+
+data_row_array  : 847
+
+rule index is : 2 , degree is : 0.13798647439430062
+data_row_array  : 848
+
+rule index is : 0 , degree is : 0.14783471259867767
+rule index is : 1 , degree is : 0.10395869344263395
+data_row_array  : 849
+
+rule index is : 0 , degree is : 0.011960401395830711
+rule index is : 2 , degree is : 0.15264926427597272
+rule index is : 3 , degree is : 0.09615073572402717
+data_row_array  : 850
+
+rule index is : 3 , degree is : 0.048115231409850474
+data_row_array  : 851
+
+rule index is : 0 , degree is : 0.1462813224666466
+rule index is : 1 , degree is : 0.10532301580502637
+rule index is : 2 , degree is : 0.14893657606902605
+rule index is : 3 , degree is : 0.09986342393097383
+data_row_array  : 852
+
+rule index is : 0 , degree is : 0.10892617302209343
+rule index is : 1 , degree is : 0.13813155802943106
+rule index is : 2 , degree is : 0.16813129134497046
+data_row_array  : 853
+
+rule index is : 2 , degree is : 0.04902194658254576
+data_row_array  : 854
+
+rule index is : 0 , degree is : 0.2502574410197501
+rule index is : 4 , degree is : 0.0005240900905884132
+data_row_array  : 855
+
+data_row_array  : 856
+
+rule index is : 0 , degree is : 0.02472905368431192
+rule index is : 3 , degree is : 0.10554421073281198
+data_row_array  : 857
+
+rule index is : 0 , degree is : 0.13148443929667317
+data_row_array  : 858
+
+rule index is : 0 , degree is : 0.022349531244120417
+rule index is : 4 , degree is : 0.0005548042301824046
+data_row_array  : 859
+
+rule index is : 0 , degree is : 0.21438066407912312
+rule index is : 1 , degree is : 0.04551224920473708
+rule index is : 4 , degree is : 0.0005084597747151522
+data_row_array  : 860
+
+rule index is : 0 , degree is : 0.2135321925764849
+rule index is : 1 , degree is : 0.04625745069728711
+rule index is : 3 , degree is : 0.014466509445056426
+data_row_array  : 861
+
+rule index is : 1 , degree is : 0.15169094143451073
+rule index is : 4 , degree is : 0.0003934477979383763
+data_row_array  : 862
+
+rule index is : 3 , degree is : 0.20831063087854068
+data_row_array  : 863
+
+rule index is : 0 , degree is : 0.08412359385444004
+data_row_array  : 864
+
+rule index is : 0 , degree is : 0.05772668288556789
+rule index is : 3 , degree is : 0.06174129974588537
+data_row_array  : 865
+
+rule index is : 0 , degree is : 0.2523738853273182
+rule index is : 1 , degree is : 0.01214329680868896
+rule index is : 4 , degree is : 0.0005730645789829581
+data_row_array  : 866
+
+data_row_array  : 867
+
+data_row_array  : 868
+
+rule index is : 0 , degree is : 0.10241930104747232
+rule index is : 1 , degree is : 0.14384645911007124
+rule index is : 2 , degree is : 0.1729942921451712
+data_row_array  : 869
+
+rule index is : 4 , degree is : 6.1823226551727e-05
+data_row_array  : 870
+
+rule index is : 0 , degree is : 0.14419732962163634
+rule index is : 1 , degree is : 0.10715335963358912
+rule index is : 2 , degree is : 0.013958037590596557
+data_row_array  : 871
+
+rule index is : 0 , degree is : 0.12876032782486382
+rule index is : 2 , degree is : 0.06321293326712109
+rule index is : 3 , degree is : 0.18558706673287884
+data_row_array  : 872
+
+rule index is : 0 , degree is : 0.04596184380282619
+rule index is : 1 , degree is : 0.19343230998835173
+rule index is : 3 , degree is : 0.13016495138422599
+data_row_array  : 873
+
+rule index is : 2 , degree is : 0.035041405971008174
+data_row_array  : 874
+
+rule index is : 0 , degree is : 0.15634839362859348
+rule index is : 1 , degree is : 0.09648123805272289
+rule index is : 2 , degree is : 0.13855769446053368
+rule index is : 3 , degree is : 0.11024230553946619
+data_row_array  : 875
+
+rule index is : 0 , degree is : 0.07660863453930875
+rule index is : 2 , degree is : 0.2475516573121475
+data_row_array  : 876
+
+data_row_array  : 877
+
+rule index is : 0 , degree is : 0.002376037975542984
+rule index is : 2 , degree is : 0.0030369595030188055
+data_row_array  : 878
+
+rule index is : 1 , degree is : 0.22949038567032742
+rule index is : 2 , degree is : 0.22473196253431216
+data_row_array  : 879
+
+rule index is : 1 , degree is : 0.17758388056234212
+rule index is : 2 , degree is : 0.043281165485750235
+rule index is : 3 , degree is : 0.20551883451424968
+data_row_array  : 880
+
+rule index is : 2 , degree is : 0.07457791683251266
+rule index is : 3 , degree is : 0.17422208316748725
+data_row_array  : 881
+
+rule index is : 0 , degree is : 0.1880955105531888
+rule index is : 1 , degree is : 0.06859815789881461
+rule index is : 3 , degree is : 0.16218380874387847
+data_row_array  : 882
+
+rule index is : 2 , degree is : 0.03969026684940898
+rule index is : 3 , degree is : 0.20910973315059095
+data_row_array  : 883
+
+rule index is : 2 , degree is : 0.24541766007277754
+data_row_array  : 884
+
+rule index is : 4 , degree is : 0.00034714326823879663
+data_row_array  : 885
+
+rule index is : 0 , degree is : 0.24471449898925665
+rule index is : 2 , degree is : 0.127076107674329
+rule index is : 3 , degree is : 0.12172389232567088
+data_row_array  : 886
+
+rule index is : 1 , degree is : 0.22162386672693546
+data_row_array  : 887
+
+rule index is : 3 , degree is : 0.15206358386875296
+data_row_array  : 888
+
+rule index is : 0 , degree is : 0.22863489287682498
+rule index is : 2 , degree is : 0.11494447332828592
+data_row_array  : 889
+
+rule index is : 0 , degree is : 0.06110559149320434
+rule index is : 2 , degree is : 0.1881536382853493
+data_row_array  : 890
+
+rule index is : 3 , degree is : 0.15230604133431738
+data_row_array  : 891
+
+rule index is : 1 , degree is : 0.13592184841285107
+data_row_array  : 892
+
+rule index is : 0 , degree is : 0.12858906903915818
+rule index is : 3 , degree is : 0.12995824771058048
+data_row_array  : 893
+
+rule index is : 2 , degree is : 0.0876695741955944
+data_row_array  : 894
+
+rule index is : 0 , degree is : 0.10921450125935857
+rule index is : 1 , degree is : 0.1378783230862583
+rule index is : 2 , degree is : 0.23723104794832153
+rule index is : 3 , degree is : 0.011568952051678323
+data_row_array  : 895
+
+rule index is : 0 , degree is : 0.08050481153483442
+rule index is : 1 , degree is : 0.1630936704100515
+rule index is : 4 , degree is : 0.0004561362132318615
+data_row_array  : 896
+
+data_row_array  : 897
+
+rule index is : 0 , degree is : 0.08315545443998523
+rule index is : 2 , degree is : 0.1430737002823294
+rule index is : 3 , degree is : 0.10572629971767049
+data_row_array  : 898
+
+data_row_array  : 899
+
+data_row_array  : 900
+
+data_row_array  : 901
+
+data_row_array  : 902
+
+data_row_array  : 903
+
+data_row_array  : 904
+
+data_row_array  : 905
+
+data_row_array  : 906
+
+data_row_array  : 907
+
+data_row_array  : 908
+
+data_row_array  : 909
+
+data_row_array  : 910
+
+data_row_array  : 911
+
+data_row_array  : 912
+
+data_row_array  : 913
+
+data_row_array  : 914
+
+data_row_array  : 915
+
+data_row_array  : 916
+
+data_row_array  : 917
+
+data_row_array  : 918
+
+data_row_array  : 919
+
+data_row_array  : 920
+
+data_row_array  : 921
+
+data_row_array  : 922
+
+data_row_array  : 923
+
+data_row_array  : 924
+
+data_row_array  : 925
+
+data_row_array  : 926
+
+data_row_array  : 927
+
+data_row_array  : 928
+
+data_row_array  : 929
+
+data_row_array  : 930
+
+data_row_array  : 931
+
+data_row_array  : 932
+
+data_row_array  : 933
+
+data_row_array  : 934
+
+data_row_array  : 935
+
+data_row_array  : 936
+
+data_row_array  : 937
+
+data_row_array  : 938
+
+data_row_array  : 939
+
+data_row_array  : 940
+
+data_row_array  : 941
+
+data_row_array  : 942
+
+data_row_array  : 943
+
+data_row_array  : 944
+
+data_row_array  : 945
+
+data_row_array  : 946
+
+data_row_array  : 947
+
+data_row_array  : 948
+
+data_row_array  : 949
+
+data_row_array  : 950
+
+data_row_array  : 951
+
+data_row_array  : 952
+
+data_row_array  : 953
+
+data_row_array  : 954
+
+data_row_array  : 955
+
+data_row_array  : 956
+
+data_row_array  : 957
+
+data_row_array  : 958
+
+data_row_array  : 959
+
+data_row_array  : 960
+
+data_row_array  : 961
+
+data_row_array  : 962
+
+data_row_array  : 963
+
+data_row_array  : 964
+
+data_row_array  : 965
+
+data_row_array  : 966
+
+data_row_array  : 967
+
+data_row_array  : 968
+
+data_row_array  : 969
+
+data_row_array  : 970
+
+data_row_array  : 971
+
+data_row_array  : 972
+
+data_row_array  : 973
+
+data_row_array  : 974
+
+data_row_array  : 975
+
+data_row_array  : 976
+
+data_row_array  : 977
+
+data_row_array  : 978
+
+data_row_array  : 979
+
+data_row_array  : 980
+
+data_row_array  : 981
+
+data_row_array  : 982
+
+data_row_array  : 983
+
+data_row_array  : 984
+
+data_row_array  : 985
+
+data_row_array  : 986
+
+data_row_array  : 987
+
+data_row_array  : 988
+
+data_row_array  : 989
+
+data_row_array  : 990
+
+data_row_array  : 991
+
+data_row_array  : 992
+
+data_row_array  : 993
+
+data_row_array  : 994
+
+data_row_array  : 995
+
+data_row_array  : 996
+
+data_row_array  : 997
+
+data_row_array  : 998
+
+data_row_array  : 999
+
+data_row_array  : 1000
+
+data_row_array  : 1001
+
+data_row_array  : 1002
+
+data_row_array  : 1003
+
+data_row_array  : 1004
+
+data_row_array  : 1005
+
+data_row_array  : 1006
+
+data_row_array  : 1007
+
+data_row_array  : 1008
+
+data_row_array  : 1009
+
+data_row_array  : 1010
+
+data_row_array  : 1011
+
+data_row_array  : 1012
+
+data_row_array  : 1013
+
+data_row_array  : 1014
+
+data_row_array  : 1015
+
+data_row_array  : 1016
+
+data_row_array  : 1017
+
+data_row_array  : 1018
+
+data_row_array  : 1019
+
+data_row_array  : 1020
+
+data_row_array  : 1021
+
+data_row_array  : 1022
+
+data_row_array  : 1023
+
+data_row_array  : 1024
+
+data_row_array  : 1025
+
+data_row_array  : 1026
+
+data_row_array  : 1027
+
+data_row_array  : 1028
+
+data_row_array  : 1029
+
+data_row_array  : 1030
+
+data_row_array  : 1031
+
+data_row_array  : 1032
+
+data_row_array  : 1033
+
+data_row_array  : 1034
+
+data_row_array  : 1035
+
+data_row_array  : 1036
+
+data_row_array  : 1037
+
+data_row_array  : 1038
+
+data_row_array  : 1039
+
+data_row_array  : 1040
+
+data_row_array  : 1041
+
+data_row_array  : 1042
+
+data_row_array  : 1043
+
+data_row_array  : 1044
+
+data_row_array  : 1045
+
+data_row_array  : 1046
+
+data_row_array  : 1047
+
+data_row_array  : 1048
+
+data_row_array  : 1049
+
+data_row_array  : 1050
+
+data_row_array  : 1051
+
+data_row_array  : 1052
+
+data_row_array  : 1053
+
+data_row_array  : 1054
+
+data_row_array  : 1055
+
+data_row_array  : 1056
+
+data_row_array  : 1057
+
+data_row_array  : 1058
+
+data_row_array  : 1059
+
+data_row_array  : 1060
+
+data_row_array  : 1061
+
+data_row_array  : 1062
+
+data_row_array  : 1063
+
+data_row_array  : 1064
+
+data_row_array  : 1065
+
+data_row_array  : 1066
+
+data_row_array  : 1067
+
+data_row_array  : 1068
+
+data_row_array  : 1069
+
+data_row_array  : 1070
+
+data_row_array  : 1071
+
+data_row_array  : 1072
+
+data_row_array  : 1073
+
+data_row_array  : 1074
+
+data_row_array  : 1075
+
+data_row_array  : 1076
+
+data_row_array  : 1077
+
+data_row_array  : 1078
+
+data_row_array  : 1079
+
+data_row_array  : 1080
+
+data_row_array  : 1081
+
+data_row_array  : 1082
+
+data_row_array  : 1083
+
+data_row_array  : 1084
+
+data_row_array  : 1085
+
+data_row_array  : 1086
+
+data_row_array  : 1087
+
+data_row_array  : 1088
+
+data_row_array  : 1089
+
+data_row_array  : 1090
+
+data_row_array  : 1091
+
+data_row_array  : 1092
+
+data_row_array  : 1093
+
+data_row_array  : 1094
+
+data_row_array  : 1095
+
+data_row_array  : 1096
+
+data_row_array  : 1097
+
+data_row_array  : 1098
+
+data_row_array  : 1099
+
+data_row_array  : 1100
+
+data_row_array  : 1101
+
+data_row_array  : 1102
+
+data_row_array  : 1103
+
+data_row_array  : 1104
+
+data_row_array  : 1105
+
+data_row_array  : 1106
+
+data_row_array  : 1107
+
+data_row_array  : 1108
+
+data_row_array  : 1109
+
+data_row_array  : 1110
+
+data_row_array  : 1111
+
+data_row_array  : 1112
+
+data_row_array  : 1113
+
+data_row_array  : 1114
+
+data_row_array  : 1115
+
+data_row_array  : 1116
+
+data_row_array  : 1117
+
+data_row_array  : 1118
+
+data_row_array  : 1119
+
+data_row_array  : 1120
+
+data_row_array  : 1121
+
+data_row_array  : 1122
+
+data_row_array  : 1123
+
+data_row_array  : 1124
+
+data_row_array  : 1125
+
+data_row_array  : 1126
+
+data_row_array  : 1127
+
+data_row_array  : 1128
+
+data_row_array  : 1129
+
+data_row_array  : 1130
+
+data_row_array  : 1131
+
+data_row_array  : 1132
+
+data_row_array  : 1133
+
+data_row_array  : 1134
+
+data_row_array  : 1135
+
+data_row_array  : 1136
+
+data_row_array  : 1137
+
+data_row_array  : 1138
+
+data_row_array  : 1139
+
+data_row_array  : 1140
+
+data_row_array  : 1141
+
+data_row_array  : 1142
+
+data_row_array  : 1143
+
+data_row_array  : 1144
+
+data_row_array  : 1145
+
+data_row_array  : 1146
+
+data_row_array  : 1147
+
+data_row_array  : 1148
+
+data_row_array  : 1149
+
+data_row_array  : 1150
+
+data_row_array  : 1151
+
+data_row_array  : 1152
+
+data_row_array  : 1153
+
+data_row_array  : 1154
+
+data_row_array  : 1155
+
+data_row_array  : 1156
+
+data_row_array  : 1157
+
+data_row_array  : 1158
+
+data_row_array  : 1159
+
+data_row_array  : 1160
+
+data_row_array  : 1161
+
+data_row_array  : 1162
+
+data_row_array  : 1163
+
+data_row_array  : 1164
+
+data_row_array  : 1165
+
+data_row_array  : 1166
+
+data_row_array  : 1167
+
+data_row_array  : 1168
+
+data_row_array  : 1169
+
+data_row_array  : 1170
+
+data_row_array  : 1171
+
+data_row_array  : 1172
+
+data_row_array  : 1173
+
+data_row_array  : 1174
+
+data_row_array  : 1175
+
+data_row_array  : 1176
+
+data_row_array  : 1177
+
+data_row_array  : 1178
+
+data_row_array  : 1179
+
+data_row_array  : 1180
+
+data_row_array  : 1181
+
+data_row_array  : 1182
+
+data_row_array  : 1183
+
+data_row_array  : 1184
+
+data_row_array  : 1185
+
+data_row_array  : 1186
+
+data_row_array  : 1187
+
+data_row_array  : 1188
+
+data_row_array  : 1189
+
+data_row_array  : 1190
+
+data_row_array  : 1191
+
+data_row_array  : 1192
+
+data_row_array  : 1193
+
+data_row_array  : 1194
+
+data_row_array  : 1195
+
+data_row_array  : 1196
+
+data_row_array  : 1197
+
+data_row_array  : 1198
+
+data_row_array  : 1199
+
+data_row_array  : 1200
+
+data_row_array  : 1201
+
+data_row_array  : 1202
+
+data_row_array  : 1203
+
+data_row_array  : 1204
+
+data_row_array  : 1205
+
+data_row_array  : 1206
+
+data_row_array  : 1207
+
+data_row_array  : 1208
+
+data_row_array  : 1209
+
+data_row_array  : 1210
+
+data_row_array  : 1211
+
+data_row_array  : 1212
+
+data_row_array  : 1213
+
+data_row_array  : 1214
+
+data_row_array  : 1215
+
+data_row_array  : 1216
+
+data_row_array  : 1217
+
+data_row_array  : 1218
+
+data_row_array  : 1219
+
+data_row_array  : 1220
+
+data_row_array  : 1221
+
+data_row_array  : 1222
+
+data_row_array  : 1223
+
+data_row_array  : 1224
+
+data_row_array  : 1225
+
+data_row_array  : 1226
+
+data_row_array  : 1227
+
+data_row_array  : 1228
+
+data_row_array  : 1229
+
+data_row_array  : 1230
+
+data_row_array  : 1231
+
+data_row_array  : 1232
+
+data_row_array  : 1233
+
+data_row_array  : 1234
+
+data_row_array  : 1235
+
+data_row_array  : 1236
+
+data_row_array  : 1237
+
+data_row_array  : 1238
+
+data_row_array  : 1239
+
+data_row_array  : 1240
+
+data_row_array  : 1241
+
+data_row_array  : 1242
+
+data_row_array  : 1243
+
+data_row_array  : 1244
+
+data_row_array  : 1245
+
+data_row_array  : 1246
+
+data_row_array  : 1247
+
+data_row_array  : 1248
+
+data_row_array  : 1249
+
+data_row_array  : 1250
+
+data_row_array  : 1251
+
+data_row_array  : 1252
+
+data_row_array  : 1253
+
+data_row_array  : 1254
+
+data_row_array  : 1255
+
+data_row_array  : 1256
+
+data_row_array  : 1257
+
+data_row_array  : 1258
+
+data_row_array  : 1259
+
+data_row_array  : 1260
+
+data_row_array  : 1261
+
+data_row_array  : 1262
+
+data_row_array  : 1263
+
+data_row_array  : 1264
+
+data_row_array  : 1265
+
+data_row_array  : 1266
+
+data_row_array  : 1267
+
+data_row_array  : 1268
+
+data_row_array  : 1269
+
+data_row_array  : 1270
+
+data_row_array  : 1271
+
+data_row_array  : 1272
+
+data_row_array  : 1273
+
+data_row_array  : 1274
+
+data_row_array  : 1275
+
+data_row_array  : 1276
+
+data_row_array  : 1277
+
+data_row_array  : 1278
+
+data_row_array  : 1279
+
+data_row_array  : 1280
+
+data_row_array  : 1281
+
+data_row_array  : 1282
+
+data_row_array  : 1283
+
+data_row_array  : 1284
+
+data_row_array  : 1285
+
+data_row_array  : 1286
+
+data_row_array  : 1287
+
+data_row_array  : 1288
+
+data_row_array  : 1289
+
+data_row_array  : 1290
+
+data_row_array  : 1291
+
+data_row_array  : 1292
+
+data_row_array  : 1293
+
+data_row_array  : 1294
+
+data_row_array  : 1295
+
+data_row_array  : 1296
+
+data_row_array  : 1297
+
+data_row_array  : 1298
+
+data_row_array  : 1299
+
+data_row_array  : 1300
+
+data_row_array  : 1301
+
+data_row_array  : 1302
+
+data_row_array  : 1303
+
+data_row_array  : 1304
+
+data_row_array  : 1305
+
+data_row_array  : 1306
+
+data_row_array  : 1307
+
+data_row_array  : 1308
+
+data_row_array  : 1309
+
+data_row_array  : 1310
+
+data_row_array  : 1311
+
+data_row_array  : 1312
+
+data_row_array  : 1313
+
+data_row_array  : 1314
+
+data_row_array  : 1315
+
+data_row_array  : 1316
+
+data_row_array  : 1317
+
+data_row_array  : 1318
+
+data_row_array  : 1319
+
+data_row_array  : 1320
+
+data_row_array  : 1321
+
+data_row_array  : 1322
+
+data_row_array  : 1323
+
+data_row_array  : 1324
+
+data_row_array  : 1325
+
+data_row_array  : 1326
+
+data_row_array  : 1327
+
+data_row_array  : 1328
+
+data_row_array  : 1329
+
+data_row_array  : 1330
+
+data_row_array  : 1331
+
+data_row_array  : 1332
+
+data_row_array  : 1333
+
+data_row_array  : 1334
+
+data_row_array  : 1335
+
+data_row_array  : 1336
+
+data_row_array  : 1337
+
+data_row_array  : 1338
+
+data_row_array  : 1339
+
+data_row_array  : 1340
+
+data_row_array  : 1341
+
+data_row_array  : 1342
+
+data_row_array  : 1343
+
+data_row_array  : 1344
+
+data_row_array  : 1345
+
+data_row_array  : 1346
+
+data_row_array  : 1347
+
+data_row_array  : 1348
+
+data_row_array  : 1349
+
+data_row_array  : 1350
+
+data_row_array  : 1351
+
+data_row_array  : 1352
+
+data_row_array  : 1353
+
+data_row_array  : 1354
+
+data_row_array  : 1355
+
+data_row_array  : 1356
+
+data_row_array  : 1357
+
+data_row_array  : 1358
+
+data_row_array  : 1359
+
+data_row_array  : 1360
+
+data_row_array  : 1361
+
+data_row_array  : 1362
+
+data_row_array  : 1363
+
+data_row_array  : 1364
+
+data_row_array  : 1365
+
+data_row_array  : 1366
+
+data_row_array  : 1367
+
+data_row_array  : 1368
+
+data_row_array  : 1369
+
+data_row_array  : 1370
+
+data_row_array  : 1371
+
+data_row_array  : 1372
+
+data_row_array  : 1373
+
+data_row_array  : 1374
+
+data_row_array  : 1375
+
+data_row_array  : 1376
+
+data_row_array  : 1377
+
+data_row_array  : 1378
+
+data_row_array  : 1379
+
+data_row_array  : 1380
+
+data_row_array  : 1381
+
+data_row_array  : 1382
+
+data_row_array  : 1383
+
+data_row_array  : 1384
+
+data_row_array  : 1385
+
+data_row_array  : 1386
+
+data_row_array  : 1387
+
+data_row_array  : 1388
+
+data_row_array  : 1389
+
+data_row_array  : 1390
+
+data_row_array  : 1391
+
+data_row_array  : 1392
+
+data_row_array  : 1393
+
+data_row_array  : 1394
+
+data_row_array  : 1395
+
+data_row_array  : 1396
+
+data_row_array  : 1397
+
+data_row_array  : 1398
+
+data_row_array  : 1399
+
+data_row_array  : 1400
+
+data_row_array  : 1401
+
+data_row_array  : 1402
+
+data_row_array  : 1403
+
+data_row_array  : 1404
+
+data_row_array  : 1405
+
+data_row_array  : 1406
+
+data_row_array  : 1407
+
+data_row_array  : 1408
+
+data_row_array  : 1409
+
+data_row_array  : 1410
+
+data_row_array  : 1411
+
+data_row_array  : 1412
+
+data_row_array  : 1413
+
+data_row_array  : 1414
+
+data_row_array  : 1415
+
+data_row_array  : 1416
+
+data_row_array  : 1417
+
+data_row_array  : 1418
+
+data_row_array  : 1419
+
+data_row_array  : 1420
+
+data_row_array  : 1421
+
+data_row_array  : 1422
+
+data_row_array  : 1423
+
+data_row_array  : 1424
+
+data_row_array  : 1425
+
+data_row_array  : 1426
+
+data_row_array  : 1427
+
+data_row_array  : 1428
+
+data_row_array  : 1429
+
+data_row_array  : 1430
+
+data_row_array  : 1431
+
+data_row_array  : 1432
+
+data_row_array  : 1433
+
+data_row_array  : 1434
+
+data_row_array  : 1435
+
+data_row_array  : 1436
+
+data_row_array  : 1437
+
+data_row_array  : 1438
+
+data_row_array  : 1439
+
+data_row_array  : 1440
+
+data_row_array  : 1441
+
+data_row_array  : 1442
+
+data_row_array  : 1443
+
+data_row_array  : 1444
+
+data_row_array  : 1445
+
+data_row_array  : 1446
+
+data_row_array  : 1447
+
+data_row_array  : 1448
+
+data_row_array  : 1449
+
+data_row_array  : 1450
+
+data_row_array  : 1451
+
+data_row_array  : 1452
+
+data_row_array  : 1453
+
+data_row_array  : 1454
+
+data_row_array  : 1455
+
+data_row_array  : 1456
+
+data_row_array  : 1457
+
+data_row_array  : 1458
+
+data_row_array  : 1459
+
+data_row_array  : 1460
+
+data_row_array  : 1461
+
+data_row_array  : 1462
+
+data_row_array  : 1463
+
+data_row_array  : 1464
+
+data_row_array  : 1465
+
+data_row_array  : 1466
+
+data_row_array  : 1467
+
+data_row_array  : 1468
+
+data_row_array  : 1469
+
+data_row_array  : 1470
+
+data_row_array  : 1471
+
+data_row_array  : 1472
+
+data_row_array  : 1473
+
+data_row_array  : 1474
+
+data_row_array  : 1475
+
+data_row_array  : 1476
+
+data_row_array  : 1477
+
+data_row_array  : 1478
+
+data_row_array  : 1479
+
+data_row_array  : 1480
+
+data_row_array  : 1481
+
+data_row_array  : 1482
+
+data_row_array  : 1483
+
+data_row_array  : 1484
+
+data_row_array  : 1485
+
+data_row_array  : 1486
+
+data_row_array  : 1487
+
+data_row_array  : 1488
+
+data_row_array  : 1489
+
+data_row_array  : 1490
+
+data_row_array  : 1491
+
+data_row_array  : 1492
+
+data_row_array  : 1493
+
+data_row_array  : 1494
+
+data_row_array  : 1495
+
+data_row_array  : 1496
+
+data_row_array  : 1497
+
+data_row_array  : 1498
+
+data_row_array  : 1499
+
+data_row_array  : 1500
+
+data_row_array  : 1501
+
+data_row_array  : 1502
+
+data_row_array  : 1503
+
+data_row_array  : 1504
+
+data_row_array  : 1505
+
+data_row_array  : 1506
+
+data_row_array  : 1507
+
+data_row_array  : 1508
+
+data_row_array  : 1509
+
+data_row_array  : 1510
+
+data_row_array  : 1511
+
+data_row_array  : 1512
+
+data_row_array  : 1513
+
+data_row_array  : 1514
+
+data_row_array  : 1515
+
+data_row_array  : 1516
+
+data_row_array  : 1517
+
+data_row_array  : 1518
+
+data_row_array  : 1519
+
+data_row_array  : 1520
+
+data_row_array  : 1521
+
+data_row_array  : 1522
+
+data_row_array  : 1523
+
+data_row_array  : 1524
+
+data_row_array  : 1525
+
+data_row_array  : 1526
+
+data_row_array  : 1527
+
+data_row_array  : 1528
+
+data_row_array  : 1529
+
+data_row_array  : 1530
+
+data_row_array  : 1531
+
+data_row_array  : 1532
+
+data_row_array  : 1533
+
+data_row_array  : 1534
+
+data_row_array  : 1535
+
+data_row_array  : 1536
+
+data_row_array  : 1537
+
+data_row_array  : 1538
+
+data_row_array  : 1539
+
+data_row_array  : 1540
+
+data_row_array  : 1541
+
+data_row_array  : 1542
+
+data_row_array  : 1543
+
+data_row_array  : 1544
+
+data_row_array  : 1545
+
+data_row_array  : 1546
+
+data_row_array  : 1547
+
+data_row_array  : 1548
+
+data_row_array  : 1549
+
+data_row_array  : 1550
+
+data_row_array  : 1551
+
+data_row_array  : 1552
+
+data_row_array  : 1553
+
+data_row_array  : 1554
+
+data_row_array  : 1555
+
+data_row_array  : 1556
+
+data_row_array  : 1557
+
+data_row_array  : 1558
+
+data_row_array  : 1559
+
+data_row_array  : 1560
+
+data_row_array  : 1561
+
+data_row_array  : 1562
+
+data_row_array  : 1563
+
+data_row_array  : 1564
+
+data_row_array  : 1565
+
+data_row_array  : 1566
+
+data_row_array  : 1567
+
+data_row_array  : 1568
+
+data_row_array  : 1569
+
+data_row_array  : 1570
+
+data_row_array  : 1571
+
+data_row_array  : 1572
+
+data_row_array  : 1573
+
+data_row_array  : 1574
+
+data_row_array  : 1575
+
+data_row_array  : 1576
+
+data_row_array  : 1577
+
+data_row_array  : 1578
+
+data_row_array  : 1579
+
+data_row_array  : 1580
+
+data_row_array  : 1581
+
+data_row_array  : 1582
+
+data_row_array  : 1583
+
+data_row_array  : 1584
+
+data_row_array  : 1585
+
+data_row_array  : 1586
+
+data_row_array  : 1587
+
+data_row_array  : 1588
+
+data_row_array  : 1589
+
+data_row_array  : 1590
+
+data_row_array  : 1591
+
+data_row_array  : 1592
+
+data_row_array  : 1593
+
+data_row_array  : 1594
+
+data_row_array  : 1595
+
+data_row_array  : 1596
+
+data_row_array  : 1597
+
+data_row_array  : 1598
+
+data_row_array  : 1599
+
+data_row_array  : 1600
+
+data_row_array  : 1601
+
+data_row_array  : 1602
+
+data_row_array  : 1603
+
+data_row_array  : 1604
+
+data_row_array  : 1605
+
+data_row_array  : 1606
+
+data_row_array  : 1607
+
+data_row_array  : 1608
+
+data_row_array  : 1609
+
+data_row_array  : 1610
+
+data_row_array  : 1611
+
+data_row_array  : 1612
+
+data_row_array  : 1613
+
+data_row_array  : 1614
+
+data_row_array  : 1615
+
+data_row_array  : 1616
+
+data_row_array  : 1617
+
+data_row_array  : 1618
+
+data_row_array  : 1619
+
+data_row_array  : 1620
+
+data_row_array  : 1621
+
+data_row_array  : 1622
+
+data_row_array  : 1623
+
+data_row_array  : 1624
+
+data_row_array  : 1625
+
+data_row_array  : 1626
+
+data_row_array  : 1627
+
+data_row_array  : 1628
+
+data_row_array  : 1629
+
+data_row_array  : 1630
+
+data_row_array  : 1631
+
+data_row_array  : 1632
+
+data_row_array  : 1633
+
+data_row_array  : 1634
+
+data_row_array  : 1635
+
+data_row_array  : 1636
+
+data_row_array  : 1637
+
+data_row_array  : 1638
+
+data_row_array  : 1639
+
+data_row_array  : 1640
+
+data_row_array  : 1641
+
+data_row_array  : 1642
+
+data_row_array  : 1643
+
+data_row_array  : 1644
+
+data_row_array  : 1645
+
+data_row_array  : 1646
+
+data_row_array  : 1647
+
+data_row_array  : 1648
+
+data_row_array  : 1649
+
+data_row_array  : 1650
+
+data_row_array  : 1651
+
+data_row_array  : 1652
+
+data_row_array  : 1653
+
+data_row_array  : 1654
+
+data_row_array  : 1655
+
+data_row_array  : 1656
+
+data_row_array  : 1657
+
+data_row_array  : 1658
+
+data_row_array  : 1659
+
+data_row_array  : 1660
+
+data_row_array  : 1661
+
+data_row_array  : 1662
+
+data_row_array  : 1663
+
+data_row_array  : 1664
+
+data_row_array  : 1665
+
+data_row_array  : 1666
+
+data_row_array  : 1667
+
+data_row_array  : 1668
+
+data_row_array  : 1669
+
+data_row_array  : 1670
+
+data_row_array  : 1671
+
+data_row_array  : 1672
+
+data_row_array  : 1673
+
+data_row_array  : 1674
+
+data_row_array  : 1675
+
+data_row_array  : 1676
+
+data_row_array  : 1677
+
+data_row_array  : 1678
+
+data_row_array  : 1679
+
+data_row_array  : 1680
+
+data_row_array  : 1681
+
+data_row_array  : 1682
+
+data_row_array  : 1683
+
+data_row_array  : 1684
+
+data_row_array  : 1685
+
+data_row_array  : 1686
+
+data_row_array  : 1687
+
+data_row_array  : 1688
+
+data_row_array  : 1689
+
+data_row_array  : 1690
+
+data_row_array  : 1691
+
+data_row_array  : 1692
+
+data_row_array  : 1693
+
+data_row_array  : 1694
+
+data_row_array  : 1695
+
+data_row_array  : 1696
+
+data_row_array  : 1697
+
+data_row_array  : 1698
+
+data_row_array  : 1699
+
+data_row_array  : 1700
+
+data_row_array  : 1701
+
+data_row_array  : 1702
+
+data_row_array  : 1703
+
+data_row_array  : 1704
+
+data_row_array  : 1705
+
+data_row_array  : 1706
+
+data_row_array  : 1707
+
+data_row_array  : 1708
+
+data_row_array  : 1709
+
+data_row_array  : 1710
+
+data_row_array  : 1711
+
+data_row_array  : 1712
+
+data_row_array  : 1713
+
+data_row_array  : 1714
+
+data_row_array  : 1715
+
+data_row_array  : 1716
+
+data_row_array  : 1717
+
+data_row_array  : 1718
+
+data_row_array  : 1719
+
+data_row_array  : 1720
+
+data_row_array  : 1721
+
+data_row_array  : 1722
+
+data_row_array  : 1723
+
+data_row_array  : 1724
+
+data_row_array  : 1725
+
+data_row_array  : 1726
+
+data_row_array  : 1727
+
+data_row_array  : 1728
+
+data_row_array  : 1729
+
+data_row_array  : 1730
+
+data_row_array  : 1731
+
+data_row_array  : 1732
+
+data_row_array  : 1733
+
+data_row_array  : 1734
+
+data_row_array  : 1735
+
+data_row_array  : 1736
+
+data_row_array  : 1737
+
+data_row_array  : 1738
+
+data_row_array  : 1739
+
+data_row_array  : 1740
+
+data_row_array  : 1741
+
+data_row_array  : 1742
+
+data_row_array  : 1743
+
+data_row_array  : 1744
+
+data_row_array  : 1745
+
+data_row_array  : 1746
+
+data_row_array  : 1747
+
+data_row_array  : 1748
+
+data_row_array  : 1749
+
+data_row_array  : 1750
+
+data_row_array  : 1751
+
+data_row_array  : 1752
+
+data_row_array  : 1753
+
+data_row_array  : 1754
+
+data_row_array  : 1755
+
+data_row_array  : 1756
+
+data_row_array  : 1757
+
+data_row_array  : 1758
+
+data_row_array  : 1759
+
+data_row_array  : 1760
+
+data_row_array  : 1761
+
+data_row_array  : 1762
+
+data_row_array  : 1763
+
+data_row_array  : 1764
+
+data_row_array  : 1765
+
+data_row_array  : 1766
+
+data_row_array  : 1767
+
+data_row_array  : 1768
+
+data_row_array  : 1769
+
+data_row_array  : 1770
+
+data_row_array  : 1771
+
+data_row_array  : 1772
+
+data_row_array  : 1773
+
+data_row_array  : 1774
+
+data_row_array  : 1775
+
+data_row_array  : 1776
+
+data_row_array  : 1777
+
+data_row_array  : 1778
+
+data_row_array  : 1779
+
+data_row_array  : 1780
+
+data_row_array  : 1781
+
+data_row_array  : 1782
+
+data_row_array  : 1783
+
+data_row_array  : 1784
+
+data_row_array  : 1785
+
+data_row_array  : 1786
+
+data_row_array  : 1787
+
+data_row_array  : 1788
+
+data_row_array  : 1789
+
+data_row_array  : 1790
+
+data_row_array  : 1791
+
+data_row_array  : 1792
+
+data_row_array  : 1793
+
+data_row_array  : 1794
+
+data_row_array  : 1795
+
+1: 11.61879710931984 IS L_2(5): green rule's index : 0
+ rule's support x: 252
+ rule's support xy: 230
+ rule's rule_cover_accurate: 0.9127
+ rule's negative_rule: False
+rule's supp: 0.2806 AND rule's CF: 0.26622: 11.61879710931984 IS L_1(5): green rule's index : 1
+ rule's support x: 202
+ rule's support xy: 202
+ rule's rule_cover_accurate: 1.0
+ rule's negative_rule: False
+rule's supp: 0.2249 AND rule's CF: 0.23383: 3.61646249686014 IS L_3(5): green rule's index : 2
+ rule's support x: 215
+ rule's support xy: 215
+ rule's rule_cover_accurate: 1.0
+ rule's negative_rule: False
+rule's supp: 0.2394 AND rule's CF: 0.24884: 3.61646249686014 IS L_2(5): green rule's index : 3
+ rule's support x: 215
+ rule's support xy: 215
+ rule's rule_cover_accurate: 1.0
+ rule's negative_rule: False
+rule's supp: 0.2394 AND rule's CF: 0.24885: 3.61646249686014 IS L_0(5): green rule's index : 4
+ rule's support x: 1
+ rule's support xy: 1
+ rule's rule_cover_accurate: 1.0
+ rule's negative_rule: False
+rule's supp: 0.0011 AND rule's CF: 0.0012
+
+@supp and CF:
+
+1: supp: 0.2806 AND CF: 0.2662
+2: supp: 0.2249 AND CF: 0.2338
+3: supp: 0.2394 AND CF: 0.2488
+4: supp: 0.2394 AND CF: 0.2488
+5: supp: 0.0011 AND CF: 0.0012
+@Number of negative rules: 0
+
+
+
+@supp and CF:
+
+1.0
+
